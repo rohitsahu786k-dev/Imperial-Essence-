@@ -1,0 +1,123 @@
+export const clientGroups = [
+  {
+    name: "LVMH",
+    role: "Luxury & travel retail group",
+    image: "https://logo.clearbit.com/lvmh.com",
+    text: "A global luxury group relevant to premium beauty, fragrance, fashion, lifestyle, and travel retail sourcing conversations.",
+  },
+  {
+    name: "Puig",
+    role: "Fragrance & beauty group",
+    image: "https://logo.clearbit.com/puig.com",
+    text: "A recognized fragrance and beauty group aligned with premium distribution, selective retail, and category planning opportunities.",
+  },
+  {
+    name: "L'Oreal Luxe",
+    role: "Luxury beauty division",
+    image: "https://logo.clearbit.com/loreal.com",
+    text: "A leading luxury beauty portfolio relevant to cosmetics, skincare, fragrance, travel retail, and wholesale market discussions.",
+  },
+  {
+    name: "Coty",
+    role: "Beauty & fragrance group",
+    image: "https://logo.clearbit.com/coty.com",
+    text: "An international beauty company connected to fragrance, cosmetics, and consumer beauty categories across global channels.",
+  },
+  {
+    name: "Chanel",
+    role: "Luxury house",
+    image: "https://logo.clearbit.com/chanel.com",
+    text: "A premium luxury reference across fragrance, beauty, fashion, accessories, and high-value retail positioning.",
+  },
+  {
+    name: "Dior",
+    role: "Luxury fashion & beauty",
+    image: "https://logo.clearbit.com/dior.com",
+    text: "A globally recognized luxury name relevant to premium fragrance, beauty, fashion, and travel retail category context.",
+  },
+  {
+    name: "Gucci",
+    role: "Luxury fashion house",
+    image: "https://logo.clearbit.com/gucci.com",
+    text: "A luxury fashion reference for premium retail, accessories, lifestyle, gifting, and international distribution context.",
+  },
+  {
+    name: "Prada",
+    role: "Luxury fashion group",
+    image: "https://logo.clearbit.com/prada.com",
+    text: "A high-end fashion and lifestyle group relevant to premium retail, accessories, fragrance, and international positioning.",
+  },
+  {
+    name: "Kering",
+    role: "Luxury group",
+    image: "https://logo.clearbit.com/kering.com",
+    text: "A global luxury group connected to fashion, accessories, beauty adjacency, and selective retail ecosystems.",
+  },
+  {
+    name: "Richemont",
+    role: "Luxury goods group",
+    image: "https://logo.clearbit.com/richemont.com",
+    text: "A luxury goods group relevant to jewelry, watches, premium lifestyle, gifting, and high-value distribution conversations.",
+  },
+  {
+    name: "Estee Lauder",
+    role: "Beauty group",
+    image: "https://logo.clearbit.com/esteelauder.com",
+    text: "A leading beauty company relevant to cosmetics, skincare, fragrance, travel retail, and premium wholesale category planning.",
+  },
+  {
+    name: "Shiseido",
+    role: "Beauty group",
+    image: "https://logo.clearbit.com/shiseido.com",
+    text: "A global beauty group associated with skincare, cosmetics, fragrance, and international retail market development.",
+  },
+  {
+    name: "Unilever",
+    role: "FMCG group",
+    image: "https://logo.clearbit.com/unilever.com",
+    text: "A major FMCG reference for home care, personal care, beauty, hygiene, and international consumer goods distribution.",
+  },
+  {
+    name: "Procter & Gamble",
+    role: "FMCG group",
+    image: "https://logo.clearbit.com/pg.com",
+    text: "A global FMCG group relevant to personal care, grooming, home categories, and reliable wholesale supply planning.",
+  },
+  {
+    name: "Nestle",
+    role: "FMCG & beverages",
+    image: "https://logo.clearbit.com/nestle.com",
+    text: "A global consumer goods group relevant to food, beverage, retail, wholesale, and market expansion conversations.",
+  },
+  {
+    name: "Mondelez",
+    role: "FMCG group",
+    image: "https://logo.clearbit.com/mondelezinternational.com",
+    text: "An international snacks and consumer goods group relevant to retail, travel retail, and FMCG distribution channels.",
+  },
+  {
+    name: "Pernod Ricard",
+    role: "Beverage group",
+    image: "https://logo.clearbit.com/pernod-ricard.com",
+    text: "A global beverage group relevant to travel retail, premium retail, distribution, and market-specific wholesale discussions.",
+  },
+  {
+    name: "Diageo",
+    role: "Beverage group",
+    image: "https://logo.clearbit.com/diageo.com",
+    text: "A premium beverage reference for international retail, duty-free, distributor, and market development ecosystems.",
+  },
+  {
+    name: "Avolta",
+    role: "Travel retail operator",
+    image: "https://logo.clearbit.com/avoltaworld.com",
+    text: "A global travel retail operator relevant to airport retail, duty-free channels, and destination retail supply opportunities.",
+  },
+  {
+    name: "Gebr. Heinemann",
+    role: "Travel retail operator",
+    image: "https://logo.clearbit.com/gebr-heinemann.de",
+    text: "A major travel retail operator relevant to duty-free, airport retail, premium assortments, and international channel planning.",
+  },
+];
+
