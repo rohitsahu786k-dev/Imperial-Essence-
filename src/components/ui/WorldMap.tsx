@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { motion } from "framer-motion";
 import DottedMap from "dotted-map";
 import Image from "next/image";
@@ -20,17 +20,22 @@ export function WorldMap({
   theme = "light"
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
-  
-  // Generate dotted world map SVG background for light theme
-  const map = new DottedMap({ height: 100, grid: "diagonal" });
   const isDark = theme === "dark";
 
-  const svgMap = map.getSVG({
-    radius: 0.22,
-    color: isDark ? "#FFFFFF35" : "#07132125",
-    shape: "circle",
-    backgroundColor: isDark ? "#071321" : "#FFFFFF",
-  });
+  // Generate dotted map SVG safely inside useMemo
+  const svgMap = useMemo(() => {
+    try {
+      const map = new DottedMap({ height: 100, grid: "diagonal" });
+      return map.getSVG({
+        radius: 0.22,
+        color: isDark ? "#FFFFFF35" : "#07132125",
+        shape: "circle",
+        backgroundColor: isDark ? "#071321" : "#FFFFFF",
+      });
+    } catch {
+      return "";
+    }
+  }, [isDark]);
 
   const projectPoint = (lat: number, lng: number) => {
     const x = (lng + 180) * (800 / 360);
@@ -50,14 +55,18 @@ export function WorldMap({
   return (
     <div className={`w-full h-full min-h-[380px] lg:min-h-[460px] rounded-3xl relative overflow-hidden font-sans border ${isDark ? 'border-white/15 bg-[#071321]' : 'border-slate-200 bg-white'} shadow-sm flex items-center justify-center`}>
       {/* Map SVG background */}
-      <Image
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none object-cover"
-        alt="Worldwide Supply 28 SL Global Trade Routes"
-        height={400}
-        width={800}
-        draggable={false}
-      />
+      {svgMap ? (
+        <Image
+          src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
+          className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none object-cover"
+          alt="Worldwide Supply 28 SL Global Trade Routes"
+          height={400}
+          width={800}
+          draggable={false}
+        />
+      ) : (
+        <div className="w-full h-full bg-slate-50" />
+      )}
 
       <svg
         ref={svgRef}

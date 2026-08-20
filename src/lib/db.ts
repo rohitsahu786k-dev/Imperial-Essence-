@@ -1,12 +1,13 @@
-let clientPromise: Promise<unknown> | null = null;
+import { MongoClient } from "mongodb";
 
-export function getMongoClient() {
+let clientPromise: Promise<MongoClient> | null = null;
+
+export async function getMongoClient(): Promise<MongoClient | null> {
   if (!process.env.DATABASE_URL) return null;
 
   if (!clientPromise) {
-    clientPromise = Function("return import('mongodb')")().then((mongodb: { MongoClient: new (url: string) => { connect: () => Promise<unknown> } }) =>
-      new mongodb.MongoClient(process.env.DATABASE_URL as string).connect(),
-    );
+    const client = new MongoClient(process.env.DATABASE_URL as string);
+    clientPromise = client.connect();
   }
 
   return clientPromise;

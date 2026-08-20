@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
         <p className="text-sm text-slate-500">Last updated: August 2026</p>
         <div className="prose prose-slate max-w-none space-y-4 text-sm leading-relaxed text-slate-700">
           <p>
-            Worldwide Supply 28 SL ("we", "our", or "us"), based in Valencia, Spain (CIF: B26703769), respects your privacy and is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and Spanish data protection laws.
+            Worldwide Supply 28 SL (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;), based in Valencia, Spain (CIF: B26703769), respects your privacy and is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and Spanish data protection laws.
           </p>
           <h2 className="text-xl font-bold text-[#071321]">1. Data We Collect</h2>
           <p>
