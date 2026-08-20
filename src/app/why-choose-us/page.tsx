@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { AboutStorySection } from "@/components/sections/AboutStorySection";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "About Us | Worldwide Supply 28 SL",
-  description: "Learn about Worldwide Supply 28 SL, our founders Siddharth Thakker & Sakina Idmouhine, company mission, vision, and values.",
+  title: "Why Choose Us | Worldwide Supply 28 SL",
+  description: "Why Worldwide Supply 28 SL is your trusted partner in luxury wholesale, retail distribution, and global supply.",
 };
 
-export default function AboutPage() {
+export default function WhyChooseUsPage() {
   return (
     <div className="pt-20">
-      <AboutStorySection />
       <WhyChooseUs />
       <ContactInquirySection />
     </div>

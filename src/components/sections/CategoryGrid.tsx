@@ -1,130 +1,98 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowRight } from "@/components/ui/icons";
-import { categories } from "@/data/categories";
+import { useLanguage } from "@/context/LanguageContext";
+import { siteData } from "@/data/siteData";
+import { ArrowUpRight } from "lucide-react";
 
-const categoryImages = [
-  "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1100&q=82",
-  "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1100&q=82",
-];
-
-export function CategoryGrid({ detailed = false }: { detailed?: boolean }) {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScrollability = useCallback(() => {
-    const track = trackRef.current;
-    if (!track) return;
-    setCanScrollLeft(track.scrollLeft > 2);
-    setCanScrollRight(track.scrollLeft < track.scrollWidth - track.clientWidth - 2);
-  }, []);
-
-  const scroll = (direction: "left" | "right") => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    track.scrollBy({
-      left: direction === "left" ? -track.clientWidth * 0.82 : track.clientWidth * 0.82,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    checkScrollability();
-    track.addEventListener("scroll", checkScrollability, { passive: true });
-    window.addEventListener("resize", checkScrollability);
-
-    return () => {
-      track.removeEventListener("scroll", checkScrollability);
-      window.removeEventListener("resize", checkScrollability);
-    };
-  }, [checkScrollability]);
+export function CategoryGrid() {
+  const { t } = useLanguage();
 
   return (
-    <section className="bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 flex items-end justify-between gap-6 sm:mb-12">
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#207B68]">Product Categories</p>
-            <h2 className="text-3xl font-bold tracking-normal text-[#0B2239] sm:text-5xl">Product Categories</h2>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-[#102033]/72">
-              Category conversations are handled as B2B availability discussions, not consumer product listings.
+    <section className="bg-slate-50 py-24 text-[#071321] relative overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="max-w-2xl space-y-4">
+            <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
+              {t("Product Sectors", "Sectores de Productos")}
+            </span>
+            <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+              {t("Luxury Sourcing Categories", "Categorías de Abastecimiento de Lujo")}
+            </h2>
+            <p className="text-base text-slate-600">
+              {t(
+                "High-volume wholesale supply solutions across premier luxury categories for international distributors and prestige retailers.",
+                "Soluciones de suministro al por mayor de alto volumen en categorías de lujo principales para distribuidores internacionales y minoristas."
+              )}
             </p>
           </div>
 
-          <div className="hidden items-center gap-2 sm:flex">
-            <button
-              type="button"
-              onClick={() => scroll("left")}
-              disabled={!canScrollLeft}
-              aria-label="Scroll categories left"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#0B2239]/12 bg-white text-[#0B2239] transition hover:border-[#207B68]/35 hover:text-[#207B68] disabled:cursor-not-allowed disabled:opacity-35"
+          <div className="shrink-0">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-[#00A884] transition shadow-md"
             >
-              <ArrowRight className="h-4 w-4 rotate-180" />
-            </button>
-            <button
-              type="button"
-              onClick={() => scroll("right")}
-              disabled={!canScrollRight}
-              aria-label="Scroll categories right"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#0B2239]/12 bg-white text-[#0B2239] transition hover:border-[#207B68]/35 hover:text-[#207B68] disabled:cursor-not-allowed disabled:opacity-35"
-            >
-              <ArrowRight className="h-4 w-4" />
-            </button>
+              <span>{t("Inquire All Categories", "Consultar Todas Las Categorías")}</span>
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
 
-        <div
-          ref={trackRef}
-          className="categories-scroll-track flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-5"
-          aria-label="Product categories carousel"
-        >
-          {categories.map((category, index) => (
-            <article
-              key={category.slug}
-              id={category.slug}
-              className="group flex h-[400px] shrink-0 basis-[86%] snap-start flex-col overflow-hidden rounded-3xl bg-white transition duration-500 hover:-translate-y-1 sm:h-[440px] sm:basis-[46%] lg:basis-[calc(25%_-_16px)]"
+        {/* 8 Bright, Clean Category Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {siteData.categories.map((cat) => (
+            <Link
+              key={cat.id}
+              href="/contact"
+              className="group relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#00A884] flex flex-col justify-between h-[380px]"
             >
-              <div className="relative h-[62%] overflow-hidden bg-white">
-                <img
-                  src={categoryImages[index % categoryImages.length]}
-                  alt=""
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  loading="lazy"
+              {/* Full Bright Background Image - No Heavy Dark Shadows */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src={cat.image}
+                  alt={cat.name.en}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105 filter saturate-105"
                 />
+                {/* Subtle gradient ONLY at the bottom behind text for legibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071321]/90 via-[#071321]/30 via-40% to-transparent" />
               </div>
-              <div className="flex flex-1 flex-col justify-end bg-white p-6">
-                <div className="mb-5 h-1.5 w-14 rounded-full bg-[#C6A128]" />
-                <h3 className="text-xl font-semibold text-[#123A5A] transition group-hover:text-[#207B68]">{category.title}</h3>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {category.capabilities.map((item) => (
-                    <span key={item} className="rounded-full border border-[#123A5A]/10 bg-white px-3 py-1 text-xs font-medium text-[#123A5A]">
-                      {item}
-                    </span>
-                  ))}
+
+              {/* Badge Top Header */}
+              <div className="relative z-10 p-5 flex justify-between items-start">
+                <span className="rounded-full bg-white/95 backdrop-blur-md px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#071321] shadow-sm border border-slate-200">
+                  {t(cat.badge.en, cat.badge.es)}
+                </span>
+                <div className="h-9 w-9 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#071321] shadow-sm transition-all group-hover:bg-[#00A884] group-hover:text-white">
+                  <ArrowUpRight className="h-4 w-4" />
                 </div>
-                <Link href="/contact" className="mt-6 inline-flex text-sm font-semibold text-[#207B68] hover:text-[#123A5A]">
-                  Discuss Category Availability
-                </Link>
               </div>
-            </article>
+
+              {/* Minimal Clean Content Bottom */}
+              <div className="relative z-10 p-6 space-y-2 text-white">
+                <h3 className="text-xl font-extrabold text-white group-hover:text-[#00A884] transition leading-tight">
+                  {t(cat.name.en, cat.name.es)}
+                </h3>
+                <div className="flex items-center gap-1 text-xs font-bold text-[#00A884] uppercase tracking-wider group-hover:underline pt-1">
+                  <span>{t("Request Supply", "Solicitar Suministro")}</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </div>
+              </div>
+            </Link>
           ))}
+        </div>
+
+        {/* Footer Note */}
+        <div className="mt-12 text-center text-xs text-slate-500 border-t border-slate-200 pt-6 font-medium">
+          <p>
+            {t(
+              "Note: Displaying B2B wholesale product categories. No individual retail listings.",
+              "Nota: Mostrando categorías de productos mayoristas B2B. Sin listados minoristas individuales."
+            )}
+          </p>
         </div>
       </div>
     </section>

@@ -1,20 +1,34 @@
 import type { Metadata } from "next";
-import { InternalPageHero } from "@/components/sections/InternalPageHero";
-import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata({ title: "Privacy Policy", path: "/privacy-policy" });
+export const metadata: Metadata = {
+  title: "Privacy Policy | Worldwide Supply 28 SL",
+  description: "Privacy Policy and data protection guidelines for Worldwide Supply 28 SL.",
+};
 
 export default function PrivacyPolicyPage() {
   return (
-    <>
-      <InternalPageHero eyebrow="Legal" title="Privacy Policy" copy="Worldwide Supply 28 collects business inquiry information only to review and respond to wholesale partnership requests." />
-      <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl space-y-6 text-sm leading-7 text-[#102033]/72">
-          <p>Information submitted through the inquiry form may include name, company, contact details, market, business type, category interests, and message content.</p>
-          <p>Submitted details are used for B2B communication, lead qualification, and partnership follow-up. The website does not include consumer checkout or payment processing.</p>
-          <p>To request correction or removal of submitted business inquiry information, contact trading@worldwidesupply28.com.</p>
+    <div className="pt-32 pb-24 bg-white text-[#071321]">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-8">
+        <h1 className="text-4xl font-extrabold tracking-tight">Privacy Policy</h1>
+        <p className="text-sm text-slate-500">Last updated: August 2026</p>
+        <div className="prose prose-slate max-w-none space-y-4 text-sm leading-relaxed text-slate-700">
+          <p>
+            Worldwide Supply 28 SL ("we", "our", or "us"), based in Valencia, Spain (CIF: B26703769), respects your privacy and is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and Spanish data protection laws.
+          </p>
+          <h2 className="text-xl font-bold text-[#071321]">1. Data We Collect</h2>
+          <p>
+            We collect business inquiry information provided voluntarily through our contact forms, email, or WhatsApp, including name, company name, country, email address, and phone number.
+          </p>
+          <h2 className="text-xl font-bold text-[#071321]">2. How We Use Data</h2>
+          <p>
+            Your information is used solely to respond to wholesale inquiries, manage business relationships, arrange international logistics, and fulfill commercial contracts.
+          </p>
+          <h2 className="text-xl font-bold text-[#071321]">3. Data Security & Contact</h2>
+          <p>
+            For any inquiries regarding data protection, please contact us at <strong>info@worldwidesupply28.com</strong> or by mail to Calle Carlos Cervera, 14, Bajo, 46006, Valencia, Spain.
+          </p>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }

@@ -2,15 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "@/components/ui/icons";
-import { useEffect, useState } from "react";
-import { categories } from "@/data/categories";
-import { navItems, site } from "@/data/site";
+import { useEffect, useState, useRef } from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { Menu, X, Globe, ChevronDown, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const { language, setLanguage, t } = useLanguage();
+
+  const targetCountries = [
+    { code: "en", flag: "🇬🇧", country: "United Kingdom & Global", langName: "English" },
+    { code: "es", flag: "🇪🇸", country: "España (Spain - HQ)", langName: "Español" },
+    { code: "fr", flag: "🇫🇷", country: "France & Europe", langName: "Français" },
+    { code: "ae", flag: "🇦🇪", country: "United Arab Emirates", langName: "العربية / EN" },
+    { code: "us", flag: "🇺🇸", country: "United States", langName: "English (US)" },
+  ];
+
+  const currentCountry = targetCountries.find((c) => c.code === language) || targetCountries[0];
 
   useEffect(() => {
     const update = () => setScrolled(window.scrollY > 20);
@@ -19,78 +31,188 @@ export function Header() {
     return () => window.removeEventListener("scroll", update);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setLangDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const navLinks = [
+    { href: "/", label: t("Home", "Inicio") },
+    { href: "/about", label: t("About Us", "Sobre Nosotros") },
+    { href: "/categories", label: t("Product Categories", "Categorías de Productos") },
+    { href: "/services", label: t("Services", "Servicios") },
+    { href: "/why-choose-us", label: t("Why Choose Us", "Por qué Elegirnos") },
+    { href: "/contact", label: t("Contact Us", "Contacto") },
+  ];
+
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled || open
-          ? "border-b border-[#123A5A]/10 bg-white/88 shadow-sm backdrop-blur-xl"
-          : "bg-transparent",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-white border-b border-slate-200/90 shadow-sm",
+        scrolled ? "py-1.5" : "py-2.5"
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center" aria-label={`${site.name} home`}>
-          <Image src={site.logo} alt={`${site.name} logo`} width={150} height={112} priority className="h-16 w-auto object-contain sm:h-[72px]" />
+        {/* Clean, Prominent Tightly-Cropped Logo */}
+        <Link href="/" className="flex items-center shrink-0 group py-1" aria-label="Worldwide Supply 28 SL">
+          <Image
+            src="/world-wide-logo.png"
+            alt="Worldwide Supply 28 SL Logo"
+            width={240}
+            height={100}
+            priority
+            className="h-16 sm:h-20 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
-        <nav className="hidden items-center rounded-full border border-[#123A5A]/10 bg-white/70 p-1 backdrop-blur lg:flex" aria-label="Primary navigation">
-          {navItems.map((item) =>
-            item.label === "Categories" ? (
-              <div className="group relative" key={item.href}>
-                <Link href={item.href} className="rounded-full px-4 py-2 text-sm font-medium text-[#102033] transition hover:bg-white hover:text-[#123A5A]">
-                  {item.label}
-                </Link>
-                <div className="invisible absolute left-1/2 top-full w-[680px] -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover:visible group-hover:opacity-100">
-                  <div className="grid grid-cols-2 gap-2 rounded-2xl border border-[#123A5A]/10 bg-white/92 p-4 backdrop-blur-xl">
-                    {categories.slice(0, 8).map((category) => (
-                      <Link key={category.slug} href={`/categories#${category.slug}`} className="rounded-xl p-3 transition hover:bg-white">
-                        <span className="block text-sm font-semibold text-[#123A5A]">{category.title}</span>
-                        <span className="mt-1 block text-xs leading-5 text-[#102033]/70">{category.summary}</span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <Link key={item.href} href={item.href} className="rounded-full px-4 py-2 text-sm font-medium text-[#102033] transition hover:bg-white hover:text-[#123A5A]">
-                {item.label}
-              </Link>
-            ),
-          )}
+        {/* Desktop Nav */}
+        <nav className="hidden items-center rounded-full border border-slate-200 bg-slate-50/90 p-1.5 lg:flex" aria-label="Primary navigation">
+          {navLinks.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="rounded-full px-4 py-2 text-xs font-bold text-slate-800 transition hover:bg-white hover:text-[#00A884] hover:shadow-sm"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
+        {/* Right CTA & Country/Language Dropdown */}
         <div className="hidden items-center gap-3 lg:flex">
-          <Link href="/contact" className="group inline-flex rounded-full bg-[#123A5A] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0B2239]">
-            Request Inquiry
+          {/* Target Country & Language Selector Dropdown */}
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+              className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-bold text-slate-800 transition hover:bg-slate-100 shadow-2xs"
+              title="Select Target Country & Language"
+            >
+              <Globe className="h-4 w-4 text-[#00A884]" />
+              <span>{currentCountry.flag} {currentCountry.code.toUpperCase()}</span>
+              <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
+            </button>
+
+            {/* Dropdown Menu */}
+            {langDropdownOpen && (
+              <div className="absolute right-0 mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl z-50 animate-in fade-in slide-in-from-top-2">
+                <div className="px-3 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider border-b border-slate-100">
+                  Target Markets & Languages
+                </div>
+                <div className="py-1 space-y-1">
+                  {targetCountries.map((c) => (
+                    <button
+                      key={c.code}
+                      onClick={() => {
+                        setLanguage(c.code === "es" ? "es" : "en");
+                        setLangDropdownOpen(false);
+                      }}
+                      className={cn(
+                        "w-full flex items-center justify-between px-3 py-2 text-xs rounded-xl transition text-left",
+                        language === c.code || (language === "en" && (c.code === "en" || c.code === "us" || c.code === "fr" || c.code === "ae"))
+                          ? "bg-slate-100 text-[#071321] font-bold"
+                          : "text-slate-600 hover:bg-slate-50"
+                      )}
+                    >
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-base">{c.flag}</span>
+                        <div>
+                          <span className="block font-bold text-slate-800">{c.country}</span>
+                          <span className="block text-[10px] text-slate-400">{c.langName}</span>
+                        </div>
+                      </div>
+                      {(language === c.code || (language === "en" && c.code === "en")) && (
+                        <Check className="h-4 w-4 text-[#00A884]" />
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Inquiry CTA */}
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 rounded-full bg-[#00A884] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition hover:bg-[#009272]"
+          >
+            <span>{t("Inquire Now", "Consulta Ahora")}</span>
           </Link>
         </div>
 
-        <button
-          type="button"
-          className="inline-flex size-11 items-center justify-center rounded-md border border-[#123A5A]/15 text-[#123A5A] lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-          aria-expanded={open}
-          aria-controls="mobile-navigation"
-          aria-label="Toggle navigation"
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        {/* Mobile Menu Button */}
+        <div className="flex items-center gap-2 lg:hidden">
+          <button
+            onClick={() => setLanguage(language === "en" ? "es" : "en")}
+            className="flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-bold text-slate-800"
+          >
+            <span>{language === "en" ? "🇬🇧 EN" : "🇪🇸 ES"}</span>
+          </button>
+          <button
+            type="button"
+            className="inline-flex size-10 items-center justify-center rounded-lg border border-slate-200 text-slate-800 hover:bg-slate-100"
+            onClick={() => setOpen((value) => !value)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
 
-      {open ? (
-        <div id="mobile-navigation" className="border-t border-[#123A5A]/10 bg-white/95 px-4 pb-6 backdrop-blur-xl lg:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col gap-1 pt-4" aria-label="Mobile navigation">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className="rounded-md px-3 py-3 text-base font-medium text-[#102033] hover:bg-white">
+      {/* Mobile Navigation Sheet */}
+      {open && (
+        <div className="border-t border-slate-200 bg-white px-4 pt-3 pb-6 lg:hidden shadow-lg space-y-4">
+          <div className="space-y-1">
+            {navLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="block rounded-lg px-4 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100"
+              >
                 {item.label}
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setOpen(false)} className="mt-3 rounded-md bg-[#123A5A] px-4 py-3 text-center text-sm font-semibold text-white">
-              Request Wholesale Inquiry
+          </div>
+
+          {/* Target Countries List on Mobile */}
+          <div className="pt-3 border-t border-slate-100 space-y-2">
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block px-4">
+              Target Markets & Languages
+            </span>
+            <div className="grid grid-cols-2 gap-2 px-2">
+              {targetCountries.map((c) => (
+                <button
+                  key={c.code}
+                  onClick={() => {
+                    setLanguage(c.code === "es" ? "es" : "en");
+                    setOpen(false);
+                  }}
+                  className="flex items-center gap-2 p-2 rounded-xl border border-slate-200 text-left text-xs bg-slate-50"
+                >
+                  <span>{c.flag}</span>
+                  <span className="truncate font-semibold text-slate-800">{c.country}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-2">
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="block w-full rounded-full bg-[#00A884] py-3 text-center text-xs font-bold uppercase tracking-wider text-white"
+            >
+              {t("Inquire Now", "Consulta Ahora")}
             </Link>
-          </nav>
+          </div>
         </div>
-      ) : null}
+      )}
     </header>
   );
 }

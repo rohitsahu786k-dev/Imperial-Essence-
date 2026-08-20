@@ -1,36 +1,28 @@
 import type { Metadata } from "next";
-import { AboutIntro } from "@/components/sections/AboutIntro";
-import { AnimatedCTA } from "@/components/sections/AnimatedCTA";
-import { BlogSection } from "@/components/sections/BlogSection";
-import { CategoryGrid } from "@/components/sections/CategoryGrid";
-import { ClientShowcase } from "@/components/sections/ClientShowcase";
-import { GlobalNetwork } from "@/components/sections/GlobalNetwork";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { PartnerGroups } from "@/components/sections/PartnerGroups";
-import { ServicesOverview } from "@/components/sections/ServicesOverview";
-import { StatsSection } from "@/components/sections/StatsSection";
+import { AboutStorySection } from "@/components/sections/AboutStorySection";
+import { CategoryGrid } from "@/components/sections/CategoryGrid";
+import { ServicesSection } from "@/components/sections/ServicesSection";
+import { LogisticsTargetMarkets } from "@/components/sections/LogisticsTargetMarkets";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { pageMetadata } from "@/lib/seo";
+import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Worldwide Supply 28 | Luxury Wholesale & International Distribution",
-  path: "/",
-});
+export const metadata: Metadata = {
+  title: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
+  description:
+    "Official website of Worldwide Supply 28 SL based in Valencia, Spain. Supplying luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products worldwide.",
+};
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <StatsSection />
-      <AboutIntro />
+      <AboutStorySection />
       <CategoryGrid />
-      <ServicesOverview />
-      <GlobalNetwork />
-      <PartnerGroups />
-      <ClientShowcase />
+      <ServicesSection />
+      <LogisticsTargetMarkets />
       <WhyChooseUs />
-      <BlogSection />
-      <AnimatedCTA />
+      <ContactInquirySection />
     </>
   );
 }

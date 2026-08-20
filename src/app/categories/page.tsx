@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
 import { CategoryGrid } from "@/components/sections/CategoryGrid";
-import { InternalPageHero } from "@/components/sections/InternalPageHero";
-import { breadcrumbJsonLd } from "@/lib/jsonld";
-import { pageMetadata } from "@/lib/seo";
+import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
-export const metadata: Metadata = pageMetadata({
-  title: "Wholesale Product Categories | Worldwide Supply 28",
-  path: "/categories",
-});
+export const metadata: Metadata = {
+  title: "Product Categories | Worldwide Supply 28 SL",
+  description: "Wholesale luxury sourcing categories: Perfumes, Niche Fragrances, Cosmetics & Skincare, Wines & Spirits, Textiles, Accessories, Jewelry, Travel Sets.",
+};
 
 export default function CategoriesPage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Categories", path: "/categories" }])) }} />
-      <InternalPageHero eyebrow="Categories" title="Wholesale Product Categories" copy="Each category is presented as a B2B capability area for availability discussion, sourcing fit, and wholesale partnership planning." />
-      <CategoryGrid detailed />
-    </>
+    <div className="pt-20">
+      <CategoryGrid />
+      <ContactInquirySection />
+    </div>
   );
 }

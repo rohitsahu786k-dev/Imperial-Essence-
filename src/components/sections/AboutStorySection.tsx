@@ -1,0 +1,232 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
+import { siteData } from "@/data/siteData";
+import { Target, Eye, Quote, ArrowUpRight, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
+
+export function AboutStorySection() {
+  const { t } = useLanguage();
+
+  return (
+    <section className="bg-white py-24 text-[#071321]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Dribbble Style Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#00A884]">
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>{t("Executive Leadership & Vision", "Liderazgo Ejecutivo y Visión")}</span>
+          </div>
+
+          <h2 className="text-3xl font-extrabold sm:text-5xl lg:text-6xl text-[#071321] tracking-tight leading-[1.15]">
+            {t("The Visionaries Behind Worldwide Supply 28 SL", "Los Visionarios Detrás de Worldwide Supply 28 SL")}
+          </h2>
+
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
+            {t(siteData.about.story.p1.en, siteData.about.story.p1.es)}
+          </p>
+        </div>
+
+        {/* Dribbble Style Executive Team Cards Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 mb-20">
+          {/* Card 1: Siddharth Thakker */}
+          <div className="group relative rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#00A884] flex flex-col justify-between">
+            <div className="space-y-8">
+              {/* Header with Photo & Role */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <div className="relative h-28 w-28 sm:h-32 sm:w-32 shrink-0 rounded-2xl overflow-hidden bg-slate-100 ring-4 ring-slate-100 group-hover:ring-[#00A884]/30 transition duration-500 shadow-md">
+                  <Image
+                    src="/images/team/siddharth-thakker.jpg"
+                    alt="Siddharth Thakker Co-Founder Worldwide Supply 28 SL"
+                    fill
+                    priority
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#00A884]">
+                    {t(siteData.about.story.siddharth.role.en, siteData.about.story.siddharth.role.es)}
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
+                    {siteData.about.story.siddharth.name}
+                  </h3>
+                  <p className="text-xs font-semibold text-slate-500">
+                    {t("Trade, Duty-Free & Cross-Border Logistics", "Comercio, Duty-Free y Logística Global")}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bio Story */}
+              <div className="relative space-y-3 pt-2">
+                <Quote className="h-6 w-6 text-[#00A884]/30 mb-1" />
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {t(siteData.about.story.siddharth.bio.en, siteData.about.story.siddharth.bio.es)}
+                </p>
+              </div>
+
+              {/* Domain Badges */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                <span className="rounded-lg bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-700">
+                  15+ Years Trade Experience
+                </span>
+                <span className="rounded-lg bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-700">
+                  Global Logistics Networks
+                </span>
+              </div>
+            </div>
+
+            {/* Action Footer */}
+            <div className="pt-8 mt-8 border-t border-slate-100 flex items-center justify-between">
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+                <MapPin className="h-3.5 w-3.5 text-[#00A884]" />
+                <span>Valencia, Spain</span>
+              </div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#00A884]"
+              >
+                <span>{t("Contact Co-Founder", "Contactar Co-Fundador")}</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 2: Sakina Idmouhine */}
+          <div className="group relative rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#00A884] flex flex-col justify-between">
+            <div className="space-y-8">
+              {/* Header with Photo & Role */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <div className="relative h-28 w-28 sm:h-32 sm:w-32 shrink-0 rounded-2xl overflow-hidden bg-slate-100 ring-4 ring-slate-100 group-hover:ring-[#00A884]/30 transition duration-500 shadow-md">
+                  <Image
+                    src="/images/team/sakina-idmouhine.jpg"
+                    alt="Sakina Idmouhine Co-Founder Worldwide Supply 28 SL"
+                    fill
+                    priority
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#00A884]">
+                    {t(siteData.about.story.sakina.role.en, siteData.about.story.sakina.role.es)}
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
+                    {siteData.about.story.sakina.name}
+                  </h3>
+                  <p className="text-xs font-semibold text-slate-500">
+                    {t("Perfumery, Cosmetics & Retail Networks", "Perfumería, Cosmética y Redes Minoristas")}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bio Story */}
+              <div className="relative space-y-3 pt-2">
+                <Quote className="h-6 w-6 text-[#00A884]/30 mb-1" />
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {t(siteData.about.story.sakina.bio.en, siteData.about.story.sakina.bio.es)}
+                </p>
+              </div>
+
+              {/* Domain Badges */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                <span className="rounded-lg bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-700">
+                  15+ Years Cosmetics Master
+                </span>
+                <span className="rounded-lg bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-700">
+                  International Retail Partner
+                </span>
+              </div>
+            </div>
+
+            {/* Action Footer */}
+            <div className="pt-8 mt-8 border-t border-slate-100 flex items-center justify-between">
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+                <MapPin className="h-3.5 w-3.5 text-[#00A884]" />
+                <span>Valencia, Spain</span>
+              </div>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-[#00A884]"
+              >
+                <span>{t("Contact Co-Founder", "Contactar Co-Fundadora")}</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Shared Culture & Vision Card on Light Background */}
+        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 sm:p-12 mb-20 shadow-sm relative overflow-hidden">
+          <div className="max-w-4xl space-y-4 relative z-10">
+            <span className="text-xs font-bold text-[#00A884] uppercase tracking-wider block">
+              {t("Shared Philosophy & Culture", "Filosofía y Cultura Compartida")}
+            </span>
+            <p className="text-base sm:text-xl font-semibold leading-relaxed text-[#071321]">
+              "{t(siteData.about.story.together.en, siteData.about.story.together.es)}"
+            </p>
+            <p className="text-xs sm:text-sm font-bold text-[#00A884] pt-2">
+              — {t(siteData.about.story.familySpirit.en, siteData.about.story.familySpirit.es)}
+            </p>
+          </div>
+        </div>
+
+        {/* Mission & Vision */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm space-y-4 hover:border-[#00A884] transition">
+            <div className="h-12 w-12 rounded-xl bg-[#00A884]/10 text-[#00A884] flex items-center justify-center">
+              <Target className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-bold text-[#071321]">
+              {t(siteData.about.missionVision.mission.title.en, siteData.about.missionVision.mission.title.es)}
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm">
+              {t(siteData.about.missionVision.mission.desc.en, siteData.about.missionVision.mission.desc.es)}
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm space-y-4 hover:border-[#00A884] transition">
+            <div className="h-12 w-12 rounded-xl bg-[#071321] text-white flex items-center justify-center">
+              <Eye className="h-6 w-6" />
+            </div>
+            <h3 className="text-2xl font-bold text-[#071321]">
+              {t(siteData.about.missionVision.vision.title.en, siteData.about.missionVision.vision.title.es)}
+            </h3>
+            <p className="text-slate-600 leading-relaxed text-sm">
+              {t(siteData.about.missionVision.vision.desc.en, siteData.about.missionVision.vision.desc.es)}
+            </p>
+          </div>
+        </div>
+
+        {/* Core Values */}
+        <div>
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h3 className="text-3xl font-extrabold text-[#071321]">
+              {t("Our Core Values", "Nuestros Valores Fundamentales")}
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {siteData.about.coreValues.map((val, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl border border-slate-200 bg-white p-6 text-center space-y-3 shadow-xs hover:border-[#00A884] hover:shadow-md transition"
+              >
+                <div className="h-10 w-10 mx-auto rounded-full bg-[#00A884]/10 text-[#00A884] flex items-center justify-center font-bold text-sm">
+                  0{idx + 1}
+                </div>
+                <h4 className="text-lg font-bold text-[#071321]">
+                  {t(val.title.en, val.title.es)}
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {t(val.desc.en, val.desc.es)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

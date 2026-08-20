@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { MobileDock } from "@/components/layout/MobileDock";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { SmoothScroll } from "@/components/animations/SmoothScroll";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { site } from "@/data/site";
 import "./globals.css";
@@ -22,17 +24,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Worldwide Supply 28 | Luxury Wholesale & International Distribution",
-    template: "%s | Worldwide Supply 28",
+    default: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
+    template: "%s | Worldwide Supply 28 SL",
   },
-  description: site.description,
+  description: "Your trusted partner in luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products. Based in Valencia, Spain with global distribution.",
   alternates: { canonical: site.url },
   openGraph: {
-    title: "Worldwide Supply 28 | Luxury Wholesale & International Distribution",
-    description: site.description,
+    title: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
+    description: "Your trusted partner in luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products. Based in Valencia, Spain with global distribution.",
     url: site.url,
     siteName: site.name,
-    images: [{ url: site.logo, width: 1536, height: 864, alt: `${site.name} logo` }],
+    images: [{ url: "/images/valencia-hero.jpg", width: 1200, height: 630, alt: "Worldwide Supply 28 SL Valencia Spain" }],
     type: "website",
   },
 };
@@ -48,7 +50,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       data-scroll-behavior="smooth"
     >
-      <body className="min-h-full bg-white text-[#102033]">
+      <body className="min-h-full bg-white text-[#0B192C]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
@@ -57,12 +59,15 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
         />
-        <SmoothScroll />
-        <ScrollProgress />
-        <Header />
-        <main>{children}</main>
-        <MobileDock />
-        <Footer />
+        <LanguageProvider>
+          <SmoothScroll />
+          <ScrollProgress />
+          <Header />
+          <main>{children}</main>
+          <MobileDock />
+          <Footer />
+          <WhatsAppWidget />
+        </LanguageProvider>
       </body>
     </html>
   );
