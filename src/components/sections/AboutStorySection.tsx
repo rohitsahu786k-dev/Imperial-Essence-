@@ -66,8 +66,8 @@ export function AboutStorySection() {
               <div className="space-y-3 pt-2">
                 <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-normal">
                   {t(
-                    siteData.about.story.founders.siddharth.bio.en,
-                    siteData.about.story.founders.siddharth.bio.es
+                    siteData.about.story.siddharth.bio.en,
+                    siteData.about.story.siddharth.bio.es
                   )}
                 </p>
                 {/* Expertise Badges */}
@@ -101,39 +101,41 @@ export function AboutStorySection() {
             </div>
           </div>
 
-          {/* Card 2: Sakina Idmouhine */}
-          <div className="group relative rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#00A884] flex flex-col justify-between">
-            <div className="space-y-8">
-              {/* Header with Photo & Role */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <div className="relative h-28 w-28 sm:h-32 sm:w-32 shrink-0 rounded-2xl overflow-hidden bg-slate-100 ring-4 ring-slate-100 group-hover:ring-[#00A884]/30 transition duration-500 shadow-md">
+          {/* Executive 2: Sakina Idmouhine */}
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm hover:shadow-xl hover:border-[#00A884] transition group flex flex-col justify-between space-y-8">
+            <div className="space-y-6">
+              {/* Card Header Profile Row */}
+              <div className="flex items-center gap-5">
+                <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border-2 border-[#00A884] shadow-md bg-slate-100">
                   <Image
                     src="/images/team/sakina-idmouhine.jpg"
-                    alt="Sakina Idmouhine Co-Founder Worldwide Supply 28 SL"
+                    alt="Sakina Idmouhine Co-Founder & Director Worldwide Supply 28 SL"
                     fill
-                    priority
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    sizes="80px"
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-
-                <div className="space-y-2">
-                  <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#00A884]">
-                    {t(siteData.about.story.sakina.role.en, siteData.about.story.sakina.role.es)}
+                <div className="space-y-1">
+                  <span className="inline-block rounded-full bg-[#00A884]/10 px-3 py-0.5 text-[10px] font-extrabold text-[#00A884] uppercase tracking-wider">
+                    Co-Founder & Director
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
-                    {siteData.about.story.sakina.name}
+                  <h3 className="text-2xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
+                    Sakina Idmouhine
                   </h3>
-                  <p className="text-xs font-semibold text-slate-500">
-                    {t("Perfumery, Cosmetics & Retail Networks", "Perfumería, Cosmética y Redes Minoristas")}
+                  <p className="text-xs font-semibold text-[#00A884] flex items-center gap-1">
+                    <MapPin className="h-3.5 w-3.5 text-[#00A884]" />
+                    Valencia, Spain (HQ)
                   </p>
                 </div>
               </div>
 
-              {/* Bio Story */}
-              <div className="relative space-y-3 pt-2">
-                <Quote className="h-6 w-6 text-[#00A884]/30 mb-1" />
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  {t(siteData.about.story.sakina.bio.en, siteData.about.story.sakina.bio.es)}
+              {/* Bio & Expertise */}
+              <div className="space-y-3 pt-2">
+                <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-normal">
+                  {t(
+                    siteData.about.story.sakina.bio.en,
+                    siteData.about.story.sakina.bio.es
+                  )}
                 </p>
               </div>
 
