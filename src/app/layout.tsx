@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { MobileDock } from "@/components/layout/MobileDock";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { SmoothScroll } from "@/components/animations/SmoothScroll";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -69,7 +68,6 @@ export default function RootLayout({
           <ScrollProgress />
           <Header />
           <main>{children}</main>
-          <MobileDock />
           <Footer />
           <WhatsAppWidget />
         </LanguageProvider>
