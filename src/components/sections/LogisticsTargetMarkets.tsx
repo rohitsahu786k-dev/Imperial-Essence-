@@ -2,10 +2,23 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { Truck, Ship, Plane, Globe, ArrowRight, Sparkles } from "lucide-react";
-import { WorldMap } from "@/components/ui/WorldMap";
+
+// Dynamic import with SSR disabled for Vercel deployment compatibility
+const WorldMap = dynamic(
+  () => import("@/components/ui/WorldMap").then((mod) => mod.WorldMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-full min-h-[380px] rounded-3xl bg-slate-100 flex items-center justify-center text-slate-400 text-xs font-semibold">
+        Loading interactive map...
+      </div>
+    )
+  }
+);
 
 export function LogisticsTargetMarkets() {
   const { t } = useLanguage();
@@ -137,7 +150,7 @@ export function LogisticsTargetMarkets() {
               <h3 className="text-2xl sm:text-4xl font-extrabold text-[#071321] tracking-tight">
                 {t("Target Markets & Distribution Routes", "Mercados Objetivo y Rutas de Distribución")}
               </h3>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
                 {t(
                   "Emanating from our trade hub in Valencia, Spain—connecting Europe, Middle East, United States, Asia, and Africa.",
                   "Desde nuestra sede comercial en Valencia, España—conectando Europa, Oriente Medio, EE. UU., Asia y África."
