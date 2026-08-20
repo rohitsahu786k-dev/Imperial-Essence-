@@ -140,7 +140,10 @@ export function WhyChooseUs() {
             </div>
 
             {/* Lower Card 2: Partner With Us CTA Card (50%) */}
-            <div className="rounded-3xl bg-[#00A884] text-white p-8 flex flex-col justify-between shadow-xl transition hover:bg-[#009272] group min-h-[220px]">
+            <Link
+              href="/contact"
+              className="rounded-3xl bg-[#00A884] text-white p-8 flex flex-col justify-between shadow-xl transition hover:bg-[#009272] group min-h-[220px]"
+            >
               <div className="flex justify-between items-start">
                 <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-3.5 py-1 rounded-full backdrop-blur-md">
                   B2B Sourcing
@@ -160,7 +163,7 @@ export function WhyChooseUs() {
                   )}
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
