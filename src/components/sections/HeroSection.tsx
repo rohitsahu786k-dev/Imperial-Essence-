@@ -11,51 +11,63 @@ export function HeroSection() {
 
   return (
     <div className="relative w-full bg-slate-50 pt-20">
-      {/* Main Hero Banner with 90vh Height & 100% Crisp Background Image */}
-      <section className="relative w-full h-[90vh] min-h-[640px] overflow-hidden">
-        {/* Full 100% Clear Background Image - Zero Blur Overlay */}
-        <div className="absolute inset-0 z-0">
+      {/* Main Hero Banner with Responsive Mobile & Desktop Banners */}
+      <section className="relative w-full h-[92vh] sm:h-[90vh] min-h-[620px] sm:min-h-[640px] overflow-hidden">
+        {/* Desktop Background Image (Hidden on Mobile) */}
+        <div className="absolute inset-0 z-0 hidden sm:block">
           <Image
             src="/images/valencia-hero-waterfront.png"
-            alt="Luxury Products by Futuristic Waterfront Architecture Valencia"
+            alt="Luxury Products by Futuristic Waterfront Architecture Valencia Desktop"
             fill
             priority
             className="object-cover object-right lg:object-center filter saturate-105"
           />
         </div>
 
-        {/* Hero Content Layer - Positioned Top Left in the Open Sky Area */}
-        <div className="relative z-20 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-start pt-8 sm:pt-12 lg:pt-14">
-          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl space-y-5 bg-white/40 md:bg-transparent backdrop-blur-[2px] md:backdrop-blur-none p-4 md:p-0 rounded-2xl">
+        {/* Mobile Background Image (Visible ONLY on Mobile Screens) */}
+        <div className="absolute inset-0 z-0 block sm:hidden">
+          <Image
+            src="/images/luxury-commerce-premium-products-valencia-mobile-banner.webp"
+            alt="Luxury Products Valencia Mobile Banner"
+            fill
+            priority
+            className="object-cover object-top filter saturate-105"
+          />
+        </div>
+
+        {/* Hero Content Layer - Responsive Positioning */}
+        <div className="relative z-20 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-start pt-6 sm:pt-12 lg:pt-14">
+          {/* Mobile Glass Card Container in Top Open Sky Space */}
+          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl space-y-4 sm:space-y-5 bg-white/85 sm:bg-white/40 md:bg-transparent backdrop-blur-md sm:backdrop-blur-[2px] md:backdrop-blur-none p-5 sm:p-4 md:p-0 rounded-2xl border border-white/60 sm:border-none shadow-md sm:shadow-none">
             {/* Location Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-slate-300/80 bg-white/95 px-4 py-1.5 text-xs font-bold text-[#00A884] shadow-sm">
-              <MapPin className="h-4 w-4 shrink-0" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-slate-300/80 bg-white/95 px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold text-[#00A884] shadow-xs">
+              <MapPin className="h-3.5 sm:h-4 w-3.5 sm:w-4 shrink-0" />
               <span>{t(siteData.company.location.badge.en, siteData.company.location.badge.es)}</span>
             </div>
 
-            {/* Main Headline - Bold High-Contrast Typography */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#071321] leading-[1.15] drop-shadow-xs">
+            {/* Main Headline - High Contrast Bold Typography */}
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#071321] leading-[1.18]">
               {t(siteData.company.tagline.en, siteData.company.tagline.es)}
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-sm sm:text-base font-semibold text-slate-800 leading-relaxed max-w-md bg-white/60 md:bg-white/40 backdrop-blur-xs p-3 rounded-xl border border-white/40">
+            <p className="text-xs sm:text-base font-semibold text-slate-800 leading-relaxed max-w-md bg-white/60 sm:bg-white/40 backdrop-blur-xs p-2.5 sm:p-3 rounded-xl border border-white/40">
               {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3 pt-1">
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-1">
               <Link
                 href="/categories"
-                className="inline-flex items-center gap-2.5 rounded-full bg-[#00A884] px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-lg shadow-emerald-500/25 transition hover:bg-[#009272] hover:scale-105 active:scale-95"
+                className="inline-flex items-center gap-2 rounded-full bg-[#00A884] px-6 sm:px-7 py-3 sm:py-3.5 text-xs font-bold uppercase tracking-wider text-white shadow-lg shadow-emerald-500/25 transition hover:bg-[#009272] hover:scale-105 active:scale-95"
               >
                 <span>{t("Explore Categories", "Explorar Categorías")}</span>
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-3.5 sm:h-4 w-3.5 sm:w-4" />
               </Link>
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2.5 rounded-full border border-slate-300 bg-white/95 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-white hover:border-[#00A884] hover:text-[#00A884]"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/95 px-6 sm:px-7 py-3 sm:py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-xs transition hover:bg-white hover:border-[#00A884] hover:text-[#00A884]"
               >
                 <span>{t("Request Sourcing", "Solicitar Suministro")}</span>
               </Link>

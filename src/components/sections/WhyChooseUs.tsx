@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { ShieldCheck, Award, Globe, Building2, Layers, ArrowUpRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Award, Globe, Layers, ArrowUpRight, Sparkles } from "lucide-react";
 
 export function WhyChooseUs() {
   const { t } = useLanguage();
 
   return (
     <section className="bg-slate-50 py-24 text-[#071321]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
@@ -31,19 +31,19 @@ export function WhyChooseUs() {
           </p>
         </div>
 
-        {/* 21st.dev Inspired Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
-          {/* Bento Card 1: Hero Featured Image Card (Span 2 cols, 2 rows) */}
-          <div className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden p-8 sm:p-10 text-white flex flex-col justify-between group shadow-xl border border-slate-200">
+        {/* 50% 50% Balanced Bento Grid Layout */}
+        <div className="space-y-6">
+          {/* Top Row: Full-width Hero Visual Card */}
+          <div className="relative rounded-3xl overflow-hidden p-8 sm:p-12 text-white flex flex-col justify-between group shadow-xl border border-slate-200 min-h-[360px] sm:min-h-[420px]">
             {/* Background Image */}
             <Image
               src="/images/why-us-luxury.jpg"
               alt="Worldwide Supply 28 SL Luxury Logistics Fulfillment Center"
               fill
-              sizes="(max-width: 1024px) 100vw, 66vw"
+              sizes="100vw"
               className="object-cover transition-transform duration-700 group-hover:scale-105 filter saturate-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#071321]/95 via-[#071321]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#071321]/95 via-[#071321]/45 to-transparent" />
 
             {/* Top Badges */}
             <div className="relative z-10 flex flex-wrap items-center justify-between gap-3">
@@ -52,19 +52,19 @@ export function WhyChooseUs() {
                 <span>Spanish CIF: {siteData.company.cif}</span>
               </div>
               <span className="rounded-full bg-[#00A884] px-4 py-1.5 text-xs font-bold text-white uppercase tracking-wider shadow-md">
-                15+ Yrs Leadership
+                15+ Yrs Industry Leadership
               </span>
             </div>
 
             {/* Bottom Content */}
-            <div className="relative z-10 space-y-3 pt-12">
+            <div className="relative z-10 space-y-3 pt-16">
               <h3 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
                 {t(
                   "15+ Years of Proven Excellence in Wholesale & Travel Retail",
                   "Más de 15 Años de Excelencia en Venta al Por Mayor y Travel Retail"
                 )}
               </h3>
-              <p className="max-w-xl text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
+              <p className="max-w-2xl text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
                 {t(
                   "Deep-rooted supplier relationships, market instinct, and cross-border distribution reliability from our Mediterranean hub in Valencia, Spain.",
                   "Profundas relaciones con proveedores, instinto de mercado y fiabilidad en la distribución transfronteriza desde nuestra sede en Valencia, España."
@@ -73,78 +73,93 @@ export function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Bento Card 2: Brand Partnerships Tile */}
-          <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#00A884] transition group">
-            <div className="flex items-center justify-between">
-              <div className="h-10 w-10 rounded-full bg-[#00A884]/10 text-[#00A884] flex items-center justify-center font-bold">
-                <Award className="h-5 w-5" />
+          {/* Middle Row: 50% 50% Equal Split Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1: Brand Partnerships (50%) */}
+            <div className="rounded-3xl bg-white border border-slate-200/90 p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#00A884] transition group min-h-[220px]">
+              <div className="flex items-center justify-between">
+                <div className="h-10 w-10 rounded-full bg-[#00A884]/10 text-[#00A884] flex items-center justify-center font-bold">
+                  <Award className="h-5 w-5" />
+                </div>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+                  Premier Groups
+                </span>
               </div>
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                Premier Groups
-              </span>
-            </div>
-            <div className="space-y-2">
-              <h4 className="text-xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
-                {t("Prestige Partnerships", "Alianzas Prestige")}
-              </h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                {t(
-                  "Strong relationships with LVMH, PUIG, L'Oréal Luxe, COTY, P&G, and Niche perfume houses.",
-                  "Relaciones sólidas con LVMH, PUIG, L'Oréal Luxe, COTY, P&G y casas de perfume de nicho."
-                )}
-              </p>
-            </div>
-          </div>
-
-          {/* Bento Card 3: Global Reach Tile */}
-          <div className="rounded-3xl bg-[#071321] text-white p-6 sm:p-8 flex flex-col justify-between shadow-lg relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-[#00A884]/15 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center justify-between relative z-10">
-              <span className="text-3xl sm:text-4xl font-black text-[#00A884]">50+</span>
-              <Globe className="h-6 w-6 text-slate-400" />
-            </div>
-            <div className="relative z-10 space-y-1">
-              <h4 className="text-lg font-bold text-white">
-                {t("Global Market Network", "Red de Mercado Global")}
-              </h4>
-              <p className="text-xs text-slate-300">
-                {t("Multi-modal supply servicing Europe, Middle East, USA, Asia & Africa.", "Suministro multimodal en Europa, Oriente Medio, EE. UU., Asia y África.")}
-              </p>
-            </div>
-          </div>
-
-          {/* Bento Card 4: Flexible Supply Tile */}
-          <div className="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#00A884] transition group">
-            <div className="h-10 w-10 rounded-full bg-[#071321] text-white flex items-center justify-center font-bold">
-              <Layers className="h-5 w-5" />
-            </div>
-            <div className="space-y-1">
-              <h4 className="text-lg font-bold text-[#071321] group-hover:text-[#00A884] transition">
-                {t("Flexible B2B Sourcing", "Suministro B2B Flexible")}
-              </h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                {t("Supply tailored to duty-free operators, luxury retailers & distributors.", "Suministro adaptado a operadores duty-free, minoristas y distribuidores.")}
-              </p>
-            </div>
-          </div>
-
-          {/* Bento Card 5: Action CTA Tile */}
-          <div className="rounded-3xl bg-[#00A884] text-white p-6 sm:p-8 flex flex-col justify-between shadow-xl transition hover:bg-[#009272] group">
-            <div className="flex justify-between items-start">
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full backdrop-blur-md">
-                B2B Sourcing
-              </span>
-              <div className="h-9 w-9 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition">
-                <ArrowUpRight className="h-4 w-4 text-white" />
+              <div className="space-y-2 pt-4">
+                <h4 className="text-xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
+                  {t("Prestige Group Partnerships", "Alianzas con Grupos Prestige")}
+                </h4>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {t(
+                    "Strong relationships with LVMH, PUIG, L'Oréal Luxe, COTY, P&G, and Niche perfume houses.",
+                    "Relaciones sólidas con LVMH, PUIG, L'Oréal Luxe, COTY, P&G y casas de perfume de nicho."
+                  )}
+                </p>
               </div>
             </div>
-            <div className="space-y-1">
-              <h4 className="text-xl font-extrabold text-white">
-                {t("Partner With Us", "Asóciese con Nosotros")}
-              </h4>
-              <p className="text-xs text-white/90">
-                {t("Request customized wholesale supply solutions.", "Solicite soluciones de suministro al por mayor personalizadas.")}
-              </p>
+
+            {/* Card 2: Global Reach (50%) */}
+            <div className="rounded-3xl bg-[#071321] text-white p-8 flex flex-col justify-between shadow-lg relative overflow-hidden group min-h-[220px]">
+              <div className="absolute top-0 right-0 w-36 h-36 bg-[#00A884]/15 rounded-full blur-2xl pointer-events-none" />
+              <div className="flex items-center justify-between relative z-10">
+                <span className="text-3xl sm:text-4xl font-black text-[#00A884]">50+</span>
+                <Globe className="h-6 w-6 text-slate-400" />
+              </div>
+              <div className="relative z-10 space-y-1 pt-4">
+                <h4 className="text-xl font-bold text-white">
+                  {t("Global Distribution Footprint", "Huella de Distribución Global")}
+                </h4>
+                <p className="text-xs sm:text-sm text-slate-300">
+                  {t(
+                    "Multi-modal supply servicing Europe, Middle East, USA, Asia & Africa.",
+                    "Suministro multimodal en Europa, Oriente Medio, EE. UU., Asia y África."
+                  )}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Lower Row: 50% 50% Equal Split Cards (Niche Vale Cards) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Lower Card 1: Flexible B2B Sourcing (50%) */}
+            <div className="rounded-3xl bg-white border border-slate-200/90 p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#00A884] transition group min-h-[220px]">
+              <div className="h-10 w-10 rounded-full bg-[#071321] text-white flex items-center justify-center font-bold">
+                <Layers className="h-5 w-5" />
+              </div>
+              <div className="space-y-2 pt-4">
+                <h4 className="text-xl font-bold text-[#071321] group-hover:text-[#00A884] transition">
+                  {t("Flexible B2B Sourcing", "Suministro B2B Flexible")}
+                </h4>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {t(
+                    "Supply tailored to duty-free operators, luxury retailers & international distributors.",
+                    "Suministro adaptado a operadores duty-free, minoristas y distribuidores internacionales."
+                  )}
+                </p>
+              </div>
+            </div>
+
+            {/* Lower Card 2: Partner With Us CTA Card (50%) */}
+            <div className="rounded-3xl bg-[#00A884] text-white p-8 flex flex-col justify-between shadow-xl transition hover:bg-[#009272] group min-h-[220px]">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-3.5 py-1 rounded-full backdrop-blur-md">
+                  B2B Sourcing
+                </span>
+                <div className="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition">
+                  <ArrowUpRight className="h-5 w-5 text-white" />
+                </div>
+              </div>
+              <div className="space-y-2 pt-4">
+                <h4 className="text-2xl font-extrabold text-white">
+                  {t("Partner With Us", "Asóciese con Nosotros")}
+                </h4>
+                <p className="text-xs sm:text-sm text-white/90">
+                  {t(
+                    "Request customized wholesale supply solutions from Valencia, Spain.",
+                    "Solicite soluciones de suministro al por mayor personalizadas desde Valencia, España."
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         </div>
