@@ -35,23 +35,22 @@ export function HeroSection() {
           />
         </div>
 
-        {/* Hero Content Layer - Responsive Positioning */}
-        <div className="relative z-20 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-start pt-6 sm:pt-12 lg:pt-14">
-          {/* Mobile Glass Card Container in Top Open Sky Space */}
-          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl space-y-4 sm:space-y-5 bg-white/85 sm:bg-white/40 md:bg-transparent backdrop-blur-md sm:backdrop-blur-[2px] md:backdrop-blur-none p-5 sm:p-4 md:p-0 rounded-2xl border border-white/60 sm:border-none shadow-md sm:shadow-none">
+        {/* Hero Content Layer - Positioned Directly in the Open Sky Area (Zero Blur Card) */}
+        <div className="relative z-20 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-start pt-4 sm:pt-12 lg:pt-14">
+          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl space-y-3.5 sm:space-y-5 bg-transparent p-0 border-none shadow-none">
             {/* Location Tag */}
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-300/80 bg-white/95 px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold text-[#00A884] shadow-xs">
               <MapPin className="h-3.5 sm:h-4 w-3.5 sm:w-4 shrink-0" />
               <span>{t(siteData.company.location.badge.en, siteData.company.location.badge.es)}</span>
             </div>
 
-            {/* Main Headline - High Contrast Bold Typography */}
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#071321] leading-[1.18]">
+            {/* Main Headline - High Contrast Bold Typography on Sky */}
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#071321] leading-[1.18] drop-shadow-2xs">
               {t(siteData.company.tagline.en, siteData.company.tagline.es)}
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-xs sm:text-base font-semibold text-slate-800 leading-relaxed max-w-md bg-white/60 sm:bg-white/40 backdrop-blur-xs p-2.5 sm:p-3 rounded-xl border border-white/40">
+            <p className="text-xs sm:text-base font-semibold text-slate-800 leading-relaxed max-w-md">
               {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
             </p>
 

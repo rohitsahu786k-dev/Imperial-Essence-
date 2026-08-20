@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     images: [{ url: "/images/valencia-hero.jpg", width: 1200, height: 630, alt: "Worldwide Supply 28 SL Valencia Spain" }],
     type: "website",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
