@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
@@ -8,8 +9,13 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="pt-20">
-      <ContactInquirySection />
+    <div>
+      <InternalPageHero
+        eyebrow="Contact Us"
+        title="Start a qualified wholesale conversation"
+        copy="Send your sourcing requirement, distribution proposal, or partnership inquiry to the Worldwide Supply 28 SL team in Valencia."
+      />
+      <ContactInquirySection compact />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
@@ -9,9 +10,14 @@ export const metadata: Metadata = {
 
 export default function WhyChooseUsPage() {
   return (
-    <div className="pt-20">
-      <WhyChooseUs />
-      <ContactInquirySection />
+    <div>
+      <InternalPageHero
+        eyebrow="Why Choose Us"
+        title="Built for trust, consistency, and long-term trade"
+        copy="A Spain-based wholesale partner combining 15+ years of experience, premium relationships, flexible sourcing, and international logistics discipline."
+      />
+      <WhyChooseUs compact />
+      <ContactInquirySection compact />
     </div>
   );
 }

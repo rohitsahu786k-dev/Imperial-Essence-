@@ -277,7 +277,7 @@ export const siteData = {
       { name: { en: "Air Freight", es: "Carga Aérea" }, icon: "Plane", desc: { en: "Express priority air shipments worldwide", es: "Envíos aéreos expresos prioritarios a todo el mundo" } },
       { name: { en: "Global Network", es: "Red Global" }, icon: "Network", desc: { en: "Seamless hub distribution across continents", es: "Distribución fluida a través de centros en todos los continentes" } }
     ],
-    targetMarkets: ["Europe", "Middle East", "United States", "Asia", "Africa"]
+    targetMarkets: ["Europe", "Middle East", "North America", "Asia", "Africa"]
   },
 
   whyChooseUs: [

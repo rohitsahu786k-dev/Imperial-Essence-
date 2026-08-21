@@ -6,7 +6,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { ArrowRight, Sparkles } from "lucide-react";
 
-export function ServicesSection() {
+export function ServicesSection({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   const serviceImages = [
@@ -17,10 +17,10 @@ export function ServicesSection() {
   ];
 
   return (
-    <section className="bg-white py-24 text-[#071321] relative overflow-hidden">
+    <section className={`${compact ? "py-16" : "py-24"} bg-white text-[#071321] relative overflow-hidden`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+        <div className={`text-center max-w-3xl mx-auto ${compact ? "mb-12" : "mb-20"} space-y-4`}>
           <div className="inline-flex items-center gap-2 rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
             <Sparkles className="h-3.5 w-3.5" />
             <span>{t("Core Capabilities", "Capacidades Principales")}</span>

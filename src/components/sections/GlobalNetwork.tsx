@@ -5,29 +5,15 @@ import { WorldMap } from "@/components/ui/world-map";
 const valencia = { lat: 39.4699, lng: -0.3763, label: "Valencia, Spain" };
 
 const distributionRoutes = [
-  { start: valencia, end: { lat: 51.5074, lng: -0.1278, label: "United Kingdom" } },
-  { start: valencia, end: { lat: 48.8566, lng: 2.3522, label: "France" } },
-  { start: valencia, end: { lat: 25.2048, lng: 55.2708, label: "United Arab Emirates" } },
-  { start: valencia, end: { lat: 24.7136, lng: 46.6753, label: "Saudi Arabia" } },
-  { start: valencia, end: { lat: 33.5731, lng: -7.5898, label: "Morocco" } },
-  { start: valencia, end: { lat: 6.5244, lng: 3.3792, label: "Nigeria" } },
-  { start: valencia, end: { lat: -1.2921, lng: 36.8219, label: "Kenya" } },
-  { start: valencia, end: { lat: -26.2041, lng: 28.0473, label: "South Africa" } },
+  { start: valencia, end: { lat: 50.1109, lng: 8.6821, label: "Europe" } },
+  { start: valencia, end: { lat: 25.2048, lng: 55.2708, label: "GCC Markets" } },
+  { start: valencia, end: { lat: 31.7917, lng: -7.0926, label: "North Africa" } },
+  { start: valencia, end: { lat: 9.082, lng: 8.6753, label: "West Africa" } },
+  { start: valencia, end: { lat: -1.2921, lng: 36.8219, label: "East Africa" } },
+  { start: valencia, end: { lat: -30.5595, lng: 22.9375, label: "Southern Africa" } },
 ];
 
-const markets = ["Spain", "United Kingdom", "France", "UAE", "Saudi Arabia", "Morocco", "Nigeria", "Kenya", "South Africa"];
-
-const marketFlagCodes: Record<string, string> = {
-  Spain: "es",
-  "United Kingdom": "gb",
-  France: "fr",
-  UAE: "ae",
-  "Saudi Arabia": "sa",
-  Morocco: "ma",
-  Nigeria: "ng",
-  Kenya: "ke",
-  "South Africa": "za",
-};
+const markets = ["Spain HQ", "Europe", "GCC Markets", "North Africa", "West Africa", "East Africa", "Southern Africa"];
 
 const distributionPoints = [
   { label: "Base", value: "Valencia, Spain", icon: MapPin },
@@ -61,15 +47,6 @@ export function GlobalNetwork() {
         <div className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-2 sm:gap-3">
           {markets.map((market) => (
             <span key={market} className="inline-flex items-center gap-2 rounded-full border border-[#123A5A]/10 bg-white px-3 py-2 text-xs font-semibold text-[#123A5A] shadow-sm sm:px-4 sm:text-sm">
-              <img
-                src={`https://flagcdn.com/w40/${marketFlagCodes[market]}.png`}
-                srcSet={`https://flagcdn.com/w80/${marketFlagCodes[market]}.png 2x`}
-                width="20"
-                height="15"
-                alt={`${market} flag`}
-                className="h-[15px] w-5 rounded-[2px] object-cover shadow-sm"
-                loading="lazy"
-              />
               <span>{market}</span>
             </span>
           ))}

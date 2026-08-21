@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
-import { SmoothScroll } from "@/components/animations/SmoothScroll";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
@@ -64,7 +63,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
         />
         <LanguageProvider>
-          <SmoothScroll />
           <ScrollProgress />
           <Header />
           <main>{children}</main>

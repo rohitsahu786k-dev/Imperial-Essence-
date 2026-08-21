@@ -6,14 +6,14 @@ import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { ArrowUpRight } from "lucide-react";
 
-export function CategoryGrid() {
+export function CategoryGrid({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-slate-50 py-24 text-[#071321] relative overflow-hidden">
+    <section className={`${compact ? "py-16" : "py-24"} bg-slate-50 text-[#071321] relative overflow-hidden`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className={`flex flex-col md:flex-row md:items-end justify-between ${compact ? "mb-10" : "mb-16"} gap-6`}>
           <div className="max-w-2xl space-y-4">
             <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
               {t("Product Sectors", "Sectores de Productos")}

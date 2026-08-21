@@ -6,11 +6,11 @@ import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { ShieldCheck, Award, Globe, Layers, ArrowUpRight, Sparkles } from "lucide-react";
 
-export function WhyChooseUs() {
+export function WhyChooseUs({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-slate-50 py-24 text-[#071321]">
+    <section className={`${compact ? "py-16" : "py-24"} bg-slate-50 text-[#071321]`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -111,8 +111,8 @@ export function WhyChooseUs() {
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-300">
                   {t(
-                    "Multi-modal supply servicing Europe, Middle East, USA, Asia & Africa.",
-                    "Suministro multimodal en Europa, Oriente Medio, EE. UU., Asia y África."
+                    "Multi-modal supply servicing Europe, Middle East, North America, Asia & Africa.",
+                    "Suministro multimodal en Europa, Oriente Medio, Norteamerica, Asia y África."
                   )}
                 </p>
               </div>

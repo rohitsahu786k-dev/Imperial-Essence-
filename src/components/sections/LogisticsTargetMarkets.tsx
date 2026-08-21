@@ -20,7 +20,7 @@ const WorldMap = dynamic(
   }
 );
 
-export function LogisticsTargetMarkets() {
+export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   const transportModes = [
@@ -54,7 +54,7 @@ export function LogisticsTargetMarkets() {
   const valenciaTradeRoutes = [
     {
       start: { lat: 39.4699, lng: -0.3763, label: "Valencia" }, // HQ Valencia, Spain
-      end: { lat: 51.5074, lng: -0.1278, label: "Europe (UK/France)" }
+      end: { lat: 50.1109, lng: 8.6821, label: "Europe" }
     },
     {
       start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
@@ -62,7 +62,7 @@ export function LogisticsTargetMarkets() {
     },
     {
       start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
-      end: { lat: 25.7617, lng: -80.1918, label: "United States" }
+      end: { lat: 45.4215, lng: -75.6972, label: "North America" }
     },
     {
       start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
@@ -75,8 +75,8 @@ export function LogisticsTargetMarkets() {
   ];
 
   return (
-    <section className="bg-white py-24 text-[#071321]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20">
+    <section className={`${compact ? "py-16" : "py-24"} bg-white text-[#071321]`}>
+      <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${compact ? "space-y-12" : "space-y-20"}`}>
         {/* Logistics Capabilities Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
@@ -152,8 +152,8 @@ export function LogisticsTargetMarkets() {
               </h3>
               <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
                 {t(
-                  "Emanating from our trade hub in Valencia, Spain—connecting Europe, Middle East, United States, Asia, and Africa.",
-                  "Desde nuestra sede comercial en Valencia, España—conectando Europa, Oriente Medio, EE. UU., Asia y África."
+                  "Emanating from our trade hub in Valencia, Spain—connecting Europe, Middle East, North America, Asia, and Africa.",
+                  "Desde nuestra sede comercial en Valencia, España—conectando Europa, Oriente Medio, Norteamérica, Asia y África."
                 )}
               </p>
 
