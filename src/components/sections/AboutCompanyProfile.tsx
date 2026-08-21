@@ -52,7 +52,7 @@ export function AboutCompanyProfile() {
               <span>{t("Business Information", "Informacion de Empresa")}</span>
             </div>
             <div className="space-y-4">
-              <h1 className="text-3xl font-extrabold tracking-tight text-[#071321] sm:text-5xl">
+              <h1 className="text-3xl font-semibold tracking-tight text-[#071321] sm:text-5xl">
                 {t("About Worldwide Supply 28 SL", "Sobre Worldwide Supply 28 SL")}
               </h1>
               <p className="text-base leading-8 text-slate-600 sm:text-lg">
@@ -61,7 +61,7 @@ export function AboutCompanyProfile() {
             </div>
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
               <FileText className="mb-4 h-6 w-6 text-[#00A884]" />
-              <h2 className="text-lg font-extrabold text-[#071321]">
+              <h2 className="text-lg font-semibold text-[#071321]">
                 {t("Company Profile / Brochure", "Perfil de Empresa / Brochure")}
               </h2>
               <p className="mt-2 text-sm leading-7 text-slate-600">
@@ -81,7 +81,7 @@ export function AboutCompanyProfile() {
                   <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#00A884]/10 text-[#00A884]">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-lg font-extrabold text-[#071321]">
+                  <h3 className="text-lg font-semibold text-[#071321]">
                     {t(item.title.en, item.title.es)}
                   </h3>
                   <p className="mt-2 text-sm leading-7 text-slate-600">

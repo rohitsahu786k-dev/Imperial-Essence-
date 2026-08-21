@@ -30,7 +30,7 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
           <span className="inline-block rounded-full bg-[#00A884]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
             {t("Business Inquiries", "Consultas Comerciales")}
           </span>
-          <h2 className="text-3xl font-extrabold sm:text-5xl text-[#071321] tracking-tight">
+          <h2 className="text-3xl font-semibold sm:text-5xl text-[#071321] tracking-tight">
             {t("Connect with Worldwide Supply 28 SL", "Conéctese con Worldwide Supply 28 SL")}
           </h2>
           <p className="text-base text-slate-600">
@@ -93,7 +93,6 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
 
             <div className="pt-6 border-t border-white/10 text-[11px] text-white/50 space-y-1">
               <p>Registered Company in Spain – Tax ID (CIF): <span className="text-white font-semibold">{siteData.company.cif}</span></p>
-              <p>Domain: www.worldwidesupply28.com</p>
             </div>
           </div>
 

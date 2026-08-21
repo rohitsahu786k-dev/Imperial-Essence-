@@ -35,6 +35,8 @@ export function HeroSection() {
           />
         </div>
 
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_34%,rgba(255,255,255,0.36)_58%,rgba(255,255,255,0.06)_100%)]" aria-hidden="true" />
+
         {/* Hero Content Layer */}
         <div className="relative z-20 mx-auto flex h-full max-w-7xl items-center px-4 py-10 sm:px-6 lg:px-8">
           <div className="w-full max-w-md space-y-4 bg-transparent p-0 sm:max-w-lg sm:space-y-5 lg:max-w-2xl">
@@ -45,7 +47,7 @@ export function HeroSection() {
             </div>
 
             {/* Main Headline - High Contrast Bold Typography on Sky */}
-            <h1 className="text-3xl font-black tracking-tight text-[#071321] leading-[1.1] sm:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-semibold tracking-tight text-[#071321] leading-[1.1] sm:text-5xl lg:text-6xl">
               {t(siteData.company.tagline.en, siteData.company.tagline.es)}
             </h1>
 
@@ -82,19 +84,19 @@ export function HeroSection() {
             {/* Stats Items */}
             <div className="grid grid-cols-3 gap-4 border-b border-slate-200 pb-5 lg:col-span-5 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#00A884]">15+</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#00A884]">15+</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {t("Years Experience", "Años Experiencia")}
                 </span>
               </div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#00A884]">50+</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#00A884]">50+</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {t("Global Markets", "Mercados Globales")}
                 </span>
               </div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#071321]">CIF</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#071321]">CIF</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {siteData.company.cif}
                 </span>

@@ -18,7 +18,7 @@ export function HomeAboutBrief() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-3xl font-extrabold tracking-tight text-[#071321] sm:text-5xl">
+            <h2 className="text-3xl font-semibold tracking-tight text-[#071321] sm:text-5xl">
               {t("A trusted international wholesale partner", "Un socio mayorista internacional de confianza")}
             </h2>
             <p className="max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
@@ -41,21 +41,21 @@ export function HomeAboutBrief() {
         <div className="lg:col-span-5 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <BadgeCheck className="mb-4 h-6 w-6 text-[#00A884]" />
-            <p className="text-3xl font-black text-[#071321]">{siteData.company.highlights.yearsExperience}</p>
+            <p className="text-3xl font-semibold text-[#071321]">{siteData.company.highlights.yearsExperience}</p>
             <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
               {t("Years in wholesale, luxury retail, and travel retail", "Anos en mayorista, retail de lujo y travel retail")}
             </p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <Globe2 className="mb-4 h-6 w-6 text-[#00A884]" />
-            <p className="text-3xl font-black text-[#071321]">{siteData.company.highlights.countriesServed}</p>
+            <p className="text-3xl font-semibold text-[#071321]">{siteData.company.highlights.countriesServed}</p>
             <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
               {t("Global markets across Europe, GCC, North America, Asia, and Africa", "Mercados globales en Europa, GCC, Norteamerica, Asia y Africa")}
             </p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-[#00A884]">CIF</p>
-            <p className="text-2xl font-black text-[#071321]">{siteData.company.cif}</p>
+            <p className="text-2xl font-semibold text-[#071321]">{siteData.company.cif}</p>
             <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
               {t("Registered company in Spain", "Empresa registrada en Espana")}
             </p>

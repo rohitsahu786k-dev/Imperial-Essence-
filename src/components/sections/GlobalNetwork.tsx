@@ -28,7 +28,7 @@ export function GlobalNetwork() {
     <section className="overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-base font-medium text-[#102033]/56 sm:text-2xl">Spain-based</p>
-        <h2 className="mx-auto mt-2 max-w-5xl text-4xl font-black leading-none tracking-normal text-[#0B2239] sm:text-7xl lg:text-8xl">
+        <h2 className="mx-auto mt-2 max-w-5xl text-4xl font-semibold leading-none tracking-normal text-[#0B2239] sm:text-7xl lg:text-8xl">
           Global Distribution
         </h2>
         <div className="mx-auto mt-5 h-1.5 w-32 rounded-full bg-[#C6A128] sm:w-40" />

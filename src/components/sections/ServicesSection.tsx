@@ -26,7 +26,7 @@ export function ServicesSection({ compact = false }: { compact?: boolean }) {
             <span>{t("Core Capabilities", "Capacidades Principales")}</span>
           </div>
 
-          <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321] leading-tight">
+          <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321] leading-tight">
             {t("Our Strategic Services", "Nuestros Servicios Estratégicos")}
           </h2>
 
@@ -65,7 +65,7 @@ export function ServicesSection({ compact = false }: { compact?: boolean }) {
               {/* Card Body */}
               <div className="p-8 space-y-5 flex-1 flex flex-col justify-between">
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-extrabold text-[#071321] group-hover:text-[#00A884] transition">
+                  <h3 className="text-2xl font-semibold text-[#071321] group-hover:text-[#00A884] transition">
                     {t(svc.title.en, svc.title.es)}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">

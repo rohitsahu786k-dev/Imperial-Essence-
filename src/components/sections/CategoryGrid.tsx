@@ -18,7 +18,7 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
             <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
               {t("Product Sectors", "Sectores de Productos")}
             </span>
-            <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+            <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321]">
               {t("Luxury Sourcing Categories", "Categorías de Abastecimiento de Lujo")}
             </h2>
             <p className="text-base text-slate-600">
@@ -73,7 +73,7 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
 
               {/* Minimal Clean Content Bottom */}
               <div className="relative z-10 p-6 space-y-2 text-white">
-                <h3 className="text-xl font-extrabold text-white group-hover:text-[#00A884] transition leading-tight">
+                <h3 className="text-xl font-semibold text-white group-hover:text-[#00A884] transition leading-tight">
                   {t(cat.name.en, cat.name.es)}
                 </h3>
                 <div className="flex items-center gap-1 text-xs font-bold text-[#00A884] uppercase tracking-wider group-hover:underline pt-1">

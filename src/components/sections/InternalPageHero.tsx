@@ -35,7 +35,7 @@ export function InternalPageHero({
       />
       <div className="relative z-10 mx-auto flex min-h-[220px] max-w-5xl flex-col items-center justify-center">
         <p className="mb-5 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-[#8CE6D1] sm:text-sm">{eyebrow}</p>
-        <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-normal text-white sm:text-6xl">{title}</h1>
+        <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-white sm:text-6xl">{title}</h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/74 sm:text-lg">{copy}</p>
       </div>
     </section>

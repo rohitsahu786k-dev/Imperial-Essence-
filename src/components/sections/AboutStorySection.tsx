@@ -31,7 +31,7 @@ export function AboutStorySection() {
             <Sparkles className="h-3.5 w-3.5" />
             <span>{t("Executive Leadership", "Liderazgo Ejecutivo")}</span>
           </div>
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-[#071321] sm:text-5xl">
+          <h2 className="mt-5 text-3xl font-semibold tracking-tight text-[#071321] sm:text-5xl">
             {t("Meet Our Founders & Directors", "Conozca a Nuestros Fundadores y Directores")}
           </h2>
           <p className="mt-4 text-base text-slate-600 sm:text-lg">
@@ -59,10 +59,10 @@ export function AboutStorySection() {
                   />
                 </div>
                 <div className="min-w-0">
-                  <span className="inline-block rounded-full bg-[#00A884]/10 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-[#00A884]">
+                  <span className="inline-block rounded-full bg-[#00A884]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[#00A884]">
                     {t(founder.role.en, founder.role.es)}
                   </span>
-                  <h3 className="mt-3 text-2xl font-extrabold text-[#071321] sm:text-3xl">
+                  <h3 className="mt-3 text-2xl font-semibold text-[#071321] sm:text-3xl">
                     {founder.name}
                   </h3>
                   <p className="mt-2 flex items-center justify-center gap-1 text-xs font-semibold text-slate-500 sm:justify-start">
@@ -115,7 +115,7 @@ export function AboutStorySection() {
 
         <div className="mt-12">
           <div className="mx-auto mb-8 max-w-2xl text-center">
-            <h3 className="text-3xl font-extrabold text-[#071321]">
+            <h3 className="text-3xl font-semibold text-[#071321]">
               {t("Our Core Values", "Nuestros Valores Fundamentales")}
             </h3>
           </div>

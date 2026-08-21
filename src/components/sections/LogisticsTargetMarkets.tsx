@@ -82,7 +82,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
           <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
             {t("Global Freight & Supply Chain", "Flete Global y Cadena de Suministro")}
           </span>
-          <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+          <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321]">
             {t("Logistics & Transport Modes", "Modos de Logística y Transporte")}
           </h2>
           <p className="text-base text-slate-600">
@@ -126,7 +126,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
                 {/* Content Area */}
                 <div className="relative z-10 p-6 space-y-2 text-white">
-                  <h3 className="text-xl font-extrabold text-white group-hover:text-[#00A884] transition">
+                  <h3 className="text-xl font-semibold text-white group-hover:text-[#00A884] transition">
                     {t(mode.title.en, mode.title.es)}
                   </h3>
                   <p className="text-xs text-white/80 leading-relaxed">
@@ -147,7 +147,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
                 <Sparkles className="h-3.5 w-3.5" />
                 <span>{t("Global Distribution Network", "Red de Distribución Global")}</span>
               </div>
-              <h3 className="text-2xl sm:text-4xl font-extrabold text-[#071321] tracking-tight">
+              <h3 className="text-2xl sm:text-4xl font-semibold text-[#071321] tracking-tight">
                 {t("Target Markets & Distribution Routes", "Mercados Objetivo y Rutas de Distribución")}
               </h3>
               <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
@@ -172,7 +172,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
             <div className="lg:col-span-4 text-left lg:text-right space-y-3">
               <div>
-                <span className="text-4xl sm:text-5xl font-black text-[#00A884]">50+</span>
+                <span className="text-4xl sm:text-5xl font-semibold text-[#00A884]">50+</span>
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
                   {t("Global Destinations Serviced", "Destinos Globales Atendidos")}
                 </p>
