@@ -174,7 +174,7 @@ export const siteData = {
         en: "Exclusive artisanal perfume creations and rare olfactory formulations for luxury boutiques and connoisseurs.",
         es: "Creaciones de perfumes artesanales exclusivos y formulaciones olfativas raras para boutiques de lujo."
       },
-      image: "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp",
+      image: "/luxury-perfumes.jpg",
       badge: { en: "Artisanal & Niche", es: "Artesanal y Nicho" }
     },
     {
@@ -184,7 +184,7 @@ export const siteData = {
         en: "High-performance color cosmetics, luxury beauty palettes, and prestige makeup collections.",
         es: "Cosmética de color de alto rendimiento, paletas de belleza de lujo y colecciones de maquillaje prestige."
       },
-      image: "/images/card-images/luxury-cosmetics-skincare-premium-product-card.webp",
+      image: "/luxury-cosmetics.jpg",
       badge: { en: "Prestige Beauty", es: "Belleza Prestige" }
     },
     {
@@ -194,7 +194,7 @@ export const siteData = {
         en: "Advanced dermatological treatments, restorative serums, and ultra-premium skincare lines.",
         es: "Tratamientos dermatológicos avanzados, sueros restauradores y líneas de cuidado de la piel ultra-premium."
       },
-      image: "/images/card-images/premium-skincare-wellness-luxury-product-card.webp",
+      image: "/luxury-cosmetics.jpg",
       badge: { en: "Skincare Science", es: "Ciencia de la Piel" }
     },
     {
@@ -204,7 +204,7 @@ export const siteData = {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama."
       },
-      image: "/images/card-images/luxury-fashion-textiles-accessories-product-card.webp",
+      image: "/luxury-accessories.jpg",
       badge: { en: "Designer Apparel", es: "Textiles de Diseño" }
     },
     {
@@ -214,7 +214,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo."
       },
-      image: "/images/card-images/premium-luxury-perfumes-fragrances-product-card.webp",
+      image: "/luxury-perfumes.jpg",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
@@ -224,7 +224,7 @@ export const siteData = {
         en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories.",
         es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados."
       },
-      image: "/images/card-images/luxury-lifestyle-accessories-beauty-product-card.webp",
+      image: "/luxury-accessories.jpg",
       badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
     },
     {
@@ -234,7 +234,7 @@ export const siteData = {
         en: "Fine jewelry pieces, luxury watchmaking statements, and precious crafted accents.",
         es: "Piezas de joyería fina, alta relojería de lujo y detalles artesanales valiosos."
       },
-      image: "/images/card-images/fine-jewellery-timepieces-luxury-product-card.webp",
+      image: "/luxury-accessories.jpg",
       badge: { en: "Fine Craftsmanship", es: "Alta Artesanía" }
     }
   ],
