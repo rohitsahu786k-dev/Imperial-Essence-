@@ -1,33 +1,22 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { Building2, ShieldCheck, Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
+import { Building2, ShieldCheck, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function OurSourcingPage() {
   const { t } = useLanguage();
 
   return (
     <div className="bg-white text-[#071321]">
-      {/* Page Banner */}
-      <section className="bg-gold-shimmer border-b border-amber-200/80 py-16 sm:py-24 relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl space-y-4">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
-              <Sparkles className="h-3.5 w-3.5" />
-              <span>{t("Direct European Sourcing", "Abastecimiento Europeo Directo")}</span>
-            </span>
-            <h1 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
-              {t(siteData.sourcingModel.title.en, siteData.sourcingModel.title.es)}
-            </h1>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-medium">
-              {t(siteData.sourcingModel.desc.en, siteData.sourcingModel.desc.es)}
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Standardized Internal Page Hero with Dark Obsidian & Luxury Gold Gradient */}
+      <InternalPageHero
+        eyebrow={t("Direct European Sourcing", "Abastecimiento Europeo Directo")}
+        title={t(siteData.sourcingModel.title.en, siteData.sourcingModel.title.es)}
+        copy={t(siteData.sourcingModel.desc.en, siteData.sourcingModel.desc.es)}
+      />
 
       {/* Core T1 & T2 Breakdown */}
       <section className="py-16 sm:py-24">

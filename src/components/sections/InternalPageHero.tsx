@@ -10,33 +10,38 @@ export function InternalPageHero({
   copy: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#071321] px-4 pb-12 pt-28 text-center text-white sm:px-6 sm:pb-14 sm:pt-32 lg:px-8">
+    <section className="relative overflow-hidden bg-[#071321] px-4 pb-14 pt-32 text-center text-white sm:px-6 sm:pb-16 sm:pt-36 lg:px-8">
       <Image
-        src="/images/services/logistics-management.jpg"
-        alt=""
+        src="/dubai-skyline-hero.jpg"
+        alt="Imperial Essence Trading LLC Dubai HQ"
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 z-0 object-cover opacity-35"
+        className="absolute inset-0 z-0 object-cover opacity-30 saturate-110"
       />
-      <div className="absolute inset-0 z-0 bg-[#071321]/78" aria-hidden="true" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#071321]/90 via-[#071321]/80 to-[#071321]" aria-hidden="true" />
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 opacity-40"
         style={{
           backgroundImage: `
-            linear-gradient(135deg, rgba(0, 168, 132, 0.24), transparent 42%),
-            radial-gradient(circle at 78% 18%, rgba(198, 161, 40, 0.18) 0%, transparent 34%),
-            linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px)
+            radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.25) 0%, transparent 50%),
+            linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px)
           `,
-          backgroundSize: "auto, auto, 80px 80px, 80px 80px",
+          backgroundSize: "auto, 80px 80px, 80px 80px",
         }}
         aria-hidden="true"
       />
       <div className="relative z-10 mx-auto flex min-h-[220px] max-w-5xl flex-col items-center justify-center">
-        <p className="mb-5 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-[#8CE6D1] sm:text-sm">{eyebrow}</p>
-        <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-normal text-white sm:text-6xl">{title}</h1>
-        <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/74 sm:text-lg">{copy}</p>
+        <p className="mb-5 rounded-full border border-amber-300/40 bg-white/10 backdrop-blur-md px-5 py-1.5 text-xs font-extrabold uppercase tracking-[0.24em] text-[#D4AF37] shadow-sm sm:text-sm">
+          {eyebrow}
+        </p>
+        <h1 className="max-w-4xl text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          {title}
+        </h1>
+        <p className="mx-auto mt-6 max-w-3xl text-sm font-medium leading-relaxed text-slate-200 sm:text-lg">
+          {copy}
+        </p>
       </div>
     </section>
   );
