@@ -5,7 +5,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from "lucide-react";
 
-export function ContactInquirySection() {
+export function ContactInquirySection({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -23,14 +23,14 @@ export function ContactInquirySection() {
   };
 
   return (
-    <section className="bg-slate-50 py-24 text-[#071321]" id="contact-form">
+    <section className={`${compact ? "py-16" : "py-24"} bg-slate-50 text-[#071321]`} id="contact-form">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className={`text-center max-w-3xl mx-auto ${compact ? "mb-10" : "mb-16"} space-y-4`}>
           <span className="inline-block rounded-full bg-[#00A884]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
             {t("Business Inquiries", "Consultas Comerciales")}
           </span>
-          <h2 className="text-3xl font-extrabold sm:text-5xl text-[#071321] tracking-tight">
+          <h2 className="text-3xl font-semibold sm:text-5xl text-[#071321] tracking-tight">
             {t("Connect with Worldwide Supply 28 SL", "Conéctese con Worldwide Supply 28 SL")}
           </h2>
           <p className="text-base text-slate-600">
@@ -93,7 +93,6 @@ export function ContactInquirySection() {
 
             <div className="pt-6 border-t border-white/10 text-[11px] text-white/50 space-y-1">
               <p>Registered Company in Spain – Tax ID (CIF): <span className="text-white font-semibold">{siteData.company.cif}</span></p>
-              <p>Domain: www.worldwidesupply28.com</p>
             </div>
           </div>
 
@@ -163,7 +162,7 @@ export function ContactInquirySection() {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Spain / UAE / USA"
+                      placeholder="e.g. Spain / Europe / Asia"
                       value={formData.country}
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-[#071321] focus:border-[#00A884] focus:bg-white focus:outline-none transition"

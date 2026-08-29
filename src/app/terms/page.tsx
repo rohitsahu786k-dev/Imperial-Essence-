@@ -9,7 +9,7 @@ export default function TermsPage() {
   return (
     <div className="pt-32 pb-24 bg-white text-[#071321]">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-8">
-        <h1 className="text-4xl font-extrabold tracking-tight">Terms & Conditions</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">Terms & Conditions</h1>
         <p className="text-sm text-slate-500">Last updated: August 2026</p>
         <div className="prose prose-slate max-w-none space-y-4 text-sm leading-relaxed text-slate-700">
           <p>

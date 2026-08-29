@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { CategoryGrid } from "@/components/sections/CategoryGrid";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
@@ -9,9 +10,14 @@ export const metadata: Metadata = {
 
 export default function CategoriesPage() {
   return (
-    <div className="pt-20">
-      <CategoryGrid />
-      <ContactInquirySection />
+    <div>
+      <InternalPageHero
+        eyebrow="Product Categories"
+        title="Premium categories for international wholesale"
+        copy="Category-led B2B sourcing across perfumery, niche fragrances, cosmetics, skincare, wines and spirits, textiles, jewelry, accessories, and travel sets."
+      />
+      <CategoryGrid compact />
+      <ContactInquirySection compact />
     </div>
   );
 }

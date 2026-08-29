@@ -10,9 +10,9 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <div className="relative w-full bg-slate-50 pt-20">
+    <div className="relative w-full bg-white pt-20">
       {/* Main Hero Banner with Responsive Mobile & Desktop Banners */}
-      <section className="relative w-full h-[92vh] sm:h-[90vh] min-h-[620px] sm:min-h-[640px] overflow-hidden">
+      <section className="relative w-full min-h-[560px] overflow-hidden sm:h-[calc(100svh-5rem)] sm:min-h-[600px] sm:max-h-[760px]">
         {/* Desktop Background Image (Hidden on Mobile) */}
         <div className="absolute inset-0 z-0 hidden sm:block">
           <Image
@@ -35,9 +35,11 @@ export function HeroSection() {
           />
         </div>
 
-        {/* Hero Content Layer - Positioned Directly in the Open Sky Area (Zero Blur Card) */}
-        <div className="relative z-20 mx-auto max-w-7xl h-full px-4 sm:px-6 lg:px-8 flex items-start pt-4 sm:pt-12 lg:pt-14">
-          <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl space-y-3.5 sm:space-y-5 bg-transparent p-0 border-none shadow-none">
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_34%,rgba(255,255,255,0.36)_58%,rgba(255,255,255,0.06)_100%)]" aria-hidden="true" />
+
+        {/* Hero Content Layer */}
+        <div className="relative z-20 mx-auto flex h-full max-w-7xl items-center px-4 py-10 sm:px-6 lg:px-8">
+          <div className="w-full max-w-md space-y-4 bg-transparent p-0 sm:max-w-lg sm:space-y-5 lg:max-w-2xl">
             {/* Location Tag */}
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-300/80 bg-white/95 px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold text-[#00A884] shadow-xs">
               <MapPin className="h-3.5 sm:h-4 w-3.5 sm:w-4 shrink-0" />
@@ -45,12 +47,12 @@ export function HeroSection() {
             </div>
 
             {/* Main Headline - High Contrast Bold Typography on Sky */}
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#071321] leading-[1.18] drop-shadow-2xs">
+            <h1 className="text-3xl font-semibold tracking-tight text-[#071321] leading-[1.1] sm:text-5xl lg:text-6xl">
               {t(siteData.company.tagline.en, siteData.company.tagline.es)}
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-xs sm:text-base font-semibold text-slate-800 leading-relaxed max-w-md">
+            <p className="max-w-xl text-sm font-semibold leading-relaxed text-slate-700 sm:text-lg">
               {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
             </p>
 
@@ -76,25 +78,25 @@ export function HeroSection() {
       </section>
 
       {/* Sub-Hero Section: Dedicated Trust & Brand Highlights Bar Below Hero */}
-      <section className="bg-white border-y border-slate-200 py-8 shadow-sm relative z-30">
+      <section className="relative z-30 border-y border-slate-200 bg-white py-5 shadow-sm sm:py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 items-center gap-5 lg:grid-cols-12 lg:gap-8">
             {/* Stats Items */}
-            <div className="lg:col-span-5 grid grid-cols-3 gap-4 border-b lg:border-b-0 lg:border-r border-slate-200 pb-6 lg:pb-0 lg:pr-8">
+            <div className="grid grid-cols-3 gap-4 border-b border-slate-200 pb-5 lg:col-span-5 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#00A884]">15+</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#00A884]">15+</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {t("Years Experience", "Años Experiencia")}
                 </span>
               </div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#00A884]">50+</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#00A884]">50+</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {t("Global Markets", "Mercados Globales")}
                 </span>
               </div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-black text-[#071321]">CIF</span>
+                <span className="block text-2xl sm:text-3xl font-semibold text-[#071321]">CIF</span>
                 <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider">
                   {siteData.company.cif}
                 </span>

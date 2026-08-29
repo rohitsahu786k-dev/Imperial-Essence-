@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { AboutStorySection } from "@/components/sections/AboutStorySection";
+import { HomeAboutBrief } from "@/components/sections/HomeAboutBrief";
 import { CategoryGrid } from "@/components/sections/CategoryGrid";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { LogisticsTargetMarkets } from "@/components/sections/LogisticsTargetMarkets";
@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutStorySection />
+      <HomeAboutBrief />
       <CategoryGrid />
-      <ServicesSection />
-      <LogisticsTargetMarkets />
+      <ServicesSection compact />
+      <LogisticsTargetMarkets compact />
       <WhyChooseUs />
       <ContactInquirySection />
     </>

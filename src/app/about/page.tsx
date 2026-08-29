@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
+import { AboutCompanyProfile } from "@/components/sections/AboutCompanyProfile";
 import { AboutStorySection } from "@/components/sections/AboutStorySection";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
@@ -10,10 +12,16 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-20">
+    <div>
+      <InternalPageHero
+        eyebrow="About Us"
+        title="Spain-based partner for luxury wholesale"
+        copy="Worldwide Supply 28 SL connects premium categories, trusted retail partners, duty-free channels, distributors, and international supply routes from Valencia."
+      />
+      <AboutCompanyProfile />
       <AboutStorySection />
-      <WhyChooseUs />
-      <ContactInquirySection />
+      <WhyChooseUs compact />
+      <ContactInquirySection compact />
     </div>
   );
 }

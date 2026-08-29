@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { LogisticsTargetMarkets } from "@/components/sections/LogisticsTargetMarkets";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
@@ -10,10 +11,15 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="pt-20">
-      <ServicesSection />
-      <LogisticsTargetMarkets />
-      <ContactInquirySection />
+    <div>
+      <InternalPageHero
+        eyebrow="Services"
+        title="Wholesale, logistics, and market-entry support"
+        copy="End-to-end B2B capabilities for global distribution, logistics management, brand introduction, and supplier development."
+      />
+      <ServicesSection compact />
+      <LogisticsTargetMarkets compact />
+      <ContactInquirySection compact />
     </div>
   );
 }

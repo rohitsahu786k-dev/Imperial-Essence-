@@ -71,7 +71,7 @@ function ClientColumn({
                 <div className="mt-5 flex items-center gap-3">
                   <div
                     className={cn(
-                      "flex size-12 shrink-0 items-center justify-center rounded-full border text-sm font-black tracking-normal",
+                      "flex size-12 shrink-0 items-center justify-center rounded-full border text-sm font-semibold tracking-normal",
                       badgeColors[(offset + index) % badgeColors.length],
                     )}
                     aria-label={`${client.name} short name`}

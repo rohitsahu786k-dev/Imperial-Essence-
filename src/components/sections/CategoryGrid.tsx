@@ -6,19 +6,19 @@ import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { ArrowUpRight } from "lucide-react";
 
-export function CategoryGrid() {
+export function CategoryGrid({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-slate-50 py-24 text-[#071321] relative overflow-hidden">
+    <section className={`${compact ? "py-16" : "py-24"} bg-slate-50 text-[#071321] relative overflow-hidden`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className={`flex flex-col md:flex-row md:items-end justify-between ${compact ? "mb-10" : "mb-16"} gap-6`}>
           <div className="max-w-2xl space-y-4">
             <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
               {t("Product Sectors", "Sectores de Productos")}
             </span>
-            <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+            <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321]">
               {t("Luxury Sourcing Categories", "Categorías de Abastecimiento de Lujo")}
             </h2>
             <p className="text-base text-slate-600">
@@ -73,7 +73,7 @@ export function CategoryGrid() {
 
               {/* Minimal Clean Content Bottom */}
               <div className="relative z-10 p-6 space-y-2 text-white">
-                <h3 className="text-xl font-extrabold text-white group-hover:text-[#00A884] transition leading-tight">
+                <h3 className="text-xl font-semibold text-white group-hover:text-[#00A884] transition leading-tight">
                   {t(cat.name.en, cat.name.es)}
                 </h3>
                 <div className="flex items-center gap-1 text-xs font-bold text-[#00A884] uppercase tracking-wider group-hover:underline pt-1">
