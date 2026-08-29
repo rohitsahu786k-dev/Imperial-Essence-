@@ -15,7 +15,7 @@ export function WhatsAppWidget() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-[#20ba59] hover:shadow-emerald-500/20 active:scale-95 group"
+      className="fixed bottom-24 right-6 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-[#20ba59] hover:shadow-emerald-500/20 active:scale-95 group"
     >
       <div className="relative flex items-center justify-center">
         <MessageCircle className="h-6 w-6 text-white" />

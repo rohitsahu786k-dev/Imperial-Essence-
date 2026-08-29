@@ -87,8 +87,8 @@ export function LogisticsTargetMarkets() {
           </h2>
           <p className="text-base text-slate-600">
             {t(
-              "Operating out of Valencia, Spain—a prime Mediterranean trade gateway—we coordinate seamless cross-border freight.",
-              "Operando desde Valencia, España—una puerta comercial clave en el Mediterráneo—coordinamos fletes transfronterizos sin problemas."
+              "Operating out of Valencia, Spain, a prime Mediterranean trade gateway, we coordinate seamless cross-border freight.",
+              "Operando desde Valencia, España, una puerta comercial clave en el Mediterráneo, coordinamos fletes transfronterizos sin problemas."
             )}
           </p>
         </div>
@@ -152,8 +152,8 @@ export function LogisticsTargetMarkets() {
               </h3>
               <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
                 {t(
-                  "Emanating from our trade hub in Valencia, Spain—connecting Europe, Middle East, United States, Asia, and Africa.",
-                  "Desde nuestra sede comercial en Valencia, España—conectando Europa, Oriente Medio, EE. UU., Asia y África."
+                  "Emanating from our trade hub in Valencia, Spain, connecting Europe, Middle East, United States, Asia, and Africa.",
+                  "Desde nuestra sede comercial en Valencia, España, conectando Europa, Oriente Medio, EE. UU., Asia y África."
                 )}
               </p>
 

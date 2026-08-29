@@ -177,7 +177,7 @@ export function AboutStorySection() {
               &quot;{t(siteData.about.story.together.en, siteData.about.story.together.es)}&quot;
             </p>
             <p className="text-xs sm:text-sm font-bold text-[#00A884] pt-2">
-              — {t(siteData.about.story.familySpirit.en, siteData.about.story.familySpirit.es)}
+              {t(siteData.about.story.familySpirit.en, siteData.about.story.familySpirit.es)}
             </p>
           </div>
         </div>
