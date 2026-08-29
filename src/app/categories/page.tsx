@@ -4,8 +4,8 @@ import { CategoryGrid } from "@/components/sections/CategoryGrid";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "Product Categories | Worldwide Supply 28 SL",
-  description: "Wholesale luxury sourcing categories: Perfumes, Niche Fragrances, Cosmetics & Skincare, Wines & Spirits, Textiles, Accessories, Jewelry, Travel Sets.",
+  title: "Product Categories | Imperial Essence Trading LLC",
+  description: "Wholesale luxury sourcing categories: Perfumes & Fragrances, Niche Fragrances, Cosmetics & Makeup, Skincare, Fashion & Textiles, Travel Sets, Accessories, Jewelry.",
 };
 
 export default function CategoriesPage() {
@@ -13,8 +13,8 @@ export default function CategoriesPage() {
     <div>
       <InternalPageHero
         eyebrow="Product Categories"
-        title="Premium categories for international wholesale"
-        copy="Category-led B2B sourcing across perfumery, niche fragrances, cosmetics, skincare, wines and spirits, textiles, jewelry, accessories, and travel sets."
+        title="Luxury categories for international wholesale"
+        copy="Category-led B2B sourcing across luxury perfumery, niche fragrances, cosmetics, skincare, fashion & textiles, travel sets, accessories, and jewelry."
       />
       <CategoryGrid compact />
       <ContactInquirySection compact />

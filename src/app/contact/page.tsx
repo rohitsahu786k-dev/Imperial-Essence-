@@ -3,8 +3,8 @@ import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Worldwide Supply 28 SL",
-  description: "Contact Worldwide Supply 28 SL in Valencia, Spain. Request wholesale inquiries, distribution proposals, or sourcing partnerships.",
+  title: "Contact Us | Imperial Essence Trading LLC",
+  description: "Contact Imperial Essence Trading LLC in Dubai, UAE. Request wholesale inquiries, distribution proposals, or European T1 & T2 sourcing partnerships.",
 };
 
 export default function ContactPage() {
@@ -12,8 +12,8 @@ export default function ContactPage() {
     <div>
       <InternalPageHero
         eyebrow="Contact Us"
-        title="Start a qualified wholesale conversation"
-        copy="Send your sourcing requirement, distribution proposal, or partnership inquiry to the Worldwide Supply 28 SL team in Valencia."
+        title="Start a qualified wholesale & distribution conversation"
+        copy="Send your sourcing requirement, distribution proposal, or partnership inquiry to the Imperial Essence Trading LLC team at our Dubai headquarters."
       />
       <ContactInquirySection compact />
     </div>

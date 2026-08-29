@@ -1,27 +1,26 @@
 export const blogPosts = [
   {
-    title: "Opening African Wholesale Markets from Valencia",
+    title: "Direct European Sourcing & Global Distribution from Dubai",
     description:
-      "How Spain-based sourcing, logistics coordination, and partner qualification can support new distributor and retailer collaborations across Africa.",
+      "How Dubai-based operations, European T1 & T2 sourcing, and multi-modal logistics support luxury distributors and retailers across international markets.",
     image:
       "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80",
-    href: "/global-distribution",
+    href: "/our-sourcing",
   },
   {
-    title: "Travel Retail Categories Built for B2B Growth",
+    title: "Duty-Free & Travel Retail Categories Built for B2B Growth",
     description:
-      "Fragrance, beauty, travel sets, accessories, and premium gifting categories can strengthen duty-free and destination retail assortments.",
+      "Drawing on 40+ years of family legacy across luxury perfumery, cosmetics, skincare, niche fragrances, travel sets, and premium accessories.",
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
     href: "/categories",
   },
   {
-    title: "Luxury Wholesale Without E-Commerce Noise",
+    title: "Luxury Wholesale & Distribution Partnerships",
     description:
-      "Why serious wholesale websites should focus on partner qualification, availability conversations, sourcing fit, and long-term relationships.",
+      "Why serious B2B distribution gateways focus on partner qualification, availability conversations, sourcing flexibility, and long-term trust.",
     image:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
     href: "/partners",
   },
 ];
-

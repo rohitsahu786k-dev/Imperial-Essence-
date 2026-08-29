@@ -8,9 +8,9 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
+  title: "Imperial Essence Trading LLC | Luxury Perfumery, Beauty & Duty Free Distribution Dubai",
   description:
-    "Official website of Worldwide Supply 28 SL based in Valencia, Spain. Supplying luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products worldwide.",
+    "Dubai-based wholesale and distribution gateway drawing on over 40 years of family legacy in luxury perfumery, niche fragrances, cosmetics, skincare, travel sets, and European T1 & T2 sourcing.",
 };
 
 export default function Home() {

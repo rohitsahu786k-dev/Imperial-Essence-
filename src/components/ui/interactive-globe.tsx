@@ -18,28 +18,26 @@ type GlobeProps = {
 };
 
 const markers: Marker[] = [
-  { lat: 39.47, lng: -0.38, label: "Valencia" },
-  { lat: 25.2, lng: 55.27, label: "Dubai" },
+  { lat: 25.2, lng: 55.27, label: "Dubai (HQ)" },
+  { lat: 48.85, lng: 2.35, label: "Paris" },
+  { lat: 51.5, lng: -0.12, label: "London" },
+  { lat: 40.71, lng: -74.0, label: "New York" },
   { lat: 21.54, lng: 39.17, label: "Jeddah" },
   { lat: 33.57, lng: -7.59, label: "Casablanca" },
-  { lat: 36.75, lng: 3.06, label: "Algiers" },
   { lat: 30.04, lng: 31.24, label: "Cairo" },
-  { lat: 6.52, lng: 3.38, label: "Lagos" },
   { lat: -1.29, lng: 36.82, label: "Nairobi" },
-  { lat: -26.2, lng: 28.04, label: "Johannesburg" },
   { lat: 1.35, lng: 103.82, label: "Singapore" },
 ];
 
 const connections: Connection[] = [
-  { from: [39.47, -0.38], to: [25.2, 55.27] },
-  { from: [39.47, -0.38], to: [21.54, 39.17] },
-  { from: [39.47, -0.38], to: [33.57, -7.59] },
-  { from: [39.47, -0.38], to: [36.75, 3.06] },
-  { from: [39.47, -0.38], to: [30.04, 31.24] },
-  { from: [39.47, -0.38], to: [6.52, 3.38] },
-  { from: [39.47, -0.38], to: [-1.29, 36.82] },
-  { from: [39.47, -0.38], to: [-26.2, 28.04] },
-  { from: [39.47, -0.38], to: [1.35, 103.82] },
+  { from: [25.2, 55.27], to: [48.85, 2.35] },
+  { from: [25.2, 55.27], to: [51.5, -0.12] },
+  { from: [25.2, 55.27], to: [40.71, -74.0] },
+  { from: [25.2, 55.27], to: [21.54, 39.17] },
+  { from: [25.2, 55.27], to: [33.57, -7.59] },
+  { from: [25.2, 55.27], to: [30.04, 31.24] },
+  { from: [25.2, 55.27], to: [-1.29, 36.82] },
+  { from: [25.2, 55.27], to: [1.35, 103.82] },
 ];
 
 function latLngToXYZ(lat: number, lng: number, radius: number): [number, number, number] {
@@ -72,9 +70,9 @@ function project(x: number, y: number, z: number, cx: number, cy: number, fov: n
 export function InteractiveGlobe({
   className,
   size = 560,
-  dotColor = "rgba(18, 58, 90, ALPHA)",
-  arcColor = "rgba(32, 123, 104, 0.58)",
-  markerColor = "rgba(198, 161, 40, 1)",
+  dotColor = "rgba(7, 19, 33, ALPHA)",
+  arcColor = "rgba(212, 175, 55, 0.6)",
+  markerColor = "rgba(212, 175, 55, 1)",
   autoRotateSpeed = 0.002,
   connections: globeConnections = connections,
   markers: globeMarkers = markers,
@@ -127,7 +125,7 @@ export function InteractiveGlobe({
 
     ctx.beginPath();
     ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-    ctx.strokeStyle = "rgba(18, 58, 90, 0.16)";
+    ctx.strokeStyle = "rgba(212, 175, 55, 0.2)";
     ctx.lineWidth = 1;
     ctx.stroke();
 
@@ -167,14 +165,14 @@ export function InteractiveGlobe({
       ctx.moveTo(sx1, sy1);
       ctx.quadraticCurveTo(scx, scy, sx2, sy2);
       ctx.strokeStyle = arcColor;
-      ctx.lineWidth = 1.25;
+      ctx.lineWidth = 1.5;
       ctx.stroke();
 
       const t = (Math.sin(time * 1.2 + connection.from[0] * 0.1) + 1) / 2;
       const tx = (1 - t) * (1 - t) * sx1 + 2 * (1 - t) * t * scx + t * t * sx2;
       const ty = (1 - t) * (1 - t) * sy1 + 2 * (1 - t) * t * scy + t * t * sy2;
       ctx.beginPath();
-      ctx.arc(tx, ty, 2.2, 0, Math.PI * 2);
+      ctx.arc(tx, ty, 2.5, 0, Math.PI * 2);
       ctx.fillStyle = markerColor;
       ctx.fill();
     }
@@ -188,7 +186,7 @@ export function InteractiveGlobe({
       const pulse = Math.sin(time * 2 + marker.lat) * 0.5 + 0.5;
       ctx.beginPath();
       ctx.arc(sx, sy, 4 + pulse * 4, 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(198, 161, 40, ${0.22 + pulse * 0.18})`;
+      ctx.strokeStyle = `rgba(212, 175, 55, ${0.22 + pulse * 0.18})`;
       ctx.lineWidth = 1;
       ctx.stroke();
       ctx.beginPath();
@@ -197,8 +195,8 @@ export function InteractiveGlobe({
       ctx.fill();
 
       if (marker.label) {
-        ctx.font = "10px system-ui, sans-serif";
-        ctx.fillStyle = "rgba(11, 34, 57, 0.68)";
+        ctx.font = "bold 10px system-ui, sans-serif";
+        ctx.fillStyle = "#071321";
         ctx.fillText(marker.label, sx + 8, sy + 3);
       }
     }

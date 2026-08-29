@@ -6,8 +6,8 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "About Us | Worldwide Supply 28 SL",
-  description: "Learn about Worldwide Supply 28 SL, our founders Siddharth Thakker & Sakina Idmouhine, company mission, vision, and values.",
+  title: "About Us | Imperial Essence Trading LLC",
+  description: "Learn about Imperial Essence Trading LLC, our founders Siddharth Thakker & Sakina Idmouhine, 40+ years family legacy, company mission, vision, and core values.",
 };
 
 export default function AboutPage() {
@@ -15,8 +15,8 @@ export default function AboutPage() {
     <div>
       <InternalPageHero
         eyebrow="About Us"
-        title="Spain-based partner for luxury wholesale"
-        copy="Worldwide Supply 28 SL connects premium categories, trusted retail partners, duty-free channels, distributors, and international supply routes from Valencia."
+        title="Dubai Headquarters for Luxury Perfumery & European Sourcing"
+        copy="Imperial Essence Trading LLC connects luxury categories, trusted retail partners, duty-free operators, distributors, and direct European T1 & T2 sourcing from Dubai, UAE."
       />
       <AboutCompanyProfile />
       <AboutStorySection />

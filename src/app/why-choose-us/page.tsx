@@ -4,8 +4,8 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
 
 export const metadata: Metadata = {
-  title: "Why Choose Us | Worldwide Supply 28 SL",
-  description: "Why Worldwide Supply 28 SL is your trusted partner in luxury wholesale, retail distribution, and global supply.",
+  title: "Why Choose Us | Imperial Essence Trading LLC",
+  description: "Why Imperial Essence Trading LLC is your trusted partner in luxury perfumery, cosmetics, travel retail, and European T1 & T2 sourcing.",
 };
 
 export default function WhyChooseUsPage() {
@@ -13,8 +13,8 @@ export default function WhyChooseUsPage() {
     <div>
       <InternalPageHero
         eyebrow="Why Choose Us"
-        title="Built for trust, consistency, and long-term trade"
-        copy="A Spain-based wholesale partner combining 15+ years of experience, premium relationships, flexible sourcing, and international logistics discipline."
+        title="Built for trust, consistency, and long-term distribution"
+        copy="A Dubai-based wholesale partner combining over 40 years of family legacy, brand relationships, direct European T1 & T2 sourcing, and international logistics discipline."
       />
       <WhyChooseUs compact />
       <ContactInquirySection compact />
