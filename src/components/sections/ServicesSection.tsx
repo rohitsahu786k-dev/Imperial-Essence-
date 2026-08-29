@@ -10,10 +10,10 @@ export function ServicesSection({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   const serviceImages = [
-    "/images/services/global-distribution.jpg",
-    "/images/services/logistics-management.jpg",
-    "/images/services/brand-entry.jpg",
-    "/images/services/sourcing-development.jpg"
+    "/service-01.jpg",
+    "/service-02.jpg",
+    "/service-03.jpg",
+    "/service-04.jpg"
   ];
 
   return (
@@ -43,7 +43,7 @@ export function ServicesSection({ compact = false }: { compact?: boolean }) {
           {siteData.services.map((svc, index) => (
             <div
               key={svc.id}
-              className="group relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#D4AF37] flex flex-col justify-between"
+              className="group relative overflow-hidden rounded-3xl border border-amber-200/80 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#D4AF37] flex flex-col justify-between"
             >
               {/* Image Frame */}
               <div className="relative w-full h-72 sm:h-80 overflow-hidden bg-slate-100">

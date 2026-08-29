@@ -27,25 +27,25 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
     {
       title: { en: "Road Freight", es: "Transporte por Carretera" },
       desc: { en: "Pan-European express & Middle East road networks.", es: "Redes terrestres expresas paneuropeas y de Oriente Medio." },
-      image: "/images/logistics/road-freight.jpg",
+      image: "/logistics-road.jpg",
       icon: Truck
     },
     {
       title: { en: "Sea Freight", es: "Transporte Marítimo" },
       desc: { en: "FCL & LCL containerized global sea shipping lines.", es: "Líneas de transporte marítimo global en contenedores FCL y LCL." },
-      image: "/images/logistics/sea-freight.jpg",
+      image: "/logistics-sea.jpg",
       icon: Ship
     },
     {
       title: { en: "Air Freight", es: "Transporte Aéreo" },
       desc: { en: "Priority express air cargo for high-value luxury goods.", es: "Carga aérea exprés prioritaria para mercancías de lujo de gran valor." },
-      image: "/images/logistics/air-freight.jpg",
+      image: "/logistics-air.jpg",
       icon: Plane
     },
     {
       title: { en: "Global Hub Network", es: "Red de Centros Globales" },
       desc: { en: "Dubai Bay Square HQ and European supply hubs.", es: "Sede en Dubái Bay Square y centros de suministro en Europa." },
-      image: "/images/logistics/global-network.jpg",
+      image: "/logistics-hub.jpg",
       icon: Globe
     }
   ];

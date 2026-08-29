@@ -86,11 +86,11 @@ export function WhyChooseUs({ compact = false }: { compact?: boolean }) {
 
           <div className="relative min-h-[340px] overflow-hidden rounded-3xl border border-slate-200 bg-[#071321] shadow-sm lg:col-span-5">
             <Image
-              src="/images/why-us-luxury.jpg"
+              src="/why-us-luxury.jpg"
               alt="Imperial Essence Trading LLC wholesale and logistics operations"
               fill
               sizes="(max-width: 1024px) 100vw, 42vw"
-              className="object-cover opacity-72"
+              className="object-cover opacity-85 saturate-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-[#071321]/54 to-transparent" aria-hidden="true" />
             <div className="relative z-10 flex h-full min-h-[340px] flex-col justify-between p-6 text-white sm:p-8">

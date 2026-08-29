@@ -11,8 +11,8 @@ export function HeroSection() {
 
   return (
     <div className="relative w-full bg-white pt-20">
-      {/* Main Hero Banner with Softly Blurred Dubai Skyline Background */}
-      <section className="relative w-full min-h-[580px] overflow-hidden sm:h-[calc(100svh-5rem)] sm:min-h-[620px] sm:max-h-[780px]">
+      {/* Main Hero Banner with Dubai Skyline Background */}
+      <section className="relative w-full min-h-[620px] overflow-hidden py-12 sm:py-20 lg:min-h-[720px] lg:flex lg:items-center">
         {/* Softly Blurred Dubai Skyline Background */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -22,25 +22,25 @@ export function HeroSection() {
             priority
             className="object-cover object-center filter saturate-110 brightness-95"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40 sm:via-white/75" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-slate-900/40 to-transparent sm:from-white/60 sm:via-white/40" />
         </div>
 
-        {/* Hero Content Layer */}
-        <div className="relative z-20 mx-auto flex h-full max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
-          <div className="w-full max-w-md space-y-5 bg-transparent p-0 sm:max-w-lg sm:space-y-6 lg:max-w-2xl">
+        {/* Hero Content Layer - Merged 50% Width White Shadow Box */}
+        <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+          <div className="w-full lg:w-1/2 rounded-3xl bg-white/95 p-6 sm:p-10 lg:p-12 shadow-2xl border border-amber-200/80 backdrop-blur-md space-y-6">
             {/* Location & Heritage Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-white/95 px-4 py-1.5 text-xs font-bold text-[#B8860B] shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-gold-shimmer px-4 py-1.5 text-xs font-extrabold text-[#B8860B] shadow-xs">
               <MapPin className="h-4 w-4 shrink-0 text-[#D4AF37]" />
               <span>{t(siteData.company.location.badge.en, siteData.company.location.badge.es)}</span>
             </div>
 
             {/* Main Headline - High Contrast Bold Typography */}
-            <h1 className="text-3xl font-extrabold tracking-tight text-[#071321] leading-[1.1] sm:text-5xl lg:text-6xl">
+            <h1 className="text-2xl font-extrabold tracking-tight text-[#071321] leading-[1.15] sm:text-4xl lg:text-5xl">
               {t(siteData.company.tagline.en, siteData.company.tagline.es)}
             </h1>
 
             {/* Sub-headline */}
-            <p className="max-w-xl text-sm font-semibold leading-relaxed text-slate-700 sm:text-lg">
+            <p className="text-sm font-semibold leading-relaxed text-slate-700 sm:text-base">
               {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
             </p>
 
@@ -56,7 +56,7 @@ export function HeroSection() {
 
               <Link
                 href="/our-sourcing"
-                className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white/95 px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-amber-50 hover:border-[#D4AF37] hover:text-[#B8860B]"
+                className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-amber-50 hover:border-[#D4AF37] hover:text-[#B8860B]"
               >
                 <Sparkles className="h-4 w-4 text-[#D4AF37]" />
                 <span>{t("Our Sourcing (T1 & T2)", "Nuestro Abastecimiento")}</span>
