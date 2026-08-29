@@ -26,13 +26,13 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
   const transportModes = [
     {
       title: { en: "Road Freight", es: "Transporte por Carretera" },
-      desc: { en: "Pan-European express & temperature-controlled trucking fleets.", es: "Flotas de camiones con control de temperatura y servicio exprés paneuropeo." },
+      desc: { en: "Pan-European express & Middle East road networks.", es: "Redes terrestres expresas paneuropeas y de Oriente Medio." },
       image: "/images/logistics/road-freight.jpg",
       icon: Truck
     },
     {
       title: { en: "Sea Freight", es: "Transporte Marítimo" },
-      desc: { en: "FCL & LCL containerized global shipping lines.", es: "Líneas de transporte marítimo global en contenedores FCL y LCL." },
+      desc: { en: "FCL & LCL containerized global sea shipping lines.", es: "Líneas de transporte marítimo global en contenedores FCL y LCL." },
       image: "/images/logistics/sea-freight.jpg",
       icon: Ship
     },
@@ -43,34 +43,30 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
       icon: Plane
     },
     {
-      title: { en: "Global Network", es: "Red Global" },
-      desc: { en: "Seamless cross-border customs & bonded warehouse distribution.", es: "Aduanas transfronterizas fluidas y distribución en almacén franco." },
+      title: { en: "Global Hub Network", es: "Red de Centros Globales" },
+      desc: { en: "Dubai Bay Square HQ and European supply hubs.", es: "Sede en Dubái Bay Square y centros de suministro en Europa." },
       image: "/images/logistics/global-network.jpg",
       icon: Globe
     }
   ];
 
-  // Valencia Trade Connection Routes for Interactive World Map
-  const valenciaTradeRoutes = [
+  // Dubai Trade Connection Routes for Interactive World Map
+  const dubaiTradeRoutes = [
     {
-      start: { lat: 39.4699, lng: -0.3763, label: "Valencia" }, // HQ Valencia, Spain
-      end: { lat: 50.1109, lng: 8.6821, label: "Europe" }
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
+      end: { lat: 50.1109, lng: 8.6821, label: "Europe (Frankfurt)" }
     },
     {
-      start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
-      end: { lat: 25.2048, lng: 55.2708, label: "Middle East (Dubai)" }
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
+      end: { lat: 40.7128, lng: -74.0060, label: "United States (NYC)" }
     },
     {
-      start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
-      end: { lat: 45.4215, lng: -75.6972, label: "North America" }
-    },
-    {
-      start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
-      end: { lat: 1.3521, lng: 103.8198, label: "Asia (Singapore)" }
-    },
-    {
-      start: { lat: 39.4699, lng: -0.3763, label: "Valencia" },
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
       end: { lat: -1.2921, lng: 36.8219, label: "Africa (Nairobi)" }
+    },
+    {
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
+      end: { lat: 1.3521, lng: 103.8198, label: "Asia (Singapore)" }
     }
   ];
 
@@ -79,16 +75,16 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
       <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${compact ? "space-y-12" : "space-y-20"}`}>
         {/* Logistics Capabilities Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
+          <span className="inline-block rounded-full bg-amber-50 border border-amber-200/80 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
             {t("Global Freight & Supply Chain", "Flete Global y Cadena de Suministro")}
           </span>
-          <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321]">
-            {t("Logistics & Transport Modes", "Modos de Logística y Transporte")}
+          <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+            {t("Logistics & Transport Management", "Gestión de Logística y Transporte")}
           </h2>
           <p className="text-base text-slate-600">
             {t(
-              "Operating out of Valencia, Spain, a prime Mediterranean trade gateway, we coordinate seamless cross-border freight.",
-              "Operando desde Valencia, España, una puerta comercial clave en el Mediterráneo, coordinamos fletes transfronterizos sin problemas."
+              "Operating out of our Dubai headquarters in Bay Square and European trade hubs, we coordinate seamless cross-border freight.",
+              "Operando desde nuestra sede en Dubái Bay Square y centros logísticos en Europa, coordinamos fletes transfronterizos sin problemas."
             )}
           </p>
         </div>
@@ -100,7 +96,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
             return (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#00A884] flex flex-col justify-between h-[360px]"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#D4AF37] flex flex-col justify-between h-[360px]"
               >
                 {/* Image Frame */}
                 <div className="absolute inset-0 z-0">
@@ -116,17 +112,17 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
                 {/* Top Badge */}
                 <div className="relative z-10 p-5 flex justify-between items-center">
-                  <div className="h-10 w-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#00A884] shadow-sm">
+                  <div className="h-10 w-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#B8860B] shadow-sm">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <span className="rounded-full bg-[#071321]/80 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-white uppercase tracking-wider border border-white/10">
+                  <span className="rounded-full bg-[#071321]/80 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider border border-white/10">
                     Mode 0{idx + 1}
                   </span>
                 </div>
 
                 {/* Content Area */}
                 <div className="relative z-10 p-6 space-y-2 text-white">
-                  <h3 className="text-xl font-semibold text-white group-hover:text-[#00A884] transition">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition">
                     {t(mode.title.en, mode.title.es)}
                   </h3>
                   <p className="text-xs text-white/80 leading-relaxed">
@@ -138,22 +134,22 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
           })}
         </div>
 
-        {/* Single Unified Merged Card Container on Pure White Background */}
+        {/* Single Unified Merged Card Container */}
         <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-12 shadow-sm space-y-10">
           {/* Header Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-3.5 py-1 text-[11px] font-bold text-[#00A884] uppercase tracking-wider">
-                <Sparkles className="h-3.5 w-3.5" />
+              <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200/80 px-3.5 py-1 text-[11px] font-bold text-[#B8860B] uppercase tracking-wider">
+                <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
                 <span>{t("Global Distribution Network", "Red de Distribución Global")}</span>
               </div>
-              <h3 className="text-2xl sm:text-4xl font-semibold text-[#071321] tracking-tight">
+              <h3 className="text-2xl sm:text-4xl font-extrabold text-[#071321] tracking-tight">
                 {t("Target Markets & Distribution Routes", "Mercados Objetivo y Rutas de Distribución")}
               </h3>
               <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
                 {t(
-                  "Emanating from our trade hub in Valencia, Spain, connecting Europe, Middle East, United States, Asia, and Africa.",
-                  "Desde nuestra sede comercial en Valencia, España, conectando Europa, Oriente Medio, EE. UU., Asia y África."
+                  "Emanating from our Dubai headquarters in Bay Square and European supply network, connecting Middle East, Europe, United States, Africa, and Asia.",
+                  "Desde nuestra sede en Dubái Bay Square y red de suministro europea, conectando Oriente Medio, Europa, EE. UU., África y Asia."
                 )}
               </p>
 
@@ -172,14 +168,14 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
             <div className="lg:col-span-4 text-left lg:text-right space-y-3">
               <div>
-                <span className="text-4xl sm:text-5xl font-semibold text-[#00A884]">50+</span>
+                <span className="text-4xl sm:text-5xl font-extrabold text-[#B8860B]">40+</span>
                 <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  {t("Global Destinations Serviced", "Destinos Globales Atendidos")}
+                  {t("Years Family Logistics Legacy", "Años de Legado Logístico Familiar")}
                 </p>
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-xs font-bold uppercase tracking-wider text-white hover:bg-[#00A884] transition shadow-md"
+                className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-md transition hover:opacity-95"
               >
                 <span>{t("Check Shipping Routes", "Consultar Rutas de Envío")}</span>
                 <ArrowRight className="h-4 w-4" />
@@ -189,7 +185,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
           {/* Merged Light World Map Canvas */}
           <div className="pt-2">
-            <WorldMap dots={valenciaTradeRoutes} lineColor="#00A884" theme="light" />
+            <WorldMap dots={dubaiTradeRoutes} lineColor="#D4AF37" theme="light" />
           </div>
         </div>
       </div>

@@ -22,8 +22,31 @@ html {
 }
 
 ::selection {
-  background: #c6a128;
-  color: #0b2239;
+  background: #D4AF37;
+  color: #071321;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 35%, #F3E5AB 65%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #B8860B 100%);
+}
+
+.bg-gold-shimmer {
+  background: linear-gradient(135deg, #FFFDF8 0%, #FBF6E9 50%, #F4EAD3 100%);
+}
+
+.border-gold {
+  border-color: #D4AF37;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
 }
 
 @keyframes fade-in {

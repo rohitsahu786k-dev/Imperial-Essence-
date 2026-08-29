@@ -11,10 +11,10 @@ export function organizationJsonLd() {
     telephone: site.phone,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Calle Carlos Cervera, 14, Bajo",
-      postalCode: "46006",
-      addressLocality: "Valencia",
-      addressCountry: "ES",
+      streetAddress: "203, Building No. 11, Bay Square, Business Bay",
+      postalCode: "112396",
+      addressLocality: "Dubai",
+      addressCountry: "AE",
     },
   };
 }
@@ -40,4 +40,3 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
     })),
   };
 }
-

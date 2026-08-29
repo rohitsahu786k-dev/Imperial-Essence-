@@ -43,6 +43,7 @@ export function Header() {
     { href: "/", label: t("Home", "Inicio") },
     { href: "/about", label: t("About Us", "Sobre Nosotros") },
     { href: "/categories", label: t("Product Categories", "Categorías de Productos") },
+    { href: "/our-sourcing", label: t("Our Sourcing", "Nuestro Abastecimiento") },
     { href: "/services", label: t("Services", "Servicios") },
     { href: "/why-choose-us", label: t("Why Choose Us", "Por qué Elegirnos") },
     { href: "/contact", label: t("Contact Us", "Contacto") },
@@ -57,10 +58,10 @@ export function Header() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Clean, Prominent Tightly-Cropped Logo */}
-        <Link href="/" className="flex items-center shrink-0 group py-1" aria-label="Worldwide Supply 28 SL">
+        <Link href="/" className="flex items-center shrink-0 group py-1" aria-label="Imperial Essence Trading LLC">
           <Image
-            src="/world-wide-logo.png"
-            alt="Worldwide Supply 28 SL Logo"
+            src="/imperial-essence-logo.png"
+            alt="Imperial Essence Trading LLC Logo"
             width={240}
             height={100}
             priority
@@ -74,7 +75,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-4 py-2 text-xs font-bold text-slate-800 transition hover:bg-white hover:text-[#00A884] hover:shadow-sm"
+              className="rounded-full px-4 py-2 text-xs font-bold text-slate-800 transition hover:bg-white hover:text-[#B8860B] hover:shadow-sm"
             >
               {item.label}
             </Link>
@@ -90,7 +91,7 @@ export function Header() {
               className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-2 text-xs font-bold text-slate-800 transition hover:bg-slate-100 shadow-2xs"
               title="Select Language"
             >
-              <Globe className="h-4 w-4 text-[#00A884]" />
+              <Globe className="h-4 w-4 text-[#B8860B]" />
               <span>{currentLanguage.shortLabel}</span>
               <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
             </button>
@@ -121,7 +122,7 @@ export function Header() {
                         <span className="block text-[10px] text-slate-400">{item.shortLabel}</span>
                       </div>
                       {language === item.code && (
-                        <Check className="h-4 w-4 text-[#00A884]" />
+                        <Check className="h-4 w-4 text-[#B8860B]" />
                       )}
                     </button>
                   ))}
@@ -133,7 +134,7 @@ export function Header() {
           {/* Inquiry CTA */}
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-[#00A884] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-white shadow-md transition hover:bg-[#009272]"
+            className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-2.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-md transition hover:opacity-95"
           >
             <span>{t("Inquire Now", "Consulta Ahora")}</span>
           </Link>

@@ -5,7 +5,7 @@ import { siteData } from "@/data/siteData";
 
 export function WhatsAppWidget() {
   const whatsappUrl = `https://wa.me/${siteData.company.contact.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    "Hello Worldwide Supply 28 SL, I would like to inquire about your wholesale luxury products."
+    "Hello Imperial Essence Trading LLC, I would like to inquire about your wholesale luxury products and distribution."
   )}`;
 
   return (

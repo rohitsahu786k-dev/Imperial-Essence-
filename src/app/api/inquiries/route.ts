@@ -57,16 +57,16 @@ export async function POST(request: NextRequest) {
       const resend = new Resend(process.env.RESEND_API_KEY);
       const adminEmail = process.env.ADMIN_EMAIL || site.email;
       await resend.emails.send({
-        from: `Worldwide Supply 28 <onboarding@resend.dev>`,
+        from: `Imperial Essence <onboarding@resend.dev>`,
         to: adminEmail,
         subject: `New wholesale inquiry from ${lead.companyName}`,
         text: `New inquiry\n\nName: ${lead.fullName}\nCompany: ${lead.companyName}\nEmail: ${lead.email}\nPhone: ${lead.phone}\nCountry: ${lead.country}\nBusiness Type: ${lead.businessType}\nCategories: ${lead.interestedCategories.join(", ")}\nVolume: ${lead.estimatedMonthlyVolume}\n\n${lead.message}`,
       });
       await resend.emails.send({
-        from: `Worldwide Supply 28 <onboarding@resend.dev>`,
+        from: `Imperial Essence <onboarding@resend.dev>`,
         to: lead.email,
-        subject: "Thank You for Contacting Worldwide Supply 28",
-        text: `Thank you for reaching out to Worldwide Supply 28. We have received your wholesale inquiry and our team will review your requirements shortly.\n\nWorldwide Supply 28 specializes in luxury wholesale, travel retail, FMCG distribution, and international sourcing solutions for retailers, duty-free operators, distributors, and wholesalers.\n\nA member of our team will contact you soon to discuss your business needs.\n\nWorldwide Supply 28\nA Legacy of Trust. A World of Opportunities.`,
+        subject: "Thank You for Contacting Imperial Essence Trading LLC",
+        text: `Thank you for reaching out to Imperial Essence Trading LLC. We have received your wholesale inquiry and our executive team will review your requirements shortly.\n\nImperial Essence Trading LLC specializes in luxury perfumery, niche fragrances, cosmetics, skincare, travel sets, and European T1 & T2 sourcing for international retailers, duty-free operators, and distributors.\n\nA member of our team will contact you soon to discuss your business needs.\n\nImperial Essence Trading LLC\nDubai Headquarters | Bay Square, Business Bay`,
       });
     } catch (emailErr) {
       console.error("Resend email warning:", emailErr);

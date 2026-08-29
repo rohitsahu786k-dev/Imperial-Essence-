@@ -22,23 +22,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
-    template: "%s | Worldwide Supply 28 SL",
+    default: "Imperial Essence Trading LLC | Luxury Perfumery, Beauty & Duty Free Distribution Dubai",
+    template: "%s | Imperial Essence Trading LLC",
   },
-  description: "Your trusted partner in luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products. Based in Valencia, Spain with global distribution.",
+  description: "Dubai-based wholesale and distribution gateway drawing on over 40 years of family legacy in luxury perfumery, niche fragrances, cosmetics, skincare, travel sets, and European T1 & T2 sourcing.",
   alternates: { canonical: site.url },
   openGraph: {
-    title: "Worldwide Supply 28 SL | Luxury Wholesale & International Distribution",
-    description: "Your trusted partner in luxury perfumery, cosmetics, skincare, fine wines & spirits, and lifestyle products. Based in Valencia, Spain with global distribution.",
+    title: "Imperial Essence Trading LLC | Luxury Wholesale & Duty Free Distribution",
+    description: "Dubai-based wholesale and distribution gateway drawing on over 40 years of family legacy in luxury perfumery, niche fragrances, cosmetics, skincare, travel sets, and European T1 & T2 sourcing.",
     url: site.url,
     siteName: site.name,
-    images: [{ url: "/images/valencia-hero.jpg", width: 1200, height: 630, alt: "Worldwide Supply 28 SL Valencia Spain" }],
+    images: [{ url: "/dubai-skyline-hero.jpg", width: 1200, height: 630, alt: "Imperial Essence Trading LLC Dubai UAE" }],
     type: "website",
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/icon.png",
+    icon: "/imperial-essence-logo.png",
+    shortcut: "/imperial-essence-logo.png",
+    apple: "/imperial-essence-logo.png",
   },
 };
 
@@ -53,7 +53,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       data-scroll-behavior="smooth"
     >
-      <body className="min-h-full bg-white text-[#0B192C]">
+      <body className="min-h-full bg-white text-[#071321]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}

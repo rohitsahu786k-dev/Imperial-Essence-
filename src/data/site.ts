@@ -1,31 +1,31 @@
 export const site = {
-  name: "Worldwide Supply 28",
-  tagline: "A Legacy of Trust. A World of Opportunities.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.worldwidesupply28.com",
-  email: "trading@worldwidesupply28.com",
-  phone: "+34 614 85 05 70",
-  phoneHref: "tel:+34614850570",
-  address: "Calle Carlos Cervera, 14, Bajo, 46006 Valencia, Spain",
-  city: "Valencia, Spain",
-  director: "Sakina Idmouhine",
-  directorTitle: "Directora General",
-  logo: "/world-wide-logo.png",
+  name: "Imperial Essence Trading LLC",
+  tagline: "Luxury Perfumery, Beauty & Duty Free Distribution",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.theimperialessence.com",
+  email: "office@theimperialessence.com",
+  phone: "+971 56 393 0666",
+  phoneHref: "tel:+971563930666",
+  address: "203, Building No. 11, Bay Square, Business Bay, P.O. Box: 112396, Dubai, UAE",
+  city: "Dubai, UAE",
+  director: "Siddharth Thakker & Sakina Idmouhine",
+  directorTitle: "Co-Founders & Managing Directors",
+  logo: "/imperial-essence-logo.png",
   description:
-    "Worldwide Supply 28 is a Spain-based international wholesale company specializing in luxury goods, travel retail, FMCG products, global sourcing, and premium distribution solutions.",
+    "Imperial Essence Trading LLC is a Dubai-based wholesale and distribution company specializing in luxury perfumery, premium cosmetics, skincare, niche fragrances, fashion, travel sets, accessories, and jewelry with European T1 and T2 sourcing.",
 };
 
 export const navItems = [
   { label: "About", href: "/about" },
   { label: "Categories", href: "/categories" },
+  { label: "Our Sourcing", href: "/our-sourcing" },
   { label: "Services", href: "/services" },
-  { label: "Global Distribution", href: "/global-distribution" },
-  { label: "Partners", href: "/partners" },
+  { label: "Why Choose Us", href: "/why-choose-us" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const stats = [
-  { value: "15+", label: "Years Experience" },
-  { value: "50+", label: "Global Markets" },
-  { value: "100+", label: "Premium Brands" },
-  { value: "24/7", label: "Support" },
+  { value: "40+", label: "Years Legacy" },
+  { value: "Dubai", label: "Headquarters" },
+  { value: "T1 & T2", label: "European Sourcing" },
+  { value: "24/7", label: "WhatsApp Support" },
 ];
