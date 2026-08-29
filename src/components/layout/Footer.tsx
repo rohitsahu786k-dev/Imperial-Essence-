@@ -14,7 +14,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative bg-white text-[#071321] pt-20 pb-10 border-t border-slate-200 overflow-hidden">
+    <footer className="relative bg-white text-[#071321] pt-20 pb-24 lg:pb-10 border-t border-slate-200 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Col 1: Brand Info & Clean Tightly-Cropped Logo */}
@@ -119,7 +119,7 @@ export function Footer() {
           </div>
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 hover:bg-slate-50 text-slate-700 font-semibold transition"
+            className="flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 hover:bg-slate-50 text-slate-700 font-semibold transition lg:mr-28"
           >
             <span>Back to Top</span>
             <ArrowUp className="h-3.5 w-3.5 text-[#00A884]" />
