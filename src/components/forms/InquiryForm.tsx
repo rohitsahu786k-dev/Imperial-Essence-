@@ -47,13 +47,12 @@ export function InquiryForm() {
       return;
     }
 
-    window.dispatchEvent(new CustomEvent("ws28:lead-submitted"));
     form.reset();
     setStatus("success");
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-5 rounded-md border border-[#123A5A]/10 bg-white p-6 shadow-sm">
+    <form onSubmit={onSubmit} className="grid gap-5 rounded-3xl border border-amber-200 bg-white p-6 sm:p-8 shadow-md">
       <input name="companyWebsite" type="text" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
       <div className="grid gap-5 md:grid-cols-2">
         <Field label="Full Name" error={errors.fullName}><input name="fullName" className="input" /></Field>
@@ -71,9 +70,9 @@ export function InquiryForm() {
       <Field label="Interested Categories" error={errors.interestedCategories}>
         <div className="grid gap-2 sm:grid-cols-2">
           {categoryInterests.map((category) => (
-            <label key={category} className="flex items-center gap-2 rounded-md border border-[#123A5A]/10 px-3 py-2 text-sm">
-              <input name="interestedCategories" type="checkbox" value={category} />
-              {category}
+            <label key={category} className="flex items-center gap-2 rounded-xl border border-amber-200/80 px-3 py-2 text-sm hover:bg-amber-50">
+              <input name="interestedCategories" type="checkbox" value={category} className="accent-[#D4AF37]" />
+              <span>{category}</span>
             </label>
           ))}
         </div>
@@ -85,27 +84,26 @@ export function InquiryForm() {
         </select>
       </Field>
       <Field label="Message" error={errors.message}><textarea name="message" rows={5} className="input resize-y" /></Field>
-      <label className="flex items-start gap-3 text-sm leading-6 text-[#102033]/76">
-        <input name="consent" type="checkbox" className="mt-1" />
-        I agree to be contacted by Worldwide Supply 28 regarding this wholesale inquiry.
+      <label className="flex items-start gap-3 text-sm leading-6 text-slate-700">
+        <input name="consent" type="checkbox" className="mt-1 accent-[#D4AF37]" />
+        <span>I agree to be contacted by Imperial Essence Trading LLC regarding this inquiry.</span>
       </label>
       {errors.consent ? <p className="text-sm text-red-700">{errors.consent}</p> : null}
-      <button type="submit" disabled={submitting} className="rounded-md bg-[#123A5A] px-5 py-3 text-sm font-semibold text-white disabled:opacity-60">
+      <button type="submit" disabled={submitting} className="rounded-full bg-gold-gradient px-8 py-4 text-sm font-extrabold uppercase tracking-wider text-slate-950 shadow-md hover:opacity-95 disabled:opacity-60 transition">
         {submitting ? "Submitting..." : "Submit Wholesale Inquiry"}
       </button>
-      {status === "success" ? <p className="rounded-md bg-[#2FA866]/10 p-3 text-sm font-medium text-[#207B68]">Thank you. Your inquiry has been received.</p> : null}
-      {status === "error" ? <p className="rounded-md bg-red-50 p-3 text-sm font-medium text-red-700">Please review the highlighted fields or email trading@worldwidesupply28.com.</p> : null}
+      {status === "success" ? <p className="rounded-2xl bg-amber-50 border border-amber-300 p-4 text-sm font-bold text-[#B8860B]">Thank you. Your inquiry has been received by our Dubai team.</p> : null}
+      {status === "error" ? <p className="rounded-2xl bg-red-50 p-4 text-sm font-medium text-red-700">Please review the highlighted fields or email office@theimperialessence.com.</p> : null}
     </form>
   );
 }
 
 function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
   return (
-    <label className="grid gap-2 text-sm font-medium text-[#102033]">
+    <label className="grid gap-2 text-sm font-bold text-[#071321]">
       <span>{label}</span>
       {children}
       {error ? <span className="text-sm font-normal text-red-700">{error}</span> : null}
     </label>
   );
 }
-

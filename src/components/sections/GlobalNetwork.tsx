@@ -1,52 +1,49 @@
 import Link from "next/link";
-import { ArrowRight, MapPin, Ship, UsersRound } from "@/components/ui/icons";
-import { WorldMap } from "@/components/ui/world-map";
+import { ArrowRight, MapPin, Ship, UsersRound } from "lucide-react";
+import { WorldMap } from "@/components/ui/WorldMap";
 
-const valencia = { lat: 39.4699, lng: -0.3763, label: "Valencia, Spain" };
+const dubai = { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" };
 
 const distributionRoutes = [
-  { start: valencia, end: { lat: 50.1109, lng: 8.6821, label: "Europe" } },
-  { start: valencia, end: { lat: 25.2048, lng: 55.2708, label: "GCC Markets" } },
-  { start: valencia, end: { lat: 31.7917, lng: -7.0926, label: "North Africa" } },
-  { start: valencia, end: { lat: 9.082, lng: 8.6753, label: "West Africa" } },
-  { start: valencia, end: { lat: -1.2921, lng: 36.8219, label: "East Africa" } },
-  { start: valencia, end: { lat: -30.5595, lng: 22.9375, label: "Southern Africa" } },
+  { start: dubai, end: { lat: 50.1109, lng: 8.6821, label: "Europe" } },
+  { start: dubai, end: { lat: 40.7128, lng: -74.0060, label: "United States" } },
+  { start: dubai, end: { lat: -1.2921, lng: 36.8219, label: "Africa" } },
+  { start: dubai, end: { lat: 1.3521, lng: 103.8198, label: "Asia" } },
 ];
 
-const markets = ["Spain HQ", "Europe", "GCC Markets", "North Africa", "West Africa", "East Africa", "Southern Africa"];
+const markets = ["Dubai HQ", "Europe", "Middle East", "North America", "Africa", "Asia"];
 
 const distributionPoints = [
-  { label: "Base", value: "Valencia, Spain", icon: MapPin },
-  { label: "Reach", value: "Europe, GCC & Africa", icon: Ship },
-  { label: "Focus", value: "Africa expansion", icon: UsersRound },
+  { label: "Base", value: "Dubai Bay Square, UAE", icon: MapPin },
+  { label: "Reach", value: "Middle East, Europe, USA & Africa", icon: Ship },
+  { label: "Sourcing", value: "Direct European T1 & T2", icon: UsersRound },
 ];
 
-const capabilities = ["Sourcing review", "Wholesale planning", "Logistics coordination", "Partner support"];
+const capabilities = ["Sourcing review", "Wholesale planning", "Duty-free coordination", "Partner support"];
 
 export function GlobalNetwork() {
   return (
-    <section className="overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
+    <section className="overflow-hidden bg-white py-16 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <p className="text-base font-medium text-[#102033]/56 sm:text-2xl">Spain-based</p>
-        <h2 className="mx-auto mt-2 max-w-5xl text-4xl font-semibold leading-none tracking-normal text-[#0B2239] sm:text-7xl lg:text-8xl">
-          Global Distribution
+        <p className="text-base font-bold text-[#B8860B] sm:text-xl uppercase tracking-wider">Dubai Headquarters</p>
+        <h2 className="mx-auto mt-2 max-w-5xl text-4xl font-extrabold leading-none tracking-tight text-[#071321] sm:text-6xl lg:text-7xl">
+          Global Distribution Gateway
         </h2>
-        <div className="mx-auto mt-5 h-1.5 w-32 rounded-full bg-[#C6A128] sm:w-40" />
-        <p className="mx-auto mt-6 max-w-3xl text-base font-semibold leading-8 text-[#102033]/78 sm:mt-8 sm:text-xl">
-          Worldwide Supply 28 supports retailers, duty-free operators, distributors, and wholesalers from a Valencia base.
+        <div className="mx-auto mt-5 h-1.5 w-32 rounded-full bg-gold-gradient sm:w-40" />
+        <p className="mx-auto mt-6 max-w-3xl text-base font-semibold leading-8 text-slate-700 sm:mt-8 sm:text-xl">
+          Imperial Essence Trading LLC supports retailers, duty-free operators, distributors, and brand owners from our Dubai headquarters.
         </p>
-        <p className="mx-auto mt-4 max-w-4xl text-base leading-8 text-[#102033]/64 sm:text-lg">
-          Our distribution conversations focus on reliable sourcing, wholesale planning, logistics coordination, and strategic market expansion across Europe, GCC markets, and African collaborations.
+        <p className="mx-auto mt-4 max-w-4xl text-base leading-8 text-slate-600 sm:text-lg">
+          Our distribution operations focus on reliable sourcing, wholesale planning, logistics coordination, and strategic market expansion across international territories.
         </p>
 
         <div className="relative mx-auto mt-8 max-w-6xl sm:mt-10">
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 h-40 -translate-y-1/2 bg-[radial-gradient(circle_at_50%_50%,rgba(18,58,90,0.08),transparent_66%)] sm:h-56" aria-hidden="true" />
-          <WorldMap dots={distributionRoutes} lineColor="#207B68" className="relative z-10 min-h-[220px] sm:min-h-0" />
+          <WorldMap dots={distributionRoutes} lineColor="#D4AF37" theme="light" />
         </div>
 
         <div className="mx-auto mt-8 flex max-w-5xl flex-wrap justify-center gap-2 sm:gap-3">
           {markets.map((market) => (
-            <span key={market} className="inline-flex items-center gap-2 rounded-full border border-[#123A5A]/10 bg-white px-3 py-2 text-xs font-semibold text-[#123A5A] shadow-sm sm:px-4 sm:text-sm">
+            <span key={market} className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-4 py-2 text-xs font-bold text-[#B8860B] shadow-sm">
               <span>{market}</span>
             </span>
           ))}
@@ -57,10 +54,10 @@ export function GlobalNetwork() {
             const Icon = point.icon;
 
             return (
-              <div key={point.label} className="rounded-md border border-[#123A5A]/10 bg-white p-5 text-left shadow-[0_18px_40px_rgba(16,32,51,0.06)]">
-                <Icon className="mb-4 h-6 w-6 text-[#207B68]" />
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#207B68]">{point.label}</p>
-                <p className="mt-2 text-lg font-semibold text-[#0B2239]">{point.value}</p>
+              <div key={point.label} className="rounded-3xl border border-slate-200 bg-white p-6 text-left shadow-sm hover:border-[#D4AF37] transition">
+                <Icon className="mb-4 h-6 w-6 text-[#B8860B]" />
+                <p className="text-xs font-bold uppercase tracking-wider text-[#B8860B]">{point.label}</p>
+                <p className="mt-2 text-lg font-extrabold text-[#071321]">{point.value}</p>
               </div>
             );
           })}
@@ -68,7 +65,7 @@ export function GlobalNetwork() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           {capabilities.map((item) => (
-            <span key={item} className="rounded-full border border-[#123A5A]/10 bg-[#F7FAF9] px-4 py-2 text-sm font-medium text-[#123A5A]">
+            <span key={item} className="rounded-full border border-amber-200 bg-gold-shimmer px-4 py-2 text-sm font-semibold text-slate-800">
               {item}
             </span>
           ))}
@@ -77,16 +74,10 @@ export function GlobalNetwork() {
         <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center sm:gap-4">
           <Link
             href="/contact"
-            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-[#123A5A] px-6 py-4 text-base font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#0B2239] sm:px-8"
+            className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-gold-gradient px-8 py-4 text-base font-extrabold uppercase tracking-wider text-slate-950 transition hover:opacity-95 shadow-lg"
           >
-            Request Distribution Support
+            <span>Request Distribution Support</span>
             <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
-          </Link>
-          <Link
-            href="/partners"
-            className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-[#123A5A]/16 bg-white px-6 py-4 text-base font-semibold text-[#123A5A] transition duration-300 hover:-translate-y-0.5 hover:border-[#207B68]/35 hover:text-[#207B68] sm:px-8"
-          >
-            Partner With Us
           </Link>
         </div>
       </div>

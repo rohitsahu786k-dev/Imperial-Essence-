@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function AnimatedCTA() {
   const [titleNumber, setTitleNumber] = useState(0);
-  const titles = useMemo(() => ["luxury wholesale", "travel retail", "FMCG supply", "Africa expansion", "global sourcing"], []);
+  const titles = useMemo(() => ["luxury perfumery", "niche fragrance", "duty-free retail", "European sourcing", "global distribution"], []);
 
   useEffect(() => {
     const timeoutId = window.setTimeout(() => {
@@ -16,18 +16,17 @@ export function AnimatedCTA() {
 
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(18,58,90,0.08),transparent_42%)]" aria-hidden="true" />
       <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-        <div className="inline-flex rounded-full border border-[#123A5A]/10 bg-white px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#207B68]">
-          Partnership inquiry
+        <div className="inline-flex rounded-full border border-amber-300/80 bg-amber-50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
+          Partnership Inquiry
         </div>
-        <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-semibold tracking-normal text-[#0B2239] sm:text-6xl">
+        <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-extrabold tracking-tight text-[#071321] sm:text-6xl">
           Build your next
-          <span className="relative mt-2 flex min-h-[1.15em] w-full justify-center overflow-hidden pb-2 text-[#207B68]">
+          <span className="relative mt-2 flex min-h-[1.15em] w-full justify-center overflow-hidden pb-2 text-[#B8860B]">
             {titles.map((title, index) => (
               <span
                 key={title}
-                className="animated-title-word absolute font-semibold"
+                className="animated-title-word absolute font-extrabold text-gold-gradient"
                 data-active={titleNumber === index}
                 data-past={titleNumber > index}
               >
@@ -37,12 +36,16 @@ export function AnimatedCTA() {
           </span>
           opportunity
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#102033]/70">
-          Speak with Worldwide Supply 28 about categories, market availability, long-term distribution planning, and strategic wholesale partnerships.
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-600">
+          Speak with Imperial Essence Trading LLC about luxury categories, European T1 & T2 sourcing, long-term distribution planning, and strategic B2B partnerships.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <Button href="/contact">Request Wholesale Inquiry</Button>
-          <Button href="/services" variant="secondary">Explore Services</Button>
+          <Button href="/contact" className="bg-gold-gradient text-slate-950 font-extrabold shadow-md">
+            Request Wholesale Inquiry
+          </Button>
+          <Button href="/services" variant="secondary" className="border-amber-300/80 text-[#B8860B]">
+            Explore Services
+          </Button>
         </div>
       </div>
     </section>

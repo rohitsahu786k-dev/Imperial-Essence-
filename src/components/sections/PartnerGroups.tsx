@@ -7,11 +7,11 @@ export function PartnerGroups() {
         <SectionHeader
           eyebrow="Partner Network"
           title="Connected with leading international groups"
-          copy="Our network includes recognized international luxury, beauty, fragrance, and FMCG groups, enabling us to support premium sourcing and distribution opportunities across markets."
+          copy="Our network includes recognized international luxury, beauty, fragrance, and travel retail groups, enabling us to support premium sourcing and distribution opportunities across global markets."
           className="mx-auto"
         />
-        <p className="mt-8 rounded-md border border-[#123A5A]/10 bg-white p-6 text-base leading-8 text-[#102033]/76">
-          In text-only context, relevant groups may include LVMH, Puig, L&apos;Oreal Luxe, Coty, and other leading international luxury, beauty, fragrance, and FMCG groups.
+        <p className="mt-8 rounded-3xl border border-amber-200 bg-gold-shimmer p-6 text-base leading-8 text-slate-700 shadow-sm">
+          Relevant groups include LVMH, Puig, L&apos;Oréal Luxe, Coty, Procter & Gamble, and leading niche fragrance houses with direct European T1 & T2 sourcing.
         </p>
       </div>
     </section>

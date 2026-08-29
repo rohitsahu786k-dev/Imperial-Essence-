@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 
 export function CategoryGrid({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
@@ -15,10 +15,11 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
         {/* Section Header */}
         <div className={`flex flex-col md:flex-row md:items-end justify-between ${compact ? "mb-10" : "mb-16"} gap-6`}>
           <div className="max-w-2xl space-y-4">
-            <span className="inline-block rounded-full bg-[#00A884]/10 border border-[#00A884]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
-              {t("Product Sectors", "Sectores de Productos")}
+            <span className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200/80 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
+              <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
+              <span>{t("Product Sectors", "Sectores de Productos")}</span>
             </span>
-            <h2 className="text-3xl font-semibold sm:text-5xl tracking-tight text-[#071321]">
+            <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
               {t("Luxury Sourcing Categories", "Categorías de Abastecimiento de Lujo")}
             </h2>
             <p className="text-base text-slate-600">
@@ -32,7 +33,7 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
           <div className="shrink-0">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-[#00A884] transition shadow-md"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 hover:opacity-95 transition shadow-md"
             >
               <span>{t("Inquire All Categories", "Consultar Todas Las Categorías")}</span>
               <ArrowUpRight className="h-4 w-4" />
@@ -46,9 +47,9 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
             <Link
               key={cat.id}
               href="/contact"
-              className="group relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#00A884] flex flex-col justify-between h-[380px]"
+              className="group relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#D4AF37] flex flex-col justify-between h-[380px]"
             >
-              {/* Full Bright Background Image - No Heavy Dark Shadows */}
+              {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image
                   src={cat.image}
@@ -57,26 +58,25 @@ export function CategoryGrid({ compact = false }: { compact?: boolean }) {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105 filter saturate-105"
                 />
-                {/* Subtle gradient ONLY at the bottom behind text for legibility */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071321]/90 via-[#071321]/30 via-40% to-transparent" />
               </div>
 
               {/* Badge Top Header */}
               <div className="relative z-10 p-5 flex justify-between items-start">
-                <span className="rounded-full bg-white/95 backdrop-blur-md px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#071321] shadow-sm border border-slate-200">
+                <span className="rounded-full bg-white/95 backdrop-blur-md px-3.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-[#071321] shadow-sm border border-slate-200">
                   {t(cat.badge.en, cat.badge.es)}
                 </span>
-                <div className="h-9 w-9 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#071321] shadow-sm transition-all group-hover:bg-[#00A884] group-hover:text-white">
+                <div className="h-9 w-9 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#071321] shadow-sm transition-all group-hover:bg-gold-gradient group-hover:text-slate-950">
                   <ArrowUpRight className="h-4 w-4" />
                 </div>
               </div>
 
-              {/* Minimal Clean Content Bottom */}
+              {/* Clean Content Bottom */}
               <div className="relative z-10 p-6 space-y-2 text-white">
-                <h3 className="text-xl font-semibold text-white group-hover:text-[#00A884] transition leading-tight">
+                <h3 className="text-xl font-extrabold text-white group-hover:text-[#D4AF37] transition leading-tight">
                   {t(cat.name.en, cat.name.es)}
                 </h3>
-                <div className="flex items-center gap-1 text-xs font-bold text-[#00A884] uppercase tracking-wider group-hover:underline pt-1">
+                <div className="flex items-center gap-1 text-xs font-bold text-[#D4AF37] uppercase tracking-wider group-hover:underline pt-1">
                   <span>{t("Request Supply", "Solicitar Suministro")}</span>
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </div>

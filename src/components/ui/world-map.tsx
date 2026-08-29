@@ -24,7 +24,7 @@ type WorldMapProps = {
 const map = new DottedMap({ height: 100, grid: "diagonal" });
 const svgMap = map.getSVG({
   radius: 0.22,
-  color: "#123A5A40",
+  color: "#D4AF3740",
   shape: "circle",
   backgroundColor: "transparent",
 });
@@ -42,9 +42,9 @@ function createCurvedPath(start: { x: number; y: number }, end: { x: number; y: 
   return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
 }
 
-export function WorldMap({ dots = [], lineColor = "#207B68", className = "" }: WorldMapProps) {
+export function WorldMap({ dots = [], lineColor = "#D4AF37", className = "" }: WorldMapProps) {
   return (
-    <div className={`relative aspect-[2/1] w-full overflow-hidden rounded-lg bg-white ${className}`}>
+    <div className={`relative aspect-[2/1] w-full overflow-hidden rounded-3xl bg-white border border-amber-200 ${className}`}>
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="pointer-events-none h-full w-full select-none opacity-70 [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)]"
@@ -73,7 +73,7 @@ export function WorldMap({ dots = [], lineColor = "#207B68", className = "" }: W
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
                 stroke="url(#distribution-path-gradient)"
-                strokeWidth="1.4"
+                strokeWidth="2"
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 viewport={{ once: true, margin: "-80px" }}
@@ -84,10 +84,10 @@ export function WorldMap({ dots = [], lineColor = "#207B68", className = "" }: W
 
                 return (
                   <g key={`${point.label}-${projected.x}-${projected.y}`}>
-                    <circle cx={projected.x} cy={projected.y} r="2.2" fill={lineColor} />
-                    <circle cx={projected.x} cy={projected.y} r="2.2" fill={lineColor} opacity="0.45">
-                      <animate attributeName="r" from="2.2" to="9" dur="1.8s" begin={`${index * 0.18}s`} repeatCount="indefinite" />
-                      <animate attributeName="opacity" from="0.45" to="0" dur="1.8s" begin={`${index * 0.18}s`} repeatCount="indefinite" />
+                    <circle cx={projected.x} cy={projected.y} r="3" fill={lineColor} />
+                    <circle cx={projected.x} cy={projected.y} r="3" fill={lineColor} opacity="0.5">
+                      <animate attributeName="r" from="3" to="12" dur="1.8s" begin={`${index * 0.18}s`} repeatCount="indefinite" />
+                      <animate attributeName="opacity" from="0.5" to="0" dur="1.8s" begin={`${index * 0.18}s`} repeatCount="indefinite" />
                     </circle>
                   </g>
                 );

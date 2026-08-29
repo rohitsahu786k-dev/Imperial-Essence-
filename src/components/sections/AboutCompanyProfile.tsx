@@ -7,34 +7,34 @@ import { Building2, FileText, Globe2, Handshake, ShieldCheck, Truck } from "luci
 const highlights = [
   {
     icon: Globe2,
-    title: { en: "Global Reach", es: "Alcance Global" },
+    title: { en: "Global Market Expansion", es: "Expansión Comercial Global" },
     desc: {
-      en: "Serving wholesale, luxury retail, and travel retail clients across Europe, Asia, the GCC, Africa, and North America.",
-      es: "Atendiendo a clientes mayoristas, retail de lujo y travel retail en Europa, Asia, GCC, Africa y Norteamerica."
+      en: "Serving wholesale, luxury retail, and duty-free travel retail clients across Middle East, Europe, Africa, and North America.",
+      es: "Atendiendo a clientes mayoristas, retail de lujo y duty free en Oriente Medio, Europa, África y Norteamérica."
     }
   },
   {
     icon: Truck,
-    title: { en: "Distribution Network", es: "Red de Distribucion" },
+    title: { en: "Logistics Management", es: "Gestión Logística Global" },
     desc: {
-      en: "An established international network of freight forwarders supports reliable global delivery from origin to destination.",
-      es: "Una red internacional establecida de transitarios apoya entregas globales fiables desde origen hasta destino."
+      en: "Multi-modal road, sea, and air freight network coordinating international logistics efficiently across global destinations.",
+      es: "Red de fletes por carretera, mar y aire que coordina la logística internacional con total eficiencia."
     }
   },
   {
     icon: Handshake,
-    title: { en: "Premium Relationships", es: "Relaciones Premium" },
+    title: { en: "Luxury Group Sourcing", es: "Abastecimiento de Grupos de Lujo" },
     desc: {
-      en: "Strong relationships with major groups including LVMH, PUIG, L'Oreal Luxe, COTY, P&G, and selected niche perfume houses.",
-      es: "Relaciones solidas con grandes grupos como LVMH, PUIG, L'Oreal Luxe, COTY, P&G y casas de perfume nicho seleccionadas."
+      en: "Established access to merchandise from major groups including LVMH, PUIG, L'Oréal Luxe, COTY, and selected niche perfume houses.",
+      es: "Acceso consolidado a productos de grandes grupos como LVMH, PUIG, L'Oréal Luxe, COTY y firmas de nicho."
     }
   },
   {
     icon: ShieldCheck,
-    title: { en: "Registered in Spain", es: "Registrada en Espana" },
+    title: { en: "Registered in Dubai, UAE", es: "Entidad Registrada en Dubái, EAU" },
     desc: {
-      en: `Spanish registered company with Tax ID (CIF): ${siteData.company.cif}. Registration certificate available upon request.`,
-      es: `Empresa registrada en Espana con Tax ID (CIF): ${siteData.company.cif}. Certificado de registro disponible bajo solicitud.`
+      en: `Dubai commercial entity operating out of Bay Square, Business Bay (${siteData.company.license}).`,
+      es: `Entidad comercial en Dubái operando desde Bay Square, Business Bay (${siteData.company.license}).`
     }
   }
 ];
@@ -47,27 +47,27 @@ export function AboutCompanyProfile() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#00A884]/20 bg-[#00A884]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#00A884]">
-              <Building2 className="h-3.5 w-3.5" />
-              <span>{t("Business Information", "Informacion de Empresa")}</span>
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
+              <Building2 className="h-3.5 w-3.5 text-[#D4AF37]" />
+              <span>{t("Business Overview", "Información de la Empresa")}</span>
             </div>
             <div className="space-y-4">
-              <h1 className="text-3xl font-semibold tracking-tight text-[#071321] sm:text-5xl">
-                {t("About Worldwide Supply 28 SL", "Sobre Worldwide Supply 28 SL")}
+              <h1 className="text-3xl font-extrabold tracking-tight text-[#071321] sm:text-5xl">
+                {t("About Imperial Essence Trading LLC", "Sobre Imperial Essence Trading LLC")}
               </h1>
               <p className="text-base leading-8 text-slate-600 sm:text-lg">
                 {t(siteData.about.overview.en, siteData.about.overview.es)}
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <FileText className="mb-4 h-6 w-6 text-[#00A884]" />
-              <h2 className="text-lg font-semibold text-[#071321]">
+            <div className="rounded-3xl border border-amber-200/80 bg-gold-shimmer p-6 shadow-sm">
+              <FileText className="mb-4 h-6 w-6 text-[#B8860B]" />
+              <h2 className="text-lg font-bold text-[#071321]">
                 {t("Company Profile / Brochure", "Perfil de Empresa / Brochure")}
               </h2>
               <p className="mt-2 text-sm leading-7 text-slate-600">
                 {t(
-                  "A downloadable company profile PDF can be prepared separately once final branding assets are ready.",
-                  "Se puede preparar un perfil de empresa descargable en PDF una vez que los activos finales de marca esten listos."
+                  "A downloadable company brochure PDF can be provided upon request for official B2B evaluation.",
+                  "Se puede proporcionar un folleto corporativo en PDF bajo solicitud para evaluación B2B."
                 )}
               </p>
             </div>
@@ -77,14 +77,14 @@ export function AboutCompanyProfile() {
             {highlights.map((item) => {
               const Icon = item.icon;
               return (
-                <div key={item.title.en} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#00A884] hover:shadow-md">
-                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#00A884]/10 text-[#00A884]">
+                <div key={item.title.en} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#D4AF37] hover:shadow-md space-y-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-50 text-[#B8860B]">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-lg font-semibold text-[#071321]">
+                  <h3 className="text-lg font-bold text-[#071321]">
                     {t(item.title.en, item.title.es)}
                   </h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                  <p className="text-sm leading-7 text-slate-600">
                     {t(item.desc.en, item.desc.es)}
                   </p>
                 </div>

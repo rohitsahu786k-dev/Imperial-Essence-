@@ -190,7 +190,7 @@ export function Header() {
                   }}
                   className={cn(
                     "flex items-center justify-center gap-2 p-2 rounded-xl border border-slate-200 text-xs bg-slate-50 font-semibold",
-                    language === item.code && "border-[#00A884] text-[#00A884]"
+                    language === item.code && "border-[#D4AF37] text-[#B8860B] bg-amber-50"
                   )}
                 >
                   <span>{item.label}</span>
@@ -203,7 +203,7 @@ export function Header() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="block w-full rounded-full bg-[#00A884] py-3 text-center text-xs font-bold uppercase tracking-wider text-white"
+              className="block w-full rounded-full bg-gold-gradient py-3 text-center text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-md"
             >
               {t("Inquire Now", "Consulta Ahora")}
             </Link>

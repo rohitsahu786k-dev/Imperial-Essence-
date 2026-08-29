@@ -16,7 +16,7 @@ interface MapProps {
 
 export function WorldMap({
   dots = [],
-  lineColor = "#00A884",
+  lineColor = "#D4AF37",
   theme = "light"
 }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -53,19 +53,19 @@ export function WorldMap({
   };
 
   return (
-    <div className={`w-full h-full min-h-[380px] lg:min-h-[460px] rounded-3xl relative overflow-hidden font-sans border ${isDark ? 'border-white/15 bg-[#071321]' : 'border-slate-200 bg-white'} shadow-sm flex items-center justify-center`}>
+    <div className={`w-full h-full min-h-[380px] lg:min-h-[460px] rounded-3xl relative overflow-hidden font-sans border ${isDark ? 'border-white/15 bg-[#071321]' : 'border-amber-200/80 bg-white'} shadow-sm flex items-center justify-center`}>
       {/* Map SVG background */}
       {svgMap ? (
         <Image
           src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
           className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none object-cover"
-          alt="Worldwide Supply 28 SL Global Trade Routes"
+          alt="Imperial Essence Trading LLC Global Trade Routes"
           height={400}
           width={800}
           draggable={false}
         />
       ) : (
-        <div className="w-full h-full bg-slate-50" />
+        <div className="w-full h-full bg-amber-50/50" />
       )}
 
       <svg
@@ -74,10 +74,10 @@ export function WorldMap({
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
       >
         <defs>
-          <linearGradient id="trade-path-gradient-light" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#00A884" stopOpacity="0.2" />
+          <linearGradient id="trade-path-gradient-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.2" />
             <stop offset="50%" stopColor={lineColor} stopOpacity="1" />
-            <stop offset="100%" stopColor="#00A884" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#D4AF37" stopOpacity="0.2" />
           </linearGradient>
         </defs>
 
@@ -90,8 +90,8 @@ export function WorldMap({
               <motion.path
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
-                stroke="url(#trade-path-gradient-light)"
-                strokeWidth="2"
+                stroke="url(#trade-path-gradient-gold)"
+                strokeWidth="2.5"
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
                 transition={{
@@ -113,20 +113,20 @@ export function WorldMap({
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           return (
             <g key={`points-group-${i}`}>
-              {/* Valencia / Origin Point */}
+              {/* Dubai Origin Point */}
               {i === 0 && (
-                <g key="origin-valencia">
+                <g key="origin-dubai">
                   <circle
                     cx={startPoint.x}
                     cy={startPoint.y}
                     r="5"
-                    fill="#00A884"
+                    fill="#D4AF37"
                   />
                   <circle
                     cx={startPoint.x}
                     cy={startPoint.y}
                     r="5"
-                    fill="#00A884"
+                    fill="#D4AF37"
                     opacity="0.6"
                   >
                     <animate
@@ -147,12 +147,12 @@ export function WorldMap({
                   <text
                     x={startPoint.x}
                     y={startPoint.y - 12}
-                    fill="#00A884"
-                    fontSize="10"
+                    fill="#B8860B"
+                    fontSize="11"
                     fontWeight="bold"
                     textAnchor="middle"
                   >
-                    Valencia (HQ)
+                    Dubai (HQ)
                   </text>
                 </g>
               )}
@@ -169,7 +169,7 @@ export function WorldMap({
                   cx={endPoint.x}
                   cy={endPoint.y}
                   r="4"
-                  fill="#00A884"
+                  fill="#D4AF37"
                   opacity="0.5"
                 >
                   <animate

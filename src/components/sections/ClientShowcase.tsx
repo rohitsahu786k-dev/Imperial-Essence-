@@ -6,14 +6,10 @@ import { cn } from "@/lib/utils";
 type ClientGroup = (typeof clientGroups)[number];
 
 const badgeColors = [
-  "bg-[#EAF2FF] text-[#123A5A] border-[#123A5A]/10",
-  "bg-[#EAF7F2] text-[#207B68] border-[#207B68]/12",
-  "bg-[#FFF6DC] text-[#8A6A12] border-[#C6A128]/18",
-  "bg-[#F1ECFF] text-[#59409A] border-[#59409A]/12",
-  "bg-[#FFEDEF] text-[#9A3947] border-[#9A3947]/12",
-  "bg-[#EAF8FF] text-[#116A8A] border-[#116A8A]/12",
-  "bg-[#F3F6E8] text-[#5B6F1B] border-[#5B6F1B]/12",
-  "bg-[#F7EEF7] text-[#7C3B74] border-[#7C3B74]/12",
+  "bg-amber-50 text-[#B8860B] border-amber-300/80",
+  "bg-gold-shimmer text-[#071321] border-amber-400/60",
+  "bg-amber-100/60 text-[#8A6A12] border-amber-300",
+  "bg-slate-900 text-amber-300 border-amber-400/40",
 ];
 
 const shortNames: Record<string, string> = {
@@ -64,14 +60,14 @@ function ClientColumn({
           <div key={loop} className="flex flex-col gap-6">
             {clients.map((client, index) => (
               <article
-                className="w-full rounded-3xl border border-[#123A5A]/10 bg-white p-7 text-left shadow-lg shadow-[#123A5A]/5"
+                className="w-full rounded-3xl border border-slate-200 bg-white p-7 text-left shadow-sm hover:border-[#D4AF37] transition"
                 key={`${client.name}-${loop}`}
               >
-                <p className="text-sm leading-7 text-[#102033]/72">{client.text}</p>
+                <p className="text-sm leading-7 text-slate-600">{client.text}</p>
                 <div className="mt-5 flex items-center gap-3">
                   <div
                     className={cn(
-                      "flex size-12 shrink-0 items-center justify-center rounded-full border text-sm font-semibold tracking-normal",
+                      "flex size-12 shrink-0 items-center justify-center rounded-full border text-sm font-bold tracking-normal",
                       badgeColors[(offset + index) % badgeColors.length],
                     )}
                     aria-label={`${client.name} short name`}
@@ -79,8 +75,8 @@ function ClientColumn({
                     {getShortName(client.name)}
                   </div>
                   <div className="flex min-w-0 flex-col">
-                    <div className="truncate font-semibold leading-5 tracking-normal text-[#123A5A]">{client.name}</div>
-                    <div className="truncate text-sm leading-5 tracking-normal text-[#102033]/58">{client.role}</div>
+                    <div className="truncate font-extrabold leading-5 tracking-normal text-[#071321]">{client.name}</div>
+                    <div className="truncate text-sm leading-5 tracking-normal text-slate-500">{client.role}</div>
                   </div>
                 </div>
               </article>
@@ -100,20 +96,19 @@ export function ClientShowcase() {
 
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-24">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(18,58,90,0.045)_1px,transparent_1px),linear-gradient(to_bottom,rgba(18,58,90,0.045)_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_70%_45%_at_50%_20%,#000_55%,transparent_100%)]" />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-[620px] flex-col items-center justify-center text-center">
           <div className="flex justify-center">
-            <div className="rounded-lg border border-[#123A5A]/10 bg-white px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-[#207B68]">
-              International Groups
+            <div className="rounded-full border border-amber-300/80 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
+              International Luxury Groups
             </div>
           </div>
 
-          <h2 className="mt-5 text-3xl font-bold tracking-normal text-[#0B2239] sm:text-4xl lg:text-5xl">
-            Recognized market names across luxury, beauty, FMCG and travel retail
+          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-[#071321] sm:text-4xl lg:text-5xl">
+            Recognized global leaders across luxury perfumery, cosmetics & travel retail
           </h2>
-          <p className="mt-5 text-base leading-8 text-[#102033]/70">
-            These real international groups and operators represent the kind of premium wholesale, sourcing, travel retail, and FMCG ecosystems Worldwide Supply 28 is built to support.
+          <p className="mt-5 text-base leading-8 text-slate-600">
+            These international brand ecosystems represent the high standards of luxury perfumery, cosmetics, and duty-free travel retail that Imperial Essence Trading LLC supports.
           </p>
         </div>
 
