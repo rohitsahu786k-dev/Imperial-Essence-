@@ -11,10 +11,11 @@ export function HeroSection() {
 
   return (
     <div className="relative w-full bg-white pt-20">
-      {/* Main Hero Banner with Dubai Skyline Background */}
-      <section className="relative w-full min-h-[620px] overflow-hidden py-12 sm:py-20 lg:min-h-[720px] lg:flex lg:items-center">
-        {/* Softly Blurred Dubai Skyline Background */}
-        <div className="absolute inset-0 z-0">
+      {/* Main Hero Banner Container */}
+      <section className="relative w-full bg-slate-50 py-6 sm:py-10 lg:bg-transparent lg:py-20 lg:min-h-[720px] lg:flex lg:items-center overflow-hidden">
+        
+        {/* Desktop Full-Bleed Background Image (hidden on mobile, visible on lg) */}
+        <div className="hidden lg:block absolute inset-0 z-0">
           <Image
             src="/dubai-skyline-hero.jpg"
             alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
@@ -22,14 +23,34 @@ export function HeroSection() {
             priority
             className="object-cover object-center filter saturate-110 brightness-95"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-slate-900/40 to-transparent sm:from-white/60 sm:via-white/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-white/50 to-white/70" />
         </div>
 
-        {/* Hero Content Layer - Merged 50% Width White Shadow Box */}
+        {/* Content Container */}
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
-          <div className="w-full lg:w-1/2 rounded-3xl bg-white/95 p-6 sm:p-10 lg:p-12 shadow-2xl border border-amber-200/80 backdrop-blur-md space-y-6">
-            {/* Location & Heritage Tag */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-gold-shimmer px-4 py-1.5 text-xs font-extrabold text-[#B8860B] shadow-xs">
+          
+          {/* Mobile Image Banner (Visible on mobile, hidden on lg) */}
+          <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden shadow-lg border border-amber-200/80 mb-6 lg:hidden">
+            <Image
+              src="/dubai-skyline-hero.jpg"
+              alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
+              fill
+              priority
+              className="object-cover object-center filter saturate-110 brightness-95"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 text-white">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-[#B8860B]">
+                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
+                <span>Dubai, UAE – Global HQ</span>
+              </span>
+            </div>
+          </div>
+
+          {/* 50% Width White Shadow Text Card */}
+          <div className="w-full lg:w-1/2 rounded-3xl bg-white p-6 sm:p-10 lg:p-12 shadow-xl lg:shadow-2xl border border-amber-200/80 space-y-6">
+            {/* Location & Heritage Tag (Desktop View) */}
+            <div className="hidden lg:inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-gold-shimmer px-4 py-1.5 text-xs font-extrabold text-[#B8860B] shadow-xs">
               <MapPin className="h-4 w-4 shrink-0 text-[#D4AF37]" />
               <span>{t(siteData.company.location.badge.en, siteData.company.location.badge.es)}</span>
             </div>
@@ -45,10 +66,10 @@ export function HeroSection() {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <Link
                 href="/categories"
-                className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-xl transition hover:scale-105 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-xl transition hover:scale-105 active:scale-95"
               >
                 <span>{t("Explore Categories", "Explorar Categorías")}</span>
                 <ArrowRight className="h-4 w-4" />
@@ -56,7 +77,7 @@ export function HeroSection() {
 
               <Link
                 href="/our-sourcing"
-                className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-amber-50 hover:border-[#D4AF37] hover:text-[#B8860B]"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-amber-300 bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-amber-50 hover:border-[#D4AF37] hover:text-[#B8860B]"
               >
                 <Sparkles className="h-4 w-4 text-[#D4AF37]" />
                 <span>{t("Our Sourcing (T1 & T2)", "Nuestro Abastecimiento")}</span>
