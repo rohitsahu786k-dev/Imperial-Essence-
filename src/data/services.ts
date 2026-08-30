@@ -2,7 +2,7 @@ export const services = [
   {
     title: "Global Wholesale & Distribution",
     summary:
-      "Supplying luxury perfumery, cosmetics, skincare, and niche fragrances to retail groups and commercial partners across the Middle East, Europe, and the United States.",
+      "Supplying luxury perfumery, cosmetics, skincare, and niche fragrances to retail groups and commercial partners across the Middle East, Europe, the United States, South America, Australia, and Africa.",
   },
   {
     title: "Logistics & Transport Management",
@@ -27,6 +27,6 @@ export const services = [
   {
     title: "Partnership Opportunities for Brands",
     summary:
-      "Established, reliable market access for brand owners seeking distribution into the Middle East, Europe, and the United States across wholesale, official distribution, and duty free.",
+      "Established, reliable market access for brand owners seeking distribution into the Middle East, Europe, the United States, South America, Australia, and Africa across wholesale, official distribution, and duty free.",
   },
 ];

@@ -9,13 +9,15 @@ const distributionRoutes = [
   { start: dubai, end: { lat: 40.7128, lng: -74.0060, label: "United States" } },
   { start: dubai, end: { lat: -1.2921, lng: 36.8219, label: "Africa" } },
   { start: dubai, end: { lat: 1.3521, lng: 103.8198, label: "Asia" } },
+  { start: dubai, end: { lat: -23.5505, lng: -46.6333, label: "South America" } },
+  { start: dubai, end: { lat: -33.8688, lng: 151.2093, label: "Australia" } },
 ];
 
-const markets = ["Dubai HQ", "Europe", "Middle East", "North America", "Africa", "Asia"];
+const markets = ["Dubai HQ", "Europe", "Middle East", "North America", "Africa", "Asia", "South America", "Australia"];
 
 const distributionPoints = [
   { label: "Base", value: "Dubai Bay Square, UAE", icon: MapPin },
-  { label: "Reach", value: "Middle East, Europe, USA & Africa", icon: Ship },
+  { label: "Reach", value: "Middle East, Europe, USA, Africa, South America & Australia", icon: Ship },
   { label: "Sourcing", value: "Direct European T1 & T2", icon: UsersRound },
 ];
 

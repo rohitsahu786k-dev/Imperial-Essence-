@@ -9,7 +9,7 @@ const highlights = [
     icon: Globe2,
     title: { en: "Global Market Expansion", es: "Expansión Comercial Global" },
     desc: {
-      en: "Serving wholesale, luxury retail, and duty-free travel retail clients across Middle East, Europe, Africa, and North America.",
+      en: "Serving wholesale, luxury retail, and duty-free travel retail clients across Middle East, Europe, Africa, North America, South America, and Australia.",
       es: "Atendiendo a clientes mayoristas, retail de lujo y duty free en Oriente Medio, Europa, África y Norteamérica."
     }
   },

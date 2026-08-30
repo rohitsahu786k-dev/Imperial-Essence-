@@ -5,7 +5,7 @@
 - [x] Executive Founders: Siddharth Thakker & Sakina Idmouhine
 - [x] Visual Identity: Luxury White & Metallic Gold gradient (`#D4AF37`, `#B8860B`)
 - [x] Direct European Sourcing Page: `/our-sourcing`
-- [x] WhatsApp Widget: Icon-only, 24/7 support (`+971 56 393 0666`)
+- [x] WhatsApp Widget: Icon-only, 24/7 support (`+971 50 501 0056`)
 - [x] SEO Optimization: Title tags, openGraph imagery, JSON-LD schema, canonical URLs
 - [x] Zero Em-Dashes (`—`)
 - [x] Zero references to old company name

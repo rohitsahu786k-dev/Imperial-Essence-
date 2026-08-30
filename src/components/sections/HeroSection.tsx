@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="hidden lg:block absolute inset-0 z-0">
           <Image
             src="/dubai-skyline-hero.jpg"
-            alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
+            alt="Luxury perfume and fragrance product for Imperial Essence Trading LLC"
             fill
             priority
             className="object-cover object-center filter saturate-110 brightness-95"
@@ -33,7 +33,7 @@ export function HeroSection() {
           <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden shadow-lg border border-amber-200/80 mb-6 lg:hidden">
             <Image
               src="/dubai-skyline-hero.jpg"
-              alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
+              alt="Luxury perfume and fragrance product for Imperial Essence Trading LLC"
               fill
               priority
               className="object-cover object-center filter saturate-110 brightness-95"

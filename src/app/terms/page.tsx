@@ -26,7 +26,7 @@ export default function TermsPage() {
           </p>
           <h2 className="text-xl font-bold text-[#071321]">3. Trademark & Group Disclaimer</h2>
           <p>
-            References to major luxury groups (including LVMH, PUIG, L'Oréal Luxe, COTY) and niche perfume houses represent commercial sourcing capabilities and do not imply official brand representation unless explicitly authorized.
+            References to major luxury groups (including LVMH, PUIG, L&apos;Oréal Luxe, COTY) and niche perfume houses represent commercial sourcing capabilities and do not imply official brand representation unless explicitly authorized.
           </p>
           <h2 className="text-xl font-bold text-[#071321]">4. Governing Law</h2>
           <p>

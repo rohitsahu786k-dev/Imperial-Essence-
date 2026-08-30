@@ -67,6 +67,14 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
     {
       start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
       end: { lat: 1.3521, lng: 103.8198, label: "Asia (Singapore)" }
+    },
+    {
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
+      end: { lat: -23.5505, lng: -46.6333, label: "South America (Sao Paulo)" }
+    },
+    {
+      start: { lat: 25.2048, lng: 55.2708, label: "Dubai (HQ)" },
+      end: { lat: -33.8688, lng: 151.2093, label: "Australia (Sydney)" }
     }
   ];
 
@@ -148,8 +156,8 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
               </h3>
               <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
                 {t(
-                  "Emanating from our Dubai headquarters in Bay Square and European supply network, connecting Middle East, Europe, United States, Africa, and Asia.",
-                  "Desde nuestra sede en Dubái Bay Square y red de suministro europea, conectando Oriente Medio, Europa, EE. UU., África y Asia."
+                  "Emanating from our Dubai headquarters in Bay Square and European supply network, connecting Middle East, Europe, United States, Africa, Asia, South America, and Australia.",
+                  "Desde nuestra sede en Dubái Bay Square y red de suministro europea, conectando Oriente Medio, Europa, EE. UU., África, Asia, Sudamérica y Australia."
                 )}
               </p>
 

@@ -202,7 +202,7 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
                     <input
                       type="tel"
                       required
-                      placeholder="+971 56 393 0666"
+                      placeholder="+971 50 501 0056"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-[#071321] focus:border-[#D4AF37] focus:bg-white focus:outline-none transition"

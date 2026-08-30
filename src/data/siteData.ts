@@ -41,8 +41,8 @@ export const siteData = {
     },
     contact: {
       phone: "+971 4 552 1257",
-      mobile: "+971 56 393 0666",
-      whatsapp: "+971 56 393 0666",
+      mobile: "+971 50 501 0056",
+      whatsapp: "+971 50 501 0056",
       whatsappText: "24/7 Available",
       email: "office@theimperialessence.com",
       website: "www.theimperialessence.com",
@@ -61,7 +61,7 @@ export const siteData = {
 
   about: {
     overview: {
-      en: "Imperial Essence Trading LLC is a Dubai-based wholesale and distribution company specializing in luxury perfumery, premium cosmetics, skincare, and niche fragrances, alongside fashion, textiles, travel sets, accessories, and jewelry. We work with leading international retail groups and long-standing commercial partners across wholesale and duty free channels in the Middle East, Europe, Africa, and the United States.",
+      en: "Imperial Essence Trading LLC is a Dubai-based wholesale and distribution company specializing in luxury perfumery, premium cosmetics, skincare, and niche fragrances, alongside fashion, textiles, travel sets, accessories, and jewelry. We work with leading international retail groups and long-standing commercial partners across wholesale and duty free channels in the Middle East, Europe, Africa, the United States, South America, and Australia.",
       es: "Imperial Essence Trading LLC es una empresa de distribución y venta al por mayor con sede en Dubái, especializada en perfumería de lujo, cosmética de primera calidad, cuidado de la piel y fragancias de nicho, así como moda, textiles, juegos de viaje, accesorios y joyería. Trabajamos con grupos minoristas internacionales líderes y socios comerciales en Oriente Medio, Europa, África y EE. UU."
     },
     story: {
@@ -164,7 +164,7 @@ export const siteData = {
         en: "Prestige luxury perfumery collections from leading international fashion houses and beauty conglomerates.",
         es: "Colecciones de perfumería de lujo de las principales casas de moda y conglomerados de belleza."
       },
-      image: "/luxury-perfumes.jpg",
+      image: "/images/categories/perfumes.jpg",
       badge: { en: "Prestige Fragrances", es: "Fragancias Prestige" }
     },
     {
@@ -174,7 +174,7 @@ export const siteData = {
         en: "Exclusive artisanal perfume creations and rare olfactory formulations for luxury boutiques and connoisseurs.",
         es: "Creaciones de perfumes artesanales exclusivos y formulaciones olfativas raras para boutiques de lujo."
       },
-      image: "/luxury-perfumes.jpg",
+      image: "/images/categories/niche-perfumes.jpg",
       badge: { en: "Artisanal & Niche", es: "Artesanal y Nicho" }
     },
     {
@@ -184,7 +184,7 @@ export const siteData = {
         en: "High-performance color cosmetics, luxury beauty palettes, and prestige makeup collections.",
         es: "Cosmética de color de alto rendimiento, paletas de belleza de lujo y colecciones de maquillaje prestige."
       },
-      image: "/luxury-cosmetics.jpg",
+      image: "/images/categories/cosmetics.jpg",
       badge: { en: "Prestige Beauty", es: "Belleza Prestige" }
     },
     {
@@ -194,7 +194,7 @@ export const siteData = {
         en: "Advanced dermatological treatments, restorative serums, and ultra-premium skincare lines.",
         es: "Tratamientos dermatológicos avanzados, sueros restauradores y líneas de cuidado de la piel ultra-premium."
       },
-      image: "/luxury-cosmetics.jpg",
+      image: "/images/categories/skincare.jpg",
       badge: { en: "Skincare Science", es: "Ciencia de la Piel" }
     },
     {
@@ -204,7 +204,7 @@ export const siteData = {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama."
       },
-      image: "/luxury-accessories.jpg",
+      image: "/images/categories/fashion-textiles.jpg",
       badge: { en: "Designer Apparel", es: "Textiles de Diseño" }
     },
     {
@@ -214,7 +214,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo."
       },
-      image: "/luxury-perfumes.jpg",
+      image: "/images/categories/travel-sets.jpg",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
@@ -224,7 +224,7 @@ export const siteData = {
         en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories.",
         es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados."
       },
-      image: "/luxury-accessories.jpg",
+      image: "/images/categories/accessories.jpg",
       badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
     },
     {
@@ -234,7 +234,7 @@ export const siteData = {
         en: "Fine jewelry pieces, luxury watchmaking statements, and precious crafted accents.",
         es: "Piezas de joyería fina, alta relojería de lujo y detalles artesanales valiosos."
       },
-      image: "/luxury-accessories.jpg",
+      image: "/images/categories/jewelry.jpg",
       badge: { en: "Fine Craftsmanship", es: "Alta Artesanía" }
     }
   ],
@@ -244,11 +244,11 @@ export const siteData = {
       id: "global-wholesale-distribution",
       title: { en: "Global Wholesale & Distribution", es: "Venta al por Mayor y Distribución Global" },
       shortDesc: {
-        en: "Supplying luxury perfumery and beauty to commercial partners across Middle East, Europe, Africa, and USA.",
+        en: "Supplying luxury perfumery and beauty to commercial partners across Middle East, Europe, Africa, USA, South America, and Australia.",
         es: "Suministro de perfumería de lujo y belleza a socios comerciales en Oriente Medio, Europa, África y EE. UU."
       },
       fullDesc: {
-        en: "We supply luxury perfumery, cosmetics, and related lifestyle categories to retail groups and commercial partners across the Middle East, Europe, Africa, and the United States, through wholesale, official distribution, and duty free channels.",
+        en: "We supply luxury perfumery, cosmetics, and related lifestyle categories to retail groups and commercial partners across the Middle East, Europe, Africa, the United States, South America, and Australia, through wholesale, official distribution, and duty free channels.",
         es: "Suministramos perfumería y cosmética de lujo a grupos minoristas y socios en Oriente Medio, Europa, África y Estados Unidos a través de canales mayoristas y duty free."
       },
       iconName: "Globe"
@@ -301,7 +301,7 @@ export const siteData = {
       { name: { en: "Air Freight", es: "Carga Aérea" }, icon: "Plane", desc: { en: "Priority express air freight shipments", es: "Envíos expresos prioritarios por vía aérea" } },
       { name: { en: "Global Hub Network", es: "Red de Centros Globales" }, icon: "Network", desc: { en: "Dubai Bay Square HQ and European supply hubs", es: "Sede en Dubái Bay Square y centros de suministro en Europa" } }
     ],
-    targetMarkets: ["Middle East", "Europe", "United States", "Africa", "Asia"]
+    targetMarkets: ["Middle East", "Europe", "United States", "Africa", "Asia", "South America", "Australia"]
   },
 
   whyChooseUs: [

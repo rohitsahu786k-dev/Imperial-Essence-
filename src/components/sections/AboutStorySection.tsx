@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { Eye, MapPin, Sparkles, Target, Award, HeartHandshake } from "lucide-react";
+import { Eye, MapPin, Sparkles, Target, HeartHandshake } from "lucide-react";
 
 const founders = [
   {
