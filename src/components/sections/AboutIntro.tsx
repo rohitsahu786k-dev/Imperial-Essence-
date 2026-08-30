@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const aboutImages = [
   {
-    src: "/images/categories/perfumes.jpg",
-    alt: "Luxury fragrance product for international wholesale supply",
+    src: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=82",
+    alt: "Wholesale partners reviewing international luxury supply plans",
   },
   {
-    src: "/images/services/logistics-management.jpg",
-    alt: "Duty-free retail floor for international distribution",
+    src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=82",
+    alt: "Global logistics containers ready for international shipment",
   },
   {
-    src: "/images/categories/jewelry.jpg",
-    alt: "Fine jewelry category for luxury wholesale partners",
+    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=82",
+    alt: "Executive team discussing European T1 & T2 sourcing",
   },
 ];
 

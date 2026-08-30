@@ -6,43 +6,43 @@ import { services } from "@/data/services";
 
 const serviceVisuals = [
   {
-    image: "/images/services/sourcing-development.jpg",
+    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
     icon: Search,
   },
   {
-    image: "/images/categories/perfumes.jpg",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
     icon: Sparkles,
   },
   {
-    image: "/images/services/global-distribution.jpg",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
     icon: Ship,
   },
   {
-    image: "/images/categories/accessories.jpg",
+    image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80",
     icon: Package,
   },
   {
-    image: "/images/services/logistics-management.jpg",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     icon: Package,
   },
   {
-    image: "/images/categories/jewelry.jpg",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
     icon: Search,
   },
   {
-    image: "/images/logistics/air-freight.jpg",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80",
     icon: Ship,
   },
   {
-    image: "/images/categories/cosmetics.jpg",
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&q=80",
     icon: Package,
   },
   {
-    image: "/images/logistics/sea-freight.jpg",
+    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80",
     icon: Ship,
   },
   {
-    image: "/images/services/brand-entry.jpg",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
     icon: Sparkles,
   },
 ];

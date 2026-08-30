@@ -13,7 +13,7 @@ export function InternalPageHero({
     <section className="relative overflow-hidden bg-[#071321] px-4 pb-14 pt-32 text-center text-white sm:px-6 sm:pb-16 sm:pt-36 lg:px-8">
       <Image
         src="/dubai-skyline-hero.jpg"
-        alt="Luxury fragrance product for Imperial Essence Trading LLC"
+        alt="Imperial Essence Trading LLC Dubai HQ"
         fill
         priority
         sizes="100vw"
