@@ -6,43 +6,43 @@ import { services } from "@/data/services";
 
 const serviceVisuals = [
   {
-    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
     icon: Search,
   },
   {
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/04-black-gold-perfume-bottles-water-splash.webp",
     icon: Sparkles,
   },
   {
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp",
     icon: Ship,
   },
   {
-    image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/39-colorful-premium-spirits-bottle-lineup.webp",
     icon: Package,
   },
   {
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp",
     icon: Package,
   },
   {
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
     icon: Search,
   },
   {
-    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/27-modern-wine-spirits-retail-showroom.webp",
     icon: Ship,
   },
   {
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/49-luxury-wristwatch-collection-leather-wood.webp",
     icon: Package,
   },
   {
-    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/37-opulent-modern-jewelry-retail-hall.webp",
     icon: Ship,
   },
   {
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/brand-free-images/11-four-gradient-luxury-perfume-bottles.webp",
     icon: Sparkles,
   },
 ];

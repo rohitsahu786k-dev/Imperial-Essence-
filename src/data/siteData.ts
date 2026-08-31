@@ -164,7 +164,7 @@ export const siteData = {
         en: "Prestige luxury perfumery collections from leading international fashion houses and beauty conglomerates.",
         es: "Colecciones de perfumería de lujo de las principales casas de moda y conglomerados de belleza."
       },
-      image: "/images/categories/perfumes.jpg",
+      image: "/images/brand-free-images/04-black-gold-perfume-bottles-water-splash.webp",
       badge: { en: "Prestige Fragrances", es: "Fragancias Prestige" }
     },
     {
@@ -174,7 +174,7 @@ export const siteData = {
         en: "Exclusive artisanal perfume creations and rare olfactory formulations for luxury boutiques and connoisseurs.",
         es: "Creaciones de perfumes artesanales exclusivos y formulaciones olfativas raras para boutiques de lujo."
       },
-      image: "/images/categories/niche-perfumes.jpg",
+      image: "/images/brand-free-images/13-pink-perfume-white-iris-flowers.webp",
       badge: { en: "Artisanal & Niche", es: "Artesanal y Nicho" }
     },
     {
@@ -184,7 +184,7 @@ export const siteData = {
         en: "High-performance color cosmetics, luxury beauty palettes, and prestige makeup collections.",
         es: "Cosmética de color de alto rendimiento, paletas de belleza de lujo y colecciones de maquillaje prestige."
       },
-      image: "/images/categories/cosmetics.jpg",
+      image: "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp",
       badge: { en: "Prestige Beauty", es: "Belleza Prestige" }
     },
     {
@@ -194,7 +194,7 @@ export const siteData = {
         en: "Advanced dermatological treatments, restorative serums, and ultra-premium skincare lines.",
         es: "Tratamientos dermatológicos avanzados, sueros restauradores y líneas de cuidado de la piel ultra-premium."
       },
-      image: "/images/categories/skincare.jpg",
+      image: "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp",
       badge: { en: "Skincare Science", es: "Ciencia de la Piel" }
     },
     {
@@ -204,7 +204,7 @@ export const siteData = {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama."
       },
-      image: "/images/categories/fashion-textiles.jpg",
+      image: "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp",
       badge: { en: "Designer Apparel", es: "Textiles de Diseño" }
     },
     {
@@ -214,7 +214,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo."
       },
-      image: "/images/categories/travel-sets.jpg",
+      image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
@@ -224,7 +224,7 @@ export const siteData = {
         en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories.",
         es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados."
       },
-      image: "/images/categories/accessories.jpg",
+      image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
       badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
     },
     {
@@ -234,7 +234,7 @@ export const siteData = {
         en: "Fine jewelry pieces, luxury watchmaking statements, and precious crafted accents.",
         es: "Piezas de joyería fina, alta relojería de lujo y detalles artesanales valiosos."
       },
-      image: "/images/categories/jewelry.jpg",
+      image: "/images/brand-free-images/44-emerald-sapphire-diamond-necklace-portrait.webp",
       badge: { en: "Fine Craftsmanship", es: "Alta Artesanía" }
     }
   ],

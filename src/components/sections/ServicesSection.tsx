@@ -10,10 +10,10 @@ export function ServicesSection({ compact = false }: { compact?: boolean }) {
   const { t } = useLanguage();
 
   const serviceImages = [
-    "/service-01.jpg",
-    "/service-02.jpg",
-    "/service-03.jpg",
-    "/service-04.jpg"
+    "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
+    "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp",
+    "/images/brand-free-images/27-modern-wine-spirits-retail-showroom.webp",
+    "/images/brand-free-images/38-warm-lit-premium-spirits-backbar.webp"
   ];
 
   return (

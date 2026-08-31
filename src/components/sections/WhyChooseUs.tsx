@@ -86,7 +86,7 @@ export function WhyChooseUs({ compact = false }: { compact?: boolean }) {
 
           <div className="relative min-h-[340px] overflow-hidden rounded-3xl border border-slate-200 bg-[#071321] shadow-sm lg:col-span-5">
             <Image
-              src="/why-us-luxury.jpg"
+              src="/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp"
               alt="Imperial Essence Trading LLC wholesale and logistics operations"
               fill
               sizes="(max-width: 1024px) 100vw, 42vw"

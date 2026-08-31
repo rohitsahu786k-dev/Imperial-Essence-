@@ -17,7 +17,7 @@ export function HeroSection() {
         {/* Desktop Full-Bleed Background Image (hidden on mobile, visible on lg) */}
         <div className="hidden lg:block absolute inset-0 z-0">
           <Image
-            src="/hero-luxury-banner-clean.jpg"
+            src="/images/brand-free-images/imperial-banner.png"
             alt="Imperial Essence Unbranded Luxury Product Portfolio Banner"
             fill
             priority
@@ -29,13 +29,14 @@ export function HeroSection() {
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
           
           {/* Mobile Image Banner (Visible on mobile, hidden on lg) */}
-          <div className="relative w-full h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg border border-amber-200/80 mb-6 lg:hidden">
+          <div className="relative mx-auto mb-6 aspect-[9/16] w-full max-w-[420px] overflow-hidden rounded-3xl border border-amber-200/80 shadow-lg lg:hidden">
             <Image
-              src="/hero-luxury-banner-clean.jpg"
-              alt="Imperial Essence Unbranded Luxury Product Portfolio Banner"
+              src="/images/brand-free-images/imperial-mobile-banner.png"
+              alt="Imperial Essence Unbranded Luxury Product Portfolio Mobile Banner"
               fill
               priority
-              className="object-cover object-right"
+              sizes="(max-width: 640px) 100vw, 420px"
+              className="object-cover object-center"
             />
             <div className="absolute bottom-4 left-4 right-4 text-white z-10">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-[#B8860B] shadow-md">
