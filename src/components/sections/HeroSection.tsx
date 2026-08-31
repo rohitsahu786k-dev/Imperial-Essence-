@@ -17,30 +17,28 @@ export function HeroSection() {
         {/* Desktop Full-Bleed Background Image (hidden on mobile, visible on lg) */}
         <div className="hidden lg:block absolute inset-0 z-0">
           <Image
-            src="/dubai-skyline-hero.jpg"
-            alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
+            src="/hero-luxury-banner-clean.jpg"
+            alt="Imperial Essence Unbranded Luxury Product Portfolio Banner"
             fill
             priority
-            className="object-cover object-center filter saturate-110 brightness-95"
+            className="object-cover object-right"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-white/50 to-white/70" />
         </div>
 
         {/* Content Container */}
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
           
           {/* Mobile Image Banner (Visible on mobile, hidden on lg) */}
-          <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden shadow-lg border border-amber-200/80 mb-6 lg:hidden">
+          <div className="relative w-full h-72 sm:h-80 rounded-3xl overflow-hidden shadow-lg border border-amber-200/80 mb-6 lg:hidden">
             <Image
-              src="/dubai-skyline-hero.jpg"
-              alt="Dubai Skyline with Burj Khalifa Imperial Essence Headquarters"
+              src="/hero-luxury-banner-clean.jpg"
+              alt="Imperial Essence Unbranded Luxury Product Portfolio Banner"
               fill
               priority
-              className="object-cover object-center filter saturate-110 brightness-95"
+              className="object-cover object-right"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 text-white">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-[#B8860B]">
+            <div className="absolute bottom-4 left-4 right-4 text-white z-10">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-[#B8860B] shadow-md">
                 <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
                 <span>Dubai, UAE – Global HQ</span>
               </span>
