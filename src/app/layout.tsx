@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: "Dubai-based wholesale and distribution gateway drawing on over 40 years of family legacy in luxury perfumery, niche fragrances, cosmetics, skincare, travel sets, and European T1 & T2 sourcing.",
     url: site.url,
     siteName: site.name,
-    images: [{ url: "/banner/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop-01.png", width: 1920, height: 900, alt: "Imperial Essence Trading LLC luxury product portfolio" }],
+    images: [{ url: "/images/brand-free-images/imperial-banner.png", width: 1920, height: 900, alt: "Imperial Essence Trading LLC luxury product portfolio" }],
     type: "website",
   },
   icons: {
