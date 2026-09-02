@@ -18,25 +18,25 @@ export const siteData = {
   company: {
     name: "IMPERIAL ESSENCE TRADING LLC",
     shortName: "Imperial Essence",
-    license: "Dubai Commercial License - Bay Square",
+    license: "Dubai Commercial License - Bay Square, Business Bay",
     tagline: {
-      en: "LUXURY PERFUMERY, BEAUTY & DUTY FREE DISTRIBUTION",
-      es: "PERFUMERÍA DE LUJO, BELLEZA Y DISTRIBUCIÓN DUTY FREE",
-      ar: "عطور فاخرة، تجميل وتوزيع السوق الحرة"
+      en: "YOUR GLOBAL PARTNER IN LUXURY & PREMIUM PRODUCTS",
+      es: "TU SOCIO GLOBAL EN PRODUCTOS DE LUJO Y DE PRIMERA CALIDAD",
+      ar: "شركائكم العالمي في المنتجات الفاخرة والمتميزة"
     },
     subTagline: {
-      en: "A Dubai-based wholesale and distribution gateway drawing on over 40 years of family legacy in luxury perfumery, niche cosmetics, and global duty-free travel retail.",
-      es: "Una plataforma de venta al por mayor y distribución con sede en Dubái, respaldada por más de 40 años de legado familiar en perfumería de lujo y travel retail.",
-      ar: "بوابة توزيع وجملة مقرها دبي تعتمد على أكثر من 40 عامًا من الإرث العائلي في العطور الفاخرة وتجارة التجزئة في الأسواق الحرة."
+      en: "A Dubai-based wholesale and distribution gateway specializing in luxury perfumery, niche cosmetics, fashion, textiles, travel sets, accessories, and jewelry. Drawing on over 40 years of family legacy in global duty-free travel retail.",
+      es: "Una plataforma de venta al por mayor y distribución con sede en Dubái, especializada en perfumería de lujo, cosmética de nicho, moda, textiles, juegos de viaje, accesorios y joyería. Respaldada por más de 40 años de legado familiar.",
+      ar: "شركة مقرها دبي متخصصة في الجملة والتوزيع للتجميل والعطور الفاخرة والمنسوجات والإكسسوارات والمجوهرات ومجموعات السفر."
     },
     location: {
       city: "Dubai",
       country: "United Arab Emirates",
       address: "203, Building No. 11, Bay Square, Business Bay, P.O. Box: 112396, Dubai, UAE",
       badge: {
-        en: "DUBAI, UAE – Global Headquarters & Luxury Trade Hub",
-        es: "DUBÁI, EAU – Sede Global y Centro Comercial de Lujo",
-        ar: "دبي، الإمارات العربية المتحدة – المقر الرئيسي العالمي"
+        en: "DUBAI, UNITED ARAB EMIRATES – Global Headquarters",
+        es: "DUBÁI, EMIRATOS ÁRABES UNIDOS – Sede Central",
+        ar: "دبي، الإمارات العربية المتحدة"
       }
     },
     contact: {
@@ -74,24 +74,24 @@ export const siteData = {
         name: "Siddharth Thakker",
         role: { en: "Co-Founder & Managing Director", es: "Cofundador y Director General" },
         bio: {
-          en: "Siddharth Thakker, born and raised in Dubai, grew up immersed in the family's wholesale and distribution business, gaining early exposure to supplier relationships, market instinct, business strategy, and the discipline needed to move goods reliably across borders.",
-          es: "Siddharth Thakker, nacido y criado en Dubái, creció inmerso en el negocio familiar de distribución al por mayor, adquiriendo experiencia temprana en relaciones con proveedores, estrategia de mercado y la disciplina necesaria para mover mercancías con fiabilidad a través de las fronteras."
+          en: "Siddharth Thakker, born and raised in Dubai, grew up immersed in the family business, gaining early exposure to supplier relationships, market instinct, business strategy, and the discipline needed to move goods across borders.",
+          es: "Siddharth Thakker, nacido y criado en Dubái, creció inmerso en el negocio familiar de distribución al por mayor, adquiriendo experiencia temprana en relaciones con proveedores, estrategia de mercado y disciplina comercial."
         }
       },
       sakina: {
         name: "Sakina Idmouhine",
         role: { en: "Co-Founder & Managing Director", es: "Cofundadora y Directora General" },
         bio: {
-          en: "Sakina Idmouhine, originally from Spain, built her career within the perfumery and luxury cosmetics industry over more than 15 years, mastering brand relationships and international retail expectations while connecting with industry partners worldwide.",
+          en: "Sakina Idmouhine, originally from Spain, built her career in the perfumery and luxury cosmetics industry over 15+ years, mastering brand relationships, market insight, business strategy, and the discipline needed to move goods across borders.",
           es: "Sakina Idmouhine, originaria de España, desarrolló su carrera en la industria de la perfumería y cosmética de lujo durante más de 15 años, dominando las relaciones con las marcas y las expectativas de minoristas internacionales."
         }
       },
       together: {
-        en: "When their paths crossed, they recognized a shared passion for the industry and a common belief in doing business with reliability, transparency, and long-term commitment. Together, they founded Imperial Essence Trading LLC to bridge European sourcing with global luxury demand.",
+        en: "When their paths crossed, they recognized a shared passion for the industry and a commitment to doing business the right way — with reliability, transparency, and long-term relationships. Together, they founded Imperial Essence Trading LLC.",
         es: "Cuando sus caminos se cruzaron, reconocieron una pasión compartida por la industria y la convicción de hacer negocios con fiabilidad, transparencia y compromiso a largo plazo. Juntos fundaron Imperial Essence Trading LLC."
       },
       familySpirit: {
-        en: "Beyond being business partners, Sakina and Siddharth work together like family, sharing the same drive, values, and ambition. That spirit of partnership defines Imperial Essence Trading today.",
+        en: "More than business partners, Sakina and Siddharth work together like family, sharing the same drive, values, and ambition to keep growing.",
         es: "Más que socios comerciales, Sakina y Siddharth trabajan juntos como una familia, compartiendo el mismo impulso, valores y ambición. Ese espíritu define a Imperial Essence Trading hoy en día."
       }
     },
@@ -100,7 +100,7 @@ export const siteData = {
       mission: {
         title: { en: "Our Mission", es: "Nuestra Misión" },
         desc: {
-          en: "To build a recognized presence within the luxury perfumery and beauty industry, serving as a dependable long-term partner for clients and suppliers. We aim to open new markets, expand our portfolio as official brand distributors, and strengthen our position across global duty-free and wholesale channels through direct European sourcing.",
+          en: "To build a strong, recognized presence in the luxury perfumery and beauty industry. To be the partner of choice for clients and suppliers by delivering quality, opening new markets, becoming official distributors for leading brands, strengthening our Duty Free presence, and growing our global network through direct European sourcing and reliable distribution.",
           es: "Construir una presencia destacada en la industria de perfumería y belleza de lujo, siendo un socio confiable a largo plazo para clientes y proveedores, expandiendo marcas oficiales y canales duty-free mediante abastecimiento europeo directo."
         }
       },
@@ -115,7 +115,7 @@ export const siteData = {
 
     coreValues: [
       {
-        title: { en: "Reliability & Long-Term Partnership", es: "Fiabilidad y Alianza a Largo Plazo" },
+        title: { en: "Reliability & Long-term Partnership", es: "Fiabilidad y Alianza a Largo Plazo" },
         desc: { en: "Consistent, dependable supply and transparent collaboration built to endure.", es: "Suministro constante y fiable con colaboración transparente orientada a perdurar." }
       },
       {
@@ -123,12 +123,12 @@ export const siteData = {
         desc: { en: "Strict quality assurance and genuine product sourcing across all categories.", es: "Garantía estricta de calidad y abastecimiento genuino en todas las categorías." }
       },
       {
-        title: { en: "Sourcing Flexibility (T1 & T2)", es: "Flexibilidad de Suministro (T1 y T2)" },
+        title: { en: "Flexibility across T1 & T2 Supply Sources", es: "Flexibilidad en Fuentes T1 y T2" },
         desc: { en: "Direct European clean T2 sourcing alongside flexible non-European T1 supply options.", es: "Abastecimiento europeo directo T2 y opciones flexibles de mercancía T1." }
       },
       {
-        title: { en: "40+ Years Family Heritage", es: "40+ Años de Herencia Familiar" },
-        desc: { en: "Deep industry roots, market intuition, and travel retail expertise.", es: "Profundas raíces en el sector, intuición de mercado y experiencia en travel retail." }
+        title: { en: "Family Heritage & Industry Expertise", es: "Herencia Familiar y Experiencia" },
+        desc: { en: "Over 40 years of family legacy, market intuition, and travel retail expertise.", es: "Más de 40 años de legado familiar, intuición de mercado y experiencia en travel retail." }
       }
     ]
   },
@@ -159,7 +159,7 @@ export const siteData = {
   categories: [
     {
       id: "perfumes-fragrances",
-      name: { en: "Perfumes & Fragrances", es: "Perfumes y Fragancias" },
+      name: { en: "Perfumes & Fragrances", es: "Perfumes y Fragancias", ar: "العطور والعبق" },
       description: {
         en: "Prestige luxury perfumery collections from leading international fashion houses and beauty conglomerates.",
         es: "Colecciones de perfumería de lujo de las principales casas de moda y conglomerados de belleza."
@@ -169,37 +169,27 @@ export const siteData = {
     },
     {
       id: "niche-fragrances",
-      name: { en: "Niche Fragrances", es: "Fragancias de Nicho" },
+      name: { en: "Niche Fragrances", es: "Fragancias de Nicho", ar: "عطور النيش الفاخرة" },
       description: {
         en: "Exclusive artisanal perfume creations and rare olfactory formulations for luxury boutiques and connoisseurs.",
         es: "Creaciones de perfumes artesanales exclusivos y formulaciones olfativas raras para boutiques de lujo."
       },
-      image: "/images/brand-free-images/13-pink-perfume-white-iris-flowers.webp",
+      image: "/images/brand-free-images/02-gold-crowned-luxury-perfume-bottle.webp",
       badge: { en: "Artisanal & Niche", es: "Artesanal y Nicho" }
     },
     {
-      id: "cosmetics-makeup",
-      name: { en: "Cosmetics & Makeup", es: "Cosmética y Maquillaje" },
+      id: "cosmetics-skincare",
+      name: { en: "Luxury Cosmetics & Skincare", es: "Cosmética de Lujo y Cuidado de la Piel", ar: "مستحضرات التجميل والعناية بالبشرة" },
       description: {
-        en: "High-performance color cosmetics, luxury beauty palettes, and prestige makeup collections.",
-        es: "Cosmética de color de alto rendimiento, paletas de belleza de lujo y colecciones de maquillaje prestige."
+        en: "High-performance cosmetics, dermatological treatments, luxury beauty palettes, and prestige skincare lines.",
+        es: "Cosmética de color de alto rendimiento, paletas de belleza de lujo y tratamientos dermatológicos."
       },
-      image: "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp",
+      image: "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp",
       badge: { en: "Prestige Beauty", es: "Belleza Prestige" }
     },
     {
-      id: "skincare",
-      name: { en: "Skincare", es: "Cuidado de la Piel" },
-      description: {
-        en: "Advanced dermatological treatments, restorative serums, and ultra-premium skincare lines.",
-        es: "Tratamientos dermatológicos avanzados, sueros restauradores y líneas de cuidado de la piel ultra-premium."
-      },
-      image: "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp",
-      badge: { en: "Skincare Science", es: "Ciencia de la Piel" }
-    },
-    {
       id: "fashion-textiles",
-      name: { en: "Fashion & Textiles", es: "Moda y Textiles" },
+      name: { en: "Fashion & Textiles", es: "Moda y Textiles", ar: "الأزياء والمنسوجات" },
       description: {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama."
@@ -209,7 +199,7 @@ export const siteData = {
     },
     {
       id: "travel-sets",
-      name: { en: "Travel Sets", es: "Juegos de Viaje" },
+      name: { en: "Travel Sets", es: "Juegos de Viaje", ar: "مجموعات السفر" },
       description: {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo."
@@ -218,24 +208,24 @@ export const siteData = {
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
-      id: "accessories",
-      name: { en: "Accessories", es: "Accesorios" },
-      description: {
-        en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories.",
-        es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados."
-      },
-      image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
-      badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
-    },
-    {
       id: "jewelry",
-      name: { en: "Jewelry", es: "Joyería" },
+      name: { en: "Jewelry", es: "Joyería", ar: "المجوهرات" },
       description: {
         en: "Fine jewelry pieces, luxury watchmaking statements, and precious crafted accents.",
         es: "Piezas de joyería fina, alta relojería de lujo y detalles artesanales valiosos."
       },
       image: "/images/brand-free-images/44-emerald-sapphire-diamond-necklace-portrait.webp",
       badge: { en: "Fine Craftsmanship", es: "Alta Artesanía" }
+    },
+    {
+      id: "accessories",
+      name: { en: "Accessories", es: "Accesorios", ar: "الإكسسوارات" },
+      description: {
+        en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories.",
+        es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados."
+      },
+      image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
+      badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
     }
   ],
 
@@ -255,13 +245,13 @@ export const siteData = {
     },
     {
       id: "logistics-management",
-      title: { en: "Logistics & Transport Management", es: "Gestión de Logística y Transporte" },
+      title: { en: "Logistics & Global Supply Solutions", es: "Gestión de Logística y Soluciones Globales" },
       shortDesc: {
         en: "Comprehensive road, sea, and air freight coordination across international trade corridors.",
         es: "Coordinación integral de fletes por carretera, mar y aire en corredores comerciales internacionales."
       },
       fullDesc: {
-        en: "We have many years of experience in logistics and international transport by road, sea, and air worldwide. We work closely with established freight forwarders and an extensive logistics network that helps both suppliers and clients manage shipments efficiently, reducing obstacles across trade destinations.",
+        en: "We have many years of experience in logistics and transportation via road, sea, and air worldwide. We work closely with trusted forwarders and have a wide network of logistics partners, allowing us to offer efficient, cost-effective and secure solutions tailored to each client's needs.",
         es: "Contamos con años de experiencia en logística y transporte internacional terrestre, marítimo y aéreo. Trabajamos estrechamente con transitarios consolidados para facilitar envíos ágiles."
       },
       iconName: "Truck"
@@ -296,19 +286,19 @@ export const siteData = {
 
   logistics: {
     modes: [
-      { name: { en: "Road Freight", es: "Carga Terrestre" }, icon: "Truck", desc: { en: "Pan-European & Middle East road corridors", es: "Corredores terrestres Paneuropeos y Oriente Medio" } },
-      { name: { en: "Sea Freight", es: "Carga Marítima" }, icon: "Ship", desc: { en: "Full Container & LCL global sea freight", es: "Fletes marítimos en contenedor completo y consolidado" } },
-      { name: { en: "Air Freight", es: "Carga Aérea" }, icon: "Plane", desc: { en: "Priority express air freight shipments", es: "Envíos expresos prioritarios por vía aérea" } },
-      { name: { en: "Global Hub Network", es: "Red de Centros Globales" }, icon: "Network", desc: { en: "Dubai Bay Square HQ and European supply hubs", es: "Sede en Dubái Bay Square y centros de suministro en Europa" } }
+      { name: { en: "Road Freight", es: "Carga Terrestre", ar: "الشحن البري" }, icon: "Truck", desc: { en: "Pan-European & Middle East road corridors", es: "Corredores terrestres Paneuropeos y Oriente Medio" } },
+      { name: { en: "Sea Freight", es: "Carga Marítima", ar: "الشحن البحري" }, icon: "Ship", desc: { en: "Full Container & LCL global sea freight", es: "Fletes marítimos en contenedor completo y consolidado" } },
+      { name: { en: "Air Freight", es: "Carga Aérea", ar: "الشحن الجوي" }, icon: "Plane", desc: { en: "Priority express air freight shipments", es: "Envíos expresos prioritarios por vía aérea" } },
+      { name: { en: "Global Hub Network", es: "Red de Centros Globales", ar: "الشبكة العالمية" }, icon: "Network", desc: { en: "Dubai Bay Square HQ and European supply hubs", es: "Sede en Dubái Bay Square y centros de suministro en Europa" } }
     ],
-    targetMarkets: ["Middle East", "Europe", "United States", "Africa", "Asia", "South America", "Australia"]
+    targetMarkets: ["Middle East", "Europe", "Africa", "United States"]
   },
 
   whyChooseUs: [
-    { en: "40+ years of family legacy and proven track record in travel retail, wholesale, and luxury perfumery", es: "40+ años de legado familiar y trayectoria demostrada en travel retail y perfumería de lujo" },
-    { en: "Direct sourcing from Europe, offering clean T2 and non-European T1 merchandise with flexible supply", es: "Abastecimiento directo desde Europa, ofreciendo mercancía T2 limpia y T1 con total flexibilidad" },
-    { en: "Established commercial relationships with major international groups (LVMH, PUIG, L'Oréal Luxe, COTY) and niche houses", es: "Relaciones comerciales consolidadas con grandes grupos (LVMH, PUIG, L'Oréal Luxe, COTY) y firmas de nicho" },
-    { en: "Active presence and growth ambitions across wholesale, official distribution, and duty free channels", es: "Presencia activa y ambición de crecimiento en canales mayoristas, distribución oficial y duty free" },
-    { en: "Committed to opening new markets and forming long-term, transparent partnerships with clients and suppliers", es: "Comprometidos con la apertura de nuevos mercados y alianzas transparentes a largo plazo" }
+    { en: "Reliability & Long-term Partnership with consistent, dependable supply", es: "Fiabilidad y Alianza a Largo Plazo con suministro constante y seguro" },
+    { en: "Product Authenticity & Quality guaranteed across all luxury product lines", es: "Autenticidad y Calidad del Producto garantizadas en todas las líneas" },
+    { en: "Flexibility across T1 & T2 Supply Sources directly from Europe", es: "Flexibilidad en fuentes de suministro T1 y T2 directamente desde Europa" },
+    { en: "Over 40 years of family heritage and deep travel retail expertise", es: "Más de 40 años de herencia familiar y profunda experiencia en travel retail" },
+    { en: "Dubai Bay Square HQ providing a strategic global gateway for trade", es: "Sede central en Dubái Bay Square que ofrece una puerta de entrada global estratégica" }
   ]
 };
