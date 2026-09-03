@@ -3,7 +3,7 @@ import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { AboutCompanyProfile } from "@/components/sections/AboutCompanyProfile";
 import { AboutStorySection } from "@/components/sections/AboutStorySection";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
+import { InquiryCTA } from "@/components/sections/InquiryCTA";
 
 export const metadata: Metadata = {
   title: "About Us | Imperial Essence Trading LLC",
@@ -20,8 +20,8 @@ export default function AboutPage() {
       />
       <AboutCompanyProfile />
       <AboutStorySection />
-      <WhyChooseUs compact />
-      <ContactInquirySection compact />
+      <WhyChooseUs />
+      <InquiryCTA />
     </div>
   );
 }

@@ -3,135 +3,144 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { siteData } from "@/data/siteData";
-import { MapPin, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin, ShieldCheck, Globe2, Building2, PhoneCall } from "lucide-react";
 
 export function HeroSection() {
   const { t } = useLanguage();
 
+  const desktopBannerImage = "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop-02.png";
+  const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile-02.png";
+
   return (
-    <div className="relative w-full bg-white pt-20">
-      {/* Main Hero Banner Container */}
-      <section className="relative w-full bg-slate-50 py-6 sm:py-10 lg:bg-transparent lg:py-20 lg:min-h-[720px] lg:flex lg:items-center overflow-hidden">
+    <section className="relative min-h-[90vh] sm:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-[130px] sm:pt-20 text-[#1f190f] flex flex-col justify-between">
+      
+      {/* Background Banner Image Container */}
+      <div className="absolute inset-0 z-0">
         
-        {/* Desktop Full-Bleed Background Image (hidden on mobile, visible on lg) */}
-        <div className="hidden lg:block absolute inset-0 z-0">
+        {/* Desktop Single Banner Image */}
+        <div className="hidden sm:block relative h-full w-full">
           <Image
-            src="/images/brand-free-images/imperial-banner.png"
-            alt="Imperial Essence Unbranded Luxury Product Portfolio Banner"
+            src={desktopBannerImage}
+            alt="Imperial Essence Trading LLC Luxury Banner"
             fill
             priority
-            className="object-cover object-right"
+            className="object-cover object-right filter brightness-[0.96] contrast-[1.02]"
           />
+          {/* Strong Left-to-Right White Gradient Vignette for Text Area */}
+          <div className="absolute inset-y-0 left-0 w-full sm:w-3/4 lg:w-3/5 bg-gradient-to-r from-white via-white/95 to-transparent pointer-events-none" />
         </div>
 
-        {/* Content Container */}
-        <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+        {/* Mobile Single Banner Image */}
+        <div className="block sm:hidden relative h-full w-full">
+          <Image
+            src={mobileBannerImage}
+            alt="Imperial Essence Trading LLC Luxury Banner"
+            fill
+            priority
+            className="object-cover object-center filter brightness-[0.98]"
+          />
+          {/* Smooth Radial Soft Shadow Overlay Merging Gracefully into Background */}
+          <div className="absolute top-0 left-0 w-full h-[450px] bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.96)_0%,_rgba(255,255,255,0.65)_50%,_transparent_80%)] pointer-events-none" />
+        </div>
+
+      </div>
+
+      {/* Hero Content Container - Positioned Top Left with 130px Top Padding */}
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-0 sm:pt-10 pb-4 sm:pb-8 flex-1 flex flex-col justify-start items-start">
+        
+        {/* Main Text Content */}
+        <div className="max-w-[260px] xs:max-w-xs sm:max-w-md lg:max-w-lg space-y-2.5 sm:space-y-4 text-left">
           
-          {/* Mobile Image Banner (Visible on mobile, hidden on lg) */}
-          <div className="relative mx-auto mb-6 aspect-[9/16] w-full max-w-[420px] overflow-hidden rounded-3xl border border-amber-200/80 shadow-lg lg:hidden">
-            <Image
-              src="/images/brand-free-images/imperial-mobile-banner.png"
-              alt="Imperial Essence Unbranded Luxury Product Portfolio Mobile Banner"
-              fill
-              priority
-              sizes="(max-width: 640px) 100vw, 420px"
-              className="object-cover object-center"
-            />
-            <div className="absolute bottom-4 left-4 right-4 text-white z-10">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/90 backdrop-blur-md px-3 py-1 text-[11px] font-bold text-[#B8860B] shadow-md">
-                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
-                <span>Dubai, UAE – Global HQ</span>
-              </span>
-            </div>
+          {/* Location Pill Badge */}
+          <div className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-white/95 px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-emerald-800 shadow-sm backdrop-blur-md self-start">
+            <MapPin className="h-2.5 w-2.5 text-emerald-600" />
+            <span>{t("DUBAI, UAE – Bay Square, Business Bay", "DUBÁI, EAU – Bay Square, Business Bay")}</span>
           </div>
 
-          {/* 50% Width White Shadow Text Card */}
-          <div className="w-full lg:w-1/2 rounded-3xl bg-white p-6 sm:p-10 lg:p-12 shadow-xl lg:shadow-2xl border border-amber-200/80 space-y-6">
-            {/* Location & Heritage Tag (Desktop View) */}
-            <div className="hidden lg:inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-gold-shimmer px-4 py-1.5 text-xs font-extrabold text-[#B8860B] shadow-xs">
-              <MapPin className="h-4 w-4 shrink-0 text-[#D4AF37]" />
-              <span>{t(siteData.company.location.badge.en, siteData.company.location.badge.es)}</span>
-            </div>
+          {/* Main Title */}
+          <h1 className="text-lg sm:text-3xl lg:text-4xl font-normal tracking-tight text-[#1f190f] uppercase leading-[1.2] font-sans">
+            {t("CONNECTING MARKETS, DELIVERING EXCELLENCE", "CONECTANDO MERCADOS, ENTREGANDO EXCELENCIA")}
+          </h1>
 
-            {/* Main Headline - High Contrast Bold Typography */}
-            <h1 className="text-2xl font-extrabold tracking-tight text-[#071321] leading-[1.15] sm:text-4xl lg:text-5xl">
-              {t(siteData.company.tagline.en, siteData.company.tagline.es)}
-            </h1>
+          {/* Description */}
+          <p className="text-[11px] sm:text-sm font-medium leading-relaxed text-[#4a3c28]">
+            {t(
+              "Your trusted partner in luxury perfumery, cosmetics, lifestyle products and more, with reliable supply solutions worldwide.",
+              "Su socio de confianza en perfumería de lujo, cosméticos, productos de estilo de vida y más, con soluciones de suministro fiables en todo el mundo."
+            )}
+          </p>
 
-            {/* Sub-headline */}
-            <p className="text-sm font-semibold leading-relaxed text-slate-700 sm:text-base">
-              {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
-            </p>
+          {/* Action Buttons Row */}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
+            <Link
+              href="/categories"
+              className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-[9px] sm:text-xs font-extrabold uppercase tracking-wider shadow-md transition-all duration-300 hover:scale-105"
+            >
+              <span>{t("EXPLORE CATEGORIES", "EXPLORAR CATEGORÍAS")}</span>
+              <ArrowRight className="h-3 w-3" />
+            </Link>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-              <Link
-                href="/categories"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-xl transition hover:scale-105 active:scale-95"
-              >
-                <span>{t("Explore Categories", "Explorar Categorías")}</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-
-              <Link
-                href="/our-sourcing"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-amber-300 bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition hover:bg-amber-50 hover:border-[#D4AF37] hover:text-[#B8860B]"
-              >
-                <Sparkles className="h-4 w-4 text-[#D4AF37]" />
-                <span>{t("Our Sourcing (T1 & T2)", "Nuestro Abastecimiento")}</span>
-              </Link>
-            </div>
+            <Link
+              href="/our-sourcing"
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white/95 hover:bg-white text-[#1f190f] px-4 sm:px-6 py-2 sm:py-3 text-[9px] sm:text-xs font-extrabold uppercase tracking-wider shadow-sm transition-all duration-300 hover:border-[#b8860b] hover:text-[#b8860b] hover:scale-105"
+            >
+              <span>{t("REQUEST SOURCING", "SOLICITAR SOURCING")}</span>
+            </Link>
           </div>
+
         </div>
-      </section>
 
-      {/* Sub-Hero Trust Highlights Bar */}
-      <section className="relative z-30 border-y border-amber-200/80 bg-gold-shimmer py-6 shadow-sm">
+      </div>
+
+      {/* Bottom Highlights & Metrics Bar */}
+      <div className="relative z-10 border-t border-[#d4af37]/30 bg-white/95 py-4 backdrop-blur-xl shadow-md">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-8">
-            {/* Stats Items */}
-            <div className="grid grid-cols-3 gap-4 border-b border-amber-200/80 pb-5 lg:col-span-5 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
-              <div>
-                <span className="block text-2xl sm:text-3xl font-extrabold text-[#B8860B]">40+</span>
-                <span className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">
-                  {t("Years Legacy", "Años de Legado")}
-                </span>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            
+            <div className="flex items-center gap-3 border-r border-[#d4af37]/20 pr-4 last:border-0">
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#b8860b]">
+                <ShieldCheck className="h-5 w-5" />
               </div>
               <div>
-                <span className="block text-2xl sm:text-3xl font-extrabold text-[#B8860B]">Global</span>
-                <span className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">
-                  {t("Distribution", "Distribución")}
-                </span>
-              </div>
-              <div>
-                <span className="block text-2xl sm:text-3xl font-extrabold text-[#071321]">T1 & T2</span>
-                <span className="text-[11px] font-bold text-slate-700 uppercase tracking-wider">
-                  {t("European Sourcing", "Suministro Europeo")}
-                </span>
+                <p className="text-sm font-extrabold text-[#1f190f]">40+ Years</p>
+                <p className="text-[11px] font-semibold text-[#5a4a30]">{t("Family Legacy", "Legado Familiar")}</p>
               </div>
             </div>
 
-            {/* Brand Group Highlights */}
-            <div className="lg:col-span-7 space-y-2">
-              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block flex items-center gap-1.5">
-                <ShieldCheck className="h-3.5 w-3.5 text-[#B8860B]" />
-                <span>{t("Work with products from premier international groups:", "Trabajamos con productos de grandes grupos internacionales:")}</span>
-              </span>
-              <div className="flex flex-wrap items-center gap-2">
-                {siteData.company.highlights.brandGroups.map((group) => (
-                  <span
-                    key={group}
-                    className="rounded-full border border-amber-200 bg-white px-3.5 py-1.5 text-xs font-bold text-slate-800 shadow-2xs"
-                  >
-                    {group}
-                  </span>
-                ))}
+            <div className="flex items-center gap-3 border-r border-[#d4af37]/20 pr-4 last:border-0">
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#b8860b]">
+                <Globe2 className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm font-extrabold text-[#1f190f]">Dubai Hub</p>
+                <p className="text-[11px] font-semibold text-[#5a4a30]">{t("Bay Square, Business Bay", "Bay Square, Dubái")}</p>
               </div>
             </div>
+
+            <div className="flex items-center gap-3 border-r border-[#d4af37]/20 pr-4 last:border-0">
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#b8860b]">
+                <Building2 className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm font-extrabold text-[#1f190f]">European T1 & T2</p>
+                <p className="text-[11px] font-semibold text-[#5a4a30]">{t("Direct Sourcing", "Sourcing Directo")}</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 pr-4">
+              <div className="rounded-xl border border-emerald-500/40 bg-emerald-50 p-2 text-emerald-700">
+                <PhoneCall className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="text-sm font-extrabold text-emerald-800">WhatsApp 24/7</p>
+                <p className="text-[11px] font-semibold text-[#5a4a30]">+971 56 393 0666</p>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+
+    </section>
   );
 }

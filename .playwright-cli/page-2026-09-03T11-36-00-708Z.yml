@@ -1,0 +1,238 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Imperial Essence Trading LLC" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Imperial Essence Trading LLC Logo" [ref=e6]
+      - navigation "Primary navigation" [ref=e7]:
+        - link "Products" [ref=e8] [cursor=pointer]:
+          - /url: /categories
+        - link "Services" [ref=e12] [cursor=pointer]:
+          - /url: /services
+        - link "Industries" [ref=e16] [cursor=pointer]:
+          - /url: /our-sourcing
+        - link "About Us" [ref=e20] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=e22] [cursor=pointer]:
+          - /url: /why-choose-us
+        - link "Contact" [ref=e26] [cursor=pointer]:
+          - /url: /contact
+      - link "Get in Touch" [ref=e28] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - img "Imperial Essence luxury products with Dubai skyline" [ref=e35]
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Global Wholesale Partner
+        - heading "Luxury Products. Global Excellence." [level=1] [ref=e42]:
+          - generic [ref=e43]: Luxury Products.
+          - generic [ref=e44]: Global Excellence.
+        - paragraph [ref=e45]: Imperial Essence Trading LLC is your trusted wholesale partner for premium fragrances, cosmetics, and lifestyle products. Delivering quality, reliability, and value worldwide.
+        - generic [ref=e46]:
+          - link "Explore Products" [ref=e47] [cursor=pointer]:
+            - /url: /categories
+          - link "Our Services" [ref=e51] [cursor=pointer]:
+            - /url: /services
+      - generic [ref=e53]:
+        - generic [ref=e59]:
+          - paragraph [ref=e60]: 40+
+          - paragraph [ref=e61]: Years of Family Legacy
+          - paragraph [ref=e62]: Built on trust and reliability
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: Global Network
+          - paragraph [ref=e72]: Serving 40+ countries
+          - paragraph [ref=e73]: Worldwide reach
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: Premium Quality
+          - paragraph [ref=e81]: Carefully sourced luxury products
+          - paragraph [ref=e82]: Authentic and refined
+        - generic [ref=e90]:
+          - paragraph [ref=e91]: End-to-End Support
+          - paragraph [ref=e92]: From sourcing to worldwide delivery
+          - paragraph [ref=e93]: Reliable execution
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: About Imperial Essence
+        - heading "A Legacy of Trust. A Future of Growth." [level=2] [ref=e100]
+        - paragraph [ref=e101]: With over 40 years of experience, Imperial Essence Trading LLC has established itself as a leader in wholesale distribution of luxury products. Our commitment to quality, transparency, and long-term partnerships sets us apart.
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - paragraph [ref=e107]: 40+
+            - paragraph [ref=e108]: Years in Business
+          - generic [ref=e109]:
+            - paragraph [ref=e115]: 40+
+            - paragraph [ref=e116]: Countries Served
+          - generic [ref=e117]:
+            - paragraph [ref=e123]: 1000+
+            - paragraph [ref=e124]: Global Clients
+        - link "Learn More About Us" [ref=e125] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e130]:
+        - generic [ref=e131]: Headquartered in Dubai
+        - heading "Your Global Partner for Premium Products" [level=3] [ref=e136]
+        - link "Get in Touch" [ref=e137] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - paragraph [ref=e145]: Our Product Categories
+          - heading "Diverse Range. Uncompromised Quality." [level=2] [ref=e146]
+        - link "View All Products" [ref=e147] [cursor=pointer]:
+          - /url: /categories
+      - generic [ref=e151]:
+        - link [ref=e152] [cursor=pointer]:
+          - /url: /categories
+          - img "Perfumes & Fragrances" [ref=e153]
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: Prestige Fragrances
+            - heading "Perfumes & Fragrances" [level=3] [ref=e157]
+            - paragraph [ref=e158]: Prestige luxury perfumery collections from leading international fashion houses and beauty conglomerates.
+        - link [ref=e161] [cursor=pointer]:
+          - /url: /categories
+          - img "Skincare" [ref=e162]
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: Skincare Science
+            - heading "Skincare" [level=3] [ref=e166]
+            - paragraph [ref=e167]: Advanced dermatological treatments, restorative serums, and ultra-premium skincare lines.
+        - link [ref=e170] [cursor=pointer]:
+          - /url: /categories
+          - img "Jewelry" [ref=e171]
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: Fine Craftsmanship
+            - heading "Jewelry" [level=3] [ref=e175]
+            - paragraph [ref=e176]: Fine jewelry pieces, luxury watchmaking statements, and precious crafted accents.
+        - link [ref=e179] [cursor=pointer]:
+          - /url: /categories
+          - img "Accessories" [ref=e180]
+          - generic [ref=e182]:
+            - paragraph [ref=e183]: Luxury Lifestyle
+            - heading "Accessories" [level=3] [ref=e184]
+            - paragraph [ref=e185]: Luxury leather goods, designer lifestyle accents, and refined travel accessories.
+        - link [ref=e188] [cursor=pointer]:
+          - /url: /categories
+          - img "Travel Sets" [ref=e189]
+          - generic [ref=e191]:
+            - paragraph [ref=e192]: Duty Free Exclusives
+            - heading "Travel Sets" [level=3] [ref=e193]
+            - paragraph [ref=e194]: Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures.
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - paragraph [ref=e200]: Our Services
+        - heading "Comprehensive Wholesale Solutions" [level=2] [ref=e201]
+        - paragraph [ref=e202]: From product sourcing to global delivery, we provide tailored solutions to help your business grow.
+      - generic [ref=e203]:
+        - article [ref=e204]:
+          - heading "Global Wholesale & Distribution" [level=3] [ref=e211]
+          - paragraph [ref=e212]: Supplying luxury perfumery and beauty to commercial partners across Middle East, Europe, Africa, USA, South America, and Australia.
+        - article [ref=e213]:
+          - heading "Logistics & Transport Management" [level=3] [ref=e220]
+          - paragraph [ref=e221]: Comprehensive road, sea, and air freight coordination across international trade corridors.
+        - article [ref=e222]:
+          - heading "Direct European Sourcing" [level=3] [ref=e234]
+          - paragraph [ref=e235]: Providing European clean T2 products and non-European T1 merchandise for flexible supply.
+        - article [ref=e236]:
+          - heading "Duty Free & Travel Retail Supply" [level=3] [ref=e240]
+          - paragraph [ref=e241]: 40+ years of family expertise supplying travel retail operators and international airport channels.
+      - generic [ref=e242]:
+        - paragraph [ref=e243]: GIVENCHY
+        - paragraph [ref=e244]: GUERLAIN
+        - paragraph [ref=e245]: L'OREAL
+        - paragraph [ref=e246]: Dior
+        - paragraph [ref=e247]: ESTEE LAUDER
+        - paragraph [ref=e248]: CHANEL
+    - generic [ref=e250]:
+      - generic [ref=e251]:
+        - paragraph [ref=e252]: Why Choose Us
+        - heading "Your Success Is Our Priority" [level=2] [ref=e253]
+        - paragraph [ref=e254]: We go beyond products - we build partnerships that last.
+        - generic [ref=e255]:
+          - generic [ref=e256]: Unmatched product quality
+          - generic [ref=e261]: Competitive pricing
+          - generic [ref=e266]: Transparent business practices
+          - generic [ref=e271]: Long-term partnership approach
+        - link "Partner With Us" [ref=e276] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e280]:
+        - generic [ref=e283]:
+          - article [ref=e284]:
+            - heading "Quality Assurance" [level=3] [ref=e288]
+            - paragraph [ref=e289]: Every product meets international quality standards.
+          - article [ref=e290]:
+            - heading "Global Reach" [level=3] [ref=e296]
+            - paragraph [ref=e297]: Strong network across key markets and regions.
+          - article [ref=e298]:
+            - heading "Customer Focus" [level=3] [ref=e301]
+            - paragraph [ref=e302]: Dedicated support team for your business needs.
+          - article [ref=e303]:
+            - heading "Reliable Delivery" [level=3] [ref=e309]
+            - paragraph [ref=e310]: On-time delivery with secure packaging worldwide.
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - heading "Ready to Grow Your Business?" [level=3] [ref=e314]
+            - paragraph [ref=e315]: Let's build a successful partnership together.
+          - generic [ref=e316]:
+            - generic [ref=e317]: +971 50 501 0056
+            - generic [ref=e318]: office@theimperialessence.com
+          - link "Get in Touch" [ref=e319] [cursor=pointer]:
+            - /url: /contact
+  - contentinfo [ref=e323]:
+    - generic [ref=e324]:
+      - generic [ref=e325]:
+        - generic [ref=e326]:
+          - link "Imperial Essence Trading LLC" [ref=e327] [cursor=pointer]:
+            - /url: /
+            - img "Imperial Essence Trading LLC Logo" [ref=e328]
+          - paragraph [ref=e329]: Your global partner in luxury products wholesale and distribution.
+        - generic [ref=e343]:
+          - heading "Quick Links" [level=3] [ref=e344]
+          - list [ref=e345]:
+            - listitem [ref=e346]:
+              - link "About Us" [ref=e347] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e348]:
+              - link "Products" [ref=e349] [cursor=pointer]:
+                - /url: /categories
+            - listitem [ref=e350]:
+              - link "Services" [ref=e351] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e352]:
+              - link "Industries" [ref=e353] [cursor=pointer]:
+                - /url: /our-sourcing
+        - generic [ref=e354]:
+          - heading "Resources" [level=3] [ref=e355]
+          - list [ref=e356]:
+            - listitem [ref=e357]:
+              - link "Blog" [ref=e358] [cursor=pointer]:
+                - /url: /why-choose-us
+            - listitem [ref=e359]:
+              - link "Catalog" [ref=e360] [cursor=pointer]:
+                - /url: /categories
+            - listitem [ref=e361]:
+              - link "Privacy Policy" [ref=e362] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=e363]:
+              - link "Terms & Conditions" [ref=e364] [cursor=pointer]:
+                - /url: /terms
+        - generic [ref=e365]:
+          - heading "Contact Us" [level=3] [ref=e366]
+          - list [ref=e367]:
+            - listitem [ref=e368]:
+              - generic [ref=e372]: "203, Building No. 11, Bay Square, Business Bay, P.O. Box: 112396, Dubai, UAE"
+            - listitem [ref=e373]:
+              - link "+971 50 501 0056" [ref=e376] [cursor=pointer]:
+                - /url: tel:+971 50 501 0056
+            - listitem [ref=e377]:
+              - link "office@theimperialessence.com" [ref=e381] [cursor=pointer]:
+                - /url: mailto:office@theimperialessence.com
+        - generic [ref=e382]:
+          - heading "Newsletter" [level=3] [ref=e383]
+          - paragraph [ref=e384]: Stay updated with our latest products and offers.
+          - generic [ref=e385]:
+            - textbox "Enter your email" [ref=e386]
+            - button "Submit newsletter email" [ref=e387]
+      - generic [ref=e391]:
+        - paragraph [ref=e392]: (c) 2026 Imperial Essence Trading LLC. All Rights Reserved.
+        - paragraph [ref=e393]: Designed with Excellence
+  - link "Chat on WhatsApp" [ref=e394] [cursor=pointer]:
+    - /url: https://wa.me/971505010056?text=Hello%20Imperial%20Essence%20Trading%20LLC%2C%20I%20would%20like%20to%20inquire%20about%20your%20wholesale%20luxury%20products%20and%20distribution.
+  - alert [ref=e398]

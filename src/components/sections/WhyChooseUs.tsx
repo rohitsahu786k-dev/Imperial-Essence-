@@ -1,162 +1,162 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { ArrowRight, BadgeCheck, Boxes, Globe2, Handshake, ShieldCheck, Sparkles, Truck } from "lucide-react";
+import { ShieldCheck, Sparkles, Building2, ArrowRight, Award, Globe, TrendingUp, MapPin } from "lucide-react";
 
-const capabilityCards = [
-  {
-    icon: Handshake,
-    label: "Premier Groups",
-    title: { en: "Prestige Group Partnerships", es: "Alianzas con Grupos Prestige" },
-    copy: {
-      en: "Relationships across LVMH, PUIG, L'Oréal Luxe, COTY, and selected niche perfume houses.",
-      es: "Relaciones con LVMH, PUIG, L'Oréal Luxe, COTY y casas de perfume nicho seleccionadas.",
-    },
-  },
-  {
-    icon: Truck,
-    label: "Logistics",
-    title: { en: "Cross-Border Supply Discipline", es: "Disciplina de Suministro Internacional" },
-    copy: {
-      en: "Practical coordination for duty-free operators, distributors, retailers, and buying offices worldwide.",
-      es: "Coordinación práctica para operadores duty-free, distribuidores, minoristas y oficinas de compra.",
-    },
-  },
-  {
-    icon: Boxes,
-    label: "European Sourcing",
-    title: { en: "Direct T1 & T2 Sourcing Flexibility", es: "Flexibilidad de Suministro T1 y T2 Directo" },
-    copy: {
-      en: "Direct European clean T2 merchandise alongside flexible non-European T1 supply options.",
-      es: "Mercancía T2 limpia europea directa y opciones flexibles de mercancía T1 no europea.",
-    },
-  },
-];
-
-export function WhyChooseUs({ compact = false }: { compact?: boolean }) {
+export function WhyChooseUs() {
   const { t } = useLanguage();
 
+  const partnershipFeatures = [
+    {
+      title: { en: "40+ Years Family Legacy", es: "40+ Años de Legado Familiar" },
+      desc: {
+        en: "Built on over 40 years of family heritage and proven track record in travel retail, wholesale, and luxury perfumery & cosmetics.",
+        es: "Basado en más de 40 años de herencia familiar y trayectoria demostrada en travel retail, mayorista y cosmética de lujo."
+      },
+      tag: "FAMILY HERITAGE",
+      icon: Award
+    },
+    {
+      title: { en: "Direct European Sourcing", es: "Sourcing Europeo Directo" },
+      desc: {
+        en: "Direct sourcing from European hubs, offering clean T2 and non-European T1 merchandise with total supply flexibility.",
+        es: "Abastecimiento directo desde centros europeos, ofreciendo mercancía T2 limpia y T1 con total flexibilidad."
+      },
+      tag: "T1 & T2 FLEXIBILITY",
+      icon: Building2
+    },
+    {
+      title: { en: "Major Group Relations", es: "Relaciones con Grandes Grupos" },
+      desc: {
+        en: "Established commercial relationships working with major international groups (LVMH, PUIG, L'Oréal Luxe, COTY) and niche houses.",
+        es: "Relaciones comerciales consolidadas con grandes grupos internacionales (LVMH, PUIG, L'Oréal Luxe, COTY) y firmas de nicho."
+      },
+      tag: "COMMERCIAL RELATIONS",
+      icon: ShieldCheck
+    },
+    {
+      title: { en: "Duty Free & Travel Channels", es: "Canales Duty Free y Travel Retail" },
+      desc: {
+        en: "Active presence and strategic expansion across international airport duty-free stores and regional wholesale distribution networks.",
+        es: "Presencia activa y expansión estratégica en tiendas duty-free de aeropuertos internacionales y redes de distribución."
+      },
+      tag: "GLOBAL CHANNELS",
+      icon: Globe
+    },
+    {
+      title: { en: "Global Market Expansion", es: "Expansión Global de Mercado" },
+      desc: {
+        en: "Committed to opening new geographic markets and forming transparent, mutually beneficial long-term commercial partnerships.",
+        es: "Comprometidos con la apertura de nuevos mercados geográficos y la creación de alianzas transparentes a largo plazo."
+      },
+      tag: "GLOBAL GROWTH",
+      icon: TrendingUp
+    },
+    {
+      title: { en: "Dubai Headquarters Infrastructure", es: "Infraestructura de Sede en Dubái" },
+      desc: {
+        en: "Operating from Bay Square, Business Bay Dubai with complete air, sea, and road freight logistics transport management.",
+        es: "Operando desde Bay Square, Business Bay Dubái con gestión completa de transporte logístico aéreo, marítimo y terrestre."
+      },
+      tag: "BAY SQUARE HQ",
+      icon: MapPin
+    }
+  ];
+
   return (
-    <section className={`${compact ? "py-14" : "py-20"} bg-slate-50 text-[#071321]`}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-stretch gap-8 lg:grid-cols-12">
-          <div className="flex flex-col justify-between rounded-3xl border border-amber-200/80 bg-white p-6 shadow-sm sm:p-8 lg:col-span-7">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
-                <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
-                <span>{t("Why Imperial Essence Trading LLC", "Por qué Imperial Essence Trading LLC")}</span>
-              </div>
+    <section className="relative bg-[#fffdf7] py-24 text-[#1f190f] overflow-hidden border-t border-[#d4af37]/30" id="why-choose-us-section">
+      
+      {/* Background Subtle Ambient Glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 h-96 w-96 rounded-full bg-[#d4af37]/10 blur-[140px] pointer-events-none" />
 
-              <h2 className="mt-5 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-[#071321] sm:text-5xl">
-                {t("Reliable wholesale support for global luxury retailers and distributors", "Soporte mayorista fiable para minoristas y distribuidores de lujo")}
-              </h2>
-
-              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-                {t(
-                  "We combine 40+ years of family legacy, brand relationships, and direct European sourcing from Dubai, UAE to support retailers, duty-free operators, and strategic distribution partners.",
-                  "Combinamos 40+ años de legado familiar, relaciones de marca y suministro europeo directo desde Dubái para apoyar a minoristas y distribuidores."
-                )}
-              </p>
-            </div>
-
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
-              <div className="border-t border-slate-200 pt-4">
-                <p className="text-3xl font-extrabold text-[#B8860B]">{siteData.company.highlights.yearsExperience}</p>
-                <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
-                  {t("Family Legacy", "Legado Familiar")}
-                </p>
-              </div>
-              <div className="border-t border-slate-200 pt-4">
-                <p className="text-3xl font-extrabold text-[#071321]">{siteData.company.highlights.countriesServed}</p>
-                <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
-                  {t("Markets Supported", "Mercados Atendidos")}
-                </p>
-              </div>
-              <div className="border-t border-slate-200 pt-4">
-                <p className="text-xl font-extrabold text-[#071321]">Dubai HQ</p>
-                <p className="mt-1 text-xs font-bold uppercase tracking-wider text-slate-500">
-                  {t("Bay Square, UAE", "Bay Square, EAU")}
-                </p>
-              </div>
-            </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-4 py-1.5 text-xs font-extrabold text-[#8a640f] backdrop-blur-md">
+            <ShieldCheck className="h-3.5 w-3.5 text-[#b8860b]" />
+            <span>{t("WHY PARTNER WITH IMPERIAL ESSENCE", "POR QUÉ ASOCIARSE CON IMPERIAL ESSENCE")}</span>
           </div>
 
-          <div className="relative min-h-[340px] overflow-hidden rounded-3xl border border-slate-200 bg-[#071321] shadow-sm lg:col-span-5">
-            <Image
-              src="/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp"
-              alt="Imperial Essence Trading LLC wholesale and logistics operations"
-              fill
-              sizes="(max-width: 1024px) 100vw, 42vw"
-              className="object-cover opacity-85 saturate-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-[#071321]/54 to-transparent" aria-hidden="true" />
-            <div className="relative z-10 flex h-full min-h-[340px] flex-col justify-between p-6 text-white sm:p-8">
-              <div className="flex items-center justify-between gap-3">
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 text-xs font-bold text-[#071321]">
-                  <ShieldCheck className="h-4 w-4 text-[#B8860B]" />
-                  Dubai Commercial Entity
-                </span>
-                <Globe2 className="h-6 w-6 text-amber-400" />
-              </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-[#D4AF37]">
-                  {t("Dubai-based B2B Gateway", "Socio B2B con Sede en Dubái")}
-                </p>
-                <h3 className="mt-3 text-2xl font-extrabold leading-tight text-white sm:text-3xl">
-                  {t("Built for long-term distribution partnerships", "Construido para alianzas de distribución a largo plazo")}
-                </h3>
-              </div>
-            </div>
-          </div>
+          <h2 className="text-3xl font-normal tracking-tight text-[#1f190f] sm:text-5xl leading-tight">
+            {t("A Trusted Gateway for Clients & Brand Partners", "Una Plataforma Confiable para Clientes y Marcas")}
+          </h2>
+
+          <p className="text-sm font-medium text-[#4a3c28] sm:text-base leading-relaxed">
+            {t(
+              "Connecting Europe, the Middle East, Africa, the Americas, and global duty-free travel retail channels through over 40 years of domain heritage.",
+              "Conectando Europa, Oriente Medio, África, las Américas y los canales de travel retail duty-free global con más de 40 años de experiencia."
+            )}
+          </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
-          {capabilityCards.map((card) => {
-            const Icon = card.icon;
+        {/* 6 Feature Bento Grid Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {partnershipFeatures.map((feat, idx) => {
+            const Icon = feat.icon;
             return (
-              <article key={card.label} className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-[#D4AF37] hover:shadow-md">
-                <div className="flex items-center justify-between gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-50 text-[#B8860B]">
-                    <Icon className="h-6 w-6" />
+              <div
+                key={idx}
+                className="group relative rounded-3xl border border-[#d4af37]/35 bg-gradient-to-br from-white via-[#fffdf9] to-[#faf4e6]/60 p-8 shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:border-[#b8860b] hover:shadow-[0_15px_35px_rgba(212,175,55,0.2)] flex flex-col justify-between"
+              >
+                <div className="space-y-4">
+                  {/* Top Icon & Tag */}
+                  <div className="flex items-center justify-between">
+                    <div className="h-12 w-12 rounded-2xl border border-[#d4af37]/40 bg-[#faf4e6] flex items-center justify-center text-[#b8860b] shadow-sm group-hover:bg-[#b8860b] group-hover:text-white transition-colors duration-300">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <span className="rounded-full border border-[#d4af37]/30 bg-white/90 px-3 py-1 text-[9px] font-extrabold text-[#8a640f] uppercase tracking-wider backdrop-blur-md">
+                      {feat.tag}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">{card.label}</span>
+
+                  {/* Card Title & Description */}
+                  <h3 className="text-xl font-normal text-[#1f190f] group-hover:text-[#b8860b] transition-colors pt-2">
+                    {t(feat.title.en, feat.title.es)}
+                  </h3>
+
+                  <p className="text-xs sm:text-sm text-[#4a3c28] leading-relaxed font-medium">
+                    {t(feat.desc.en, feat.desc.es)}
+                  </p>
                 </div>
-                <h3 className="mt-6 text-xl font-extrabold leading-tight text-[#071321]">
-                  {t(card.title.en, card.title.es)}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
-                  {t(card.copy.en, card.copy.es)}
-                </p>
-              </article>
+
+                <div className="pt-5 border-t border-[#d4af37]/20 mt-6 flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-[10px] font-extrabold text-[#8a640f] uppercase tracking-wider">
+                    <ShieldCheck className="h-3.5 w-3.5 text-[#b8860b]" />
+                    <span>{t("AUTHENTIC & VERIFIED", "AUTÉNTICO Y VERIFICADO")}</span>
+                  </div>
+                  <span className="h-2 w-2 rounded-full bg-[#b8860b]/40 group-hover:bg-[#b8860b] transition-colors" />
+                </div>
+              </div>
             );
           })}
         </div>
 
-        <div className="mt-8 flex flex-col items-start justify-between gap-4 rounded-3xl border border-amber-300/60 bg-[#071321] p-8 text-white sm:flex-row sm:items-center shadow-xl">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold-gradient text-slate-950">
-              <BadgeCheck className="h-6 w-6" />
-            </div>
-            <div>
-              <h3 className="text-xl font-extrabold text-white">
-                {t("Ready to discuss a wholesale or distribution requirement?", "¡Listo para hablar de sus requisitos de distribución?")}
-              </h3>
-              <p className="mt-1 text-sm leading-6 text-white/80">
-                {t("Share your category, market, and volume requirements with our Dubai team.", "Comparta sus requisitos de categoría, mercado y volumen con nuestro equipo en Dubái.")}
-              </p>
-            </div>
+        {/* Bottom Partnership Callout Banner */}
+        <div className="rounded-3xl border border-[#d4af37]/40 bg-gradient-to-r from-[#fffdf8] via-[#faf4e6] to-[#fffdf8] p-8 sm:p-12 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center md:text-left max-w-2xl">
+            <h3 className="text-2xl font-normal text-[#1f190f]">
+              {t("Explore Strategic Brand & Supplier Opportunities", "Explore Oportunidades Estratégicas para Marcas")}
+            </h3>
+            <p className="text-xs sm:text-sm text-[#4a3c28] leading-relaxed font-medium">
+              {t(
+                "Learn more about our European clean T2 sourcing models, non-European T1 supply lines, and official distribution capabilities.",
+                "Conozca más sobre nuestros modelos de sourcing T2 limpios europeos y líneas T1 no europeas."
+              )}
+            </p>
           </div>
+
           <Link
-            href="/contact"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-gold-gradient px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-slate-950 transition hover:opacity-95 shadow-md"
+            href="/why-choose-us"
+            className="inline-flex items-center gap-2.5 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-8 py-4 text-xs font-extrabold uppercase tracking-wider text-[#1f190f] shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg shrink-0"
           >
-            <span>{t("Start Inquiry", "Iniciar Consulta")}</span>
+            <span>{t("Explore Partnership Capabilities", "Explorar Capacidades de Alianza")}</span>
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
+
       </div>
     </section>
   );

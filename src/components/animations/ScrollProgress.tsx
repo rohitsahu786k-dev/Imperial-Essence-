@@ -22,7 +22,7 @@ export function ScrollProgress() {
 
   return (
     <div className="fixed inset-x-0 top-0 z-[70] h-1 bg-transparent" aria-hidden="true">
-      <div className="h-full bg-[#C6A128]" style={{ width: `${progress}%` }} />
+      <div className="h-full bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c]" style={{ width: `${progress}%` }} />
     </div>
   );
 }

@@ -28,9 +28,9 @@ export function WorldMap({
       const map = new DottedMap({ height: 100, grid: "diagonal" });
       return map.getSVG({
         radius: 0.22,
-        color: isDark ? "#FFFFFF35" : "#07132125",
+        color: isDark ? "#FFFFFF35" : "#b8860b30",
         shape: "circle",
-        backgroundColor: isDark ? "#071321" : "#FFFFFF",
+        backgroundColor: isDark ? "#1f190f" : "#FFFFFF",
       });
     } catch {
       return "";
@@ -53,7 +53,7 @@ export function WorldMap({
   };
 
   return (
-    <div className={`w-full h-full min-h-[380px] lg:min-h-[460px] rounded-3xl relative overflow-hidden font-sans border ${isDark ? 'border-white/15 bg-[#071321]' : 'border-amber-200/80 bg-white'} shadow-sm flex items-center justify-center`}>
+    <div className={`w-full h-full min-h-[380px] lg:min-h-[460px] rounded-3xl relative overflow-hidden font-sans border ${isDark ? 'border-white/15 bg-[#1f190f]' : 'border-[#d4af37]/35 bg-white'} shadow-sm flex items-center justify-center`}>
       {/* Map SVG background */}
       {svgMap ? (
         <Image

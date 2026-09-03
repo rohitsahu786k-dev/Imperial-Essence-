@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Layers } from "lucide-react";
 
 export function InternalPageHero({
   eyebrow,
@@ -10,36 +11,34 @@ export function InternalPageHero({
   copy: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#071321] px-4 pb-14 pt-32 text-center text-white sm:px-6 sm:pb-16 sm:pt-36 lg:px-8">
+    <section className="relative overflow-hidden bg-[#fffdf7] px-4 pb-16 pt-32 text-center text-[#1f190f] sm:px-6 sm:pb-20 sm:pt-40 lg:px-8 border-b border-[#d4af37]/30">
+      
+      {/* Background Image Overlay */}
       <Image
         src="/dubai-skyline-hero.jpg"
-        alt="Imperial Essence Trading LLC Dubai HQ"
+        alt="Imperial Essence Trading LLC Dubai HQ Skyline"
         fill
         priority
         sizes="100vw"
-        className="absolute inset-0 z-0 object-cover opacity-30 saturate-110"
+        className="absolute inset-0 z-0 object-cover object-center filter brightness-[0.9] blur-[1px]"
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#071321]/90 via-[#071321]/80 to-[#071321]" aria-hidden="true" />
-      <div
-        className="absolute inset-0 z-0 opacity-40"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.25) 0%, transparent 50%),
-            linear-gradient(to right, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(212, 175, 55, 0.05) 1px, transparent 1px)
-          `,
-          backgroundSize: "auto, 80px 80px, 80px 80px",
-        }}
-        aria-hidden="true"
-      />
-      <div className="relative z-10 mx-auto flex min-h-[220px] max-w-5xl flex-col items-center justify-center">
-        <p className="mb-5 rounded-full border border-amber-300/40 bg-white/10 backdrop-blur-md px-5 py-1.5 text-xs font-extrabold uppercase tracking-[0.24em] text-[#D4AF37] shadow-sm sm:text-sm">
-          {eyebrow}
-        </p>
-        <h1 className="max-w-4xl text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/90 via-white/80 to-white/95" />
+      
+      {/* Radial Gold Lighting */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-80 w-80 rounded-full bg-[#d4af37]/15 blur-[100px] pointer-events-none" />
+
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center justify-center">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#8a640f] backdrop-blur-xl shadow-md">
+          <Layers className="h-3.5 w-3.5 text-[#b8860b]" />
+          <span>{eyebrow}</span>
+        </div>
+
+        <h1 className="text-3xl font-normal leading-tight tracking-tight text-[#1f190f] sm:text-5xl lg:text-6xl text-gold-gradient-bright">
           {title}
         </h1>
-        <p className="mx-auto mt-6 max-w-3xl text-sm font-medium leading-relaxed text-slate-200 sm:text-lg">
+
+        <p className="mx-auto mt-6 max-w-2xl text-xs font-medium leading-relaxed text-[#4a3c28] sm:text-base">
           {copy}
         </p>
       </div>

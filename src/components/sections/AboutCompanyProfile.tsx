@@ -43,28 +43,28 @@ export function AboutCompanyProfile() {
   const { t } = useLanguage();
 
   return (
-    <section className="bg-white py-16 text-[#071321] sm:py-20">
+    <section className="bg-[#faf6ee] py-20 text-[#1f190f] border-b border-[#d4af37]/30">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
-              <Building2 className="h-3.5 w-3.5 text-[#D4AF37]" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#8a640f]">
+              <Building2 className="h-3.5 w-3.5 text-[#b8860b]" />
               <span>{t("Business Overview", "Información de la Empresa")}</span>
             </div>
             <div className="space-y-4">
-              <h1 className="text-3xl font-extrabold tracking-tight text-[#071321] sm:text-5xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-[#1f190f] sm:text-5xl">
                 {t("About Imperial Essence Trading LLC", "Sobre Imperial Essence Trading LLC")}
-              </h1>
-              <p className="text-base leading-8 text-slate-600 sm:text-lg">
-                {t(siteData.about.overview.en, siteData.about.overview.es)}
+              </h2>
+              <p className="text-sm leading-relaxed text-[#4a3c28] sm:text-base font-medium">
+                {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
               </p>
             </div>
-            <div className="rounded-3xl border border-amber-200/80 bg-gold-shimmer p-6 shadow-sm">
-              <FileText className="mb-4 h-6 w-6 text-[#B8860B]" />
-              <h2 className="text-lg font-bold text-[#071321]">
+            <div className="rounded-3xl border border-[#d4af37]/35 bg-white p-6 shadow-md space-y-2">
+              <FileText className="h-6 w-6 text-[#b8860b]" />
+              <h3 className="text-lg font-extrabold text-[#1f190f]">
                 {t("Company Profile / Brochure", "Perfil de Empresa / Brochure")}
-              </h2>
-              <p className="mt-2 text-sm leading-7 text-slate-600">
+              </h3>
+              <p className="text-xs leading-relaxed text-[#5a4a30] font-medium">
                 {t(
                   "A downloadable company brochure PDF can be provided upon request for official B2B evaluation.",
                   "Se puede proporcionar un folleto corporativo en PDF bajo solicitud para evaluación B2B."
@@ -74,17 +74,17 @@ export function AboutCompanyProfile() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {highlights.map((item) => {
+            {highlights.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div key={item.title.en} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#D4AF37] hover:shadow-md space-y-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-50 text-[#B8860B]">
+                <div key={idx} className="rounded-3xl border border-[#d4af37]/35 bg-white p-6 shadow-md space-y-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#faf4e6] text-[#b8860b] border border-[#d4af37]/30">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-lg font-bold text-[#071321]">
+                  <h3 className="text-lg font-extrabold text-[#1f190f]">
                     {t(item.title.en, item.title.es)}
                   </h3>
-                  <p className="text-sm leading-7 text-slate-600">
+                  <p className="text-xs leading-relaxed text-[#5a4a30] font-medium">
                     {t(item.desc.en, item.desc.es)}
                   </p>
                 </div>

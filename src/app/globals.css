@@ -2,7 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #102033;
+  --foreground: #1f190f;
+  --gold-primary: #d4af37;
+  --gold-dark: #b8860b;
+  --gold-light: #f5d77f;
+  --gold-deep: #8a640f;
+  --bg-cream: #fffdf7;
+  --bg-sand: #faf4e6;
 }
 
 @theme inline {
@@ -17,36 +23,60 @@ body {
   color: var(--foreground);
 }
 
+/* Enforce font-weight <= 400 for all heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 ::selection {
-  background: #D4AF37;
-  color: #071321;
+  background: #d4af37;
+  color: #ffffff;
 }
 
 .text-gold-gradient {
-  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 35%, #F3E5AB 65%, #AA7C11 100%);
+  background: linear-gradient(135deg, #8a640f 0%, #b8860b 25%, #d4af37 60%, #9e7415 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gold-gradient-bright {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 35%, #e5b85c 70%, #9e7415 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .bg-gold-gradient {
-  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #B8860B 100%);
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 40%, #e5b85c 75%, #c5a059 100%);
+}
+
+.bg-gold-gradient-soft {
+  background: linear-gradient(135deg, #fffdf8 0%, #faf4e6 50%, #f4e8d0 100%);
 }
 
 .bg-gold-shimmer {
-  background: linear-gradient(135deg, #FFFDF8 0%, #FBF6E9 50%, #F4EAD3 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fffdf5 40%, #faf3e3 100%);
 }
 
 .border-gold {
-  border-color: #D4AF37;
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.border-gold-strong {
+  border-color: #d4af37;
 }
 
 .gold-glow {
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+}
+
+.gold-shadow {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.2);
 }
 
 @keyframes fade-in {
@@ -102,10 +132,10 @@ html {
 }
 
 .cinematic-footer-wrapper {
-  --footer-pill-bg-1: rgb(255 255 255 / 0.08);
-  --footer-pill-bg-2: rgb(255 255 255 / 0.03);
-  --footer-pill-border: rgb(255 255 255 / 0.12);
-  --footer-pill-border-hover: rgb(198 161 40 / 0.45);
+  --footer-pill-bg-1: rgba(212, 175, 55, 0.08);
+  --footer-pill-bg-2: rgba(212, 175, 55, 0.03);
+  --footer-pill-border: rgba(212, 175, 55, 0.25);
+  --footer-pill-border-hover: rgba(184, 134, 11, 0.6);
 }
 
 @keyframes footer-breathe {
@@ -139,14 +169,14 @@ html {
 .footer-bg-grid {
   background-size: 60px 60px;
   background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
+    linear-gradient(to right, rgba(212, 175, 55, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
   mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
 }
 
 .footer-aurora {
-  background: radial-gradient(circle at 50% 50%, rgb(47 168 102 / 0.16) 0%, rgb(198 161 40 / 0.12) 38%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.18) 0%, rgba(184, 134, 11, 0.1) 40%, transparent 70%);
 }
 
 .footer-glass-pill {
@@ -166,18 +196,18 @@ html {
   font-weight: 600;
   letter-spacing: 0;
   color: transparent;
-  -webkit-text-stroke: 1px rgb(255 255 255 / 0.07);
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.12) 0%, transparent 66%);
+  -webkit-text-stroke: 1px rgba(212, 175, 55, 0.12);
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.15) 0%, transparent 66%);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .footer-text-glow {
-  background: linear-gradient(180deg, #ffffff 0%, rgb(255 255 255 / 0.42) 100%);
+  background: linear-gradient(180deg, #8a640f 0%, rgba(138, 100, 15, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 20px rgb(255 255 255 / 0.12));
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
 }
 
 @keyframes client-column-scroll {
@@ -232,8 +262,8 @@ html {
 .service-image-card {
   animation: service-card-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
   box-shadow:
-    0 18px 0 -10px rgb(255 255 255),
-    0 34px 34px -32px rgb(11 34 57 / 0.34);
+    0 18px 0 -10px rgba(255, 255, 255, 0.9),
+    0 34px 34px -32px rgba(184, 134, 11, 0.2);
 }
 
 @media (min-width: 1024px) {
@@ -275,15 +305,15 @@ html {
 .input {
   min-height: 44px;
   width: 100%;
-  border-radius: 6px;
-  border: 1px solid rgb(18 58 90 / 0.18);
-  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #ffffff;
   padding: 0.7rem 0.85rem;
-  color: #102033;
+  color: #1f190f;
   outline: none;
 }
 
 .input:focus {
-  border-color: #207b68;
-  box-shadow: 0 0 0 3px rgb(47 168 102 / 0.16);
+  border-color: #b8860b;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { CategoryGrid } from "@/components/sections/CategoryGrid";
-import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
+import { CategoryInteractiveGallery } from "@/components/sections/CategoryInteractiveGallery";
+import { InquiryCTA } from "@/components/sections/InquiryCTA";
 
 export const metadata: Metadata = {
   title: "Product Categories | Imperial Essence Trading LLC",
@@ -13,11 +14,12 @@ export default function CategoriesPage() {
     <div>
       <InternalPageHero
         eyebrow="Product Categories"
-        title="Luxury categories for international wholesale"
+        title="8 Luxury Wholesale Categories"
         copy="Category-led B2B sourcing across luxury perfumery, niche fragrances, cosmetics, skincare, fashion & textiles, travel sets, accessories, and jewelry."
       />
-      <CategoryGrid compact />
-      <ContactInquirySection compact />
+      <CategoryGrid />
+      <CategoryInteractiveGallery />
+      <InquiryCTA />
     </div>
   );
 }

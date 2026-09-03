@@ -79,17 +79,17 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
   ];
 
   return (
-    <section className={`${compact ? "py-16" : "py-24"} bg-white text-[#071321]`}>
+    <section className={`${compact ? "py-16" : "py-24"} bg-[#fffdf7] text-[#1f190f] border-t border-[#d4af37]/30`}>
       <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${compact ? "space-y-12" : "space-y-20"}`}>
         {/* Logistics Capabilities Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-block rounded-full bg-amber-50 border border-amber-200/80 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#B8860B]">
+          <span className="inline-block rounded-full bg-[#faf4e6] border border-[#d4af37]/40 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#8a640f]">
             {t("Global Freight & Supply Chain", "Flete Global y Cadena de Suministro")}
           </span>
-          <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#071321]">
+          <h2 className="text-3xl font-extrabold sm:text-5xl tracking-tight text-[#1f190f]">
             {t("Logistics & Transport Management", "Gestión de Logística y Transporte")}
           </h2>
-          <p className="text-base text-slate-600">
+          <p className="text-base text-[#4a3c28] font-medium">
             {t(
               "Operating out of our Dubai headquarters in Bay Square and European trade hubs, we coordinate seamless cross-border freight.",
               "Operando desde nuestra sede en Dubái Bay Square y centros logísticos en Europa, coordinamos fletes transfronterizos sin problemas."
@@ -104,7 +104,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
             return (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#D4AF37] flex flex-col justify-between h-[360px]"
+                className="group relative overflow-hidden rounded-3xl border border-[#d4af37]/35 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#b8860b] flex flex-col justify-between h-[360px]"
               >
                 {/* Image Frame */}
                 <div className="absolute inset-0 z-0">
@@ -113,24 +113,24 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
                     alt={mode.title.en}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105 filter saturate-105"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-[0.9]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-[#071321]/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1f190f] via-[#1f190f]/60 to-transparent" />
                 </div>
 
                 {/* Top Badge */}
                 <div className="relative z-10 p-5 flex justify-between items-center">
-                  <div className="h-10 w-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#B8860B] shadow-sm">
+                  <div className="h-10 w-10 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#b8860b] shadow-sm">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <span className="rounded-full bg-[#071321]/80 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider border border-white/10">
+                  <span className="rounded-full bg-[#1f190f]/80 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-[#e5b85c] uppercase tracking-wider border border-white/10">
                     Mode 0{idx + 1}
                   </span>
                 </div>
 
                 {/* Content Area */}
                 <div className="relative z-10 p-6 space-y-2 text-white">
-                  <h3 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#e5b85c] transition">
                     {t(mode.title.en, mode.title.es)}
                   </h3>
                   <p className="text-xs text-white/80 leading-relaxed">
@@ -143,18 +143,18 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
         </div>
 
         {/* Single Unified Merged Card Container */}
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-12 shadow-sm space-y-10">
+        <div className="rounded-3xl border border-[#d4af37]/35 bg-white p-8 sm:p-12 shadow-sm space-y-10">
           {/* Header Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200/80 px-3.5 py-1 text-[11px] font-bold text-[#B8860B] uppercase tracking-wider">
-                <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
+              <div className="inline-flex items-center gap-2 rounded-full bg-[#faf4e6] border border-[#d4af37]/40 px-3.5 py-1 text-[11px] font-bold text-[#8a640f] uppercase tracking-wider">
+                <Globe className="h-3.5 w-3.5 text-[#b8860b]" />
                 <span>{t("Global Distribution Network", "Red de Distribución Global")}</span>
               </div>
-              <h3 className="text-2xl sm:text-4xl font-extrabold text-[#071321] tracking-tight">
+              <h3 className="text-2xl sm:text-4xl font-extrabold text-[#1f190f] tracking-tight">
                 {t("Target Markets & Distribution Routes", "Mercados Objetivo y Rutas de Distribución")}
               </h3>
-              <p className="text-sm sm:text-base text-[#071321] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4a3c28] leading-relaxed font-medium">
                 {t(
                   "Emanating from our Dubai headquarters in Bay Square and European supply network, connecting Middle East, Europe, United States, Africa, Asia, South America, and Australia.",
                   "Desde nuestra sede en Dubái Bay Square y red de suministro europea, conectando Oriente Medio, Europa, EE. UU., África, Asia, Sudamérica y Australia."
@@ -166,7 +166,7 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
                 {siteData.logistics.targetMarkets.map((reg) => (
                   <span
                     key={reg}
-                    className="rounded-full bg-slate-100 border border-slate-200 px-4 py-1.5 text-xs font-semibold text-slate-800"
+                    className="rounded-full bg-[#faf4e6] border border-[#d4af37]/30 px-4 py-1.5 text-xs font-extrabold text-[#2c2214]"
                   >
                     {reg}
                   </span>
@@ -176,14 +176,14 @@ export function LogisticsTargetMarkets({ compact = false }: { compact?: boolean 
 
             <div className="lg:col-span-4 text-left lg:text-right space-y-3">
               <div>
-                <span className="text-4xl sm:text-5xl font-extrabold text-[#B8860B]">40+</span>
-                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                <span className="text-4xl sm:text-5xl font-extrabold text-[#b8860b]">40+</span>
+                <p className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">
                   {t("Years Family Logistics Legacy", "Años de Legado Logístico Familiar")}
                 </p>
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-xs font-extrabold uppercase tracking-wider text-slate-950 shadow-md transition hover:opacity-95"
+                className="inline-flex items-center gap-2 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-6 py-3 text-xs font-extrabold uppercase tracking-wider text-[#1f190f] shadow-md transition hover:scale-105"
               >
                 <span>{t("Check Shipping Routes", "Consultar Rutas de Envío")}</span>
                 <ArrowRight className="h-4 w-4" />

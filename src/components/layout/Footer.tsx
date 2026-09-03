@@ -4,135 +4,158 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { MapPin, Phone, Mail, Clock, ArrowUp, Building2 } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Phone, ShieldCheck, Clock } from "lucide-react";
 
 export function Footer() {
   const { t } = useLanguage();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const quickLinks = [
+    { href: "/about", label: t("About Us", "Nosotros") },
+    { href: "/categories", label: t("Product Categories", "Categorías de Productos") },
+    { href: "/our-sourcing", label: t("European Sourcing (T1 & T2)", "Sourcing Europeo (T1 y T2)") },
+    { href: "/global-distribution", label: t("Logistics & Transport", "Logística y Transporte") },
+    { href: "/why-choose-us", label: t("Why Choose Us", "Por Qué Elegirnos") },
+    { href: "/contact", label: t("Contact Us", "Contacto") },
+  ];
+
+  const categoriesList = [
+    { href: "/categories#perfumes-fragrances", label: t("Perfumes & Fragrances", "Perfumes y Fragancias") },
+    { href: "/categories#niche-fragrances", label: t("Niche Fragrances", "Perfumes de Nicho") },
+    { href: "/categories#cosmetics-makeup", label: t("Cosmetics & Makeup", "Cosmética y Maquillaje") },
+    { href: "/categories#skincare", label: t("Skincare", "Cuidado de la Piel") },
+    { href: "/categories#travel-sets", label: t("Travel Sets & Duty Free", "Juegos de Viaje y Duty Free") },
+    { href: "/categories#jewelry", label: t("Jewelry & Watchmaking", "Joyería y Relojería") },
+  ];
+
+  const legalLinks = [
+    { href: "/privacy-policy", label: t("Privacy Policy", "Política de Privacidad") },
+    { href: "/terms", label: t("Terms & Conditions", "Términos y Condiciones") },
+    { href: "/cookie-policy", label: t("Cookie Policy", "Política de Cookies") },
+  ];
 
   return (
-    <footer className="relative bg-white text-[#071321] pt-20 pb-24 lg:pb-10 border-t border-slate-200 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Col 1: Brand Info & Imperial Essence Logo */}
-          <div className="flex flex-col space-y-6">
-            <Link href="/" className="inline-block shrink-0">
+    <footer className="relative border-t-2 border-[#d4af37] bg-gradient-to-b from-[#fffdf9] via-[#faf4e6] to-[#f3e7cd] text-[#1f190f]">
+      {/* Gold Top Accent Line */}
+      <div className="h-1 w-full bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#b8860b]" />
+
+      <div className="mx-auto max-w-7xl px-4 pb-12 pt-16 sm:px-6 lg:px-8">
+        <div className="grid gap-12 border-b border-[#d4af37]/25 pb-12 md:grid-cols-2 lg:grid-cols-4">
+          
+          {/* Col 1: Brand & Overview */}
+          <div className="space-y-6">
+            <Link href="/" aria-label="Imperial Essence Trading LLC" className="inline-block">
               <Image
                 src="/imperial-essence-logo.png"
                 alt="Imperial Essence Trading LLC Logo"
-                width={260}
-                height={110}
-                className="h-20 sm:h-24 w-auto object-contain"
+                width={210}
+                height={90}
+                className="h-16 w-auto object-contain filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.3)]"
               />
             </Link>
-            <p className="text-xs text-slate-600 leading-relaxed font-medium">
-              {t(siteData.company.subTagline.en, siteData.company.subTagline.es)}
+
+            <p className="text-xs leading-relaxed text-[#4a3c28] font-medium">
+              {t(
+                "Dubai-based wholesale and distribution company specializing in luxury perfumery, premium cosmetics, skincare, niche fragrances, fashion, travel sets, accessories, and jewelry.",
+                "Empresa de distribución y venta al por mayor con sede en Dubái especializada en perfumería de lujo, cosmética premium y travel retail."
+              )}
             </p>
-            <div className="text-xs text-slate-500 space-y-1">
-              <p className="font-semibold text-slate-700">Registered Commercial Entity in Dubai, UAE</p>
-              <p className="font-bold text-[#071321]">{siteData.company.license}</p>
+
+            <div className="flex items-center gap-3 pt-2">
+              <div className="flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-50 px-3.5 py-1.5 text-xs font-bold text-emerald-800 shadow-sm">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-600"></span>
+                </span>
+                <span>WhatsApp 24/7 Available</span>
+              </div>
             </div>
           </div>
 
           {/* Col 2: Navigation Links */}
           <div>
-            <h3 className="text-sm font-bold text-[#B8860B] uppercase tracking-wider mb-6">
-              {t("Quick Links", "Enlaces Rápidos")}
+            <h3 className="text-xs font-extrabold uppercase tracking-widest text-[#8a640f]">
+              {t("Company & Sourcing", "Empresa y Sourcing")}
             </h3>
-            <ul className="space-y-3 text-xs font-semibold text-slate-700">
-              <li>
-                <Link href="/" className="hover:text-[#B8860B] transition">{t("Home", "Inicio")}</Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-[#B8860B] transition">{t("About Us", "Sobre Nosotros")}</Link>
-              </li>
-              <li>
-                <Link href="/categories" className="hover:text-[#B8860B] transition">{t("Product Categories", "Categorías de Productos")}</Link>
-              </li>
-              <li>
-                <Link href="/our-sourcing" className="hover:text-[#B8860B] transition">{t("Our Sourcing (T1 & T2)", "Nuestro Abastecimiento (T1 y T2)")}</Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-[#B8860B] transition">{t("Services & Logistics", "Servicios y Logística")}</Link>
-              </li>
-              <li>
-                <Link href="/why-choose-us" className="hover:text-[#B8860B] transition">{t("Why Choose Us", "Por qué Elegirnos")}</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#B8860B] transition">{t("Contact Us", "Contacto")}</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 3: Product Sectors */}
-          <div>
-            <h3 className="text-sm font-bold text-[#B8860B] uppercase tracking-wider mb-6">
-              {t("Luxury Categories", "Categorías de Lujo")}
-            </h3>
-            <ul className="space-y-3 text-xs font-semibold text-slate-700">
-              {siteData.categories.slice(0, 7).map((cat) => (
-                <li key={cat.id}>
-                  <Link href="/categories" className="hover:text-[#B8860B] transition">
-                    {t(cat.name.en, cat.name.es)}
+            <ul className="mt-6 space-y-3 text-xs font-bold text-[#3a2e1c]">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="transition hover:text-[#b8860b] flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#b8860b]"></span>
+                    <span>{link.label}</span>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Col 4: Dubai Headquarters */}
+          {/* Col 3: Categories & Channels */}
           <div>
-            <h3 className="text-sm font-bold text-[#B8860B] uppercase tracking-wider mb-6">
+            <h3 className="text-xs font-extrabold uppercase tracking-widest text-[#8a640f]">
+              {t("Product Categories", "Categorías de Productos")}
+            </h3>
+            <ul className="mt-6 space-y-3 text-xs font-bold text-[#3a2e1c]">
+              {categoriesList.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="transition hover:text-[#b8860b] flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#b8860b]"></span>
+                    <span>{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Col 4: Contact Information */}
+          <div>
+            <h3 className="text-xs font-extrabold uppercase tracking-widest text-[#8a640f]">
               {t("Dubai Headquarters", "Sede en Dubái")}
             </h3>
-            <ul className="space-y-4 text-xs font-medium text-slate-700">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-[#B8860B] shrink-0 mt-0.5" />
-                <span>{siteData.company.location.address}</span>
+            <ul className="mt-6 space-y-4 text-xs font-bold text-[#2c2214]">
+              <li className="flex gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#b8860b]" />
+                <span className="leading-relaxed">{siteData.company.location.address}</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-[#B8860B] shrink-0" />
-                <a href={`tel:${siteData.company.contact.mobile}`} className="hover:text-[#B8860B] font-semibold">
-                  {siteData.company.contact.mobile}
+                <Phone className="h-4 w-4 shrink-0 text-[#b8860b]" />
+                <span>Tel: {siteData.company.contact.phone}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-4 w-4 shrink-0 text-emerald-600" />
+                <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b]">
+                  Mobile/WhatsApp: {siteData.company.contact.mobile}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Building2 className="h-4 w-4 text-[#B8860B] shrink-0" />
-                <a href={`tel:${siteData.company.contact.phone}`} className="hover:text-[#B8860B] font-semibold">
-                  {siteData.company.contact.phone}
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-[#B8860B] shrink-0" />
-                <a href={`mailto:${siteData.company.contact.email}`} className="hover:text-[#B8860B] font-semibold">
+                <Mail className="h-4 w-4 shrink-0 text-[#b8860b]" />
+                <a href="mailto:office@theimperialessence.com" className="hover:text-[#b8860b]">
                   {siteData.company.contact.email}
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <Clock className="h-4 w-4 text-[#B8860B] shrink-0 mt-0.5" />
-                <span>{t(siteData.company.contact.hours.en, siteData.company.contact.hours.es)}</span>
+              <li className="flex items-center gap-3 text-[#5a4a30]">
+                <Clock className="h-4 w-4 shrink-0 text-[#b8860b]" />
+                <span>Office: Mon–Fri 9:00 AM – 5:00 PM</span>
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
-          <p>© {new Date().getFullYear()} Imperial Essence Trading LLC. All rights reserved.</p>
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 text-xs font-bold text-[#5a4a30] sm:flex-row">
+          <p>© {new Date().getFullYear()} Imperial Essence Trading LLC. All Rights Reserved.</p>
+
           <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-[#B8860B] transition">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-[#B8860B] transition">Terms & Conditions</Link>
+            {legalLinks.map((legal) => (
+              <Link key={legal.href} href={legal.href} className="hover:text-[#b8860b] transition">
+                {legal.label}
+              </Link>
+            ))}
           </div>
-          <button
-            onClick={scrollToTop}
-            className="flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 hover:bg-slate-50 text-slate-700 font-semibold transition lg:mr-28"
-          >
-            <span>Back to Top</span>
-            <ArrowUp className="h-3.5 w-3.5 text-[#B8860B]" />
-          </button>
+
+          <p className="flex items-center gap-1.5 text-[#8a640f]">
+            <ShieldCheck className="h-3.5 w-3.5 text-[#b8860b]" />
+            <span>Dubai Bay Square Registered Firm</span>
+          </p>
         </div>
       </div>
     </footer>

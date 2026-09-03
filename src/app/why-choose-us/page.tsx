@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { ContactInquirySection } from "@/components/sections/ContactInquirySection";
+import { ServicesOverview } from "@/components/sections/ServicesOverview";
+import { InquiryCTA } from "@/components/sections/InquiryCTA";
 
 export const metadata: Metadata = {
   title: "Why Choose Us | Imperial Essence Trading LLC",
-  description: "Why Imperial Essence Trading LLC is your trusted partner in luxury perfumery, cosmetics, travel retail, and European T1 & T2 sourcing.",
+  description: "40+ years family legacy, direct European sourcing (T1 & T2 model), established commercial relationships with LVMH, PUIG, L'Oréal Luxe, COTY, and niche houses.",
 };
 
 export default function WhyChooseUsPage() {
@@ -13,11 +14,12 @@ export default function WhyChooseUsPage() {
     <div>
       <InternalPageHero
         eyebrow="Why Choose Us"
-        title="Built for trust, consistency, and long-term distribution"
-        copy="A Dubai-based wholesale partner combining over 40 years of family legacy, brand relationships, direct European T1 & T2 sourcing, and international logistics discipline."
+        title="Your Reliable Partner for Luxury Wholesale & Distribution"
+        copy="Speaking to clients looking for a luxury supplier and brands seeking a regional official distributor across Dubai, Europe, and duty free channels."
       />
-      <WhyChooseUs compact />
-      <ContactInquirySection compact />
+      <WhyChooseUs />
+      <ServicesOverview />
+      <InquiryCTA />
     </div>
   );
 }
