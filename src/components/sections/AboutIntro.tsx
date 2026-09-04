@@ -8,8 +8,8 @@ const aboutImages = [
     alt: "Luxury duty-free retail corridor with premium product displays",
   },
   {
-    src: "/images/brand-free-images/27-modern-wine-spirits-retail-showroom.webp",
-    alt: "Modern premium wine and spirits showroom with warm retail lighting",
+    src: "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp",
+    alt: "Elegant pink and gold quilted makeup compact in a luxury beauty display",
   },
   {
     src: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",

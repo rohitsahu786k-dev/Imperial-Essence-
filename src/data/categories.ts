@@ -89,15 +89,8 @@ export const categories = [
       "Travel sets are especially relevant for duty-free operators, airport retail, hospitality, and destination-led channels. We support wholesale conversations around compact, premium, and giftable formats that can serve international passengers and retail partners.",
     capabilities: ["Duty-free relevance", "Giftable formats", "Travel retail assortment support", "Airport retail supply"],
     images: [
-      "/images/brand-free-images/27-modern-wine-spirits-retail-showroom.webp",
       "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
-      "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp",
-      "/images/brand-free-images/31-luxury-sparkling-wine-bottle-golden-bokeh.webp",
-      "/images/brand-free-images/33-premium-dark-wine-bottle-gold-label.webp",
-      "/images/brand-free-images/34-burgundy-capped-premium-wine-bottles.webp",
-      "/images/brand-free-images/36-luxury-sparkling-wine-bottle-gift-box.webp",
-      "/images/brand-free-images/38-warm-lit-premium-spirits-backbar.webp",
-      "/images/brand-free-images/39-colorful-premium-spirits-bottle-lineup.webp"
+      "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp"
     ]
   },
   {

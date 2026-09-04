@@ -12,7 +12,7 @@ export function HeroSection() {
   const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png";
 
   return (
-    <section className="relative min-h-[70vh] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative min-h-[80vh] lg:min-h-[90vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
       
       {/* Background Banner Image Container */}
       <div className="absolute inset-0 z-0">
