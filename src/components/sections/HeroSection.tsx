@@ -12,7 +12,7 @@ export function HeroSection() {
   const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png";
 
   return (
-    <section className="relative min-h-[110vh] sm:min-h-[90vh] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative min-h-[70vh] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
       
       {/* Background Banner Image Container */}
       <div className="absolute inset-0 z-0">
@@ -39,8 +39,8 @@ export function HeroSection() {
             priority
             className="object-cover object-center filter brightness-[0.98] contrast-[1.02]"
           />
-          {/* Top Left Merging Soft White Radial Shadow Overlay behind text */}
-          <div className="absolute top-0 left-0 w-full h-[480px] bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.98)_0%,_rgba(255,255,255,0.85)_40%,_rgba(255,255,255,0.4)_65%,_transparent_85%)] pointer-events-none" />
+          {/* Smooth 50% Top Merging Soft Overlay - Natural Fade */}
+          <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-white/95 via-white/60 to-transparent pointer-events-none" />
         </div>
 
       </div>
