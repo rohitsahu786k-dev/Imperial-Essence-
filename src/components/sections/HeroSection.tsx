@@ -12,7 +12,7 @@ export function HeroSection() {
   const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile-02.png";
 
   return (
-    <section className="relative min-h-[90vh] sm:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-[130px] sm:pt-20 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative min-h-[90vh] sm:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-28 sm:pt-28 lg:pt-28 text-[#1f190f] flex flex-col justify-between">
       
       {/* Background Banner Image Container */}
       <div className="absolute inset-0 z-0">
@@ -46,10 +46,10 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content Container - Positioned Top Left with 130px Top Padding */}
-      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-0 sm:pt-10 pb-4 sm:pb-8 flex-1 flex flex-col justify-start items-start">
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-0 sm:pt-6 pb-4 sm:pb-8 flex-1 flex flex-col justify-start items-start">
         
         {/* Main Text Content */}
-        <div className="max-w-[260px] xs:max-w-xs sm:max-w-md lg:max-w-lg space-y-2.5 sm:space-y-4 text-left">
+        <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2.5 sm:space-y-4 text-left">
           
           {/* Location Pill Badge */}
           <div className="inline-flex items-center gap-1 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-[#8a640f] shadow-sm backdrop-blur-md self-start">

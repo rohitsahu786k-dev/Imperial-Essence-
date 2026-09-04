@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-export type Language = "en" | "es" | "ar";
+export type Language = "en" | "ar";
 
 export interface LanguageOption {
   code: Language;
@@ -13,7 +13,6 @@ export interface LanguageOption {
 
 export const LANGUAGES: LanguageOption[] = [
   { code: "en", label: "EN", flag: "🇬🇧", name: "English" },
-  { code: "es", label: "ES", flag: "🇪🇸", name: "Español" },
   { code: "ar", label: "AR", flag: "🇦🇪", name: "العربية" },
 ];
 
@@ -191,7 +190,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       const savedLang = localStorage.getItem("imperial_lang") as Language;
-      if (savedLang && (savedLang === "en" || savedLang === "es" || savedLang === "ar")) {
+      if (savedLang && (savedLang === "en" || savedLang === "ar")) {
         setLanguageState(savedLang);
         document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
       }
@@ -211,9 +210,6 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   };
 
   const t = (enText: string, esText?: string, arText?: string) => {
-    if (language === "es") {
-      return esText || enText;
-    }
     if (language === "ar") {
       if (arText) return arText;
       if (ARABIC_DICTIONARY[enText]) return ARABIC_DICTIONARY[enText];

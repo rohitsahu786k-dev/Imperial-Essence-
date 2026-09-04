@@ -59,7 +59,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-3" aria-label="Imperial Essence Trading LLC">
+        <Link href="/" className="group flex items-center gap-3 shrink-0" aria-label="Imperial Essence Trading LLC">
           <div className="relative overflow-hidden rounded-lg p-1 transition group-hover:scale-[1.02]">
             <Image
               src="/imperial-essence-logo.png"
@@ -73,7 +73,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-2.5 xl:flex 2xl:gap-5 shrink-0" aria-label="Primary navigation">
           {navLinks.map((item) => {
             const isActive = pathname === item.href;
             if (item.hasDropdown) {
@@ -87,7 +87,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b]",
+                      "inline-flex items-center gap-1 text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
                       isActive ? "text-[#b8860b] font-bold" : "text-[#2c2214]"
                     )}
                   >
@@ -126,7 +126,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b]",
+                  "relative text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
                   isActive ? "text-[#b8860b] font-extrabold after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-[#d4af37] after:rounded-full" : "text-[#2c2214]"
                 )}
               >
@@ -137,7 +137,7 @@ export function Header() {
         </nav>
 
         {/* Right Action Controls */}
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-2.5 xl:flex 2xl:gap-4 shrink-0">
           
           {/* Desktop Language Selector Dropdown */}
           <div
@@ -203,7 +203,7 @@ export function Header() {
         </div>
 
         {/* Mobile Menu Toggle & Language Dropdown */}
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <div className="relative">
             <button
               onClick={() => setLangDropdownOpen((prev) => !prev)}
@@ -250,7 +250,7 @@ export function Header() {
 
       {/* Mobile Drawer Navigation */}
       {open && (
-        <div className="border-t border-[#d4af37]/30 bg-white/98 px-6 pb-8 pt-4 shadow-2xl backdrop-blur-2xl lg:hidden animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="border-t border-[#d4af37]/30 bg-white/98 px-6 pb-8 pt-4 shadow-2xl backdrop-blur-2xl xl:hidden animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="space-y-2">
             {navLinks.map((item) => (
               <Link
