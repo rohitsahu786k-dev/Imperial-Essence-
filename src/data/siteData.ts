@@ -38,9 +38,9 @@ export const siteData = {
     },
     contact: {
       phone: "+971 4 552 1257",
-      mobile: "+34 614 65 55 87",
-      whatsapp: "+34 614655587",
-      whatsappMain: "+34 614655587",
+      mobile: "+971 56 393 0666",
+      whatsapp: "+971 56 393 0666",
+      whatsappMain: "+971 56 393 0666",
       whatsappText: "24/7 Available",
       email: "office@theimperialessence.com",
       website: "www.theimperialessence.com",

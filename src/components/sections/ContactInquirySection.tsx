@@ -65,8 +65,8 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
                   <Phone className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
                   <div>
                     <span className="font-extrabold text-[#1f190f] block mb-0.5">{t("Mobile / WhatsApp (24/7)", "Móvil / WhatsApp (24/7)")}</span>
-                    <a href="https://wa.me/34614655587" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b] font-extrabold text-emerald-700 block">
-                      +34 614 65 55 87
+                    <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b] font-extrabold text-emerald-700 block">
+                      +971 56 393 0666
                     </a>
                   </div>
                 </li>
