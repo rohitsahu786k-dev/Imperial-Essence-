@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-export type Language = "en" | "ar" | "es" | "fr" | "de";
+export type Language = "en" | "es";
 
 export interface LanguageOption {
   code: Language;
@@ -13,10 +13,7 @@ export interface LanguageOption {
 
 export const LANGUAGES: LanguageOption[] = [
   { code: "en", label: "EN", flag: "🇬🇧", name: "English" },
-  { code: "ar", label: "AR", flag: "🇦🇪", name: "العربية" },
   { code: "es", label: "ES", flag: "🇪🇸", name: "Español" },
-  { code: "fr", label: "FR", flag: "🇫🇷", name: "Français" },
-  { code: "de", label: "DE", flag: "🇩🇪", name: "Deutsch" },
 ];
 
 interface LanguageContextType {
@@ -31,10 +28,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
 
   const t = (enText: string, esText?: string, arText?: string, frText?: string, deText?: string) => {
-    if (language === "ar") return arText || enText;
     if (language === "es") return esText || enText;
-    if (language === "fr") return frText || enText;
-    if (language === "de") return deText || enText;
     return enText;
   };
 

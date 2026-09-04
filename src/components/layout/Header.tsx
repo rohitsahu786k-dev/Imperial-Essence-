@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useLanguage, LANGUAGES, Language } from "@/context/LanguageContext";
+import { useInquiryModal } from "@/context/InquiryModalContext";
 import { ArrowRight, ChevronDown, Menu, X, Phone, Globe, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +16,7 @@ export function Header() {
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const pathname = usePathname();
   const { language, setLanguage, t } = useLanguage();
+  const { openInquiryModal } = useInquiryModal();
 
   const currentLangObj = LANGUAGES.find((l) => l.code === language) || LANGUAGES[0];
 
@@ -190,13 +192,14 @@ export function Header() {
           </div>
 
           {/* Quick Inquiry CTA */}
-          <Link
-            href="/contact"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-[#1f190f] shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(212,175,55,0.45)]"
+          <button
+            type="button"
+            onClick={() => openInquiryModal()}
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-5 py-2.5 text-xs font-extrabold uppercase tracking-wide text-[#1f190f] shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(212,175,55,0.45)] cursor-pointer"
           >
             <span>{t("Inquire Now", "Consulta Ahora")}</span>
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Menu Toggle & Language Dropdown */}
@@ -268,23 +271,26 @@ export function Header() {
           </div>
 
           <div className="mt-6 pt-4 border-t border-[#d4af37]/20 space-y-3">
-            <Link
-              href="/contact"
-              onClick={() => setOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] py-3.5 text-xs font-extrabold uppercase tracking-wide text-[#1f190f] shadow-md"
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                openInquiryModal();
+              }}
+              className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] py-3.5 text-xs font-extrabold uppercase tracking-wide text-[#1f190f] shadow-md cursor-pointer"
             >
               <span>{t("Inquire Now", "Consulta Ahora")}</span>
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </button>
 
             <a
-              href="https://wa.me/971563930666"
+              href="https://wa.me/34614655587"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-50 py-3 text-xs font-bold text-emerald-700"
             >
               <Phone className="h-4 w-4 text-emerald-600" />
-              <span>WhatsApp 24/7 (+971 56 393 0666)</span>
+              <span>WhatsApp 24/7 (+34 614 65 55 87)</span>
             </a>
           </div>
         </div>

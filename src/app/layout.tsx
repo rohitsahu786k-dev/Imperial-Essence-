@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { InquiryModalProvider } from "@/context/InquiryModalContext";
+import { InquiryModal } from "@/components/ui/InquiryModal";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { site } from "@/data/site";
@@ -63,11 +65,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
         />
         <LanguageProvider>
-          <ScrollProgress />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppWidget />
+          <InquiryModalProvider>
+            <ScrollProgress />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <WhatsAppWidget />
+            <InquiryModal />
+          </InquiryModalProvider>
         </LanguageProvider>
       </body>
     </html>

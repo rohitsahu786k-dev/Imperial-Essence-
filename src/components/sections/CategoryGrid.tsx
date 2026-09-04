@@ -3,11 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { useInquiryModal } from "@/context/InquiryModalContext";
 import { siteData } from "@/data/siteData";
 import { ArrowUpRight, Layers, ShieldCheck } from "lucide-react";
 
 export function CategoryGrid() {
   const { t } = useLanguage();
+  const { openInquiryModal } = useInquiryModal();
   const categories = siteData.categories;
 
   return (
@@ -47,7 +49,8 @@ export function CategoryGrid() {
           {categories.map((cat) => (
             <div
               key={cat.id}
-              className="group relative overflow-hidden rounded-3xl border border-[#d4af37]/35 bg-[#1f190f] shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#b8860b] h-[350px] flex flex-col justify-between"
+              onClick={() => openInquiryModal(cat.name.en, cat.image)}
+              className="group relative cursor-pointer overflow-hidden rounded-3xl border border-[#d4af37]/35 bg-[#1f190f] shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-[#b8860b] h-[350px] flex flex-col justify-between"
             >
               {/* Card Background Image */}
               <div className="absolute inset-0 z-0">
@@ -67,13 +70,17 @@ export function CategoryGrid() {
                   {cat.badge.en}
                 </span>
 
-                <Link
-                  href={`/categories#${cat.id}`}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openInquiryModal(cat.name.en, cat.image);
+                  }}
                   className="h-9 w-9 rounded-full bg-white/95 backdrop-blur-md flex items-center justify-center text-[#1f190f] shadow-sm group-hover:bg-[#b8860b] group-hover:text-white transition-colors duration-300"
-                  aria-label={`Explore ${cat.name.en}`}
+                  aria-label={`Inquire ${cat.name.en}`}
                 >
                   <ArrowUpRight className="h-4 w-4" />
-                </Link>
+                </button>
               </div>
 
               {/* Bottom Row: Title & Action Link */}
@@ -82,13 +89,17 @@ export function CategoryGrid() {
                   {t(cat.name.en, cat.name.es)}
                 </h3>
 
-                <Link
-                  href={`/categories#${cat.id}`}
-                  className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors pt-1"
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openInquiryModal(cat.name.en, cat.image);
+                  }}
+                  className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors pt-1 cursor-pointer"
                 >
                   <span>{t("REQUEST SUPPLY", "SOLICITAR SUMINISTRO")}</span>
                   <ArrowUpRight className="h-3.5 w-3.5" />
-                </Link>
+                </button>
               </div>
             </div>
           ))}
@@ -129,13 +140,14 @@ export function CategoryGrid() {
             </p>
 
             <div className="pt-3">
-              <Link
-                href="/contact"
-                className="group/btn relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-9 py-4 text-xs font-extrabold uppercase tracking-wider text-[#1f190f] shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(212,175,55,0.65)]"
+              <button
+                type="button"
+                onClick={() => openInquiryModal()}
+                className="group/btn relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-9 py-4 text-xs font-extrabold uppercase tracking-wider text-[#1f190f] shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(212,175,55,0.65)] cursor-pointer"
               >
                 <span>{t("Submit Commercial Inquiry", "Enviar Consulta Comercial")}</span>
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
-              </Link>
+              </button>
             </div>
           </div>
 
