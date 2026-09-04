@@ -53,21 +53,21 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-[#d4af37]/30 bg-white/95 py-2 shadow-md backdrop-blur-xl"
-          : "bg-gradient-to-b from-white/90 via-white/70 to-transparent py-4"
+          ? "border-b border-[#d4af37]/30 bg-white/95 py-1 shadow-md backdrop-blur-xl"
+          : "bg-gradient-to-b from-white/90 via-white/70 to-transparent py-2"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-3 shrink-0" aria-label="Imperial Essence Trading LLC">
-          <div className="relative overflow-hidden rounded-lg p-1 transition group-hover:scale-[1.02]">
+          <div className="relative overflow-hidden rounded-lg transition group-hover:scale-[1.02]">
             <Image
               src="/imperial-essence-logo.png"
               alt="Imperial Essence Trading LLC Logo"
               width={160}
               height={65}
               priority
-              className="h-11 w-auto object-contain sm:h-12 lg:h-18 filter drop-shadow-[0_1px_4px_rgba(212,175,55,0.2)]"
+              className="h-14 w-auto object-contain sm:h-14 lg:h-18 filter drop-shadow-[0_1px_4px_rgba(212,175,55,0.2)]"
             />
           </div>
         </Link>

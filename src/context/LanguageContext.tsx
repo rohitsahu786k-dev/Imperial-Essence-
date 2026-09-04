@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { ARABIC_EXTRA } from "@/data/arabicExtra";
 
 export type Language = "en" | "ar";
 
@@ -16,7 +17,7 @@ export const LANGUAGES: LanguageOption[] = [
   { code: "ar", label: "AR", flag: "🇦🇪", name: "العربية" },
 ];
 
-const ARABIC_DICTIONARY: Record<string, string> = {
+const ARABIC_BASE: Record<string, string> = {
   // Navigation & Headers
   "Home": "الرئيسية",
   "Inicio": "الرئيسية",
@@ -175,6 +176,9 @@ const ARABIC_DICTIONARY: Record<string, string> = {
   "Send Wholesale Inquiry": "إرسال استفسار الجملة",
   "Enviar Consulta Mayorista": "إرسال استفسار الجملة",
 };
+
+// Base entries plus the generated set covering siteData and section copy.
+const ARABIC_DICTIONARY: Record<string, string> = { ...ARABIC_BASE, ...ARABIC_EXTRA };
 
 interface LanguageContextType {
   language: Language;
