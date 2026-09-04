@@ -37,7 +37,7 @@ export default function CookiePolicyPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Essential Cookies:</strong> Required for fundamental site operations, navigation, and secure forms.</li>
               <li><strong>Performance & Analytics Cookies:</strong> Help us analyze site traffic and improve page loading speed without collecting personal identification.</li>
-              <li><strong>Functional Cookies:</strong> Remember your preferred language settings (English / Spanish) across sessions.</li>
+              <li><strong>Functional Cookies:</strong> Remember your preferred language settings (English / Arabic) across sessions.</li>
             </ul>
           </div>
 
