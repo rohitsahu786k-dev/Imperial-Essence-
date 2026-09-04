@@ -80,17 +80,17 @@ export function InquiryCTA() {
                 href="https://wa.me/34614655587"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-4 rounded-2xl border border-emerald-500/40 bg-emerald-50/60 p-4 shadow-sm transition-all duration-300 hover:border-emerald-600 hover:shadow-md hover:-translate-y-0.5"
+                className="group flex items-start gap-4 rounded-2xl border border-[#d4af37]/40 bg-[#faf4e6]/80 p-4 shadow-sm transition-all duration-300 hover:border-[#b8860b] hover:shadow-md hover:-translate-y-0.5"
               >
-                <div className="rounded-xl border border-emerald-500/40 bg-emerald-100 p-3 text-emerald-700 shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-3 text-[#b8860b] shrink-0 group-hover:bg-[#b8860b] group-hover:text-white transition-colors duration-300">
                   <MessageCircle className="h-5 w-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h4 className="text-xs font-extrabold uppercase tracking-wider text-emerald-800">WhatsApp Support (24/7)</h4>
-                    <span className="rounded-full bg-emerald-600 px-2 py-0.5 text-[9px] font-extrabold text-white">LIVE</span>
+                    <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">WhatsApp Support (24/7)</h4>
+                    <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
                   </div>
-                  <p className="text-xs font-extrabold text-emerald-900 pt-0.5 group-hover:underline">
+                  <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
                     +34 614 65 55 87 (Click to Chat 24/7)
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export function InquiryCTA() {
 
               {submitted ? (
                 <div className="text-center py-12 space-y-4">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 border border-emerald-500/40 shadow-inner">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#faf4e6] text-[#b8860b] border border-[#d4af37]/40 shadow-inner">
                     <CheckCircle2 className="h-8 w-8" />
                   </div>
                   <h3 className="text-2xl font-normal text-[#1f190f]">{t("Inquiry Received", "Consulta Recibida")}</h3>

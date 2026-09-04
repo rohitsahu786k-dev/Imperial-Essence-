@@ -287,9 +287,9 @@ export function Header() {
               href="https://wa.me/34614655587"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-50 py-3 text-xs font-bold text-emerald-700"
+              className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] py-3 text-xs font-bold text-[#b8860b]"
             >
-              <Phone className="h-4 w-4 text-emerald-600" />
+              <Phone className="h-4 w-4 text-[#b8860b]" />
               <span>WhatsApp 24/7 (+34 614 65 55 87)</span>
             </a>
           </div>

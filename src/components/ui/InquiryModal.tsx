@@ -130,7 +130,7 @@ export function InquiryModal() {
                   <span>{t("Dubai Headquarters & European Clean Sourcing", "Sede en Dubái y Abastecimiento Europeo")}</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <PhoneCall className="h-4 w-4 text-emerald-400 shrink-0" />
+                  <PhoneCall className="h-4 w-4 text-[#e5b85c] shrink-0" />
                   <span>{t("24/7 WhatsApp Commercial Support", "Soporte Comercial por WhatsApp 24/7")}</span>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export function InquiryModal() {
                   href="https://wa.me/34614655587"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-xl border border-emerald-500/50 bg-emerald-950/70 py-2.5 px-4 text-xs font-bold text-emerald-300 backdrop-blur-md transition-all hover:bg-emerald-900 hover:text-white"
+                  className="flex items-center justify-center gap-2 rounded-xl border border-[#d4af37]/50 bg-[#1f190f] py-2.5 px-4 text-xs font-bold text-[#e5b85c] backdrop-blur-md transition-all hover:bg-black hover:text-white"
                 >
                   <PhoneCall className="h-3.5 w-3.5" />
                   <span>{t("Direct WhatsApp: +34 614 65 55 87", "WhatsApp Directo: +34 614 65 55 87")}</span>
@@ -153,7 +153,7 @@ export function InquiryModal() {
           <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-center bg-[#fffdf7]">
             {submitted ? (
               <div className="text-center py-10 space-y-4 animate-in zoom-in-95 duration-300">
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 border border-emerald-500 text-emerald-600 shadow-lg">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#faf4e6] border border-[#d4af37] text-[#b8860b] shadow-lg">
                   <CheckCircle2 className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#1f190f]">
@@ -171,7 +171,7 @@ export function InquiryModal() {
                     href="https://wa.me/34614655587"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-emerald-600 bg-emerald-600 px-6 py-2.5 text-xs font-extrabold text-white shadow-md transition hover:bg-emerald-700"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-6 py-2.5 text-xs font-extrabold text-[#1f190f] shadow-md transition hover:brightness-110"
                   >
                     <span>{t("Chat Now on WhatsApp", "Chatear Ahora por WhatsApp")}</span>
                     <ArrowRight className="h-3.5 w-3.5" />

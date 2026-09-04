@@ -105,7 +105,7 @@ export function ServicesOverview() {
                     </span>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors"
+                      className="inline-flex items-center gap-1 text-xs font-extrabold text-[#b8860b] group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors"
                     >
                       <span>{t("INQUIRE", "CONSULTAR")}</span>
                       <ArrowUpRight className="h-3.5 w-3.5" />

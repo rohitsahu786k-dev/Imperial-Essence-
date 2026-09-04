@@ -95,7 +95,7 @@ export function CategoryGrid() {
                     e.stopPropagation();
                     openInquiryModal(cat.name.en, cat.image);
                   }}
-                  className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors pt-1 cursor-pointer"
+                  className="inline-flex items-center gap-1 text-xs font-extrabold text-[#b8860b] group-hover:text-[#e5b85c] uppercase tracking-wider transition-colors pt-1 cursor-pointer"
                 >
                   <span>{t("REQUEST SUPPLY", "SOLICITAR SUMINISTRO")}</span>
                   <ArrowUpRight className="h-3.5 w-3.5" />

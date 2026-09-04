@@ -52,8 +52,8 @@ export function HeroSection() {
         <div className="max-w-[260px] xs:max-w-xs sm:max-w-md lg:max-w-lg space-y-2.5 sm:space-y-4 text-left">
           
           {/* Location Pill Badge */}
-          <div className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-white/95 px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-emerald-800 shadow-sm backdrop-blur-md self-start">
-            <MapPin className="h-2.5 w-2.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-1 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-[#8a640f] shadow-sm backdrop-blur-md self-start">
+            <MapPin className="h-2.5 w-2.5 text-[#b8860b]" />
             <span>{t("DUBAI, UAE – Bay Square, Business Bay", "DUBÁI, EAU – Bay Square, Business Bay")}</span>
           </div>
 
@@ -74,7 +74,7 @@ export function HeroSection() {
           <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
             <Link
               href="/categories"
-              className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-[9px] sm:text-xs font-extrabold uppercase tracking-wider shadow-md transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] text-[#1f190f] hover:brightness-110 px-4 sm:px-6 py-2 sm:py-3 text-[9px] sm:text-xs font-extrabold uppercase tracking-wider shadow-md transition-all duration-300 hover:scale-105"
             >
               <span>{t("EXPLORE CATEGORIES", "EXPLORAR CATEGORÍAS")}</span>
               <ArrowRight className="h-3 w-3" />
@@ -128,11 +128,11 @@ export function HeroSection() {
             </div>
 
             <div className="flex items-center gap-3 pr-4">
-              <div className="rounded-xl border border-emerald-500/40 bg-emerald-50 p-2 text-emerald-700">
+              <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#b8860b]">
                 <PhoneCall className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-sm font-extrabold text-emerald-800">WhatsApp 24/7</p>
+                <p className="text-sm font-extrabold text-[#1f190f]">WhatsApp 24/7</p>
                 <p className="text-[11px] font-semibold text-[#5a4a30]">+34 614 65 55 87</p>
               </div>
             </div>

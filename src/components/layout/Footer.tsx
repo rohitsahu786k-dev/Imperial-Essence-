@@ -61,10 +61,10 @@ export function Footer() {
             </p>
 
             <div className="flex items-center gap-3 pt-2">
-              <div className="flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-50 px-3.5 py-1.5 text-xs font-bold text-emerald-800 shadow-sm">
+              <div className="flex items-center gap-2 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-3.5 py-1.5 text-xs font-bold text-[#b8860b] shadow-sm">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-600"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#d4af37] opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#b8860b]"></span>
                 </span>
                 <span>WhatsApp 24/7 Available</span>
               </div>
@@ -120,7 +120,7 @@ export function Footer() {
                 <span>Tel: {siteData.company.contact.phone}</span>
               </li>
               <li className="flex items-center gap-3">
-                <MessageCircle className="h-4 w-4 shrink-0 text-emerald-600" />
+                <MessageCircle className="h-4 w-4 shrink-0 text-[#b8860b]" />
                 <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b]">
                   Mobile / WhatsApp: +971 56 393 0666
                 </a>

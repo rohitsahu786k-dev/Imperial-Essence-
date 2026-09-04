@@ -62,10 +62,10 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                  <Phone className="h-5 w-5 text-[#b8860b] shrink-0 mt-0.5" />
                   <div>
                     <span className="font-extrabold text-[#1f190f] block mb-0.5">{t("Mobile / WhatsApp (24/7)", "Móvil / WhatsApp (24/7)")}</span>
-                    <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b] font-extrabold text-emerald-700 block">
+                    <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b] font-extrabold text-[#b8860b] block">
                       +971 56 393 0666
                     </a>
                   </div>
@@ -110,7 +110,7 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
           <div className="lg:col-span-2 bg-white p-8 sm:p-10 rounded-3xl border border-[#d4af37]/35 shadow-md">
             {submitted ? (
               <div className="py-16 text-center space-y-4">
-                <div className="h-16 w-16 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-500/40">
+                <div className="h-16 w-16 mx-auto rounded-full bg-[#faf4e6] text-[#b8860b] flex items-center justify-center border border-[#d4af37]/40 shadow-inner">
                   <CheckCircle2 className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-extrabold text-[#1f190f]">
