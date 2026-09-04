@@ -64,10 +64,10 @@ export function Header() {
             <Image
               src="/imperial-essence-logo.png"
               alt="Imperial Essence Trading LLC Logo"
-              width={200}
-              height={85}
+              width={160}
+              height={65}
               priority
-              className="h-8 w-auto object-contain sm:h-9 lg:h-10 filter drop-shadow-[0_2px_6px_rgba(212,175,55,0.2)]"
+              className="h-6 w-auto max-w-[125px] object-contain sm:h-7 sm:max-w-[140px] lg:h-8 lg:max-w-[150px] filter drop-shadow-[0_1px_4px_rgba(212,175,55,0.2)]"
             />
           </div>
         </Link>
