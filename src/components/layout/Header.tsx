@@ -67,7 +67,7 @@ export function Header() {
               width={200}
               height={85}
               priority
-              className="h-14 w-auto object-contain sm:h-16 filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.25)]"
+              className="h-10 w-auto object-contain sm:h-12 lg:h-13 filter drop-shadow-[0_2px_6px_rgba(212,175,55,0.25)]"
             />
           </div>
         </Link>
