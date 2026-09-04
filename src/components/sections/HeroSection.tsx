@@ -12,7 +12,7 @@ export function HeroSection() {
   const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png";
 
   return (
-    <section className="relative min-h-[90vh] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative min-h-[110vh] sm:min-h-[90vh] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
       
       {/* Background Banner Image Container */}
       <div className="absolute inset-0 z-0">
@@ -40,16 +40,16 @@ export function HeroSection() {
             className="object-cover object-center filter brightness-[0.98] contrast-[1.02]"
           />
           {/* Top Left Merging Soft White Radial Shadow Overlay behind text */}
-          <div className="absolute top-0 left-0 w-full h-[520px] bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.96)_0%,_rgba(255,255,255,0.75)_45%,_transparent_80%)] pointer-events-none" />
+          <div className="absolute top-0 left-0 w-full h-[480px] bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.98)_0%,_rgba(255,255,255,0.85)_40%,_rgba(255,255,255,0.4)_65%,_transparent_85%)] pointer-events-none" />
         </div>
 
       </div>
 
       {/* Hero Content Container */}
-      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex-1 flex flex-col justify-center items-start">
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-3 sm:pt-8 pb-4 sm:pb-8 flex-1 flex flex-col justify-start sm:justify-center items-start">
         
-        {/* Main Text Content - Positioned Top Left */}
-        <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2.5 sm:space-y-4 text-left">
+        {/* Main Text Content - Positioned Top Left on Mobile in the Red Box Area */}
+        <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2 sm:space-y-4 text-left">
           
           {/* Location Pill Badge */}
           <div className="inline-flex items-center gap-1 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-[#8a640f] shadow-sm backdrop-blur-md self-start">
