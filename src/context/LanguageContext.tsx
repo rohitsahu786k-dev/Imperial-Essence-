@@ -103,7 +103,6 @@ const ARABIC_BASE: Record<string, string> = {
   "Commercial Inquiries & Wholesale Requests": "الاستفسارات التجارية وطلبات الجملة",
   "Consultas Comerciales y Solicitudes Mayoristas": "الاستفسارات التجارية وطلبات الجملة",
   "Send Business Inquiry": "إرسال استفسار تجاري",
-  "Enviar Consulta Comercial": "إرسال استفسار تجاري",
   "Full Name *": "الاسم الكامل *",
   "Nombre Completo *": "الاسم الكامل *",
   "Company Name *": "اسم الشركة *",
@@ -144,7 +143,6 @@ const ARABIC_BASE: Record<string, string> = {
 
   // Contact Page
   "Contact Us": "اتصل بنا",
-  "Contacto": "اتصل بنا",
   "Connect with Imperial Essence Trading LLC": "تواصل مع امبريال اسنس للتجارة ش.ذ.م.م",
   "Conéctese con Imperial Essence Trading LLC": "تواصل مع امبريال اسنس للتجارة ش.ذ.م.م",
   "Dubai Head Office": "المكتب الرئيسي في دبي",
@@ -174,7 +172,6 @@ const ARABIC_BASE: Record<string, string> = {
   "Inquiry Message / Product Categories Required": "رسالة الاستفسار / الفئات المطلوبة",
   "Mensaje de Consulta / Categorías Requeridas": "رسالة الاستفسار / الفئات المطلوبة",
   "Send Wholesale Inquiry": "إرسال استفسار الجملة",
-  "Enviar Consulta Mayorista": "إرسال استفسار الجملة",
 };
 
 // Base entries plus the generated set covering siteData and section copy.

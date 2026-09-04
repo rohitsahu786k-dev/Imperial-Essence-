@@ -8,11 +8,11 @@ import { ArrowRight, MapPin, ShieldCheck, Globe2, Building2, PhoneCall } from "l
 export function HeroSection() {
   const { t } = useLanguage();
 
-  const desktopBannerImage = "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop-02.png";
-  const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile-02.png";
+  const desktopBannerImage = "/images/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop-01.png";
+  const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png";
 
   return (
-    <section className="relative min-h-[540px] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative min-h-[560px] lg:min-h-[76vh] xl:min-h-[80vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
       
       {/* Background Banner Image Container */}
       <div className="absolute inset-0 z-0">
@@ -30,26 +30,26 @@ export function HeroSection() {
           <div className="absolute inset-y-0 left-0 w-full sm:w-3/4 lg:w-3/5 bg-gradient-to-r from-white via-white/95 to-transparent pointer-events-none" />
         </div>
 
-        {/* Mobile Single Banner Image */}
+        {/* Mobile Single Banner Image - Formatted to show complete luxury image */}
         <div className="block sm:hidden relative h-full w-full">
           <Image
             src={mobileBannerImage}
-            alt="Imperial Essence Trading LLC Luxury Banner"
+            alt="Imperial Essence Trading LLC Luxury Banner Mobile"
             fill
             priority
-            className="object-cover object-center filter brightness-[0.98]"
+            className="object-cover object-center filter brightness-[0.98] contrast-[1.02]"
           />
-          {/* Smooth Radial Soft Shadow Overlay Merging Gracefully into Background */}
-          <div className="absolute top-0 left-0 w-full h-[450px] bg-[radial-gradient(ellipse_at_top_left,_rgba(255,255,255,0.96)_0%,_rgba(255,255,255,0.65)_50%,_transparent_80%)] pointer-events-none" />
+          {/* Soft top-to-bottom fade overlay for text readability without obscuring full image */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/40 to-white/75 pointer-events-none" />
         </div>
 
       </div>
 
-      {/* Hero Content Container - Positioned Top Left with 130px Top Padding */}
+      {/* Hero Content Container */}
       <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex-1 flex flex-col justify-center items-start">
         
-        {/* Main Text Content */}
-        <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2.5 sm:space-y-4 text-left">
+        {/* Main Text Content - Glassmorphic wrapper on mobile for maximum legibility */}
+        <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2.5 sm:space-y-4 text-left bg-white/70 sm:bg-transparent backdrop-blur-md sm:backdrop-blur-none p-4 sm:p-0 rounded-2xl border border-[#d4af37]/30 sm:border-0 shadow-lg sm:shadow-none">
           
           {/* Location Pill Badge */}
           <div className="inline-flex items-center gap-1 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] px-2.5 py-0.5 text-[9px] sm:text-xs font-extrabold text-[#8a640f] shadow-sm backdrop-blur-md self-start">

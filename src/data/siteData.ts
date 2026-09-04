@@ -84,19 +84,19 @@ export const siteData = {
   heroBanners: {
     desktop: [
       {
-        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop.webp",
+        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop-01.png",
         title: { en: "Global Luxury Distribution Hub", es: "Centro Global de Distribución de Lujo" },
         subtitle: { en: "Connecting Europe, Middle East & Worldwide Duty Free", es: "Conectando Europa, Oriente Medio y Duty Free Global" },
         tag: "Dubai Headquarters | Bay Square"
       },
       {
-        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-luxury-distribution-banner-desktop.webp",
+        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-luxury-distribution-banner-desktop-03.png",
         title: { en: "Direct European Sourcing", es: "Abastecimiento Europeo Directo" },
         subtitle: { en: "Flexible T1 & T2 Supply Model for Luxury Brands", es: "Modelo Flexible T1 y T2 para Marcas de Lujo" },
         tag: "European Clean T2 & T1 Merchandise"
       },
       {
-        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop.webp",
+        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop-02.png",
         title: { en: "40+ Years Family Legacy", es: "Más de 40 Años de Legado Familiar" },
         subtitle: { en: "Travel Retail, Wholesale & Official Brand Partnerships", es: "Travel Retail, Venta al por Mayor y Alianzas Oficiales" },
         tag: "Travel Retail & Wholesale Experts"
@@ -104,19 +104,19 @@ export const siteData = {
     ],
     mobile: [
       {
-        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile.webp",
+        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png",
         title: { en: "Global Luxury Distribution", es: "Distribución Global de Lujo" },
         subtitle: { en: "Dubai Hub & European Sourcing", es: "Hub de Dubái y Abastecimiento Europeo" },
         tag: "Bay Square, Dubai"
       },
       {
-        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-luxury-wholesale-banner-mobile.webp",
+        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-luxury-wholesale-banner-mobile-03.png",
         title: { en: "Direct European Sourcing", es: "Abastecimiento Europeo Directo" },
         subtitle: { en: "Flexible T1 & T2 Supply Model", es: "Modelo de Suministro T1 y T2 Flexible" },
         tag: "T1 & T2 Wholesale"
       },
       {
-        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile.webp",
+        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile-02.png",
         title: { en: "40+ Years Legacy", es: "Más de 40 Años de Legado" },
         subtitle: { en: "Travel Retail & Luxury Beauty", es: "Travel Retail y Belleza de Lujo" },
         tag: "Luxury Travel Retail"
