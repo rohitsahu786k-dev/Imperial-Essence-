@@ -38,9 +38,12 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/imperial-essence-logo.png",
-    shortcut: "/imperial-essence-logo.png",
-    apple: "/imperial-essence-logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
