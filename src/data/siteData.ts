@@ -158,6 +158,7 @@ export const siteData = {
     { id: 24, src: "/images/brand-free-images/24-monochrome-black-white-runway-fashion.webp", category: "fashion-textiles", title: "Monochrome Runway Look" },
     { id: 25, src: "/images/brand-free-images/25-black-quilted-handbags-floral-celebration.webp", category: "accessories", title: "Quilted Luxury Handbag" },
     { id: 26, src: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp", category: "accessories", title: "Boutique Handbag Display" },
+    { id: 50, src: "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp", category: "travel-sets", title: "Luxury Travel Set & Duty Free Kit" },
     { id: 28, src: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp", category: "travel-sets", title: "Duty Free Shopping Corridor" },
     { id: 29, src: "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp", category: "travel-sets", title: "Futuristic Duty Free Interior" },
     { id: 30, src: "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp", category: "fashion-textiles", title: "White Tweed Runway Style" },
@@ -234,7 +235,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures for airport and duty-free channels.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo para aeropuertos y duty-free."
       },
-      image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
+      image: "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {

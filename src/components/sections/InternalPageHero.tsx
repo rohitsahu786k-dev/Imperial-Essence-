@@ -5,18 +5,22 @@ export function InternalPageHero({
   eyebrow,
   title,
   copy,
+  backgroundImage = "/dubai-skyline-hero.jpg",
+  backgroundAlt = "Imperial Essence Trading LLC Dubai HQ Skyline",
 }: {
   eyebrow: string;
   title: string;
   copy: string;
+  backgroundImage?: string;
+  backgroundAlt?: string;
 }) {
   return (
     <section className="relative overflow-hidden bg-[#fffdf7] px-4 pb-16 pt-32 text-center text-[#1f190f] sm:px-6 sm:pb-20 sm:pt-40 lg:px-8 border-b border-[#d4af37]/30">
       
       {/* Background Image Overlay */}
       <Image
-        src="/dubai-skyline-hero.jpg"
-        alt="Imperial Essence Trading LLC Dubai HQ Skyline"
+        src={backgroundImage}
+        alt={backgroundAlt}
         fill
         priority
         sizes="100vw"

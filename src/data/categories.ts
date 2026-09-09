@@ -82,13 +82,14 @@ export const categories = [
   {
     title: "Travel Sets",
     slug: "travel-sets",
-    image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
+    image: "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
     summary:
       "Travel-friendly premium sets designed for duty-free, airport, gifting, hospitality, and destination retail wholesale opportunities.",
     detail:
       "Travel sets are especially relevant for duty-free operators, airport retail, hospitality, and destination-led channels. We support wholesale conversations around compact, premium, and giftable formats that can serve international passengers and retail partners.",
     capabilities: ["Duty-free relevance", "Giftable formats", "Travel retail assortment support", "Airport retail supply"],
     images: [
+      "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
       "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
       "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp"
     ]

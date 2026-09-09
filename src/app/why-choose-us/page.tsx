@@ -16,6 +16,8 @@ export default function WhyChooseUsPage() {
         eyebrow="Why Choose Us"
         title="Your Reliable Partner for Luxury Wholesale & Distribution"
         copy="Speaking to clients looking for a luxury supplier and brands seeking a regional official distributor across Dubai, Europe, and duty free channels."
+        backgroundImage="/why-choose-us-partnership-hero.jpg"
+        backgroundAlt="Business partnership handshake between Imperial Essence Trading LLC and a wholesale distribution client"
       />
       <WhyChooseUs />
       <ServicesOverview />
