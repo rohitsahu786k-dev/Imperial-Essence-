@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { ScrollProgress } from "@/components/animations/ScrollProgress";
+import { SiteChrome } from "@/components/layout/SiteChrome";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { InquiryModalProvider } from "@/context/InquiryModalContext";
-import { InquiryModal } from "@/components/ui/InquiryModal";
-import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { site } from "@/data/site";
 import "./globals.css";
@@ -76,12 +72,7 @@ export default function RootLayout({
         />
         <LanguageProvider>
           <InquiryModalProvider>
-            <ScrollProgress />
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <WhatsAppWidget />
-            <InquiryModal />
+            <SiteChrome>{children}</SiteChrome>
           </InquiryModalProvider>
         </LanguageProvider>
       </body>
