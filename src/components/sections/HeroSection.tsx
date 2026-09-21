@@ -13,10 +13,10 @@ export function HeroSection() {
   const mobileBannerImage = siteData.heroBanners.mobile[0].image;
 
   return (
-    <section className="relative min-h-[80vh] lg:min-h-[90vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">
+    <section className="relative w-full overflow-hidden bg-[#fffdf7] pt-20 text-[#1f190f] sm:min-h-[80vh] sm:justify-between lg:min-h-[90vh] lg:pt-24 flex flex-col">
       
       {/* Background Banner Image Container */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-x-0 top-0 z-0 h-[80vh] sm:inset-0 sm:h-auto">
         
         {/* Desktop Single Banner Image */}
         <div className="hidden sm:block relative h-full w-full">
@@ -32,13 +32,13 @@ export function HeroSection() {
         </div>
 
         {/* Mobile Single Banner Image */}
-        <div className="block sm:hidden relative h-full w-full">
+        <div className="block sm:hidden relative h-full w-full bg-[#fffdf7]">
           <Image
             src={mobileBannerImage}
             alt="Imperial Essence Trading LLC Luxury Banner Mobile"
             fill
             priority
-            className="object-cover object-center filter brightness-[0.98] contrast-[1.02]"
+            className="object-contain object-bottom filter brightness-[0.98] contrast-[1.02]"
           />
           {/* Smooth 50% Top Merging Soft Overlay - Natural Fade */}
           <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-white/95 via-white/60 to-transparent pointer-events-none" />
@@ -47,7 +47,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content Container */}
-      <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-3 sm:pt-8 pb-4 sm:pb-8 flex-1 flex flex-col justify-start sm:justify-center items-start">
+      <div className="relative z-10 mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col items-start justify-start px-4 pb-4 pt-3 sm:min-h-0 sm:flex-1 sm:justify-center sm:px-6 sm:pt-8 sm:pb-8 lg:px-8">
         
         {/* Main Text Content - Positioned Top Left on Mobile in the Red Box Area */}
         <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2 sm:space-y-4 text-left">
