@@ -38,7 +38,7 @@ export function HeroSection() {
             alt="Imperial Essence Trading LLC Luxury Banner Mobile"
             fill
             priority
-            className="object-contain object-bottom filter brightness-[0.98] contrast-[1.02]"
+            className="object-contain object-top filter brightness-[0.98] contrast-[1.02]"
           />
           {/* Smooth 50% Top Merging Soft Overlay - Natural Fade */}
           <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-white/95 via-white/60 to-transparent pointer-events-none" />
