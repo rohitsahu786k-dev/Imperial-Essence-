@@ -16,7 +16,7 @@ export function HeroSection() {
     <section className="relative w-full overflow-hidden bg-[#fffdf7] pt-20 text-[#1f190f] sm:min-h-[80vh] sm:justify-between lg:min-h-[90vh] lg:pt-24 flex flex-col">
       
       {/* Background Banner Image Container */}
-      <div className="absolute inset-x-0 top-0 z-0 h-[80vh] sm:inset-0 sm:h-auto">
+      <div className="absolute inset-x-0 top-20 z-0 h-[125vw] sm:inset-0 sm:h-auto">
         
         {/* Desktop Single Banner Image */}
         <div className="hidden sm:block relative h-full w-full">
@@ -38,7 +38,7 @@ export function HeroSection() {
             alt="Imperial Essence Trading LLC Luxury Banner Mobile"
             fill
             priority
-            className="object-contain object-top filter brightness-[0.98] contrast-[1.02]"
+            className="object-cover object-top filter brightness-[0.98] contrast-[1.02]"
           />
           {/* Smooth 50% Top Merging Soft Overlay - Natural Fade */}
           <div className="absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-white/95 via-white/60 to-transparent pointer-events-none" />
@@ -47,7 +47,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content Container */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(80vh-5rem)] w-full max-w-7xl flex-col items-start justify-start px-4 pb-4 pt-3 sm:min-h-0 sm:flex-1 sm:justify-center sm:px-6 sm:pt-8 sm:pb-8 lg:px-8">
+      <div className="relative z-10 mx-auto flex min-h-[125vw] w-full max-w-7xl flex-col items-start justify-start px-4 pb-0 pt-3 sm:min-h-0 sm:flex-1 sm:justify-center sm:px-6 sm:pt-8 sm:pb-8 lg:px-8">
         
         {/* Main Text Content - Positioned Top Left on Mobile in the Red Box Area */}
         <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2 sm:space-y-4 text-left">
