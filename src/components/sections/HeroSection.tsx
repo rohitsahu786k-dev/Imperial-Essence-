@@ -47,7 +47,7 @@ export function HeroSection() {
       </div>
 
       {/* Hero Content Container */}
-      <div className="relative z-10 mx-auto flex min-h-[80vh] w-full max-w-7xl flex-col items-start justify-start px-4 pb-4 pt-3 sm:min-h-0 sm:flex-1 sm:justify-center sm:px-6 sm:pt-8 sm:pb-8 lg:px-8">
+      <div className="relative z-10 mx-auto flex min-h-[calc(80vh-5rem)] w-full max-w-7xl flex-col items-start justify-start px-4 pb-4 pt-3 sm:min-h-0 sm:flex-1 sm:justify-center sm:px-6 sm:pt-8 sm:pb-8 lg:px-8">
         
         {/* Main Text Content - Positioned Top Left on Mobile in the Red Box Area */}
         <div className="max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-xl space-y-2 sm:space-y-4 text-left">
