@@ -3,13 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { siteData } from "@/data/siteData";
 import { ArrowRight, MapPin, ShieldCheck, Globe2, Building2, PhoneCall } from "lucide-react";
 
 export function HeroSection() {
   const { t } = useLanguage();
 
-  const desktopBannerImage = "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop-02.png";
-  const mobileBannerImage = "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png";
+  const desktopBannerImage = siteData.heroBanners.desktop[0].image;
+  const mobileBannerImage = siteData.heroBanners.mobile[0].image;
 
   return (
     <section className="relative min-h-[80vh] lg:min-h-[90vh] w-full overflow-hidden bg-[#fffdf7] pt-20 lg:pt-24 text-[#1f190f] flex flex-col justify-between">

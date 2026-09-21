@@ -84,7 +84,7 @@ export const siteData = {
   heroBanners: {
     desktop: [
       {
-        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop-01.png",
+        image: "/images/imperial-essence-trading-llc/desktop/imperial-essence-main-banner-desktop.png",
         title: { en: "Global Luxury Distribution Hub", es: "Centro Global de Distribución de Lujo" },
         subtitle: { en: "Connecting Europe, Middle East & Worldwide Duty Free", es: "Conectando Europa, Oriente Medio y Duty Free Global" },
         tag: "Dubai Headquarters | Bay Square"
@@ -104,7 +104,7 @@ export const siteData = {
     ],
     mobile: [
       {
-        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png",
+        image: "/images/imperial-essence-trading-llc/mobile/imperial-essence-main-banner-mobile.png",
         title: { en: "Global Luxury Distribution", es: "Distribución Global de Lujo" },
         subtitle: { en: "Dubai Hub & European Sourcing", es: "Hub de Dubái y Abastecimiento Europeo" },
         tag: "Bay Square, Dubai"

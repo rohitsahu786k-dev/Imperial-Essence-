@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { UnderConstruction } from "@/components/sections/UnderConstruction";
+import { HomeContent } from "@/components/sections/HomeContent";
 
 export const metadata: Metadata = {
-  title: "Imperial Essence Trading LLC | Under Construction",
+  title: "Imperial Essence Trading LLC | Luxury Wholesale & Duty Free Distribution",
   description:
-    "Imperial Essence Trading LLC is preparing its new home. Please check back soon.",
+    "Dubai-based wholesale and distribution gateway for luxury perfumery, cosmetics, skincare, lifestyle products, travel retail, and duty-free channels.",
 };
 
 export default function Home() {
-  return <UnderConstruction />;
+  return <HomeContent />;
 }
