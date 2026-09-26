@@ -284,13 +284,13 @@ export function Header() {
             </button>
 
             <a
-              href="https://wa.me/34614655587"
+              href="https://wa.me/971563930666"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] py-3 text-xs font-bold text-[#b8860b]"
             >
               <Phone className="h-4 w-4 text-[#b8860b]" />
-              <span>WhatsApp 24/7 (+34 614 65 55 87)</span>
+              <span>WhatsApp 24/7 (+971 56 393 0666)</span>
             </a>
           </div>
         </div>

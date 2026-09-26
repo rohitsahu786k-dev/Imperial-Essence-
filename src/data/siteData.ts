@@ -55,14 +55,14 @@ export const siteData = {
         role: "Co-Founder & Business Strategy Partner",
         origin: "Born & Raised in Dubai",
         bio: "Grew up immersed in his family's wholesale and distribution business in Dubai, gaining early exposure to supplier relationships, market instinct, business strategy, and the discipline needed to move goods reliably across international borders.",
-        image: "/images/brand-free-images/48-watch-collection-marble-desk-workspace.webp"
+        image: "/images/team/siddharth-thakker.jpg"
       },
       {
         name: "Sakina Idmouhine",
         role: "Co-Founder & Brand Relations Partner",
         origin: "Spain",
         bio: "Built her career within the perfumery and luxury cosmetics industry over more than 15 years, mastering brand relationships and expectations of international retailers and distributors while traveling worldwide to open new markets and foster trust.",
-        image: "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp"
+        image: "/images/team/sakina-idmouhine.jpg"
       }
     ],
     mission: {
@@ -195,7 +195,7 @@ export const siteData = {
         en: "Selective niche fragrance portfolios for luxury concept stores, specialized boutiques, and duty-free channels.",
         es: "Portafolios de perfumería de nicho selectiva para tiendas concepto de lujo, boutiques especializadas y canales duty-free."
       },
-      image: "/images/brand-free-images/03-ruby-red-perfume-bottle-with-blossoms.webp",
+      image: "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp",
       badge: { en: "Selective Niche", es: "Nicho Selectivo" }
     },
     {
@@ -225,7 +225,7 @@ export const siteData = {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles for retail extensions.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama para extensiones minoristas."
       },
-      image: "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp",
+      image: "/images/brand-free-images/16-mens-brown-leather-jacket-fashion-portrait.webp",
       badge: { en: "Designer Apparel", es: "Textiles de Diseño" }
     },
     {
@@ -235,7 +235,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures for airport and duty-free channels.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo para aeropuertos y duty-free."
       },
-      image: "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
+      image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
@@ -245,7 +245,7 @@ export const siteData = {
         en: "Luxury leather goods, designer lifestyle accents, and refined travel accessories for commercial distributors.",
         es: "Marroquinería de lujo, accesorios de diseño y artículos de viaje refinados para distribuidores comerciales."
       },
-      image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
+      image: "/images/card-images/luxury-lifestyle-accessories-beauty-product-card.webp",
       badge: { en: "Luxury Lifestyle", es: "Estilo de Vida de Lujo" }
     },
     {

@@ -21,7 +21,7 @@ export function ServicesOverview() {
 
   const serviceImageMap: Record<string, string> = {
     "global-wholesale-distribution": "/images/services/global-distribution.jpg",
-    "logistics-management": "/images/services/logistics-management.jpg",
+    "logistics-management": "/images/logistics/sea-freight.jpg",
     "direct-european-sourcing": "/images/services/sourcing-development.jpg",
     "official-brand-representation": "/images/services/brand-entry.jpg",
     "duty-free-travel-retail": "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",

@@ -20,13 +20,14 @@ export const categories = [
   {
     title: "Niche Fragrances",
     slug: "niche-fragrances",
-    image: "/images/brand-free-images/03-ruby-red-perfume-bottle-with-blossoms.webp",
+    image: "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp",
     summary:
       "Selective niche fragrance opportunities for partners looking to strengthen premium discovery, boutique, travel, or destination-led assortments.",
     detail:
       "Niche fragrances require careful positioning, market understanding, and selective access. Imperial Essence Trading LLC helps business partners discuss premium niche fragrance opportunities for boutique retailers, specialty distributors, and travel retail environments.",
     capabilities: ["Selective sourcing", "Boutique channel support", "Premium assortment guidance", "Destination luxury"],
     images: [
+      "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp",
       "/images/brand-free-images/03-ruby-red-perfume-bottle-with-blossoms.webp",
       "/images/brand-free-images/05-citrus-pineapple-luxury-perfume-display.webp",
       "/images/brand-free-images/09-lavender-vanilla-floral-perfume-still-life.webp",
@@ -65,15 +66,15 @@ export const categories = [
   {
     title: "Fashion & Textiles",
     slug: "fashion-textiles",
-    image: "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp",
+    image: "/images/brand-free-images/16-mens-brown-leather-jacket-fashion-portrait.webp",
     summary:
       "Fashion wholesale opportunities for business partners seeking premium retail, distributor, and travel retail category extensions.",
     detail:
       "Fashion categories can strengthen retail portfolios when sourced and positioned with discipline. Imperial Essence Trading LLC supports partners exploring premium fashion opportunities for wholesale distribution, retail expansion, or travel retail assortments.",
     capabilities: ["Retail category extension", "Distributor support", "Market suitability review", "Silk & apparel"],
     images: [
-      "/images/brand-free-images/12-mens-fashion-shearling-coat-leather-bag.webp",
       "/images/brand-free-images/16-mens-brown-leather-jacket-fashion-portrait.webp",
+      "/images/brand-free-images/12-mens-fashion-shearling-coat-leather-bag.webp",
       "/images/brand-free-images/20-ruffled-skirt-fashion-model-handbag.webp",
       "/images/brand-free-images/24-monochrome-black-white-runway-fashion.webp",
       "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp"
@@ -82,28 +83,29 @@ export const categories = [
   {
     title: "Travel Sets",
     slug: "travel-sets",
-    image: "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
+    image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
     summary:
       "Travel-friendly premium sets designed for duty-free, airport, gifting, hospitality, and destination retail wholesale opportunities.",
     detail:
       "Travel sets are especially relevant for duty-free operators, airport retail, hospitality, and destination-led channels. We support wholesale conversations around compact, premium, and giftable formats that can serve international passengers and retail partners.",
     capabilities: ["Duty-free relevance", "Giftable formats", "Travel retail assortment support", "Airport retail supply"],
     images: [
-      "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp",
       "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
-      "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp"
+      "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp",
+      "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp"
     ]
   },
   {
     title: "Accessories",
     slug: "accessories",
-    image: "/images/brand-free-images/26-luxury-handbag-boutique-display.webp",
+    image: "/images/card-images/luxury-lifestyle-accessories-beauty-product-card.webp",
     summary:
       "Premium accessories sourcing for wholesale partners needing adaptable lifestyle, gifting, and travel retail assortment options.",
     detail:
       "Accessories offer flexible wholesale opportunities across premium retail, duty-free, distributor, and gifting environments. Imperial Essence Trading LLC helps partners evaluate accessory categories with a focus on commercial relevance, availability, and channel positioning.",
     capabilities: ["Lifestyle accessories", "Gifting assortment support", "International sourcing", "Leather goods"],
     images: [
+      "/images/card-images/luxury-lifestyle-accessories-beauty-product-card.webp",
       "/images/brand-free-images/14-brown-leather-chain-hobo-handbag.webp",
       "/images/brand-free-images/15-black-street-style-luxury-handbag.webp",
       "/images/brand-free-images/21-premium-black-leather-belt-silver-buckle.webp",

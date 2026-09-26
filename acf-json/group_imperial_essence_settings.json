@@ -1,0 +1,318 @@
+{
+  "key": "group_imperial_essence_settings",
+  "title": "The Imperial Essence - Site Content & Settings",
+  "fields": [
+    {
+      "key": "field_ie_tab_company",
+      "label": "🏢 Company & Contact Details",
+      "name": "",
+      "type": "tab",
+      "instructions": "Manage official company information, headquarters address, phone numbers, and WhatsApp.",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_ie_company_name",
+      "label": "Company Name",
+      "name": "company_name",
+      "type": "text",
+      "instructions": "Official registered company name",
+      "default_value": "Imperial Essence Trading LLC"
+    },
+    {
+      "key": "field_ie_company_license",
+      "label": "License / Registration ID",
+      "name": "company_license",
+      "type": "text",
+      "instructions": "Commercial License / Registration Number",
+      "default_value": "P.O. Box: 112396, Dubai, UAE"
+    },
+    {
+      "key": "field_ie_contact_phone",
+      "label": "Primary Phone Number",
+      "name": "contact_phone",
+      "type": "text",
+      "instructions": "Primary headquarters telephone number",
+      "default_value": "+971 4 552 1257"
+    },
+    {
+      "key": "field_ie_contact_whatsapp",
+      "label": "Primary WhatsApp Number",
+      "name": "contact_whatsapp",
+      "type": "text",
+      "instructions": "24/7 WhatsApp support number",
+      "default_value": "+971 56 393 0666"
+    },
+    {
+      "key": "field_ie_contact_email",
+      "label": "Primary Contact Email",
+      "name": "contact_email",
+      "type": "email",
+      "instructions": "Official business inquiries email",
+      "default_value": "office@theimperialessence.com"
+    },
+    {
+      "key": "field_ie_contact_address",
+      "label": "Headquarters Address",
+      "name": "contact_address",
+      "type": "textarea",
+      "instructions": "Physical address of Dubai headquarters",
+      "default_value": "203, Building No. 11, Bay Square, Business Bay, P.O. Box: 112396, Dubai, UAE"
+    },
+    {
+      "key": "field_ie_contact_city",
+      "label": "City",
+      "name": "contact_city",
+      "type": "text",
+      "default_value": "Dubai"
+    },
+    {
+      "key": "field_ie_contact_country",
+      "label": "Country",
+      "name": "contact_country",
+      "type": "text",
+      "default_value": "United Arab Emirates"
+    },
+    {
+      "key": "field_ie_contact_hours",
+      "label": "Office & Support Hours",
+      "name": "contact_hours",
+      "type": "text",
+      "default_value": "Sunday – Thursday, 9:00 – 18:00 (GST). WhatsApp support available 24/7."
+    },
+    {
+      "key": "field_ie_company_tagline",
+      "label": "Company Tagline / Slogan",
+      "name": "company_tagline",
+      "type": "text",
+      "default_value": "Luxury Perfumery, Beauty & Duty Free Distribution"
+    },
+    {
+      "key": "field_ie_company_subtagline",
+      "label": "Company Subtagline / Mission Brief",
+      "name": "company_subtagline",
+      "type": "textarea",
+      "default_value": "Your premier Dubai-based gateway for luxury perfumery, cosmetics, and fine European fragrances with direct T1 and T2 sourcing."
+    },
+    {
+      "key": "field_ie_tab_logos",
+      "label": "🎨 Brand Logos & Favicon",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_ie_brand_header_logo",
+      "label": "Header Logo",
+      "name": "brand_header_logo",
+      "type": "image",
+      "instructions": "Main gold & luxury logo for navigation header",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_brand_footer_logo",
+      "label": "Footer Logo",
+      "name": "brand_footer_logo",
+      "type": "image",
+      "instructions": "Logo shown in website footer",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_brand_favicon",
+      "label": "Website Favicon",
+      "name": "brand_favicon",
+      "type": "image",
+      "instructions": "Browser tab icon",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_tab_hero",
+      "label": "🚀 Homepage Hero & Visuals",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_ie_hero_desktop_banner_1",
+      "label": "Hero Banner 1 (Dubai Skyline)",
+      "name": "hero_desktop_banner_1",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_hero_desktop_banner_2",
+      "label": "Hero Banner 2 (Luxury Products Collage)",
+      "name": "hero_desktop_banner_2",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_hero_badge",
+      "label": "Hero Badge Text",
+      "name": "hero_badge",
+      "type": "text",
+      "default_value": "Dubai Premier Luxury Distribution"
+    },
+    {
+      "key": "field_ie_hero_title",
+      "label": "Hero Main Headline",
+      "name": "hero_title",
+      "type": "text",
+      "default_value": "Elevating Global Luxury Distribution From Dubai"
+    },
+    {
+      "key": "field_ie_hero_stat_legacy",
+      "label": "Stat 1: Legacy Years",
+      "name": "hero_stat_legacy",
+      "type": "text",
+      "default_value": "40+"
+    },
+    {
+      "key": "field_ie_hero_stat_sourcing",
+      "label": "Stat 2: Sourcing Model",
+      "name": "hero_stat_sourcing",
+      "type": "text",
+      "default_value": "T1 & T2 European"
+    },
+    {
+      "key": "field_ie_tab_leadership",
+      "label": "👥 Executive Leadership",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_ie_founder_siddharth_name",
+      "label": "Founder 1 Name",
+      "name": "founder_siddharth_name",
+      "type": "text",
+      "default_value": "Siddharth Thakker"
+    },
+    {
+      "key": "field_ie_founder_siddharth_role",
+      "label": "Founder 1 Role / Title",
+      "name": "founder_siddharth_role",
+      "type": "text",
+      "default_value": "Co-Founder & Managing Director"
+    },
+    {
+      "key": "field_ie_founder_siddharth_bio",
+      "label": "Founder 1 Biography",
+      "name": "founder_siddharth_bio",
+      "type": "textarea",
+      "default_value": "With deep generational roots in wholesale luxury trade and duty-free retail, Siddharth leads international supplier partnerships and market expansion."
+    },
+    {
+      "key": "field_ie_founder_siddharth_image",
+      "label": "Founder 1 Photo",
+      "name": "founder_siddharth_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_founder_sakina_name",
+      "label": "Founder 2 Name",
+      "name": "founder_sakina_name",
+      "type": "text",
+      "default_value": "Sakina Idmouhine"
+    },
+    {
+      "key": "field_ie_founder_sakina_role",
+      "label": "Founder 2 Role / Title",
+      "name": "founder_sakina_role",
+      "type": "text",
+      "default_value": "Co-Founder & Managing Director"
+    },
+    {
+      "key": "field_ie_founder_sakina_bio",
+      "label": "Founder 2 Biography",
+      "name": "founder_sakina_bio",
+      "type": "textarea",
+      "default_value": "Over 15 years mastering luxury perfumery and cosmetics brand relationships, European sourcing, and prestige international distribution."
+    },
+    {
+      "key": "field_ie_founder_sakina_image",
+      "label": "Founder 2 Photo",
+      "name": "founder_sakina_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_tab_categories",
+      "label": "📦 Categories & Logistics",
+      "name": "",
+      "type": "tab",
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_ie_cat_perfumes_image",
+      "label": "Luxury Perfumes Image",
+      "name": "cat_perfumes_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_cat_cosmetics_image",
+      "label": "Luxury Cosmetics Image",
+      "name": "cat_cosmetics_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_cat_accessories_image",
+      "label": "Luxury Accessories Image",
+      "name": "cat_accessories_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_logistics_air_image",
+      "label": "Logistics Air Image",
+      "name": "logistics_air_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_logistics_sea_image",
+      "label": "Logistics Sea Image",
+      "name": "logistics_sea_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_logistics_road_image",
+      "label": "Logistics Road Image",
+      "name": "logistics_road_image",
+      "type": "image",
+      "return_format": "array"
+    },
+    {
+      "key": "field_ie_logistics_hub_image",
+      "label": "Logistics Hub Image",
+      "name": "logistics_hub_image",
+      "type": "image",
+      "return_format": "array"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_slug",
+        "operator": "==",
+        "value": "site-settings"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Central content and settings for The Imperial Essence website"
+}

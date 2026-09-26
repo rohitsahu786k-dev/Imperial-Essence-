@@ -70,14 +70,14 @@ export function InquiryCTA() {
                 <div>
                   <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Telephone & Mobile</h4>
                   <p className="text-xs font-bold text-[#1f190f] pt-0.5">
-                    Tel: +971 4 552 1257 | Mobile: +34 614 65 55 87
+                    Tel: +971 4 552 1257 | Mobile: +971 56 393 0666
                   </p>
                 </div>
               </div>
 
               {/* WhatsApp 24/7 Highlight */}
               <a
-                href="https://wa.me/34614655587"
+                href="https://wa.me/971563930666"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-start gap-4 rounded-2xl border border-[#d4af37]/40 bg-[#faf4e6]/80 p-4 shadow-sm transition-all duration-300 hover:border-[#b8860b] hover:shadow-md hover:-translate-y-0.5"
@@ -91,7 +91,7 @@ export function InquiryCTA() {
                     <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
                   </div>
                   <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
-                    +34 614 65 55 87 (Click to Chat 24/7)
+                    +971 56 393 0666 (Click to Chat 24/7)
                   </p>
                 </div>
               </a>
@@ -211,7 +211,7 @@ export function InquiryCTA() {
                     <input
                       type="tel"
                       required
-                      placeholder="+971 50 123 4567"
+                      placeholder="+971 56 393 0666"
                       className="w-full rounded-xl border border-[#d4af37]/40 bg-[#fffdfa] px-4 py-3.5 text-xs text-[#1f190f] font-semibold outline-none focus:border-[#b8860b] focus:ring-2 focus:ring-[#d4af37]/30 transition"
                     />
                   </div>

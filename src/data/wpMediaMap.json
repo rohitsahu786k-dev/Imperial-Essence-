@@ -1,0 +1,702 @@
+{
+  "/dubai-skyline-hero.jpg": {
+    "id": 48,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/dubai-skyline-hero.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:23:48.307Z"
+  },
+  "/favicon.ico": {
+    "id": 49,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/favicon.png",
+    "width": 32,
+    "height": 32,
+    "uploadedAt": "2026-09-15T06:23:48.529Z"
+  },
+  "/hero-luxury-banner-clean.jpg": {
+    "id": 50,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/hero-luxury-banner-clean.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:23:56.279Z"
+  },
+  "/hero-luxury-products-collage.jpg": {
+    "id": 51,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/hero-luxury-products-collage.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:24:03.656Z"
+  },
+  "/images/brand-free-images/01-cinematic-luxury-perfume-bottle-night.webp": {
+    "id": 52,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/01-cinematic-luxury-perfume-bottle-night.webp",
+    "width": 1086,
+    "height": 1448,
+    "uploadedAt": "2026-09-15T06:24:06.588Z"
+  },
+  "/images/brand-free-images/02-gold-crowned-luxury-perfume-bottle.webp": {
+    "id": 53,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/02-gold-crowned-luxury-perfume-bottle.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:10.436Z"
+  },
+  "/images/brand-free-images/03-ruby-red-perfume-bottle-with-blossoms.webp": {
+    "id": 54,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/03-ruby-red-perfume-bottle-with-blossoms.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:23.623Z"
+  },
+  "/images/brand-free-images/04-black-gold-perfume-bottles-water-splash.webp": {
+    "id": 55,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/04-black-gold-perfume-bottles-water-splash.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:27.050Z"
+  },
+  "/images/brand-free-images/05-citrus-pineapple-luxury-perfume-display.webp": {
+    "id": 56,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/05-citrus-pineapple-luxury-perfume-display.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:29.415Z"
+  },
+  "/images/brand-free-images/06-pastel-skincare-bottles-clean-beauty-display.webp": {
+    "id": 57,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/06-pastel-skincare-bottles-clean-beauty-display.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:29.952Z"
+  },
+  "/images/brand-free-images/07-amber-skincare-dropper-serum-still-life.webp": {
+    "id": 58,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/07-amber-skincare-dropper-serum-still-life.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:31.392Z"
+  },
+  "/images/brand-free-images/08-gold-black-perfume-bottles-dynamic-splash.webp": {
+    "id": 59,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/08-gold-black-perfume-bottles-dynamic-splash.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:35.013Z"
+  },
+  "/images/brand-free-images/09-lavender-vanilla-floral-perfume-still-life.webp": {
+    "id": 60,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/09-lavender-vanilla-floral-perfume-still-life.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:38.170Z"
+  },
+  "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp": {
+    "id": 61,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/10-amber-glow-beauty-skincare-collection.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:38.926Z"
+  },
+  "/images/brand-free-images/11-four-gradient-luxury-perfume-bottles.webp": {
+    "id": 62,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/11-four-gradient-luxury-perfume-bottles.webp",
+    "width": 1448,
+    "height": 1086,
+    "uploadedAt": "2026-09-15T06:24:39.773Z"
+  },
+  "/images/brand-free-images/12-mens-fashion-shearling-coat-leather-bag.webp": {
+    "id": 63,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/12-mens-fashion-shearling-coat-leather-bag.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:40.691Z"
+  },
+  "/images/brand-free-images/13-pink-perfume-white-iris-flowers.webp": {
+    "id": 64,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/13-pink-perfume-white-iris-flowers.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:43.233Z"
+  },
+  "/images/brand-free-images/14-brown-leather-chain-hobo-handbag.webp": {
+    "id": 65,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/14-brown-leather-chain-hobo-handbag.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:44.134Z"
+  },
+  "/images/brand-free-images/15-black-street-style-luxury-handbag.webp": {
+    "id": 66,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/15-black-street-style-luxury-handbag.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:46.232Z"
+  },
+  "/images/brand-free-images/16-mens-brown-leather-jacket-fashion-portrait.webp": {
+    "id": 67,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/16-mens-brown-leather-jacket-fashion-portrait.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:47.412Z"
+  },
+  "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp": {
+    "id": 68,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/17-pink-gold-quilted-makeup-compact.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:49.756Z"
+  },
+  "/images/brand-free-images/18-rose-crystal-perfume-bottle-closeup.webp": {
+    "id": 69,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/18-rose-crystal-perfume-bottle-closeup.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:52.885Z"
+  },
+  "/images/brand-free-images/19-lavender-bloom-floral-perfume-display.webp": {
+    "id": 70,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/19-lavender-bloom-floral-perfume-display.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:54.088Z"
+  },
+  "/images/brand-free-images/20-ruffled-skirt-fashion-model-handbag.webp": {
+    "id": 71,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/20-ruffled-skirt-fashion-model-handbag.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:54.790Z"
+  },
+  "/images/brand-free-images/21-premium-black-leather-belt-silver-buckle.webp": {
+    "id": 72,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/21-premium-black-leather-belt-silver-buckle.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:24:55.718Z"
+  },
+  "/images/brand-free-images/22-gold-rhinestone-pointed-mule-heels.webp": {
+    "id": 73,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/22-gold-rhinestone-pointed-mule-heels.webp",
+    "width": 1086,
+    "height": 1448,
+    "uploadedAt": "2026-09-15T06:24:56.946Z"
+  },
+  "/images/brand-free-images/23-black-crocodile-texture-top-handle-handbag.webp": {
+    "id": 74,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/23-black-crocodile-texture-top-handle-handbag.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:24:58.412Z"
+  },
+  "/images/brand-free-images/24-monochrome-black-white-runway-fashion.webp": {
+    "id": 75,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/24-monochrome-black-white-runway-fashion.webp",
+    "width": 1024,
+    "height": 1536,
+    "uploadedAt": "2026-09-15T06:24:59.950Z"
+  },
+  "/images/brand-free-images/25-black-quilted-handbags-floral-celebration.webp": {
+    "id": 76,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/25-black-quilted-handbags-floral-celebration.webp",
+    "width": 1672,
+    "height": 941,
+    "uploadedAt": "2026-09-15T06:25:02.310Z"
+  },
+  "/images/brand-free-images/26-luxury-handbag-boutique-display.webp": {
+    "id": 77,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/26-luxury-handbag-boutique-display.webp",
+    "width": 1672,
+    "height": 941,
+    "uploadedAt": "2026-09-15T06:25:03.996Z"
+  },
+  "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp": {
+    "id": 78,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/28-luxury-duty-free-shopping-corridor.webp",
+    "width": 1536,
+    "height": 1024,
+    "uploadedAt": "2026-09-15T06:25:06.752Z"
+  },
+  "/images/brand-free-images/29-futuristic-duty-free-retail-interior.webp": {
+    "id": 79,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/29-futuristic-duty-free-retail-interior.webp",
+    "width": 1512,
+    "height": 1040,
+    "uploadedAt": "2026-09-15T06:25:10.303Z"
+  },
+  "/images/brand-free-images/30-white-tweed-runway-fashion-look.webp": {
+    "id": 80,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/30-white-tweed-runway-fashion-look.webp",
+    "width": 1024,
+    "height": 1536,
+    "uploadedAt": "2026-09-15T06:25:11.659Z"
+  },
+  "/images/brand-free-images/32-emerald-gemstone-watch-dial-macro.webp": {
+    "id": 81,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/32-emerald-gemstone-watch-dial-macro.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:25:14.749Z"
+  },
+  "/images/brand-free-images/35-mechanical-watch-movement-closeup.webp": {
+    "id": 82,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/35-mechanical-watch-movement-closeup.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:25:17.489Z"
+  },
+  "/images/brand-free-images/37-opulent-modern-jewelry-retail-hall.webp": {
+    "id": 83,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/37-opulent-modern-jewelry-retail-hall.webp",
+    "width": 1672,
+    "height": 941,
+    "uploadedAt": "2026-09-15T06:25:19.268Z"
+  },
+  "/images/brand-free-images/40-icy-blue-luxury-watch-on-rock.webp": {
+    "id": 84,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/40-icy-blue-luxury-watch-on-rock.webp",
+    "width": 1536,
+    "height": 1024,
+    "uploadedAt": "2026-09-15T06:25:20.824Z"
+  },
+  "/images/brand-free-images/41-mediterranean-turquoise-statement-necklace.webp": {
+    "id": 85,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/41-mediterranean-turquoise-statement-necklace.webp",
+    "width": 1448,
+    "height": 1086,
+    "uploadedAt": "2026-09-15T06:25:21.690Z"
+  },
+  "/images/brand-free-images/42-sculptural-diamond-brooch-black-lapel.webp": {
+    "id": 86,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/42-sculptural-diamond-brooch-black-lapel.webp",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:25:23.757Z"
+  },
+  "/images/brand-free-images/43-blue-sapphire-necklace-ring-jewelry-portrait.webp": {
+    "id": 87,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/43-blue-sapphire-necklace-ring-jewelry-portrait.webp",
+    "width": 1448,
+    "height": 1086,
+    "uploadedAt": "2026-09-15T06:25:25.028Z"
+  },
+  "/images/brand-free-images/44-emerald-sapphire-diamond-necklace-portrait.webp": {
+    "id": 88,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/44-emerald-sapphire-diamond-necklace-portrait.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:25:26.354Z"
+  },
+  "/images/brand-free-images/45-aquamarine-sapphire-diamond-drop-earrings.webp": {
+    "id": 89,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/45-aquamarine-sapphire-diamond-drop-earrings.webp",
+    "width": 1254,
+    "height": 1254,
+    "uploadedAt": "2026-09-15T06:25:27.741Z"
+  },
+  "/images/brand-free-images/46-art-deco-diamond-necklace-architectural-backdrop.webp": {
+    "id": 90,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/46-art-deco-diamond-necklace-architectural-backdrop.webp",
+    "width": 1448,
+    "height": 1086,
+    "uploadedAt": "2026-09-15T06:25:29.274Z"
+  },
+  "/images/brand-free-images/47-vintage-watchmaking-tools-flat-lay.webp": {
+    "id": 91,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/47-vintage-watchmaking-tools-flat-lay.webp",
+    "width": 1536,
+    "height": 1024,
+    "uploadedAt": "2026-09-15T06:25:32.608Z"
+  },
+  "/images/brand-free-images/48-watch-collection-marble-desk-workspace.webp": {
+    "id": 92,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/48-watch-collection-marble-desk-workspace.webp",
+    "width": 1536,
+    "height": 1024,
+    "uploadedAt": "2026-09-15T06:25:34.004Z"
+  },
+  "/images/brand-free-images/49-luxury-wristwatch-collection-leather-wood.webp": {
+    "id": 93,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/49-luxury-wristwatch-collection-leather-wood.webp",
+    "width": 1448,
+    "height": 1086,
+    "uploadedAt": "2026-09-15T06:25:35.814Z"
+  },
+  "/images/brand-free-images/50-luxury-travel-set-airport-duty-free.webp": {
+    "id": 94,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/50-luxury-travel-set-airport-duty-free.webp",
+    "width": 1086,
+    "height": 1448,
+    "uploadedAt": "2026-09-15T06:25:36.769Z"
+  },
+  "/images/brand-free-images/imperial-banner.png": {
+    "id": 95,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-banner.png",
+    "width": 1832,
+    "height": 859,
+    "uploadedAt": "2026-09-15T06:25:51.743Z"
+  },
+  "/images/brand-free-images/imperial-mobile-banner.png": {
+    "id": 96,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-mobile-banner.png",
+    "width": 941,
+    "height": 1672,
+    "uploadedAt": "2026-09-15T06:26:12.293Z"
+  },
+  "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp": {
+    "id": 97,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/artisanal-niche-fragrances-luxury-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:13.007Z"
+  },
+  "/images/card-images/fine-jewellery-timepieces-luxury-product-card.webp": {
+    "id": 98,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/fine-jewellery-timepieces-luxury-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:14.146Z"
+  },
+  "/images/card-images/luxury-cosmetics-skincare-premium-product-card.webp": {
+    "id": 99,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-cosmetics-skincare-premium-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:14.650Z"
+  },
+  "/images/card-images/luxury-fashion-textiles-accessories-product-card.webp": {
+    "id": 100,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-fashion-textiles-accessories-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:15.371Z"
+  },
+  "/images/card-images/luxury-lifestyle-accessories-beauty-product-card.webp": {
+    "id": 101,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-lifestyle-accessories-beauty-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:15.785Z"
+  },
+  "/images/card-images/premium-luxury-perfumes-fragrances-product-card.webp": {
+    "id": 102,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/premium-luxury-perfumes-fragrances-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:16.492Z"
+  },
+  "/images/card-images/premium-skincare-wellness-luxury-product-card.webp": {
+    "id": 103,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/premium-skincare-wellness-luxury-product-card.webp",
+    "width": 800,
+    "height": 600,
+    "uploadedAt": "2026-09-15T06:26:16.908Z"
+  },
+  "/images/categories/accessories.jpg": {
+    "id": 104,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/accessories.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:17.570Z"
+  },
+  "/images/categories/cosmetics.jpg": {
+    "id": 105,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/cosmetics.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:18.820Z"
+  },
+  "/images/categories/fashion-textiles.jpg": {
+    "id": 106,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/fashion-textiles.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:19.912Z"
+  },
+  "/images/categories/jewelry.jpg": {
+    "id": 107,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/jewelry.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:20.976Z"
+  },
+  "/images/categories/niche-perfumes.jpg": {
+    "id": 108,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/niche-perfumes.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:22.288Z"
+  },
+  "/images/categories/perfumes.jpg": {
+    "id": 109,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/perfumes.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:23.648Z"
+  },
+  "/images/categories/skincare.jpg": {
+    "id": 110,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/skincare.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:24.437Z"
+  },
+  "/images/categories/travel-sets.jpg": {
+    "id": 111,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/travel-sets.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:26:26.002Z"
+  },
+  "/images/hero-luxury-products-collage.jpg": {
+    "id": 51,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/hero-luxury-products-collage.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:26:26.003Z"
+  },
+  "/images/imperial-essence-trading-llc/desktop/imperial-essence-dubai-luxury-products-banner-desktop-01.png": {
+    "id": 112,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-dubai-luxury-products-banner-desktop-01.png",
+    "width": 1916,
+    "height": 821,
+    "uploadedAt": "2026-09-15T06:26:35.233Z"
+  },
+  "/images/imperial-essence-trading-llc/desktop/imperial-essence-luxury-distribution-banner-desktop-03.png": {
+    "id": 113,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-luxury-distribution-banner-desktop-03.png",
+    "width": 1916,
+    "height": 821,
+    "uploadedAt": "2026-09-15T06:26:45.930Z"
+  },
+  "/images/imperial-essence-trading-llc/desktop/imperial-essence-premium-wholesale-banner-desktop-02.png": {
+    "id": 114,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-premium-wholesale-banner-desktop-02.png",
+    "width": 1916,
+    "height": 821,
+    "uploadedAt": "2026-09-15T06:26:55.836Z"
+  },
+  "/images/imperial-essence-trading-llc/mobile/imperial-essence-dubai-luxury-products-banner-mobile-01.png": {
+    "id": 115,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-dubai-luxury-products-banner-mobile-01.png",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:27:06.539Z"
+  },
+  "/images/imperial-essence-trading-llc/mobile/imperial-essence-luxury-wholesale-banner-mobile-03.png": {
+    "id": 116,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-luxury-wholesale-banner-mobile-03.png",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:27:17.824Z"
+  },
+  "/images/imperial-essence-trading-llc/mobile/imperial-essence-premium-retail-banner-mobile-02.png": {
+    "id": 117,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-premium-retail-banner-mobile-02.png",
+    "width": 1122,
+    "height": 1402,
+    "uploadedAt": "2026-09-15T06:27:31.989Z"
+  },
+  "/images/logistics/air-freight.jpg": {
+    "id": 118,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/air-freight.jpg",
+    "width": 800,
+    "height": 519,
+    "uploadedAt": "2026-09-15T06:27:32.931Z"
+  },
+  "/images/logistics/global-network.jpg": {
+    "id": 119,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/global-network.jpg",
+    "width": 800,
+    "height": 546,
+    "uploadedAt": "2026-09-15T06:27:33.417Z"
+  },
+  "/images/logistics/road-freight.jpg": {
+    "id": 120,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/road-freight.jpg",
+    "width": 800,
+    "height": 533,
+    "uploadedAt": "2026-09-15T06:27:34.509Z"
+  },
+  "/images/logistics/sea-freight.jpg": {
+    "id": 121,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/sea-freight.jpg",
+    "width": 800,
+    "height": 533,
+    "uploadedAt": "2026-09-15T06:27:35.661Z"
+  },
+  "/images/luxury-commerce-premium-products-valencia-mobile-banner.webp": {
+    "id": 122,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-commerce-premium-products-valencia-mobile-banner.webp",
+    "width": 931,
+    "height": 1689,
+    "uploadedAt": "2026-09-15T06:27:36.774Z"
+  },
+  "/images/luxury_cta_banner_bg.jpg": {
+    "id": 123,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury_cta_banner_bg.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:27:41.167Z"
+  },
+  "/images/services/brand-entry.jpg": {
+    "id": 124,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/brand-entry.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:27:42.899Z"
+  },
+  "/images/services/global-distribution.jpg": {
+    "id": 125,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/global-distribution.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:27:43.783Z"
+  },
+  "/images/services/logistics-management.jpg": {
+    "id": 126,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/logistics-management.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:27:45.203Z"
+  },
+  "/images/services/sourcing-development.jpg": {
+    "id": 127,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/sourcing-development.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:27:46.803Z"
+  },
+  "/images/team/sakina-idmouhine.jpg": {
+    "id": 128,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/sakina-idmouhine.jpg",
+    "width": 800,
+    "height": 1007,
+    "uploadedAt": "2026-09-15T06:27:47.458Z"
+  },
+  "/images/team/siddharth-thakker.jpg": {
+    "id": 129,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/siddharth-thakker.jpg",
+    "width": 896,
+    "height": 1200,
+    "uploadedAt": "2026-09-15T06:27:51.030Z"
+  },
+  "/images/valencia-hero-waterfront.png": {
+    "id": 130,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/valencia-hero-waterfront.png",
+    "width": 1679,
+    "height": 937,
+    "uploadedAt": "2026-09-15T06:28:10.232Z"
+  },
+  "/images/valencia-hero.jpg": {
+    "id": 131,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/valencia-hero.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:28:15.438Z"
+  },
+  "/images/why-us-luxury.jpg": {
+    "id": 132,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/why-us-luxury.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:28:21.006Z"
+  },
+  "/imperial-essence-logo.png": {
+    "id": 133,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/imperial-essence-logo.png",
+    "width": 1063,
+    "height": 650,
+    "uploadedAt": "2026-09-15T06:28:21.957Z"
+  },
+  "/logistics-air.jpg": {
+    "id": 134,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/logistics-air.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:28:26.943Z"
+  },
+  "/logistics-hub.jpg": {
+    "id": 135,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/logistics-hub.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:28:31.244Z"
+  },
+  "/logistics-road.jpg": {
+    "id": 136,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/logistics-road.jpg",
+    "width": 1200,
+    "height": 896,
+    "uploadedAt": "2026-09-15T06:28:36.640Z"
+  },
+  "/logistics-sea.jpg": {
+    "id": 137,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/logistics-sea.jpg",
+    "width": 1200,
+    "height": 896,
+    "uploadedAt": "2026-09-15T06:28:40.957Z"
+  },
+  "/luxury-accessories.jpg": {
+    "id": 138,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-accessories.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:28:42.877Z"
+  },
+  "/luxury-cosmetics.jpg": {
+    "id": 139,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-cosmetics.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:28:44.605Z"
+  },
+  "/luxury-perfumes.jpg": {
+    "id": 140,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/luxury-perfumes.jpg",
+    "width": 1200,
+    "height": 900,
+    "uploadedAt": "2026-09-15T06:28:45.498Z"
+  },
+  "/service-01.jpg": {
+    "id": 141,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/service-01.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:28:47.129Z"
+  },
+  "/service-02.jpg": {
+    "id": 142,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/service-02.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:28:47.882Z"
+  },
+  "/service-03.jpg": {
+    "id": 143,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/service-03.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:28:48.769Z"
+  },
+  "/service-04.jpg": {
+    "id": 144,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/service-04.jpg",
+    "width": 1000,
+    "height": 750,
+    "uploadedAt": "2026-09-15T06:28:50.019Z"
+  },
+  "/why-choose-us-partnership-hero.jpg": {
+    "id": 145,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/why-choose-us-partnership-hero.jpg",
+    "width": 540,
+    "height": 360,
+    "uploadedAt": "2026-09-15T06:28:50.605Z"
+  },
+  "/why-us-luxury.jpg": {
+    "id": 132,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/09/why-us-luxury.jpg",
+    "width": 1376,
+    "height": 768,
+    "uploadedAt": "2026-09-15T06:28:50.605Z"
+  }
+}

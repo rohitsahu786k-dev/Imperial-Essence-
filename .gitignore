@@ -37,6 +37,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# agent/mcp local config (contains secrets)
+/.agents/
+.playwright-cli/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

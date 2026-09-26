@@ -137,13 +137,13 @@ export function InquiryModal() {
 
               <div className="pt-2">
                 <a
-                  href="https://wa.me/34614655587"
+                  href="https://wa.me/971563930666"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-xl border border-[#d4af37]/50 bg-[#1f190f] py-2.5 px-4 text-xs font-bold text-[#e5b85c] backdrop-blur-md transition-all hover:bg-black hover:text-white"
                 >
                   <PhoneCall className="h-3.5 w-3.5" />
-                  <span>{t("Direct WhatsApp: +34 614 65 55 87", "WhatsApp Directo: +34 614 65 55 87")}</span>
+                  <span>{t("Direct WhatsApp: +971 56 393 0666", "WhatsApp Directo: +971 56 393 0666")}</span>
                 </a>
               </div>
             </div>
@@ -168,7 +168,7 @@ export function InquiryModal() {
 
                 <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                   <a
-                    href="https://wa.me/34614655587"
+                    href="https://wa.me/971563930666"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-6 py-2.5 text-xs font-extrabold text-[#1f190f] shadow-md transition hover:brightness-110"
@@ -258,7 +258,7 @@ export function InquiryModal() {
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+34 600 000 000"
+                        placeholder="+971 56 393 0666"
                         className="w-full rounded-xl border border-[#d4af37]/40 bg-white px-3.5 py-2.5 text-xs font-semibold text-[#1f190f] shadow-sm outline-none transition focus:border-[#b8860b] focus:ring-1 focus:ring-[#b8860b]"
                       />
                     </div>

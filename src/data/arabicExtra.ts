@@ -109,7 +109,7 @@ export const ARABIC_EXTRA: Record<string, string> = {
   "100% Authentic T1 & T2 Supply": "توريد T1 وT2 أصلي 100%",
   "Dubai Headquarters & European Clean Sourcing": "المقر الرئيسي في دبي والتوريد الأوروبي النظيف",
   "24/7 WhatsApp Commercial Support": "دعم تجاري عبر واتساب على مدار الساعة",
-  "Direct WhatsApp: +34 614 65 55 87": "واتساب مباشر: +34 614 65 55 87",
+  "Direct WhatsApp: +971 56 393 0666": "واتساب مباشر: +971 56 393 0666",
   "Thank you for contacting Imperial Essence Trading LLC. Our commercial sourcing team will review your wholesale inquiry and get back to you within 24 hours.": "شكراً لتواصلك مع إمبريال إيسنس للتجارة ذ.م.م. سيراجع فريق التوريد التجاري استفسارك ويعاود التواصل معك خلال 24 ساعة.",
   "COMMERCIAL REQUEST FORM": "نموذج الطلب التجاري",
   "Fill out your details to receive customized volume pricing and product catalogs.": "املأ بياناتك للحصول على تسعير مخصص حسب الكمية وكتالوجات المنتجات.",
