@@ -19,6 +19,8 @@ export function Header() {
   const { openInquiryModal } = useInquiryModal();
 
   const currentLangObj = LANGUAGES.find((l) => l.code === language) || LANGUAGES[0];
+  const isHome = pathname === "/";
+  const navTextClass = scrolled || isHome ? "text-[#2c2214]" : "text-white";
 
   useEffect(() => {
     const update = () => setScrolled(window.scrollY > 20);
@@ -54,7 +56,9 @@ export function Header() {
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
           ? "border-b border-[#d4af37]/30 bg-white/95 py-1 shadow-md backdrop-blur-xl"
-          : "bg-gradient-to-b from-white/90 via-white/70 to-transparent py-2"
+          : isHome
+            ? "bg-gradient-to-b from-white/90 via-white/70 to-transparent py-2"
+            : "bg-gradient-to-b from-black/70 via-black/40 to-transparent py-2"
       )}
     >
       <div className="mx-auto flex h-16 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -88,7 +92,7 @@ export function Header() {
                     href={item.href}
                     className={cn(
                       "inline-flex items-center gap-1 text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
-                      isActive ? "text-[#b8860b] font-bold" : "text-[#2c2214]"
+                      isActive ? "text-[#b8860b] font-bold" : navTextClass
                     )}
                   >
                     <span>{item.label}</span>
@@ -127,7 +131,7 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   "relative text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
-                  isActive ? "text-[#b8860b] font-extrabold after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-[#d4af37] after:rounded-full" : "text-[#2c2214]"
+                  isActive ? "text-[#b8860b] font-extrabold after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-[#d4af37] after:rounded-full" : navTextClass
                 )}
               >
                 {item.label}

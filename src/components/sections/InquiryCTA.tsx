@@ -91,7 +91,7 @@ export function InquiryCTA() {
                     <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
                   </div>
                   <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
-                    Mobile / WhatsApp: +971 56 393 0666 (24/7)
+                    WhatsApp: +971 56 393 0666 (Click to Chat)
                   </p>
                 </div>
               </a>
