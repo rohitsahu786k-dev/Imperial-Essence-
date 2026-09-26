@@ -29,6 +29,9 @@ export function InternalPageHero({
 
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/70 via-black/55 to-black/75" />
 
+      {/* Top Shadow for Header Legibility */}
+      <div className="absolute inset-x-0 top-0 z-[1] h-40 bg-gradient-to-b from-black/80 via-black/40 to-transparent" />
+
       {/* Radial Gold Lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-80 w-80 rounded-full bg-[#d4af37]/15 blur-[100px] pointer-events-none" />
 
