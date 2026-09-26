@@ -15,8 +15,8 @@ export function InternalPageHero({
   backgroundAlt?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#fffdf7] px-4 pb-16 pt-32 text-center text-[#1f190f] sm:px-6 sm:pb-20 sm:pt-40 lg:px-8 border-b border-[#d4af37]/30">
-      
+    <section className="relative overflow-hidden bg-[#14110a] px-4 pb-16 pt-32 text-center text-white sm:px-6 sm:pb-20 sm:pt-40 lg:px-8 border-b border-[#d4af37]/30">
+
       {/* Background Image Overlay */}
       <Image
         src={backgroundImage}
@@ -27,8 +27,8 @@ export function InternalPageHero({
         className="absolute inset-0 z-0 object-cover object-center filter brightness-[0.9] blur-[1px]"
       />
 
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/90 via-white/80 to-white/95" />
-      
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/70 via-black/55 to-black/75" />
+
       {/* Radial Gold Lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-80 w-80 rounded-full bg-[#d4af37]/15 blur-[100px] pointer-events-none" />
 
@@ -38,11 +38,11 @@ export function InternalPageHero({
           <span>{eyebrow}</span>
         </div>
 
-        <h1 className="text-3xl font-normal leading-tight tracking-tight text-[#1f190f] sm:text-5xl lg:text-6xl text-gold-gradient-bright">
+        <h1 className="text-3xl font-normal leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl text-gold-gradient-bright">
           {title}
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-xs font-medium leading-relaxed text-[#4a3c28] sm:text-base">
+        <p className="mx-auto mt-6 max-w-2xl text-xs font-medium leading-relaxed text-white/85 sm:text-base">
           {copy}
         </p>
       </div>

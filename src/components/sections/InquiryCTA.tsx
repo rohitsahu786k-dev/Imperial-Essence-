@@ -70,7 +70,7 @@ export function InquiryCTA() {
                 <div>
                   <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Telephone & Mobile</h4>
                   <p className="text-xs font-bold text-[#1f190f] pt-0.5">
-                    Tel: +971 4 552 1257 | Mobile: +971 56 393 0666
+                    Tel: +971 4 552 1257 | Mobile / WhatsApp: +971 56 393 0666 (24/7)
                   </p>
                 </div>
               </div>

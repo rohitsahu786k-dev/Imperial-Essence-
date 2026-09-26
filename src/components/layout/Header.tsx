@@ -290,7 +290,7 @@ export function Header() {
               className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] py-3 text-xs font-bold text-[#b8860b]"
             >
               <Phone className="h-4 w-4 text-[#b8860b]" />
-              <span>WhatsApp 24/7 (+971 56 393 0666)</span>
+              <span>Mobile / WhatsApp: +971 56 393 0666 (24/7)</span>
             </a>
           </div>
         </div>

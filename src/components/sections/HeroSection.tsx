@@ -133,8 +133,8 @@ export function HeroSection() {
                 <PhoneCall className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-sm font-extrabold text-[#1f190f]">WhatsApp 24/7</p>
-                <p className="text-[11px] font-semibold text-[#5a4a30]">+971 56 393 0666</p>
+                <p className="text-sm font-extrabold text-[#1f190f]">Mobile / WhatsApp</p>
+                <p className="text-[11px] font-semibold text-[#5a4a30]">+971 56 393 0666 (24/7)</p>
               </div>
             </div>
 
