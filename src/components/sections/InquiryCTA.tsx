@@ -86,12 +86,9 @@ export function InquiryCTA() {
                   <MessageCircle className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="flex items-center gap-2">
-                    <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">WhatsApp Support (24/7)</h4>
-                    <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
-                  </div>
+                  <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Mobile / WhatsApp</h4>
                   <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
-                    Mobile / WhatsApp: +971 56 393 0666 (24/7)
+                    +971 56 393 0666 (24/7)
                   </p>
                 </div>
               </a>
