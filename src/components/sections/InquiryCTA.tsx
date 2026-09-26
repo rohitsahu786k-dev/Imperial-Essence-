@@ -70,7 +70,7 @@ export function InquiryCTA() {
                 <div>
                   <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Telephone & Mobile</h4>
                   <p className="text-xs font-bold text-[#1f190f] pt-0.5">
-                    Tel: +971 4 552 1257 | Mobile / WhatsApp: +971 56 393 0666 (24/7)
+                    Tel: +971 4 552 1257
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export function InquiryCTA() {
                     <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
                   </div>
                   <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
-                    +971 56 393 0666 (Click to Chat 24/7)
+                    Mobile / WhatsApp: +971 56 393 0666 (24/7)
                   </p>
                 </div>
               </a>
