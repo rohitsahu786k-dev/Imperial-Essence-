@@ -20,12 +20,12 @@ export function ServicesOverview() {
   };
 
   const serviceImageMap: Record<string, string> = {
-    "global-wholesale-distribution": "/images/services/global-distribution.jpg",
-    "logistics-management": "/images/logistics/sea-freight.jpg",
-    "direct-european-sourcing": "/images/services/sourcing-development.jpg",
-    "official-brand-representation": "/images/services/brand-entry.jpg",
-    "duty-free-travel-retail": "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
-    "brand-partnerships": "/images/brand-free-images/48-watch-collection-marble-desk-workspace.webp"
+    "global-wholesale-distribution": "/images/global/global-wholesale-distribution.webp",
+    "logistics-management": "/images/global/logistics-transport-management.webp",
+    "direct-european-sourcing": "/images/global/direct-european-sourcing.webp",
+    "official-brand-representation": "/images/global/official-brand-representation.webp",
+    "duty-free-travel-retail": "/images/global/duty-free-travel-retail-supply.webp",
+    "brand-partnerships": "/images/global/partnership-opportunities-for-brands.webp"
   };
 
   return (

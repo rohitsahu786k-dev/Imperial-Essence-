@@ -185,7 +185,7 @@ export const siteData = {
         en: "Comprehensive wholesale fragrance sourcing for commercial retailers, duty-free operators, and regional distributors.",
         es: "Suministro integral de perfumería al por mayor para minoristas comerciales, operadores duty-free y distribuidores regionales."
       },
-      image: "/images/brand-free-images/01-cinematic-luxury-perfume-bottle-night.webp",
+      image: "/images/categories/perfumes-fragrances.webp",
       badge: { en: "Commercial Wholesale", es: "Venta Comercial" }
     },
     {
@@ -195,7 +195,7 @@ export const siteData = {
         en: "Selective niche fragrance portfolios for luxury concept stores, specialized boutiques, and duty-free channels.",
         es: "Portafolios de perfumería de nicho selectiva para tiendas concepto de lujo, boutiques especializadas y canales duty-free."
       },
-      image: "/images/card-images/artisanal-niche-fragrances-luxury-product-card.webp",
+      image: "/images/card-images/05-citrus-pineapple-luxury-perfume-display.webp",
       badge: { en: "Selective Niche", es: "Nicho Selectivo" }
     },
     {
@@ -205,7 +205,7 @@ export const siteData = {
         en: "High-grade beauty and makeup assortments structured for volume distribution and commercial retail portfolios.",
         es: "Surtidos de belleza y maquillaje de alta calidad estructurados para distribución por volumen y minoristas."
       },
-      image: "/images/brand-free-images/17-pink-gold-quilted-makeup-compact.webp",
+      image: "/images/categories/cosmetics-makeup.webp",
       badge: { en: "Luxury Makeup", es: "Maquillaje de Lujo" }
     },
     {
@@ -215,7 +215,7 @@ export const siteData = {
         en: "Advanced skincare, restorative serums, and ultra-premium dermatological lines direct from European hubs.",
         es: "Cuidado de la piel avanzado, sueros restauradores y líneas dermatológicas ultra-premium desde centros europeos."
       },
-      image: "/images/brand-free-images/10-amber-glow-beauty-skincare-collection.webp",
+      image: "/images/categories/skincare.webp",
       badge: { en: "Skincare Science", es: "Ciencia de la Piel" }
     },
     {
@@ -225,7 +225,7 @@ export const siteData = {
         en: "Fine silk creations, luxury apparel accessories, and high-end designer textiles for retail extensions.",
         es: "Creaciones en seda fina, accesorios de vestir de lujo y textiles de diseño de alta gama para extensiones minoristas."
       },
-      image: "/images/brand-free-images/16-mens-brown-leather-jacket-fashion-portrait.webp",
+      image: "/images/brand-free-images/24-monochrome-black-white-runway-fashion.webp",
       badge: { en: "Designer Apparel", es: "Textiles de Diseño" }
     },
     {
@@ -235,7 +235,7 @@ export const siteData = {
         en: "Curated travel retail exclusives, fragrance gift sets, and luxury travel miniatures for airport and duty-free channels.",
         es: "Exclusivos de travel retail seleccionados, estuches de regalo y miniaturas de lujo para aeropuertos y duty-free."
       },
-      image: "/images/brand-free-images/28-luxury-duty-free-shopping-corridor.webp",
+      image: "/images/categories/travel-sets.webp",
       badge: { en: "Duty Free Exclusives", es: "Exclusivos Duty Free" }
     },
     {
