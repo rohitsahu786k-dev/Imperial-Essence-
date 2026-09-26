@@ -62,13 +62,13 @@ export function InquiryCTA() {
                 </div>
               </div>
 
-              {/* Telephone & Mobile */}
+              {/* Telephone */}
               <div className="group flex items-start gap-4 rounded-2xl border border-[#d4af37]/30 bg-white p-4 shadow-sm transition-all duration-300 hover:border-[#b8860b] hover:shadow-md hover:-translate-y-0.5">
                 <div className="rounded-xl border border-[#d4af37]/40 bg-[#faf4e6] p-3 text-[#b8860b] shrink-0 group-hover:bg-[#b8860b] group-hover:text-white transition-colors duration-300">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Telephone & Mobile</h4>
+                  <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#8a640f]">Telephone</h4>
                   <p className="text-xs font-bold text-[#1f190f] pt-0.5">
                     Tel: +971 4 552 1257
                   </p>
@@ -91,7 +91,7 @@ export function InquiryCTA() {
                     <span className="rounded-full bg-gradient-to-r from-[#b8860b] to-[#d4af37] px-2 py-0.5 text-[9px] font-extrabold text-[#1f190f]">LIVE</span>
                   </div>
                   <p className="text-xs font-extrabold text-[#1f190f] pt-0.5 group-hover:underline">
-                    WhatsApp: +971 56 393 0666 (Click to Chat)
+                    Mobile / WhatsApp: +971 56 393 0666 (24/7)
                   </p>
                 </div>
               </a>

@@ -4,7 +4,7 @@ import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { InquiryCTA } from "@/components/sections/InquiryCTA";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
-import { MapPin, Phone, Mail, MessageCircle, Clock, Globe } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react";
 
 export default function ContactPage() {
   const { t } = useLanguage();
@@ -74,11 +74,6 @@ export default function ContactPage() {
                     <a href="mailto:office@theimperialessence.com" className="hover:text-[#b8860b]">
                       office@theimperialessence.com
                     </a>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <Globe className="h-4 w-4 text-[#b8860b]" />
-                    <span>www.theimperialessence.com</span>
                   </div>
 
                   <div className="flex items-center gap-3 text-[#5a4a30]">
