@@ -38,7 +38,7 @@ export const siteData = {
     },
     contact: {
       phone: "+971 4 552 1257",
-      mobile: "+971 56 393 0666",
+      mobile: "+971 50 501 0056, +971 56 393 0666",
       whatsapp: "+971 56 393 0666",
       whatsappMain: "+971 56 393 0666",
       whatsappText: "24/7 Available",

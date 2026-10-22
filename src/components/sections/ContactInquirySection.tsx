@@ -64,7 +64,15 @@ export function ContactInquirySection({ compact = false }: { compact?: boolean }
                 <li className="flex items-start gap-3">
                   <Phone className="h-5 w-5 text-[#b8860b] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-extrabold text-[#1f190f] block mb-0.5">{t("Mobile / WhatsApp (24/7)", "Móvil / WhatsApp (24/7)")}</span>
+                    <span className="font-extrabold text-[#1f190f] block mb-0.5">{t("Mobile", "Móvil")}</span>
+                    <span className="block font-extrabold">{siteData.company.contact.mobile}</span>
+                  </div>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <Phone className="h-5 w-5 text-[#b8860b] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-extrabold text-[#1f190f] block mb-0.5">{t("WhatsApp Support (24/7)", "Soporte WhatsApp (24/7)")}</span>
                     <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b] font-extrabold text-[#b8860b] block">
                       +971 56 393 0666
                     </a>

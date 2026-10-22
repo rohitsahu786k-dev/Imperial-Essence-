@@ -59,13 +59,13 @@ export default function ContactPage() {
                 <div className="pt-3 border-t border-[#d4af37]/20 space-y-3 font-bold">
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-[#b8860b]" />
-                    <span>Tel: +971 4 552 1257</span>
+                    <span>Tel: +971 4 552 1257 | Mobile: +971 50 501 0056, +971 56 393 0666</span>
                   </div>
 
                   <div className="flex items-center gap-3">
                     <MessageCircle className="h-4 w-4 text-[#b8860b]" />
                     <a href="https://wa.me/971563930666" target="_blank" rel="noopener noreferrer" className="hover:text-[#b8860b]">
-                      Mobile / WhatsApp: +971 56 393 0666 (24/7)
+                      WhatsApp Support: +971 56 393 0666 (24/7)
                     </a>
                   </div>
 
