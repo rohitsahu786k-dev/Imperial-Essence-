@@ -61,7 +61,7 @@ export function Header() {
             : "bg-gradient-to-b from-black/70 via-black/40 to-transparent py-2"
       )}
     >
-      <div className="mx-auto flex h-16 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[4.5rem] lg:h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-3 shrink-0" aria-label="Imperial Essence Trading LLC">
           <div className="relative overflow-hidden rounded-lg transition group-hover:scale-[1.02]">
@@ -71,7 +71,7 @@ export function Header() {
               width={160}
               height={65}
               priority
-              className="h-14 w-auto object-contain sm:h-14 lg:h-18 filter drop-shadow-[0_1px_4px_rgba(212,175,55,0.2)]"
+              className="h-16 w-auto object-contain sm:h-16 lg:h-[5.25rem] filter drop-shadow-[0_1px_4px_rgba(212,175,55,0.2)]"
             />
           </div>
         </Link>
@@ -84,14 +84,14 @@ export function Header() {
               return (
                 <div
                   key={item.href}
-                  className="relative"
+                  className="relative flex items-center"
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
                   <Link
                     href={item.href}
                     className={cn(
-                      "inline-flex items-center gap-1 text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
+                      "inline-flex items-center gap-1 leading-none text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
                       isActive ? "text-[#b8860b] font-bold" : navTextClass
                     )}
                   >
@@ -130,7 +130,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "relative text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
+                  "relative inline-flex items-center leading-none text-[11px] xl:text-xs font-bold uppercase tracking-wider transition hover:text-[#b8860b] whitespace-nowrap",
                   isActive ? "text-[#b8860b] font-extrabold after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-0.5 after:bg-[#d4af37] after:rounded-full" : navTextClass
                 )}
               >
@@ -145,7 +145,7 @@ export function Header() {
           
           {/* Desktop Language Selector Dropdown */}
           <div
-            className="relative"
+            className="relative flex items-center"
             onMouseEnter={() => setLangDropdownOpen(true)}
             onMouseLeave={() => setLangDropdownOpen(false)}
           >
