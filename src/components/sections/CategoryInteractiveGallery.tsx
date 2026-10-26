@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteData } from "@/data/siteData";
 import { categories } from "@/data/categories";
@@ -67,12 +68,12 @@ export function CategoryInteractiveGallery() {
         </div>
 
         {/* Image Preview Modal */}
-        {previewImage && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-md">
+        {previewImage && createPortal(
+          <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 backdrop-blur-md">
             <div className="relative max-w-2xl w-full rounded-2xl border border-[#d4af37]/50 bg-white p-6 shadow-2xl space-y-4 text-[#1f190f]">
               <button
                 onClick={() => setPreviewImage(null)}
-                className="absolute top-4 right-4 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#1f190f] hover:bg-[#b8860b] hover:text-white transition"
+                className="absolute top-4 right-4 z-30 rounded-full border border-[#d4af37]/40 bg-[#faf4e6] p-2 text-[#1f190f] hover:bg-[#b8860b] hover:text-white transition"
               >
                 <X className="h-5 w-5" />
               </button>
@@ -96,7 +97,8 @@ export function CategoryInteractiveGallery() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div>,
+          document.body
         )}
 
       </div>
