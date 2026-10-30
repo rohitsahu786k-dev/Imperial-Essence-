@@ -62,7 +62,7 @@ export const siteData = {
         role: "Co-Founder & Brand Relations Partner",
         origin: "Spain",
         bio: "Built her career within the perfumery and luxury cosmetics industry over more than 15 years, mastering brand relationships and expectations of international retailers and distributors while traveling worldwide to open new markets and foster trust.",
-        image: "/images/team/sakina-idmouhine-2026.jpg"
+        image: "/images/team/sakina-idmouhine-v2.jpg"
       }
     ],
     mission: {
