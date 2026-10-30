@@ -40,33 +40,32 @@ export function AboutStorySection() {
           {founders.map((founder, idx) => (
             <article
               key={idx}
-              className="group rounded-3xl border border-[#d4af37]/35 bg-white p-8 shadow-md transition hover:-translate-y-1 hover:border-[#b8860b] hover:shadow-xl"
+              className="group overflow-hidden rounded-3xl border border-[#d4af37]/35 bg-white shadow-md transition hover:-translate-y-1 hover:border-[#b8860b] hover:shadow-xl"
             >
-              <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
-                <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl border-2 border-[#d4af37] bg-[#faf4e6] shadow-md">
-                  <Image
-                    src={founder.image}
-                    alt={founder.name}
-                    fill
-                    sizes="112px"
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="min-w-0 space-y-2">
-                  <span className="inline-block rounded-full bg-[#faf4e6] border border-[#d4af37]/40 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-[#8a640f]">
-                    {founder.role}
-                  </span>
-                  <h3 className="text-2xl font-extrabold text-[#1f190f]">
-                    {founder.name}
-                  </h3>
-                  <p className="flex items-center justify-center gap-1.5 text-xs font-bold text-[#5a4a30] sm:justify-start">
-                    <MapPin className="h-3.5 w-3.5 text-[#b8860b]" />
-                    {founder.origin}
-                  </p>
-                  <p className="text-xs text-[#4a3c28] leading-relaxed pt-1 font-medium">
-                    {founder.bio}
-                  </p>
-                </div>
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#faf4e6] sm:aspect-[5/6]">
+                <Image
+                  src={founder.image}
+                  alt={founder.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/55 to-transparent" />
+                <span className="absolute bottom-4 left-4 inline-block rounded-full border border-[#d4af37]/50 bg-[#faf4e6]/95 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider text-[#8a640f] shadow-sm backdrop-blur-md">
+                  {founder.role}
+                </span>
+              </div>
+              <div className="space-y-2 p-6 sm:p-8">
+                <h3 className="text-2xl font-extrabold text-[#1f190f] sm:text-3xl">
+                  {founder.name}
+                </h3>
+                <p className="flex items-center gap-1.5 text-xs font-bold text-[#5a4a30]">
+                  <MapPin className="h-3.5 w-3.5 text-[#b8860b]" />
+                  {founder.origin}
+                </p>
+                <p className="text-xs text-[#4a3c28] leading-relaxed pt-1 font-medium sm:text-sm">
+                  {founder.bio}
+                </p>
               </div>
             </article>
           ))}
