@@ -55,14 +55,14 @@ export const siteData = {
         role: "Co-Founder & Business Strategy Partner",
         origin: "Born & Raised in Dubai",
         bio: "Grew up immersed in his family's wholesale and distribution business in Dubai, gaining early exposure to supplier relationships, market instinct, business strategy, and the discipline needed to move goods reliably across international borders.",
-        image: "/images/team/siddharth-thakker.jpg"
+        image: "/images/team/siddharth-thakker-2026.jpg"
       },
       {
         name: "Sakina Idmouhine",
         role: "Co-Founder & Brand Relations Partner",
         origin: "Spain",
         bio: "Built her career within the perfumery and luxury cosmetics industry over more than 15 years, mastering brand relationships and expectations of international retailers and distributors while traveling worldwide to open new markets and foster trust.",
-        image: "/images/team/sakina-idmouhine.jpg"
+        image: "/images/team/sakina-idmouhine-2026.jpg"
       }
     ],
     mission: {

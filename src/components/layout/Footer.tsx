@@ -10,6 +10,7 @@ export function Footer() {
   const { t } = useLanguage();
 
   const quickLinks = [
+    { href: "/", label: t("Home", "Inicio") },
     { href: "/about", label: t("About Us", "Nosotros") },
     { href: "/categories", label: t("Product Categories", "Categorías de Productos") },
     { href: "/our-sourcing", label: t("European Sourcing (T1 & T2)", "Sourcing Europeo (T1 y T2)") },
@@ -23,7 +24,9 @@ export function Footer() {
     { href: "/categories#niche-fragrances", label: t("Niche Fragrances", "Perfumes de Nicho") },
     { href: "/categories#cosmetics-makeup", label: t("Cosmetics & Makeup", "Cosmética y Maquillaje") },
     { href: "/categories#skincare", label: t("Skincare", "Cuidado de la Piel") },
+    { href: "/categories#fashion-textiles", label: t("Fashion & Textiles", "Moda y Textiles") },
     { href: "/categories#travel-sets", label: t("Travel Sets & Duty Free", "Juegos de Viaje y Duty Free") },
+    { href: "/categories#accessories", label: t("Luxury Accessories", "Accesorios de Lujo") },
     { href: "/categories#jewelry", label: t("Jewelry & Watchmaking", "Joyería y Relojería") },
   ];
 

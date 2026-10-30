@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { InquiryCTA } from "@/components/sections/InquiryCTA";
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export default function WhyChooseUsPage() {
         backgroundAlt="Business partnership handshake between Imperial Essence Trading LLC and a wholesale distribution client"
       />
       <WhyChooseUs />
-      <ServicesOverview />
       <InquiryCTA />
     </div>
   );

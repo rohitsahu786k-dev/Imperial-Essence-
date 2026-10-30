@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { InternalPageHero } from "@/components/sections/InternalPageHero";
+import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { InquiryCTA } from "@/components/sections/InquiryCTA";
 import { useLanguage } from "@/context/LanguageContext";
 import { Building2, ShieldCheck, CheckCircle2, ArrowRight, Globe, Layers } from "lucide-react";
@@ -19,6 +20,8 @@ export default function OurSourcingPage() {
           "Direct sourcing from Europe providing both European clean T2 products and non-European T1 merchandise for flexible, consistent wholesale supply tailored to your market.",
           "Abastecimiento directo desde Europa que proporciona productos T2 limpios europeos y mercancía T1 no europea para un suministro flexible y constante."
         )}
+        backgroundImage="/images/global/direct-european-sourcing.webp"
+        backgroundAlt="European warehouse sourcing luxury perfumery, cosmetics, and accessories"
       />
 
       {/* Core T1 & T2 Breakdown */}
@@ -127,6 +130,7 @@ export default function OurSourcingPage() {
         </div>
       </section>
 
+      <ServicesOverview />
       <InquiryCTA />
     </div>
   );

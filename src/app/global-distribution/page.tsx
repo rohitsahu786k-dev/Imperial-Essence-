@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { InternalPageHero } from "@/components/sections/InternalPageHero";
 import { GlobalNetwork } from "@/components/sections/GlobalNetwork";
-import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import { InquiryCTA } from "@/components/sections/InquiryCTA";
 
 export const metadata: Metadata = {
@@ -16,9 +15,10 @@ export default function GlobalDistributionPage() {
         eyebrow="Logistics & Transport Management"
         title="Global Transport & Freight Network"
         copy="Many years of experience in logistics and international transport by road, sea, and air worldwide, working closely with established freight forwarders."
+        backgroundImage="/images/global/logistics-transport-management.webp"
+        backgroundAlt="Road, sea, and air freight logistics for luxury wholesale goods"
       />
       <GlobalNetwork />
-      <ServicesOverview />
       <InquiryCTA />
     </div>
   );

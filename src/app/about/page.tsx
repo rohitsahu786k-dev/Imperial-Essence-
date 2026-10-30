@@ -17,6 +17,8 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Dubai Headquarters for Luxury Perfumery & European Sourcing"
         copy="Imperial Essence Trading LLC connects luxury categories, trusted retail partners, duty-free operators, distributors, and direct European T1 & T2 sourcing from Dubai, UAE."
+        backgroundImage="/images/why-us-luxury.jpg"
+        backgroundAlt="Luxury perfumery boutique counter representing Imperial Essence Trading LLC"
       />
       <AboutCompanyProfile />
       <AboutStorySection />

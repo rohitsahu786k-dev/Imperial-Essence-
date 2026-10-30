@@ -149,7 +149,7 @@ export function WhyChooseUs() {
           </div>
 
           <Link
-            href="/why-choose-us"
+            href="/contact"
             className="inline-flex items-center gap-2.5 rounded-full border border-[#d4af37] bg-gradient-to-r from-[#b8860b] via-[#d4af37] to-[#e5b85c] px-8 py-4 text-xs font-extrabold uppercase tracking-wider text-[#1f190f] shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg shrink-0"
           >
             <span>{t("Explore Partnership Capabilities", "Explorar Capacidades de Alianza")}</span>

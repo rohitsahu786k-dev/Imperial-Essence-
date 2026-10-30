@@ -698,5 +698,19 @@
     "width": 1376,
     "height": 768,
     "uploadedAt": "2026-09-15T06:28:50.605Z"
+  },
+  "/images/team/sakina-idmouhine-2026.jpg": {
+    "id": 147,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/10/sakina-idmouhine-2026.jpg",
+    "width": 939,
+    "height": 1280,
+    "uploadedAt": "2026-10-30T11:26:58.093Z"
+  },
+  "/images/team/siddharth-thakker-2026.jpg": {
+    "id": 148,
+    "url": "https://admin.theimperialessence.com/wp-content/uploads/2026/10/siddharth-thakker-2026.jpg",
+    "width": 1000,
+    "height": 1309,
+    "uploadedAt": "2026-10-30T11:26:59.017Z"
   }
 }
